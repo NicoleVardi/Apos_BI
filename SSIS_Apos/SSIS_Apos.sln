@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Apos", "SSIS_Apos\SSIS_Apos.dtproj", "{7720F03A-4CB4-4445-9F10-ACCF7B7F970E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7720F03A-4CB4-4445-9F10-ACCF7B7F970E}.Development|Default.ActiveCfg = Development
+		{7720F03A-4CB4-4445-9F10-ACCF7B7F970E}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AAAF5229-E9B8-4C77-AB3F-F9F199A0D3B7}
+	EndGlobalSection
+EndGlobal
