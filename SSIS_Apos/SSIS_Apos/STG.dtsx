@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="STG"
   DTS:PackageType="5"
-  DTS:VersionBuild="95"
-  DTS:VersionGUID="{E0A30578-4685-47C6-9EEC-0027A8A0AAF5}">
+  DTS:VersionBuild="109"
+  DTS:VersionGUID="{F2814608-342B-406C-A25B-95678CA77A62}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACwkO8SeNq+q3dqr0flOK7RAAAAAASAAACgAAAAEAAAAL2a+P3l/ri4T9qNVK1+ax4QAAAAYbrSW1fPHqiW88Nu2NjH8xQAAADF1ycTUJt+xfYvlpvx++Tqh5Escg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADYOmHTTrz5cCqlymJ3PXcvAAAAAASAAACgAAAAEAAAAFGywA9u+s5D5tqDEY1hwR8QAAAAlvoBR58dYH9G6a+nNEXBMBQAAACBj58cgoLLY9Z5MtTZP8dM9BXiDw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA5A7mupW6wRDj9M2SODVp6AAAAAASAAACgAAAAEAAAAN1VH4KlhyxSvWIdBCuhZxgQAAAA33vpACTmXCDGKGFPXo8uSBQAAADsR2GwmREQdVqFftAtAFAREXOj0w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACaKkPFHedJhZ33QoJ1jnUGAAAAAASAAACgAAAAEAAAAKNlq3jRTptupe4NHVKaPngQAAAAs1NvlP4eQSQK8jzSBgBKYBQAAAAO2qzl5x15YD4DWjhEtX7CmfZr3A</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC1X0xfQhCJ9aAZNcq3elgcAAAAAASAAACgAAAAEAAAAFe8SBOhFZolKasISsi6K+cQAAAA/Vh/cJx1C+XKHdNSWI1IyRQAAADSOL2eIDuMXtl1Bs9QnYBaCuzjLA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABRY5jJePN/e9TLG8bagCavAAAAAASAAACgAAAAEAAAAIOCDv+Sfkuh9hOgqdp2LQkQAAAABtEjRFflAtkpMIfbERL/exQAAACChK1PJO/onwMue6FN/dobxXY5vQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -532,6 +532,7 @@ FROM adm.Clinic_Mapping</property>
                   DTS:refId="Package\Dims\Organizational Units\Teritorry\Merge"
                   DTS:CreationName="Microsoft.ExecuteSQLTask"
                   DTS:Description="Execute SQL Task"
+                  DTS:Disabled="True"
                   DTS:DTSID="{5963e2d4-e7ab-4721-9a4e-1b4a3f945a7f}"
                   DTS:ExecutableType="Microsoft.ExecuteSQLTask"
                   DTS:LocaleID="-1"
@@ -560,11 +561,85 @@ FROM adm.Clinic_Mapping</property>
                       version="1">
                       <components>
                         <component
-                          refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component"
+                          refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column"
+                          componentClassID="Microsoft.DerivedColumn"
+                          contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                          description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                          name="Derived Column"
+                          usesDispositions="true">
+                          <inputs>
+                            <input
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Inputs[Derived Column Input]"
+                              description="Input to the Derived Column Transformation"
+                              name="Derived Column Input">
+                              <inputColumns>
+                                <inputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Inputs[Derived Column Input].Columns[Continent_Key]"
+                                  cachedDataType="i4"
+                                  cachedName="Continent_Key"
+                                  errorOrTruncationOperation="Computation"
+                                  errorRowDisposition="FailComponent"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
+                                  truncationRowDisposition="FailComponent"
+                                  usageType="readWrite">
+                                  <properties>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Derived Column Expression"
+                                      name="Expression">[ISNULL](#{Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]}) ? -1 : #{Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]}</property>
+                                    <property
+                                      containsID="true"
+                                      dataType="System.String"
+                                      description="Derived Column Friendly Expression"
+                                      expressionType="Notify"
+                                      name="FriendlyExpression">ISNULL(Continent_Key) ? -1 : Continent_Key</property>
+                                  </properties>
+                                </inputColumn>
+                              </inputColumns>
+                              <externalMetadataColumns />
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Output]"
+                              description="Default Output of the Derived Column Transformation"
+                              exclusionGroup="1"
+                              name="Derived Column Output"
+                              synchronousInputId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Inputs[Derived Column Input]">
+                              <externalMetadataColumns />
+                            </output>
+                            <output
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Error Output]"
+                              description="Error Output of the Derived Column Transformation"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="Derived Column Error Output"
+                              synchronousInputId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Inputs[Derived Column Input]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key"
                           componentClassID="Microsoft.ManagedComponentHost"
                           contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
                           description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
-                          name="Script Component"
+                          name="LKP Continet_Key"
                           version="11">
                           <properties>
                             <property
@@ -576,17 +651,85 @@ FROM adm.Clinic_Mapping</property>
                               <arrayElements
                                 arrayElementCount="30">
                                 <arrayElement
-                                  dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                                  dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
                                 <arrayElement
                                   dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                                 <arrayElement
-                                  dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></arrayElement>
+                                  dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
+*  Microsoft SQL Server Integration Services component wrapper
+*  This module defines the base class for your component
+*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
+
+using System;
+using System.Data;
+using Microsoft.SqlServer.Dts.Pipeline;
+using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
+using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+
+public class UserComponent: ScriptComponent
+{
+    public Connections Connections;
+    public Variables Variables;
+    public UserComponent()
+    {
+        Connections = new Connections(this);
+        Variables = new Variables(this);
+    }
+
+    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
+    {
+
+        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
+        {
+            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
+        }
+
+    }
+
+    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
+    {
+        while (Buffer.NextRow())
+        {
+            Input0_ProcessInputRow(Buffer);
+        }
+    }
+
+    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
+    {
+    }
+
+}
+
+public class Connections
+{
+    ScriptComponent ParentComponent;
+
+    public Connections(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+    public IDTSConnectionManager100 STGADO
+    {
+        get
+        {
+            return ParentComponent.ComponentMetaData.RuntimeConnectionCollection.GetRuntimeConnectionByName(@"STG_ADO").ConnectionManager;
+        }
+    }
+
+}
+
+public class Variables
+{
+    ScriptComponent ParentComponent;
+
+    public Variables(ScriptComponent Component)
+    {
+        ParentComponent = Component;
+    }
+
+}
+]]></arrayElement>
                                 <arrayElement
                                   dataType="System.String"><![CDATA[Properties\Resources.resx]]></arrayElement>
                                 <arrayElement
@@ -727,8 +870,9 @@ using System;
 using System.Data;
 using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
 using Microsoft.SqlServer.Dts.Runtime.Wrapper;
+//using Microsoft.SqlServer.Dts.Runtime;
 using System.Data.SqlClient;
-//using Microsoft.SqlServer.ManagedDTS;
+using System.Collections.Generic;
 #endregion
 
 /// <summary>
@@ -738,64 +882,16 @@ using System.Data.SqlClient;
 [Microsoft.SqlServer.Dts.Pipeline.SSISScriptComponentEntryPointAttribute]
 public class ScriptMain : UserComponent
 {
+    private IDTSConnectionManager100 connMgr;
     private SqlConnection sqlConn;
-    private SqlCommand sqlComm;
+    private SqlCommand sqlCmd;
 
-    #region Help:  Using Integration Services variables and parameters
-    /* To use a variable in this script, first ensure that the variable has been added to
-     * either the list contained in the ReadOnlyVariables property or the list contained in
-     * the ReadWriteVariables property of this script component, according to whether or not your
-     * code needs to write into the variable.  To do so, save this script, close this instance of
-     * Visual Studio, and update the ReadOnlyVariables and ReadWriteVariables properties in the
-     * Script Transformation Editor window.
-     * To use a parameter in this script, follow the same steps. Parameters are always read-only.
-     *
-     * Example of reading from a variable or parameter:
-     *  DateTime startTime = Variables.MyStartTime;
-     *
-     * Example of writing to a variable:
-     *  Variables.myStringVariable = "new value";
-     */
-    #endregion
-
-    #region Help:  Using Integration Services Connnection Managers
-    /* Some types of connection managers can be used in this script component.  See the help topic
-     * "Working with Connection Managers Programatically" for details.
-     *
-     * To use a connection manager in this script, first ensure that the connection manager has
-     * been added to either the list of connection managers on the Connection Managers page of the
-     * script component editor.  To add the connection manager, save this script, close this instance of
-     * Visual Studio, and add the Connection Manager to the list.
-     *
-     * If the component needs to hold a connection open while processing rows, override the
-     * AcquireConnections and ReleaseConnections methods.
-     * 
-     * Example of using an ADO.Net connection manager to acquire a SqlConnection:
-     *  object rawConnection = Connections.SalesDB.AcquireConnection(transaction);
-     *  SqlConnection salesDBConn = (SqlConnection)rawConnection;
-     *
-     * Example of using a File connection manager to acquire a file path:
-     *  object rawConnection = Connections.Prices_zip.AcquireConnection(transaction);
-     *  string filePath = (string)rawConnection;
-     *
-     * Example of releasing a connection manager:
-     *  Connections.SalesDB.ReleaseConnection(rawConnection);
-     */
-    #endregion
-
-    #region Help:  Firing Integration Services Events
-    /* This script component can fire events.
-     *
-     * Example of firing an error event:
-     *  ComponentMetaData.FireError(10, "Process Values", "Bad value", "", 0, out cancel);
-     *
-     * Example of firing an information event:
-     *  ComponentMetaData.FireInformation(10, "Process Values", "Processing has started", "", 0, fireAgain);
-     *
-     * Example of firing a warning event:
-     *  ComponentMetaData.FireWarning(10, "Process Values", "No rows were received", "", 0);
-     */
-    #endregion
+    public override void AcquireConnections(object Transaction)
+    {
+        //base.AcquireConnections(Transaction);
+        connMgr = this.Connections.STGADO;
+        sqlConn = (SqlConnection)connMgr.AcquireConnection(null);
+    }
 
     /// <summary>
     /// This method is called once, before rows begin to be processed in the data flow.
@@ -805,6 +901,7 @@ public class ScriptMain : UserComponent
     public override void PreExecute()
     {
         base.PreExecute();
+        //sqlConn.Open();
     }
 
     /// <summary>
@@ -815,9 +912,7 @@ public class ScriptMain : UserComponent
     public override void PostExecute()
     {
         base.PostExecute();
-        /*
-         * Add your code here
-         */
+        //sqlConn.Dispose();    
     }
 
     /// <summary>
@@ -832,9 +927,28 @@ public class ScriptMain : UserComponent
     /// <param name="Row">The row that is currently passing through the component</param>
     public override void Input0_ProcessInputRow(Input0Buffer Row)
     {
+        //Populate the Parameters
+        string DB = "STG";
+        string Schema = "stg";
+        string Dimension = "Dim_OU_Continent";
+        string SrcTable = "Dim_OU_Teritorry";
 
+        //DO NOT CHANGE
+        sqlCmd = new SqlCommand("adm.GetDimensionKey", sqlConn);
+        sqlCmd.CommandType = CommandType.StoredProcedure;
+        sqlCmd.Parameters.AddWithValue("@DB", DB);
+        sqlCmd.Parameters.AddWithValue("@Schema", Schema);
+        sqlCmd.Parameters.AddWithValue("@Dimension", Dimension);
+        sqlCmd.Parameters.AddWithValue("@SrcTable", SrcTable);
+        sqlCmd.Parameters.AddWithValue("@LookupValue", Row.Continent);
+        sqlCmd.Parameters.Add("@ReturnedKey", SqlDbType.Int);
+        sqlCmd.Parameters["@ReturnedKey"].Direction = ParameterDirection.Output;
+
+        sqlCmd.ExecuteNonQuery();
+        
+        //Read the returned key into the row
+        Row.ContinentKey = (int)sqlCmd.Parameters["@ReturnedKey"].Value;
     }
-
 }
 ]]></arrayElement>
                                 <arrayElement
@@ -877,7 +991,7 @@ public class Input0Buffer: ScriptBuffer
         }
     }
 
-    public String ContinentKey
+    public Int32 ContinentKey
     {
         set
         {
@@ -912,137 +1026,6 @@ public class Input0Buffer: ScriptBuffer
 }
 ]]></arrayElement>
                                 <arrayElement
-                                  dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[using System.Reflection;
-using System.Runtime.CompilerServices;
-
-//
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
-//
-[assembly: AssemblyTitle("SC_7790f5fa73994183982d9611566f9977")]
-[assembly: AssemblyDescription("")]
-[assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SC_7790f5fa73994183982d9611566f9977")]
-[assembly: AssemblyCopyright("Copyright @  2018")]
-[assembly: AssemblyTrademark("")]
-[assembly: AssemblyCulture("")]
-//
-// Version information for an assembly consists of the following four values:
-//
-//      Major Version
-//      Minor Version 
-//      Build Number
-//      Revision
-//
-// You can specify all the values or you can default the Revision and Build Numbers 
-// by using the '*' as shown below:
-
-[assembly: AssemblyVersion("1.0.0.0")]
-]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[ComponentWrapper.cs]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[UTF8]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[/* THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT!
-*  Microsoft SQL Server Integration Services component wrapper
-*  This module defines the base class for your component
-*  THIS IS AUTO-GENERATED CODE THAT WILL BE OVERWRITTEN! DO NOT EDIT! */
-
-using System;
-using System.Data;
-using Microsoft.SqlServer.Dts.Pipeline;
-using Microsoft.SqlServer.Dts.Pipeline.Wrapper;
-using Microsoft.SqlServer.Dts.Runtime.Wrapper;
-
-public class UserComponent: ScriptComponent
-{
-    public Connections Connections;
-    public Variables Variables;
-    public UserComponent()
-    {
-        Connections = new Connections(this);
-        Variables = new Variables(this);
-    }
-
-    public override void ProcessInput(int InputID, string InputName, PipelineBuffer Buffer, OutputNameMap OutputMap)
-    {
-
-        if (InputName.Equals(@"Input 0", StringComparison.Ordinal))
-        {
-            Input0_ProcessInput(new Input0Buffer(Buffer, GetColumnIndexes(InputID), OutputMap));
-        }
-
-    }
-
-    public virtual void Input0_ProcessInput(Input0Buffer Buffer)
-    {
-        while (Buffer.NextRow())
-        {
-            Input0_ProcessInputRow(Buffer);
-        }
-    }
-
-    public virtual void Input0_ProcessInputRow(Input0Buffer Row)
-    {
-    }
-
-}
-
-public class Connections
-{
-    ScriptComponent ParentComponent;
-
-    public Connections(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-
-public class Variables
-{
-    ScriptComponent ParentComponent;
-
-    public Variables(ScriptComponent Component)
-    {
-        ParentComponent = Component;
-    }
-
-}
-]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[Project]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
-                                <arrayElement
-                                  dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>SC_7790f5fa73994183982d9611566f9977</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>SC_7790f5fa73994183982d9611566f9977</msb:DisplayName>
-    <msb:ProjectId>{E0300E82-F7B2-4D78-87E4-85AE6BF2C3AB}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="SC_7790f5fa73994183982d9611566f9977.csproj" />
-    <msb:File Include="Properties\Settings.Designer.cs" />
-    <msb:File Include="main.cs" />
-    <msb:File Include="BufferWrapper.cs" />
-    <msb:File Include="ComponentWrapper.cs" />
-    <msb:File Include="Properties\Settings.settings" />
-    <msb:File Include="Properties\AssemblyInfo.cs" />
-    <msb:File Include="Properties\Resources.resx" />
-    <msb:File Include="Properties\Resources.Designer.cs" />
-  </msb:ItemGroup>
-</c:Project>]]></arrayElement>
-                                <arrayElement
                                   dataType="System.String"><![CDATA[Properties\Settings.Designer.cs]]></arrayElement>
                                 <arrayElement
                                   dataType="System.String"><![CDATA[UTF8]]></arrayElement>
@@ -1056,10 +1039,10 @@ public class Variables
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_7790f5fa73994183982d9611566f9977.Properties.Settings.get_Default():SC_7790f5fa73994183982d9611566f9977.Properties.Sett" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_403bbf9d6e7a4d22938140bff0a32e23.Properties.Settings.get_Default():SC_403bbf9d6e7a4d22938140bff0a32e23.Properties.Sett" +
     "ings")]
 
-namespace SC_7790f5fa73994183982d9611566f9977.Properties {
+namespace SC_403bbf9d6e7a4d22938140bff0a32e23.Properties {
     
     
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
@@ -1076,7 +1059,7 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
 }
 ]]></arrayElement>
                                 <arrayElement
-                                  dataType="System.String"><![CDATA[SC_7790f5fa73994183982d9611566f9977.csproj]]></arrayElement>
+                                  dataType="System.String"><![CDATA[SC_403bbf9d6e7a4d22938140bff0a32e23.csproj]]></arrayElement>
                                 <arrayElement
                                   dataType="System.String"><![CDATA[UTF8]]></arrayElement>
                                 <arrayElement
@@ -1088,16 +1071,15 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{ADAE73B1-5E3C-4242-98E3-8A722FA32138}</ProjectGuid>
+    <ProjectGuid>{77736eca-3669-458e-8b56-f02403d8072e}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SC_7790f5fa73994183982d9611566f9977</RootNamespace>
-    <AssemblyName>SC_7790f5fa73994183982d9611566f9977</AssemblyName>
+    <RootNamespace>SC_403bbf9d6e7a4d22938140bff0a32e23</RootNamespace>
+    <AssemblyName>SC_403bbf9d6e7a4d22938140bff0a32e23</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile>
-    </TargetFrameworkProfile>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1119,10 +1101,6 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SqlServer.ManagedDTS\v4.0_14.0.0.0__89845dcd8080cc91\Microsoft.SqlServer.ManagedDTS.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
@@ -1163,8 +1141,8 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
   <ProjectExtensions>
     <VisualStudio>
       <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" />
-        <Host Name="ScriptComponent" IconIndex="0" />
+        <ProjectProperties HostName="ScriptComponent" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="cs" TemplatesPath="" DebugInfoExeName="" DebugInfoCommandLine="" DebugInfoWorkingDir="" IconImageList="" />
+        <Host Name="ScriptComponent" GeneratedNamespace="SC_403bbf9d6e7a4d22938140bff0a32e23" IconIndex="0"></Host>
         <ProjectClient>
           <HostIdentifier>SSIS_SC140</HostIdentifier>
         </ProjectClient>
@@ -1172,6 +1150,77 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
     </VisualStudio>
   </ProjectExtensions>
 </Project>]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[Project]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[UTF16LE]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>SC_403bbf9d6e7a4d22938140bff0a32e23</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>SC_403bbf9d6e7a4d22938140bff0a32e23</msb:DisplayName>
+    <msb:ProjectId>{6529A4F6-F4B4-4999-971D-76D5ED4CD48B}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="SC_403bbf9d6e7a4d22938140bff0a32e23.csproj" />
+    <msb:File Include="Properties\Resources.Designer.cs" />
+    <msb:File Include="Properties\Settings.Designer.cs" />
+    <msb:File Include="main.cs" />
+    <msb:File Include="BufferWrapper.cs" />
+    <msb:File Include="ComponentWrapper.cs" />
+    <msb:File Include="Properties\Settings.settings" />
+    <msb:File Include="Properties\AssemblyInfo.cs" />
+    <msb:File Include="Properties\Resources.resx" />
+  </msb:ItemGroup>
+</c:Project>]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[Properties\AssemblyInfo.cs]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[using System.Reflection;
+using System.Runtime.CompilerServices;
+
+//
+// General Information about an assembly is controlled through the following 
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
+//
+[assembly: AssemblyTitle("SC_403bbf9d6e7a4d22938140bff0a32e23")]
+[assembly: AssemblyDescription("")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("SC_403bbf9d6e7a4d22938140bff0a32e23")]
+[assembly: AssemblyCopyright("Copyright @  2018")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+//
+// Version information for an assembly consists of the following four values:
+//
+//      Major Version
+//      Minor Version 
+//      Build Number
+//      Revision
+//
+// You can specify all the values or you can default the Revision and Build Numbers 
+// by using the '*' as shown below:
+
+[assembly: AssemblyVersion("1.0.0.0")]
+]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[Properties\Settings.settings]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[UTF8]]></arrayElement>
+                                <arrayElement
+                                  dataType="System.String"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></arrayElement>
                                 <arrayElement
                                   dataType="System.String"><![CDATA[Properties\Resources.Designer.cs]]></arrayElement>
                                 <arrayElement
@@ -1186,14 +1235,14 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_7790f5fa73994183982d9611566f9977.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_403bbf9d6e7a4d22938140bff0a32e23.Properties.Resources.get_ResourceManager():System.Resources.Resou" +
     "rceManager")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_7790f5fa73994183982d9611566f9977.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_403bbf9d6e7a4d22938140bff0a32e23.Properties.Resources.get_Culture():System.Globalization.CultureIn" +
     "fo")]
-[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_7790f5fa73994183982d9611566f9977.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
+[assembly: global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Scope="member", Target="SC_403bbf9d6e7a4d22938140bff0a32e23.Properties.Resources.set_Culture(System.Globalization.CultureInfo" +
     "):Void")]
 
-namespace SC_7790f5fa73994183982d9611566f9977.Properties {
+namespace SC_403bbf9d6e7a4d22938140bff0a32e23.Properties {
     
     
     /// <summary>
@@ -1221,7 +1270,7 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if ((resourceMan == null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_7790f5fa73994183982d9611566f9977.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SC_403bbf9d6e7a4d22938140bff0a32e23.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -1255,99 +1304,161 @@ namespace SC_7790f5fa73994183982d9611566f9977.Properties {
                               <arrayElements
                                 arrayElementCount="2">
                                 <arrayElement
-                                  dataType="System.String"><![CDATA[SC_7790f5fa73994183982d9611566f9977.dll]]></arrayElement>
+                                  dataType="System.String"><![CDATA[SC_403bbf9d6e7a4d22938140bff0a32e23.dll]]></arrayElement>
                                 <arrayElement
                                   dataType="System.String"><![CDATA[TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
-ZGUuDQ0KJAAAAAAAAABQRQAATAEDABfuF1sAAAAAAAAAAOAAIiALATAAABQAAAAIAAAAAAAABjIA
+ZGUuDQ0KJAAAAAAAAABQRQAATAEDAL48GFsAAAAAAAAAAOAAIiALATAAABoAAAAIAAAAAAAAZjgA
 AAAgAAAAQAAAAAAAEAAgAAAAAgAABAAAAAAAAAAGAAAAAAAAAACAAAAAAgAAAAAAAAMAYIUAABAA
-ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAALQxAABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
+ABAAAAAAEAAAEAAAAAAAABAAAAAAAAAAAAAAABQ4AABPAAAAAEAAAEgEAAAAAAAAAAAAAAAAAAAA
 AAAAAGAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAADBIAAAAgAAAAFAAAAAIA
-AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAWAAAAAAAAAAAAAAAAAABAAABA
-LnJlbG9jAAAMAAAAAGAAAAACAAAAHAAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAADo
-MQAAAAAAAEgAAAACAAUAmCEAAGQPAAABAAAAAAAAAPwwAAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4CKBAAAAoqHgIoEQAACioGKh4CKAwAAAYqKgIDBAUoEgAA
-CipSAnsTAAAKAnsUAAAKFpRvFQAACioiAhYoFgAACiomAhcDKBcAAAoqWgMsCAIXKBgAAAoqcgEA
-AHBzGQAACnoeAigaAAAKKh4CKBsAAAoqfgIoHAAACgICcxAAAAZ9AwAABAICcxEAAAZ9BAAABCqS
-BHKeAABwGm8dAAAKLBUCBQIDKB4AAAoOBHMFAAAGbw4AAAYqSisHAgNvDwAABgNvCgAABi3xKjoC
-KB8AAAoCA30FAAAEKjoCKB8AAAoCA30GAAAEKh4CKB8AAAoqrn4HAAAELR5yrgAAcNAHAAACKCAA
-AApvIQAACnMiAAAKgAcAAAR+BwAABCoafggAAAQqHgKACAAABCoafgkAAAQqHgIoIwAACioucxcA
-AAaACQAABCpCU0pCAQABAAAAAAAMAAAAdjQuMC4zMDMxOQAAAAAFAGwAAACQBQAAI34AAPwFAACM
-BgAAI1N0cmluZ3MAAAAAiAwAACABAAAjVVMAqA0AABAAAAAjR1VJRAAAALgNAACsAQAAI0Jsb2IA
-AAAAAAAAAgAAAVcVoAEJAQAAAPoBMwAWAAABAAAAIQAAAAgAAAAJAAAAGAAAAA8AAAAjAAAAEAAA
-AAMAAAAHAAAACAAAAAEAAAAFAAAAAQAAAAAABAMBAAAAAAAGAPsBjgQGAI8CjgQGAEcBewQPAAIF
-AAAGAHQBwgMGAN4BwgMGAL8BwgMGAHYCwgMGABsCwgMGADQCwgMGAIsBwgMGAKYBygIKAE8ClAAO
-ANQDqgUOAEsAqgUKAE0ElAASAD4ElAAKABkElAAKAOwFlAAGAIsFagMGACoBewQGAF4ErgQGAA0E
-rQMWAPoA7gIWAFsB7gIWAOIAmAMGAA8BjgQGAOIDagMGAOcCagMGAPwDagMGALUAagMGAGYAagMG
-AIIGwgMAAAAAJQAAAAAAAQABAAEAEACFAwAAEAABAAEAAQAQADEEAABBAAMABQABABAAzgUAAE0A
-AwAMAAEAEAB/BQAAUQAFABAAAQAQAEAFAABRAAYAEQAAABAAtQQRBVEABwASAAABEABvBREFaQAJ
-ABYAAQCQA3YAAQBxA3oABgB/BX4ABgBABYIAAQDcBYYAAQDcBYYAEQB5A4oAEQDSAI4AEQBWAJIA
-UCAAAAAAxgCtAgYAAQBYIAAAAADGALgCBgABAGAgAAAAAMYATgaWAAEAYiAAAAAAhhhuBAYAAgBq
-IAAAAACGGG4EGwACAHUgAAAAAIYIwAWcAAUAiiAAAAAAhggsAz0ABQCTIAAAAACGCG0GEAAFAJ0g
-AAAAAIYIQQOgAAYAtCAAAAAAhgBlBj0ABwC8IAAAAACGAJIFPQAHAMQgAAAAAIYYbgQGAAcA5CAA
-AAAAxgBBBqUABwAJIQAAAADGAToGlgALAGAgAAAAAMYBTgaWAAwAHCEAAAAAhhhuBK8ADQArIQAA
-AACGGG4ErwAOADohAAAAAIMYbgQGAA8AQiEAAAAAkwhaBLUADwBuIQAAAACTCLoAugAPAHUhAAAA
-AJMIxgC/AA8AfSEAAAAAlgieBcUAEACEIQAAAACGGG4EBgAQAIwhAAAAAJEYdATKABAAAAABAGkG
-AAABAFMEAAACAEoFAAADACcEAAABAMQCAAABAMQCAAABAC4AAAACAIoAAAADAFMEAAAEACcEAAAB
-AFMEAAABAGkGAAABAPIFAAABAPIFAAABAMQCCQBuBAEAEQBuBAYAGQBuBAoAKQBuBBAAMQBuBBAA
-OQBuBBAAQQBuBBAASQBuBBAAUQBuBBAAWQBuBBAAYQBuBBAAaQBuBAYAqQBuBAYAyQBuBBUA2QBu
-BAYAmQCtAgYAmQC4AgYAgQBuBBsAgQBTBCUAgQBKBSkAiQDkAi0AgQBSAzIAgQBhAzcAgQBZAwEA
-4QBuBBAAgQBlBj0AgQCSBT0AmQBuBAYA6QB4BUEAmQBeBUgAoQBuBAYA+QB4AE4A+QB+BlYAsQBu
-BFwA0QBuBAYALgALAOUALgATAO4ALgAbAA0BLgAjABYBLgArAD8BLgAzAD8BLgA7AD8BLgBDABYB
-LgBLAEUBLgBTAD8BLgBbAFwBQwBjAKYBqQBzAA0ByQBzAA0B4wBrAKYBIQF7AKYBAwABAAcABQAI
-AAcAAADEBc4AAAAwA9IAAABxBs4AAABFA9IAAABeBNYAAADaANsAAACiBeAAAgAGAAMAAgAHAAUA
-AQAIAAcAAQAJAAkAAgATAAsAAgAUAA0AAQAVAA0AAgAWAA8ABIAAAAEAAAAAAAAAAAAAAAAAAQAA
-AAQAAAAAAAAAAAAAAGQAQgAAAAAADgAAAAAAAAAAAAAAbQD8BQAAAAAEAAAAAAAAAAAAAABkADYA
-AAAAAA4AAAAAAAAAAAAAAG0AGQYAAAAABAAAAAAAAAAAAAAAZABqAwAAAAAAAAAAAQAAAL8EAAAA
-AABTQ183NzkwZjVmYTczOTk0MTgzOTgyZDk2MTE1NjZmOTk3NwA8TW9kdWxlPgBJbnB1dElEAFN5
-c3RlbS5EYXRhAG1zY29ybGliAFNxbENvbW1hbmQAZGVmYXVsdEluc3RhbmNlAFJ1bnRpbWVUeXBl
-SGFuZGxlAEdldFR5cGVGcm9tSGFuZGxlAElucHV0TmFtZQBNaWNyb3NvZnQuU3FsU2VydmVyLkR0
-cy5QaXBlbGluZQBUeXBlAGdldF9DdWx0dXJlAHNldF9DdWx0dXJlAHJlc291cmNlQ3VsdHVyZQBB
-cHBsaWNhdGlvblNldHRpbmdzQmFzZQBFZGl0b3JCcm93c2FibGVTdGF0ZQBDb21waWxlckdlbmVy
-YXRlZEF0dHJpYnV0ZQBEZWJ1Z2dlck5vblVzZXJDb2RlQXR0cmlidXRlAERlYnVnZ2FibGVBdHRy
-aWJ1dGUARWRpdG9yQnJvd3NhYmxlQXR0cmlidXRlAEFzc2VtYmx5VGl0bGVBdHRyaWJ1dGUAQXNz
-ZW1ibHlUcmFkZW1hcmtBdHRyaWJ1dGUAVGFyZ2V0RnJhbWV3b3JrQXR0cmlidXRlAEFzc2VtYmx5
-Q29uZmlndXJhdGlvbkF0dHJpYnV0ZQBBc3NlbWJseURlc2NyaXB0aW9uQXR0cmlidXRlAENvbXBp
-bGF0aW9uUmVsYXhhdGlvbnNBdHRyaWJ1dGUAQXNzZW1ibHlQcm9kdWN0QXR0cmlidXRlAEFzc2Vt
-Ymx5Q29weXJpZ2h0QXR0cmlidXRlAFNTSVNTY3JpcHRDb21wb25lbnRFbnRyeVBvaW50QXR0cmli
-dXRlAEFzc2VtYmx5Q29tcGFueUF0dHJpYnV0ZQBSdW50aW1lQ29tcGF0aWJpbGl0eUF0dHJpYnV0
-ZQBQcmVFeGVjdXRlAFBvc3RFeGVjdXRlAHZhbHVlAFN5c3RlbS5SdW50aW1lLlZlcnNpb25pbmcA
-R2V0U3RyaW5nAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ183NzkwZjVmYTczOTk0MTgzOTgyZDk2
-MTE1NjZmOTk3Ny5kbGwAZ2V0X0NvbnRpbmVudF9Jc051bGwAc2V0X0NvbnRpbmVudEtleV9Jc051
-bGwAU2V0TnVsbABzZXRfSXRlbQBTeXN0ZW0Ac3FsQ29tbQByZXNvdXJjZU1hbgBTY3JpcHRNYWlu
-AHNxbENvbm4AU3lzdGVtLkNvbmZpZ3VyYXRpb24AU3lzdGVtLkdsb2JhbGl6YXRpb24AU3lzdGVt
-LlJlZmxlY3Rpb24AU3FsQ29ubmVjdGlvbgBJbnZhbGlkT3BlcmF0aW9uRXhjZXB0aW9uAFN0cmlu
-Z0NvbXBhcmlzb24AQ3VsdHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAASW5wdXQwQnVm
-ZmVyAFBpcGVsaW5lQnVmZmVyAFNjcmlwdEJ1ZmZlcgBnZXRfUmVzb3VyY2VNYW5hZ2VyAC5jdG9y
-AC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1bnRpbWUuQ29tcGlsZXJTZXJ2aWNl
-cwBTeXN0ZW0uUmVzb3VyY2VzAFNDXzc3OTBmNWZhNzM5OTQxODM5ODJkOTYxMTU2NmY5OTc3LlBy
-b3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dpbmdNb2RlcwBTQ183NzkwZjVmYTcz
-OTk0MTgzOTgyZDk2MTE1NjZmOTk3Ny5Qcm9wZXJ0aWVzAFZhcmlhYmxlcwBCdWZmZXJDb2x1bW5J
-bmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0dGluZ3MARXF1YWxzAENvbm5lY3Rpb25zAE9iamVj
-dABFbmRPZlJvd3NldABnZXRfRGVmYXVsdABTeXN0ZW0uRGF0YS5TcWxDbGllbnQAZ2V0X0NvbnRp
-bmVudABVc2VyQ29tcG9uZW50AFBhcmVudENvbXBvbmVudABTY3JpcHRDb21wb25lbnQATWljcm9z
-b2Z0LlNxbFNlcnZlci5UeFNjcmlwdABNaWNyb3NvZnQuU3FsU2VydmVyLlBpcGVsaW5lSG9zdABJ
-bnB1dDBfUHJvY2Vzc0lucHV0AElucHV0MF9Qcm9jZXNzSW5wdXRSb3cATmV4dFJvdwBzZXRfQ29u
-dGluZW50S2V5AGdldF9Bc3NlbWJseQAAAICbSQBzAE4AdQBsAGwAIABwAHIAbwBwAGUAcgB0AHkA
-IABjAGEAbgBuAG8AdAAgAGIAZQAgAHMAZQB0ACAAdABvACAARgBhAGwAcwBlAC4AIABBAHMAcwBp
-AGcAbgAgAGEAIAB2AGEAbAB1AGUAIAB0AG8AIAB0AGgAZQAgAGMAbwBsAHUAbQBuACAAaQBuAHMA
-dABlAGEAZAAuAAAPSQBuAHAAdQB0ACAAMAAAcVMAQwBfADcANwA5ADAAZgA1AGYAYQA3ADMAOQA5
-ADQAMQA4ADMAOQA4ADIAZAA5ADYAMQAxADUANgA2AGYAOQA5ADcANwAuAFAAcgBvAHAAZQByAHQA
-aQBlAHMALgBSAGUAcwBvAHUAcgBjAGUAcwAABy05NKAlgkqb8ZEr3nedrQAEIAEBCAMgAAEFIAEB
-EREEIAEBDgUgAQERYQkgAwESRR0IEkkDBhJFAwYdCAQgAQ4IBCABAggFIAIBCBwDIAACBiACAg4R
-eQUgAR0ICAcAARJ9EYCBBSAAEoCFByACAQ4SgIUIt3pcVhk04IkIiYRdzYCAzJEDBhI5AwYSPQMG
-EhQDBhIYAwYSTQMGElkDBhJdAwYSIAUgAQESDAMgAA4EIAEBAgkgBAEIDhJFEkkFIAEBEk0EAAAS
-WQQAABJdBQABARJdBAAAEiADAAABAygADgMoAAIECAASWQQIABJdBAgAEiAIAQAIAAAAAAAeAQAB
-AFQCFldyYXBOb25FeGNlcHRpb25UaHJvd3MBCAEAAgAAAAAAKAEAI1NDXzc3OTBmNWZhNzM5OTQx
-ODM5ODJkOTYxMTU2NmY5OTc3AAAFAQAAAAAWAQARQ29weXJpZ2h0IEAgIDIwMTgAAEkBABouTkVU
-RnJhbWV3b3JrLFZlcnNpb249djQuNQEAVA4URnJhbWV3b3JrRGlzcGxheU5hbWUSLk5FVCBGcmFt
-ZXdvcmsgNC41BAEAAAAAtAAAAM7K774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNl
-UmVhZGVyLCBtc2NvcmxpYiwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1Ymxp
-Y0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3Vy
-Y2VTZXQCAAAAAAAAAAAAAABQQURQQURQtAAAANwxAAAAAAAAAAAAAPYxAAAAIAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAADoMQAAAAAAAAAAAAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAg
-ABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAIAAACAAAAAAAAAAAAAAACCAAAEgAAAAAAAAAAAAAAC50ZXh0AAAAbBgAAAAgAAAAGgAAAAIA
+AAAAAAAAAAAAAAAAACAAAGAucnNyYwAAAEgEAAAAQAAAAAYAAAAcAAAAAAAAAAAAAAAAAABAAABA
+LnJlbG9jAAAMAAAAAGAAAAACAAAAIgAAAAAAAAAAAAAAAAAAQAAAQgAAAAAAAAAAAAAAAAAAAABI
+OAAAAAAAAEgAAAACAAUADCMAAFAUAAABAAAAAAAAAFw3AAC4AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAKYCAnsEAAAEbxIAAAZ9AQAABAICewEAAAQUbxAAAAp0DwAA
+AX0CAAAEKh4CKBEAAAoqHgIoEgAACioAABMwAwAWAQAAAQAAEXIBAABwCnIJAABwC3IRAABwDHIz
+AABwDQJyVQAAcAJ7AgAABHMTAAAKfQMAAAQCewMAAAQabxQAAAoCewMAAARvFQAACnJ9AABwBm8W
+AAAKJgJ7AwAABG8VAAAKcoUAAHAHbxYAAAomAnsDAAAEbxUAAApylQAAcAhvFgAACiYCewMAAARv
+FQAACnKrAABwCW8WAAAKJgJ7AwAABG8VAAAKcr8AAHADbwcAAAZvFgAACiYCewMAAARvFQAACnLZ
+AABwHm8XAAAKJgJ7AwAABG8VAAAKctkAAHBvGAAAChhvGQAACgJ7AwAABG8aAAAKJgMCewMAAARv
+FQAACnLZAABwbxgAAApvGwAACqUkAAABbwkAAAYqHgIoDQAABioqAgMEBSgcAAAKKlICex0AAAoC
+ex4AAAoWlG8fAAAKKiICFiggAAAKKjoCFwOMJAAAASghAAAKKloDLAgCFygiAAAKKnLzAABwcyMA
+AAp6HgIoJAAACioeAiglAAAKKn4CKCYAAAoCAnMRAAAGfQQAAAQCAnMTAAAGfQUAAAQqkgRykAEA
+cBpvJwAACiwVAgUCAygoAAAKDgRzBgAABm8PAAAGKkorBwIDbxAAAAYDbwsAAAYt8SoGKjoCKCkA
+AAoCA30GAAAEKoICewYAAARvKgAACm8rAAAKcqABAHBvLAAACm8tAAAKKjoCKCkAAAoCA30HAAAE
+Kh4CKCkAAAoqrn4IAAAELR5ysAEAcNAHAAACKC4AAApvLwAACnMwAAAKgAgAAAR+CAAABCoafgkA
+AAQqHgKACQAABCoafgoAAAQqHgIoMQAACioucxkAAAaACgAABCpCU0pCAQABAAAAAAAMAAAAdjQu
+MC4zMDMxOQAAAAAFAGwAAACUBgAAI34AAAAHAAD8CAAAI1N0cmluZ3MAAAAA/A8AACQCAAAjVVMA
+IBIAABAAAAAjR1VJRAAAADASAAAgAgAAI0Jsb2IAAAAAAAAAAgAAAVcVogEJAQAAAPoBMwAWAAAB
+AAAALQAAAAgAAAAKAAAAGgAAABAAAAAxAAAAEAAAAAEAAAAEAAAACAAAAAkAAAABAAAABwAAAAEA
+AAAAAPUDAQAAAAAABgDVAtgGBgBpA9gGBgAhAsUGDwBMBwAABgBOAsAEBgC4AsAEBgCZAsAEBgBQ
+A8AEBgD1AsAEBgAOA8AEBgBlAsAEBgCAArsDCgApA1kBDgBWAEYGEgAbBQoIEgD1AAoIBgDrB2QE
+CgAPBlkBFgAABlkBCgCUBVkBCgBMCFkBBgAEAsUGBgAgBvgGBgCIBZ8EGgDUAd8DGgA1At8DGgC8
+AYoEBgDpAdgGEgDrAGQFEgCIAbUAEgDyBAoIEgCjBgoIEgB6AbUAEgCXBmQFEgA3BbUABgBvAGQE
+BgBKBWQEBgDYA2QEBgB3BWQEHgABAG4GHgAaAG4GHgA9AG4GBgCPAWQEBgAQAWQEBgDiCMAEAAAA
+AJkAAAAAAAEAAQABABAAdwQAABAAAQABAAEAEADzBQAASQAEAAYAAQAQAC4IAABVAAQADQABABAA
+0AcAAEUABgARAAEAEACKBwAARQAHABMAAAAQAP8GWwdFAAgAFAAAARAAuQdbB20ACgAYAAEAsAbW
+AAEAggTaAAEA5ADeAAYA0AfiAAYAigfmAAEAPAjqAAEAPAjqABEAawTuABEArAHyABEAAAH2AFAg
+AAAAAMYAyQf6AAEAeiAAAAAAxgCHAwYAAgCCIAAAAADGAJIDBgACAIwgAAAAAMYArgj/AAIAriEA
+AAAAhhi4BgYAAwC2IQAAAACGGLgGYQADAMEhAAAAAIYIIAgFAQYA1iEAAAAAhggdBIMABgDfIQAA
+AACGCM0IAQAGAO4hAAAAAIYIMgQJAQcABSIAAAAAhgDFCIMACAANIgAAAACGAPIHgwAIABUiAAAA
+AIYYuAYGAAgANSIAAAAAxgChCA4BCABaIgAAAADGAZoI/wAMAG0iAAAAAMYBrgj/AA0AbyIAAAAA
+hhi4BhgBDgB+IgAAAACGCKoAqAAPAJ8iAAAAAIYYuAYYAQ8AriIAAAAAgxi4BgYAEAC2IgAAAACT
+CBwGHgEQAOIiAAAAAJMIlAEjARAA6SIAAAAAkwigASgBEADxIgAAAACWCP4HLgERAPgiAAAAAIYY
+uAYGABEAACMAAAAAkRi+BjMBEQAAAAEAtAQAAAEAyQgAAAEAFQYAAAIAlAcAAAMAogUAAAEAtQMA
+AAEAtQMAAAEAogAAAAIANAEAAAMAFQYAAAQAogUAAAEAFQYAAAEAyQgAAAEAUggAAAEAUggAAAEA
+tQMJALgGAQARALgGBgAZALgGCgApALgGEAAxALgGEAA5ALgGEABBALgGEABJALgGEABRALgGEABZ
+ALgGEABhALgGEABpALgGBgCxALgGBgDRALgGFQDhALgGBgBxAAkFGwCpAIcDBgCpAJIDBgCBALgG
+JwDpAIQBLgCBANwHNAD5AKgDOQD5AOAAQQD5AFIESwARASkFUgDpAOsIWQARAZ4DXQCRALgGYQCR
+ABUGawCRAJQHbwCZANUDcwCRAEMEeACRAFsEfQCRAEoEAQApAbgGEACRAMUIgwCRAPIHgwCpALgG
+BgAxAcIHhwCpAKgHjwCJALgGBgCpAMEAlQBBAdIEmwBJAT4BoQBRATAGqABZASIBrQBZAd4ItgC5
+ALgGvADZALgGBgAuAAsAVwEuABMAYAEuABsAfwEuACMAiAEuACsAsQEuADMAsQEuADsAsQEuAEMA
+iAEuAEsAtwEuAFMAsQEuAFsAzgFDAGMAGALJAHMAfwHjAGsAGALpAHMAfwFBAXsAGAIgAAMAAQAF
+AAUABwAGAAgACAAAACQINwEAACEEOwEAANEIPwEAADYEOwEAAK4AQwEAACAGSAEAALQBTQEAAAII
+UgECAAcAAwACAAgABQABAAkABwABAAoACQACABIACwACABUADQACABYADwABABcADwACABgAEQAE
+gAAAAQAAAAAAAAAAAAAAAAB1AAAABAAAAAAAAAAAAAAAxADXAAAAAAAOAAAAAAAAAAAAAADNAFwI
+AAAAAA4AAAAAAAAAAAAAAM0ArAUAAAAABAAAAAAAAAAAAAAAxAC1AAAAAAAOAAAAAAAAAAAAAADN
+AHkIAAAAAAQAAAAAAAAAAAAAAMQAZAQAAAAADgAAAAAAAAAAAAAAzQDPBQAAAAAAAAAAAQAAAAkH
+AAAAAAAAAElEVFNDb21wb25lbnRNZXRhRGF0YTEwMABJRFRTUnVudGltZUNvbm5lY3Rpb25Db2xs
+ZWN0aW9uMTAwAElEVFNSdW50aW1lQ29ubmVjdGlvbjEwMABJRFRTQ29ubmVjdGlvbk1hbmFnZXIx
+MDAASW50MzIAU0NfNDAzYmJmOWQ2ZTdhNGQyMjkzODE0MGJmZjBhMzJlMjMAPE1vZHVsZT4ASW5w
+dXRJRABnZXRfU1RHQURPAFN5c3RlbS5EYXRhAGdldF9Db21wb25lbnRNZXRhRGF0YQBtc2Nvcmxp
+YgBBZGQAc3FsQ21kAERiQ29tbWFuZABTcWxDb21tYW5kAGRlZmF1bHRJbnN0YW5jZQBSdW50aW1l
+VHlwZUhhbmRsZQBHZXRUeXBlRnJvbUhhbmRsZQBJbnB1dE5hbWUAR2V0UnVudGltZUNvbm5lY3Rp
+b25CeU5hbWUATWljcm9zb2Z0LlNxbFNlcnZlci5EdHMuUGlwZWxpbmUAU3FsRGJUeXBlAHNldF9D
+b21tYW5kVHlwZQBnZXRfQ3VsdHVyZQBzZXRfQ3VsdHVyZQByZXNvdXJjZUN1bHR1cmUAQXBwbGlj
+YXRpb25TZXR0aW5nc0Jhc2UARWRpdG9yQnJvd3NhYmxlU3RhdGUAQ29tcGlsZXJHZW5lcmF0ZWRB
+dHRyaWJ1dGUARGVidWdnZXJOb25Vc2VyQ29kZUF0dHJpYnV0ZQBEZWJ1Z2dhYmxlQXR0cmlidXRl
+AEVkaXRvckJyb3dzYWJsZUF0dHJpYnV0ZQBBc3NlbWJseVRpdGxlQXR0cmlidXRlAEFzc2VtYmx5
+VHJhZGVtYXJrQXR0cmlidXRlAFRhcmdldEZyYW1ld29ya0F0dHJpYnV0ZQBBc3NlbWJseUNvbmZp
+Z3VyYXRpb25BdHRyaWJ1dGUAQXNzZW1ibHlEZXNjcmlwdGlvbkF0dHJpYnV0ZQBDb21waWxhdGlv
+blJlbGF4YXRpb25zQXR0cmlidXRlAEFzc2VtYmx5UHJvZHVjdEF0dHJpYnV0ZQBBc3NlbWJseUNv
+cHlyaWdodEF0dHJpYnV0ZQBTU0lTU2NyaXB0Q29tcG9uZW50RW50cnlQb2ludEF0dHJpYnV0ZQBB
+c3NlbWJseUNvbXBhbnlBdHRyaWJ1dGUAUnVudGltZUNvbXBhdGliaWxpdHlBdHRyaWJ1dGUAUHJl
+RXhlY3V0ZQBQb3N0RXhlY3V0ZQBnZXRfVmFsdWUAQWRkV2l0aFZhbHVlAHZhbHVlAFN5c3RlbS5S
+dW50aW1lLlZlcnNpb25pbmcAR2V0U3RyaW5nAFN5c3RlbS5Db21wb25lbnRNb2RlbABTQ180MDNi
+YmY5ZDZlN2E0ZDIyOTM4MTQwYmZmMGEzMmUyMy5kbGwAZ2V0X0NvbnRpbmVudF9Jc051bGwAc2V0
+X0NvbnRpbmVudEtleV9Jc051bGwAU2V0TnVsbABnZXRfSXRlbQBzZXRfSXRlbQBTeXN0ZW0AcmVz
+b3VyY2VNYW4AU2NyaXB0TWFpbgBzcWxDb25uAFN5c3RlbS5Db25maWd1cmF0aW9uAFN5c3RlbS5H
+bG9iYWxpemF0aW9uAFRyYW5zYWN0aW9uAFN5c3RlbS5SZWZsZWN0aW9uAGdldF9SdW50aW1lQ29u
+bmVjdGlvbkNvbGxlY3Rpb24AU3FsUGFyYW1ldGVyQ29sbGVjdGlvbgBBY3F1aXJlQ29ubmVjdGlv
+bgBTcWxDb25uZWN0aW9uAHNldF9EaXJlY3Rpb24AUGFyYW1ldGVyRGlyZWN0aW9uAEludmFsaWRP
+cGVyYXRpb25FeGNlcHRpb24AU3lzdGVtLkRhdGEuQ29tbW9uAFN0cmluZ0NvbXBhcmlzb24AQ3Vs
+dHVyZUluZm8AT3V0cHV0TmFtZU1hcABPdXRwdXRNYXAATWljcm9zb2Z0LlNxbFNlcnZlci5EVFNS
+dW50aW1lV3JhcABNaWNyb3NvZnQuU3FsU2VydmVyLkRUU1BpcGVsaW5lV3JhcABJbnB1dDBCdWZm
+ZXIAUGlwZWxpbmVCdWZmZXIAU2NyaXB0QnVmZmVyAGdldF9SZXNvdXJjZU1hbmFnZXIAZ2V0X0Nv
+bm5lY3Rpb25NYW5hZ2VyAE1pY3Jvc29mdC5TcWxTZXJ2ZXIuRHRzLlJ1bnRpbWUuV3JhcHBlcgBN
+aWNyb3NvZnQuU3FsU2VydmVyLkR0cy5QaXBlbGluZS5XcmFwcGVyAERiUGFyYW1ldGVyAFNxbFBh
+cmFtZXRlcgBjb25uTWdyAC5jdG9yAC5jY3RvcgBTeXN0ZW0uRGlhZ25vc3RpY3MAU3lzdGVtLlJ1
+bnRpbWUuQ29tcGlsZXJTZXJ2aWNlcwBTeXN0ZW0uUmVzb3VyY2VzAFNDXzQwM2JiZjlkNmU3YTRk
+MjI5MzgxNDBiZmYwYTMyZTIzLlByb3BlcnRpZXMuUmVzb3VyY2VzLnJlc291cmNlcwBEZWJ1Z2dp
+bmdNb2RlcwBTQ180MDNiYmY5ZDZlN2E0ZDIyOTM4MTQwYmZmMGEzMmUyMy5Qcm9wZXJ0aWVzAFZh
+cmlhYmxlcwBCdWZmZXJDb2x1bW5JbmRleGVzAEdldENvbHVtbkluZGV4ZXMAU2V0dGluZ3MARXF1
+YWxzAEFjcXVpcmVDb25uZWN0aW9ucwBnZXRfUGFyYW1ldGVycwBPYmplY3QARW5kT2ZSb3dzZXQA
+Z2V0X0RlZmF1bHQAU3lzdGVtLkRhdGEuU3FsQ2xpZW50AGdldF9Db250aW5lbnQAVXNlckNvbXBv
+bmVudABQYXJlbnRDb21wb25lbnQAU2NyaXB0Q29tcG9uZW50AE1pY3Jvc29mdC5TcWxTZXJ2ZXIu
+VHhTY3JpcHQATWljcm9zb2Z0LlNxbFNlcnZlci5QaXBlbGluZUhvc3QASW5wdXQwX1Byb2Nlc3NJ
+bnB1dABJbnB1dDBfUHJvY2Vzc0lucHV0Um93AE5leHRSb3cAc2V0X0NvbnRpbmVudEtleQBnZXRf
+QXNzZW1ibHkARXhlY3V0ZU5vblF1ZXJ5AAAAB1MAVABHAAAHcwB0AGcAACFEAGkAbQBfAE8AVQBf
+AEMAbwBuAHQAaQBuAGUAbgB0AAAhRABpAG0AXwBPAFUAXwBUAGUAcgBpAHQAbwByAHIAeQAAJ2EA
+ZABtAC4ARwBlAHQARABpAG0AZQBuAHMAaQBvAG4ASwBlAHkAAAdAAEQAQgAAD0AAUwBjAGgAZQBt
+AGEAABVAAEQAaQBtAGUAbgBzAGkAbwBuAAATQABTAHIAYwBUAGEAYgBsAGUAABlAAEwAbwBvAGsA
+dQBwAFYAYQBsAHUAZQAAGUAAUgBlAHQAdQByAG4AZQBkAEsAZQB5AACAm0kAcwBOAHUAbABsACAA
+cAByAG8AcABlAHIAdAB5ACAAYwBhAG4AbgBvAHQAIABiAGUAIABzAGUAdAAgAHQAbwAgAEYAYQBs
+AHMAZQAuACAAQQBzAHMAaQBnAG4AIABhACAAdgBhAGwAdQBlACAAdABvACAAdABoAGUAIABjAG8A
+bAB1AG0AbgAgAGkAbgBzAHQAZQBhAGQALgAAD0kAbgBwAHUAdAAgADAAAA9TAFQARwBfAEEARABP
+AABxUwBDAF8ANAAwADMAYgBiAGYAOQBkADYAZQA3AGEANABkADIAMgA5ADMAOAAxADQAMABiAGYA
+ZgAwAGEAMwAyAGUAMgAzAC4AUAByAG8AcABlAHIAdABpAGUAcwAuAFIAZQBzAG8AdQByAGMAZQBz
+AAAAAM2DcaaFAcVOm/fKsLhnuAAABCABAQgDIAABBSABARERBCABAQ4FIAEBEWUEIAEcHAYHBA4O
+Dg4GIAIBDhI9BSABARF5BCAAEn0HIAISgIEOHAkgAhKAgQ4RgIUGIAESgIEOBiABARGAjQMgAAgD
+IAAcCSADARJNHQgSUQMGEk0DBh0IBCABDggEIAECCAUgAgEIHAMgAAIHIAICDhGAnQUgAR0ICAUg
+ABKAoQUgABKApQYgARKAqQ4EIAASOQgAARKArRGAsQUgABKAtQcgAgEOEoC1CLd6XFYZNOCJCImE
+Xc2AgMyRAwYSOQMGEj0DBhJBAwYSFAMGEhgDBhJVAwYSXQMGEmEDBhIgBCABARwFIAEBEgwDIAAO
+BCABAQIJIAQBCA4STRJRBSABARJVBAAAEl0EAAASYQUAAQESYQQAABIgAwAAAQMoAA4DKAACAygA
+CAQoABI5BAgAEl0ECAASYQQIABIgCAEACAAAAAAAHgEAAQBUAhZXcmFwTm9uRXhjZXB0aW9uVGhy
+b3dzAQgBAAIAAAAAACgBACNTQ180MDNiYmY5ZDZlN2E0ZDIyOTM4MTQwYmZmMGEzMmUyMwAABQEA
+AAAAFgEAEUNvcHlyaWdodCBAICAyMDE4AABJAQAaLk5FVEZyYW1ld29yayxWZXJzaW9uPXY0LjUB
+AFQOFEZyYW1ld29ya0Rpc3BsYXlOYW1lEi5ORVQgRnJhbWV3b3JrIDQuNQQBAAAAAAAAtAAAAM7K
+774BAAAAkQAAAGxTeXN0ZW0uUmVzb3VyY2VzLlJlc291cmNlUmVhZGVyLCBtc2NvcmxpYiwgVmVy
+c2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkz
+NGUwODkjU3lzdGVtLlJlc291cmNlcy5SdW50aW1lUmVzb3VyY2VTZXQCAAAAAAAAAAAAAABQQURQ
+QURQtAAAADw4AAAAAAAAAAAAAFY4AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAABIOAAAAAAAAAAA
+AAAAAF9Db3JEbGxNYWluAG1zY29yZWUuZGxsAAAAAAD/JQAgABAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAASAAA
+AFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAAAAAA
+vQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQAAAAB
+AFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAA
+AAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAAMAAw
+ADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBuAHkA
+TgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAAAABT
+AEMAXwA0ADAAMwBiAGIAZgA5AGQANgBlADcAYQA0AGQAMgAyADkAMwA4ADEANAAwAGIAZgBmADAA
+YQAzADIAZQAyADMAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAu
+ADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADQAMAAzAGIAYgBmADkA
+ZAA2AGUANwBhADQAZAAyADIAOQAzADgAMQA0ADAAYgBmAGYAMABhADMAMgBlADIAMwAuAGQAbABs
+AAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBoAHQA
+IABAACAAIAAyADAAMQA4AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMAAAAA
+AAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANAAwADMA
+YgBiAGYAOQBkADYAZQA3AGEANABkADIAMgA5ADMAOAAxADQAMABiAGYAZgAwAGEAMwAyAGUAMgAz
+AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADQAMAAzAGIA
+YgBmADkAZAA2AGUANwBhADQAZAAyADIAOQAzADgAMQA0ADAAYgBmAGYAMABhADMAMgBlADIAMwAA
+ADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4AAgA
+AQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAAaDgAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1356,49 +1467,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAQAQAAAAGAAAgAAAAAAAAAAAAAAAAAAAAQABAAAAMAAAgAAAAAAAAAAAAAAAAAAAAQAAAAAA
-SAAAAFhAAADsAwAAAAAAAAAAAADsAzQAAABWAFMAXwBWAEUAUgBTAEkATwBOAF8ASQBOAEYATwAA
-AAAAvQTv/gAAAQAAAAEAAAAAAAAAAQAAAAAAPwAAAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAEQA
-AAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBu
-AAAAAAAAALAETAMAAAEAUwB0AHIAaQBuAGcARgBpAGwAZQBJAG4AZgBvAAAAKAMAAAEAMAAwADAA
-MAAwADQAYgAwAAAAGgABAAEAQwBvAG0AbQBlAG4AdABzAAAAAAAAACIAAQABAEMAbwBtAHAAYQBu
-AHkATgBhAG0AZQAAAAAAAAAAAHAAJAABAEYAaQBsAGUARABlAHMAYwByAGkAcAB0AGkAbwBuAAAA
-AABTAEMAXwA3ADcAOQAwAGYANQBmAGEANwAzADkAOQA0ADEAOAAzADkAOAAyAGQAOQA2ADEAMQA1
-ADYANgBmADkAOQA3ADcAAAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4A
-MAAuADAAAABwACgAAQBJAG4AdABlAHIAbgBhAGwATgBhAG0AZQAAAFMAQwBfADcANwA5ADAAZgA1
-AGYAYQA3ADMAOQA5ADQAMQA4ADMAOQA4ADIAZAA5ADYAMQAxADUANgA2AGYAOQA5ADcANwAuAGQA
-bABsAAAASAASAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAQwBvAHAAeQByAGkAZwBo
-AHQAIABAACAAIAAyADAAMQA4AAAAKgABAAEATABlAGcAYQBsAFQAcgBhAGQAZQBtAGEAcgBrAHMA
-AAAAAAAAAAB4ACgAAQBPAHIAaQBnAGkAbgBhAGwARgBpAGwAZQBuAGEAbQBlAAAAUwBDAF8ANwA3
-ADkAMABmADUAZgBhADcAMwA5ADkANAAxADgAMwA5ADgAMgBkADkANgAxADEANQA2ADYAZgA5ADkA
-NwA3AC4AZABsAGwAAABoACQAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUAAAAAAFMAQwBfADcANwA5
-ADAAZgA1AGYAYQA3ADMAOQA5ADQAMQA4ADMAOQA4ADIAZAA5ADYAMQAxADUANgA2AGYAOQA5ADcA
-NwAAADQACAABAFAAcgBvAGQAdQBjAHQAVgBlAHIAcwBpAG8AbgAAADEALgAwAC4AMAAuADAAAAA4
-AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAMAAAACDIAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                               </arrayElements>
                             </property>
                             <property
                               dataType="System.String"
                               description="Specifies the name of the Microsoft Visual Studio Tools for Applications project. Project names must be unique within a package."
                               name="VSTAProjectName"
-                              typeConverter="NOTBROWSABLE">SC_7790f5fa73994183982d9611566f9977</property>
+                              typeConverter="NOTBROWSABLE">SC_403bbf9d6e7a4d22938140bff0a32e23</property>
                             <property
                               dataType="System.String"
                               description="Specifies the programming language used by the script."
@@ -1427,19 +1503,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                               dataType="System.String"
                               description="Checksum to match component metedata against compiled codes."
                               name="MetadataChecksum140"
-                              typeConverter="NOTBROWSABLE">DF</property>
+                              typeConverter="NOTBROWSABLE">3B</property>
                             <property
                               dataType="System.String"
                               name="UserComponentTypeName">Microsoft.ScriptComponentHost</property>
                           </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Connections[STG_ADO]"
+                              connectionManagerID="Package.ConnectionManagers[STG_ADO]"
+                              connectionManagerRefId="Package.ConnectionManagers[STG_ADO]"
+                              name="STG_ADO" />
+                          </connections>
                           <inputs>
                             <input
-                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Inputs[Input 0]"
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Inputs[Input 0]"
                               hasSideEffects="true"
                               name="Input 0">
                               <inputColumns>
                                 <inputColumn
-                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Inputs[Input 0].Columns[Continent]"
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Inputs[Input 0].Columns[Continent]"
                                   cachedCodepage="1252"
                                   cachedDataType="str"
                                   cachedLength="20"
@@ -1451,17 +1534,142 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           </inputs>
                           <outputs>
                             <output
-                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Outputs[Output 0]"
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0]"
                               name="Output 0"
-                              synchronousInputId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Inputs[Input 0]">
+                              synchronousInputId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Inputs[Input 0]">
                               <outputColumns>
                                 <outputColumn
-                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Outputs[Output 0].Columns[Continent_Key]"
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
+                                  dataType="i4"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
+                                  name="Continent_Key" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry"
+                          componentClassID="Microsoft.OLEDBDestination"
+                          contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                          description="OLE DB Destination"
+                          name="stg Dim_OU_Teritorry"
+                          usesDispositions="true"
+                          version="4">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                              name="CommandTimeout">0</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the name of the database object used to open a rowset."
+                              name="OpenRowset">[stg].[Dim_OU_Teritorry]</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the variable that contains the name of the database object used to open a rowset."
+                              name="OpenRowsetVariable"></property>
+                            <property
+                              dataType="System.String"
+                              description="The SQL command to be executed."
+                              name="SqlCommand"
+                              UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the column code page to use when code page information is unavailable from the data source."
+                              name="DefaultCodePage">1252</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Forces the use of the DefaultCodePage property value when describing character data."
+                              name="AlwaysUseDefaultCodePage">false</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the mode used to access the database."
+                              name="AccessMode"
+                              typeConverter="AccessMode">3</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                              name="FastLoadKeepIdentity">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                              name="FastLoadKeepNulls">false</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                              name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                              name="FastLoadMaxInsertCommitSize">2147483647</property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Connections[OleDbConnection]"
+                              connectionManagerID="Package.ConnectionManagers[STG]"
+                              connectionManagerRefId="Package.ConnectionManagers[STG]"
+                              description="The OLE DB runtime connection used to access the database."
+                              name="OleDbConnection" />
+                          </connections>
+                          <inputs>
+                            <input
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input]"
+                              errorOrTruncationOperation="Insert"
+                              errorRowDisposition="FailComponent"
+                              hasSideEffects="true"
+                              name="OLE DB Destination Input">
+                              <inputColumns>
+                                <inputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input].Columns[Teritorry]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="5"
+                                  cachedName="Teritorry"
+                                  externalMetadataColumnId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Teritorry]"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Teritorry]" />
+                                <inputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input].Columns[Continent_Key]"
+                                  cachedDataType="i4"
+                                  cachedName="Continent_Key"
+                                  externalMetadataColumnId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Continent_Key]"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]" />
+                              </inputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Teritorry]"
                                   codePage="1252"
                                   dataType="str"
                                   length="20"
-                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Outputs[Output 0].Columns[Continent_Key]"
+                                  name="Teritorry" />
+                                <externalMetadataColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Continent_Key]"
+                                  dataType="i4"
                                   name="Continent_Key" />
+                              </externalMetadataColumns>
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Outputs[OLE DB Destination Error Output]"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="OLE DB Destination Error Output"
+                              synchronousInputId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
                               </outputColumns>
                               <externalMetadataColumns />
                             </output>
@@ -1607,10 +1815,20 @@ FROM adm.Clinic_Mapping</property>
                       </components>
                       <paths>
                         <path
+                          refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[Derived Column Output]"
+                          endId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry.Inputs[OLE DB Destination Input]"
+                          name="Derived Column Output"
+                          startId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Outputs[Derived Column Output]" />
+                        <path
                           refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[OLE DB Source Output]"
-                          endId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component.Inputs[Input 0]"
+                          endId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Inputs[Input 0]"
                           name="OLE DB Source Output"
                           startId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Teritorry.Outputs[OLE DB Source Output]" />
+                        <path
+                          refId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[Output 0]"
+                          endId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column.Inputs[Derived Column Input]"
+                          name="Output 0"
+                          startId="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key.Outputs[Output 0]" />
                       </paths>
                     </pipeline>
                   </DTS:ObjectData>
@@ -1809,59 +2027,19 @@ FROM adm.Clinic_Mapping</property>
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="186,42"
-          Id="Package\Log End of Package\Update Monitoring Log"
-          TopLeft="5.5,5.5" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="196,103"
-          Size="196,146"
-          Id="Package\Log End of Package"
-          TopLeft="1086.66666666667,1242.66666666667" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Log Start of Package\Get Max JobKey"
-          TopLeft="28.25,5.5" />
-        <NodeLayout
-          Size="122,42"
-          Id="Package\Log Start of Package\Log Start"
-          TopLeft="44.25,72" />
-        <EdgeLayout
-          Id="Package\Log Start of Package.PrecedenceConstraints[Constraint]"
-          TopLeft="105.25,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,24.5"
-              Start="0,0"
-              End="0,17">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="208,166"
-          Size="208,209"
-          Id="Package\Log Start of Package"
-          TopLeft="631.142857142858,1.5" />
+          Size="117,42"
+          Id="Package\Dims\Organizational Units\Continent\Log End"
+          TopLeft="40.5,311.5" />
         <NodeLayout
           Size="122,42"
           Id="Package\Dims\Organizational Units\Continent\Log Start"
           TopLeft="38,5.5" />
+        <NodeLayout
+          Size="108,42"
+          Id="Package\Dims\Organizational Units\Continent\Merge"
+          TopLeft="45,209.5" />
         <NodeLayout
           Size="187,42"
           Id="Package\Dims\Organizational Units\Continent\stg Dim_OU_Continent"
@@ -1871,7 +2049,7 @@ FROM adm.Clinic_Mapping</property>
           TopLeft="99,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -1888,20 +2066,12 @@ FROM adm.Clinic_Mapping</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="117,42"
-          Id="Package\Dims\Organizational Units\Continent\Log End"
-          TopLeft="40.5,311.5" />
-        <NodeLayout
-          Size="108,42"
-          Id="Package\Dims\Organizational Units\Continent\Merge"
-          TopLeft="45,209.5" />
         <EdgeLayout
           Id="Package\Dims\Organizational Units\Continent.PrecedenceConstraints[Constraint 1]"
           TopLeft="99,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -1923,7 +2093,7 @@ FROM adm.Clinic_Mapping</property>
           TopLeft="99,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -1943,7 +2113,7 @@ FROM adm.Clinic_Mapping</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="198,408"
+          PanelSize="198,409"
           Size="198,452"
           Id="Package\Dims\Organizational Units\Continent"
           TopLeft="26.5,19.75" />
@@ -1968,7 +2138,7 @@ FROM adm.Clinic_Mapping</property>
           TopLeft="97.75,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -1990,7 +2160,7 @@ FROM adm.Clinic_Mapping</property>
           TopLeft="97.75,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2012,7 +2182,7 @@ FROM adm.Clinic_Mapping</property>
           TopLeft="99,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2041,7 +2211,7 @@ FROM adm.Clinic_Mapping</property>
           TopLeft="224.5,246.375">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="87.5,0"
               Start="0,0"
               End="80,0">
@@ -2072,32 +2242,39 @@ FROM adm.Clinic_Mapping</property>
           Size="1487,849"
           Id="Package\Dims"
           TopLeft="367.571428571428,277.285714285714" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Log End of Package\Update Monitoring Log"
+          TopLeft="5.5,5.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="196,103"
+          Size="196,146"
+          Id="Package\Log End of Package"
+          TopLeft="1086.66666666667,1242.66666666667" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Log Start of Package\Get Max JobKey"
+          TopLeft="28.25,5.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Log Start of Package\Log Start"
+          TopLeft="44.25,72" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="1111.07142857143,1126.28571428571">
+          Id="Package\Log Start of Package.PrecedenceConstraints[Constraint]"
+          TopLeft="105.25,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="73.5952380952419,116.380952380956"
+              StartConnector="{assembly:Null}"
+              EndConnector="0,24.5"
               Start="0,0"
-              End="73.5952380952419,108.880952380956">
+              End="0,17">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,54.190476190478" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,54.190476190478"
-                    Point2="0,58.190476190478"
-                    Point3="4,58.190476190478" />
-                  <mssgle:LineSegment
-                    End="69.5952380952419,58.190476190478" />
-                  <mssgle:CubicBezierSegment
-                    Point1="69.5952380952419,58.190476190478"
-                    Point2="73.5952380952419,58.190476190478"
-                    Point3="73.5952380952419,62.190476190478" />
-                  <mssgle:LineSegment
-                    End="73.5952380952419,108.880952380956" />
+                    End="0,17" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2106,12 +2283,19 @@ FROM adm.Clinic_Mapping</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="208,166"
+          Size="208,209"
+          Id="Package\Log Start of Package"
+          TopLeft="631.142857142858,1.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="735.142857142858,210.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="375.92857142857,66.785714285714"
               Start="0,0"
               End="375.92857142857,59.285714285714">
@@ -2140,6 +2324,40 @@ FROM adm.Clinic_Mapping</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="1111.07142857143,1126.28571428571">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="73.5952380952419,116.380952380956"
+              Start="0,0"
+              End="73.5952380952419,108.880952380956">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.190476190478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.190476190478"
+                    Point2="0,58.190476190478"
+                    Point3="4,58.190476190478" />
+                  <mssgle:LineSegment
+                    End="69.5952380952419,58.190476190478" />
+                  <mssgle:CubicBezierSegment
+                    Point1="69.5952380952419,58.190476190478"
+                    Point2="73.5952380952419,58.190476190478"
+                    Point3="73.5952380952419,62.190476190478" />
+                  <mssgle:LineSegment
+                    End="73.5952380952419,108.880952380956" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -2147,21 +2365,21 @@ FROM adm.Clinic_Mapping</property>
     design-time-name="Package\Dims\Organizational Units\Continent\stg Dim_OU_Continent">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="124,42"
-          Id="Package\Dims\Organizational Units\Continent\stg Dim_OU_Continent\Continent"
-          TopLeft="37,5.5" />
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="187,42"
           Id="Package\Dims\Organizational Units\Continent\stg Dim_OU_Continent\stg Dim_OU_Continent"
           TopLeft="5.50000000000001,107.5" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\Dims\Organizational Units\Continent\stg Dim_OU_Continent\Continent"
+          TopLeft="37,5.5" />
         <EdgeLayout
           Id="Package\Dims\Organizational Units\Continent\stg Dim_OU_Continent.Paths[OLE DB Source Output]"
           TopLeft="99,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2175,7 +2393,9 @@ FROM adm.Clinic_Mapping</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -2206,41 +2426,81 @@ FROM adm.Clinic_Mapping</property>
     design-time-name="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="119,42"
           Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Teritorry"
-          TopLeft="353,141" />
+          TopLeft="37,5.5" />
         <NodeLayout
-          Size="163,42"
-          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Script Component"
-          TopLeft="475,257" />
+          Size="154,42"
+          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\Derived Column"
+          TopLeft="19.5,209.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry"
+          TopLeft="5.50000000000003,311.5" />
         <EdgeLayout
-          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[OLE DB Source Output]"
-          TopLeft="412.5,183">
+          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[Derived Column Output]"
+          TopLeft="96.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="144,74"
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
               Start="0,0"
-              End="144,66.5">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33"
-                    Point2="0,37"
-                    Point3="4,37" />
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\LKP Continet_Key"
+          TopLeft="15.5,107.5" />
+        <EdgeLayout
+          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[OLE DB Source Output]"
+          TopLeft="96.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="140,37" />
-                  <mssgle:CubicBezierSegment
-                    Point1="140,37"
-                    Point2="144,37"
-                    Point3="144,41" />
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry.Paths[Output 0]"
+          TopLeft="96.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="144,66.5" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2257,6 +2517,19 @@ FROM adm.Clinic_Mapping</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dims\Organizational Units\Teritorry\stg Dim_OU_Teritorry\stg Dim_OU_Teritorry">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
