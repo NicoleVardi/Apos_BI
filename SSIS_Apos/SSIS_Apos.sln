@@ -3,15 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Apos", "SSIS_Apos\SSIS_Apos.dtproj", "{7720F03A-4CB4-4445-9F10-ACCF7B7F970E}"
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_MRR", "SSIS_MRR\SSIS_MRR.dtproj", "{BEE081AE-0E45-47D3-8A60-29686F2BF748}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Dims", "SSIS_Dims\SSIS_Dims.dtproj", "{2732EE97-EC4C-4FD2-94A2-80BDE5C98C32}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Config_Tables", "SSIS_Config_Tables\SSIS_Config_Tables.dtproj", "{0A42516C-B118-4085-82A0-F935BB1DFE5A}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Config_Patient_Tables", "SSIS_Config_Patient_Tables\SSIS_Config_Patient_Tables.dtproj", "{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7720F03A-4CB4-4445-9F10-ACCF7B7F970E}.Development|Default.ActiveCfg = Development
-		{7720F03A-4CB4-4445-9F10-ACCF7B7F970E}.Development|Default.Build.0 = Development
+		{BEE081AE-0E45-47D3-8A60-29686F2BF748}.Development|Default.ActiveCfg = Development
+		{BEE081AE-0E45-47D3-8A60-29686F2BF748}.Development|Default.Build.0 = Development
+		{2732EE97-EC4C-4FD2-94A2-80BDE5C98C32}.Development|Default.ActiveCfg = Development
+		{2732EE97-EC4C-4FD2-94A2-80BDE5C98C32}.Development|Default.Build.0 = Development
+		{0A42516C-B118-4085-82A0-F935BB1DFE5A}.Development|Default.ActiveCfg = Development
+		{0A42516C-B118-4085-82A0-F935BB1DFE5A}.Development|Default.Build.0 = Development
+		{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}.Development|Default.ActiveCfg = Development
+		{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
