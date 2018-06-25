@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="6/11/2018 11:58:01 AM"
@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="External_Config_Files"
   DTS:PackageType="5"
-  DTS:VersionBuild="25"
-  DTS:VersionGUID="{9D340206-29F0-4A4D-8BBA-7B794D8399A8}">
+  DTS:VersionBuild="26"
+  DTS:VersionGUID="{90E60AB2-7D62-4A5F-B7C3-73835BE1266D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,8 +39,18 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABvtAMqmsETHxsyXa4PSvbfAAAAAASAAACgAAAAEAAAAD5cuxtBm2EGN2gMajN6wgAQAAAArZ/vcWmVBxtWSFSQ39kbdBQAAAByh++tmkIBYZd8cf7RXPbKLGDmsQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACw1eVIg0esmdU1vwUwrB+MAAAAAASAAACgAAAAEAAAAJwfStYcOq7T1vty46eVSlQQAAAAkzG+D9zheblpqxUdKESxhxQAAAAegJcXE29KZR4qlzJdoklBWNHVMg</DTS:Password>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gait_FC_Grades]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{700FED86-9E90-494B-BBA5-2D6087D66073}"
+      DTS:ObjectName="Gait_FC_Grades">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Gait_FC_Grades.xlsx;Extended Properties=&quot;Excel 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -86,7 +96,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAANyFn//fqoEGEDsVpHiVyfAAAAAASAAACgAAAAEAAAACkpkK3Gfby+5tfTSueZtgMQAAAA+ssqbCp4AP6sECH6a8piVRQAAABmuv1v0IGUxJhHTcRkcdg+H6fmzQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC1gesAQhYzvPQ3GWOApzkaAAAAAASAAACgAAAAEAAAAAlLVtP899aoOxVu2QEzNJEQAAAAc3opD9Mqu5zlx1+f9q8zFBQAAACfKOXOFKMURPsMLVjnd9rl+O5xog</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -489,7 +499,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -513,7 +523,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -552,6 +562,630 @@
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 1"
               DTS:To="Package\Load External Files\Clinic Branch Data Groups\Log End" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load External Files\Gait FC"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:DTSID="{414fada1-63e7-48da-be77-639c446ce66c}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Gait FC">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{0bcc6b01-7a01-478f-b7d8-35c8d3e7c987}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Load ext Gait_FC_Definitions"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                      name="Derived Column"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Inputs[Derived Column Input]"
+                          description="Input to the Derived Column Transformation"
+                          name="Derived Column Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Inputs[Derived Column Input].Columns[Grade]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Grade"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Grade]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Inputs[Derived Column Input].Columns[Gender]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Gender"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Gender]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output]"
+                          description="Default Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          name="Derived Column Output"
+                          synchronousInputId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              name="DB_Create_Date"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">[GETDATE]()</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">GETDATE()</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Grade_Name]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Grade_Name]"
+                              name="Grade_Name"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_STR,50,1252)#{Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Grade]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_STR,50,1252)Grade</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Gender_Name]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="10"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Gender_Name]"
+                              name="Gender_Name"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_STR,10,1252)#{Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Gender]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_STR,10,1252)Gender</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Error Output]"
+                          description="Error Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Derived Column Error Output"
+                          synchronousInputId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="ext Gait_FC_Grades"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[ext].[Gait_FC_Grades]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[MRR]"
+                          connectionManagerRefId="Package.ConnectionManagers[MRR]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[R_Stride_Len_Min]"
+                              cachedDataType="r8"
+                              cachedName="R_Stride_Len_Min"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[R_Stride_Len_Min]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[R_Stride_Len_Min]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[R_Stride_Len_Max_Eql]"
+                              cachedDataType="r8"
+                              cachedName="R_Stride_Len_Max_Eql"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[R_Stride_Len_Max_Eql]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[R_Stride_Len_Max_Eql]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[Cadence_Min]"
+                              cachedDataType="r8"
+                              cachedName="Cadence_Min"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Cadence_Min]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Cadence_Min]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[Cadence_Max_Eql]"
+                              cachedDataType="r8"
+                              cachedName="Cadence_Max_Eql"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Cadence_Max_Eql]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Cadence_Max_Eql]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="DB_Create_Date"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[Grade_Name]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="Grade_Name"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Grade_Name]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Grade_Name]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].Columns[Gender_Name]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="10"
+                              cachedName="Gender_Name"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Gender_Name]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Gender_Name]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Grade_Name]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="Grade_Name" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Gender_Name]"
+                              codePage="1252"
+                              dataType="str"
+                              length="10"
+                              name="Gender_Name" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[R_Stride_Len_Min]"
+                              dataType="i4"
+                              name="R_Stride_Len_Min" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[R_Stride_Len_Max_Eql]"
+                              dataType="i4"
+                              name="R_Stride_Len_Max_Eql" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Cadence_Min]"
+                              dataType="i4"
+                              name="Cadence_Min" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[Cadence_Max_Eql]"
+                              dataType="i4"
+                              name="Cadence_Max_Eql" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              dataType="dbTimeStamp"
+                              name="DB_Create_Date" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades"
+                      componentClassID="Microsoft.ExcelSource"
+                      contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Excel Source"
+                      name="Gait_FC_Grades"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">Sheet1$</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.String"
+                          description="The variable that contains the SQL command to be executed."
+                          name="SqlCommandVariable"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">0</property>
+                        <property
+                          dataType="System.String"
+                          description="The mapping from parameters in the SQL command to variables."
+                          name="ParameterMapping"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[Gait_FC_Grades]"
+                          connectionManagerRefId="Package.ConnectionManagers[Gait_FC_Grades]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output]"
+                          name="Excel Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Grade]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Grade]"
+                              length="255"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Grade]"
+                              name="Grade"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Gender]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Gender]"
+                              length="255"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Gender]"
+                              name="Gender"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[R_Stride_Len_Min]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[R_Stride_Len_Min]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[R_Stride_Len_Min]"
+                              name="R_Stride_Len_Min"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[R_Stride_Len_Max_Eql]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[R_Stride_Len_Max_Eql]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[R_Stride_Len_Max_Eql]"
+                              name="R_Stride_Len_Max_Eql"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Cadence_Min]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Cadence_Min]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Cadence_Min]"
+                              name="Cadence_Min"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Cadence_Max_Eql]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Cadence_Max_Eql]"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].Columns[Cadence_Max_Eql]"
+                              name="Cadence_Max_Eql"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Grade]"
+                              dataType="wstr"
+                              length="255"
+                              name="Grade" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Gender]"
+                              dataType="wstr"
+                              length="255"
+                              name="Gender" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[R_Stride_Len_Min]"
+                              dataType="r8"
+                              name="R_Stride_Len_Min" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[R_Stride_Len_Max_Eql]"
+                              dataType="r8"
+                              name="R_Stride_Len_Max_Eql" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Cadence_Min]"
+                              dataType="r8"
+                              name="Cadence_Min" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output].ExternalColumns[Cadence_Max_Eql]"
+                              dataType="r8"
+                              name="Cadence_Max_Eql" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output]"
+                          isErrorOut="true"
+                          name="Excel Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Grade]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Grade]"
+                              name="Grade" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Gender]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Gender]"
+                              name="Gender" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[R_Stride_Len_Min]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[R_Stride_Len_Min]"
+                              name="R_Stride_Len_Min" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[R_Stride_Len_Max_Eql]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[R_Stride_Len_Max_Eql]"
+                              name="R_Stride_Len_Max_Eql" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Cadence_Min]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Cadence_Min]"
+                              name="Cadence_Min" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Cadence_Max_Eql]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[Cadence_Max_Eql]"
+                              name="Cadence_Max_Eql" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions.Paths[Derived Column Output]"
+                      endId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades.Inputs[OLE DB Destination Input]"
+                      name="Derived Column Output"
+                      startId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Outputs[Derived Column Output]" />
+                    <path
+                      refId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions.Paths[Excel Source Output]"
+                      endId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column.Inputs[Derived Column Input]"
+                      name="Excel Source Output"
+                      startId="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades.Outputs[Excel Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Gait FC\Log End"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{910e7d8f-e162-4a2a-bbc3-a2f690ee310b}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log End"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="2">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{219A720B-A3F6-4819-939A-B015563EF0AE}"
+                  SQLTask:SqlStatementSource="UPDATE DWH.adm.BI_Job_Monitoring &#xA;SET &#xA; EndTime = GETDATE(),&#xA; Duration = DATEDIFF(SECOND,StartTime,GETDATE()),&#xA; RecordCount = (SELECT COUNT(*) FROM ext.Gait_FC_Grades)&#xA;WHERE JobKey = ?&#xA;AND TableName = 'Ext Gait_FC_Grades';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::JobKey"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Gait FC\Log Start"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{f49cdb98-8bf8-4845-ab61-ed06aab21edf}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log Start"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="2">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{219A720B-A3F6-4819-939A-B015563EF0AE}"
+                  SQLTask:SqlStatementSource="TRUNCATE TABLE ext.Gait_FC_Grades;&#xA;&#xA;INSERT INTO DWH.adm.BI_Job_Monitoring (JobKey, PackageName, TableName, StartDate, StartTime)&#xA;VALUES (?, ?, 'Ext Gait_FC_Grades', GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::JobKey"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Gait FC.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{ba13dcba-bbe5-4445-ae31-1372b2b0148c}"
+              DTS:From="Package\Load External Files\Gait FC\Log Start"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Gait FC.PrecedenceConstraints[Constraint 1]"
+              DTS:CreationName=""
+              DTS:DTSID="{0850af9d-345d-4b1f-b065-6928e25924c4}"
+              DTS:From="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 1"
+              DTS:To="Package\Load External Files\Gait FC\Log End" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
         <DTS:Executable
@@ -1090,7 +1724,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1114,7 +1748,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1590,7 +2224,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1614,7 +2248,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2331,7 +2965,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2355,7 +2989,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2550,7 +3184,7 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="253,42"
           Id="Package\Load External Files\Clinic Branch Data Groups\Load ext Clinic_Branch_Data_Groups"
@@ -2568,7 +3202,7 @@
           TopLeft="132,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2590,7 +3224,7 @@
           TopLeft="132,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2631,7 +3265,7 @@
           TopLeft="119,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2653,7 +3287,7 @@
           TopLeft="119,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2694,7 +3328,7 @@
           TopLeft="133,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2716,7 +3350,7 @@
           TopLeft="133,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2757,7 +3391,7 @@
           TopLeft="120.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2779,7 +3413,7 @@
           TopLeft="120.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2803,11 +3437,74 @@
           Size="241,350"
           Id="Package\Load External Files\KPI Period Definitions"
           TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="215,42"
+          Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions"
+          TopLeft="5.50000000000003,107.5" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Load External Files\Gait FC\Log End"
+          TopLeft="62,209.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Load External Files\Gait FC\Log Start"
+          TopLeft="59.5,5.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Gait FC.PrecedenceConstraints[Constraint]"
+          TopLeft="116.75,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Gait FC.PrecedenceConstraints[Constraint 1]"
+          TopLeft="116.75,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="1202,411"
-          Size="1202,454"
+          PanelSize="241,307"
+          Size="241,350"
+          Id="Package\Load External Files\Gait FC"
+          TopLeft="1256,5.49999999999989" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="1502,411"
+          Size="1502,454"
           Id="Package\Load External Files"
           TopLeft="216.5,313.5" />
         <NodeLayout
@@ -2834,7 +3531,7 @@
           TopLeft="82.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -2863,10 +3560,10 @@
           TopLeft="701.5,253.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="116,60"
+              StartConnector="{assembly:Null}"
+              EndConnector="266,60"
               Start="0,0"
-              End="116,52.5">
+              End="266,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2877,13 +3574,13 @@
                     Point2="0,30"
                     Point3="4,30" />
                   <mssgle:LineSegment
-                    End="112,30" />
+                    End="262,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="112,30"
-                    Point2="116,30"
-                    Point3="116,34" />
+                    Point1="262,30"
+                    Point2="266,30"
+                    Point3="266,34" />
                   <mssgle:LineSegment
-                    End="116,52.5" />
+                    End="266,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2894,13 +3591,13 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="817.5,767.5">
+          TopLeft="967.5,767.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-116,60"
+              StartConnector="{assembly:Null}"
+              EndConnector="-266,60"
               Start="0,0"
-              End="-116,52.5">
+              End="-266,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2911,13 +3608,13 @@
                     Point2="0,30"
                     Point3="-4,30" />
                   <mssgle:LineSegment
-                    End="-112,30" />
+                    End="-262,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="-112,30"
-                    Point2="-116,30"
-                    Point3="-116,34" />
+                    Point1="-262,30"
+                    Point2="-266,30"
+                    Point3="-266,34" />
                   <mssgle:LineSegment
-                    End="-116,52.5" />
+                    End="-266,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3286,6 +3983,96 @@
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Derived Column"
+          TopLeft="14.5,107.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades"
+          TopLeft="14.5,5.5" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades"
+          TopLeft="5.50000000000003,209.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions.Paths[Excel Source Output]"
+          TopLeft="91.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions.Paths[Derived Column Output]"
+          TopLeft="91.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\Gait_FC_Grades">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -11,6 +11,8 @@ Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Config_Tables", "SSIS_
 EndProject
 Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Config_Patient_Tables", "SSIS_Config_Patient_Tables\SSIS_Config_Patient_Tables.dtproj", "{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "SSIS_Facts", "SSIS_Facts\SSIS_Facts.dtproj", "{4E2B8065-4A62-4F24-8472-0BE6949628CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -24,6 +26,8 @@ Global
 		{0A42516C-B118-4085-82A0-F935BB1DFE5A}.Development|Default.Build.0 = Development
 		{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}.Development|Default.ActiveCfg = Development
 		{96088518-75D3-4AC2-BBCD-C5066E3D8F8D}.Development|Default.Build.0 = Development
+		{4E2B8065-4A62-4F24-8472-0BE6949628CF}.Development|Default.ActiveCfg = Development
+		{4E2B8065-4A62-4F24-8472-0BE6949628CF}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
