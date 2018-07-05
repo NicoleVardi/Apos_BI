@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Facts"
   DTS:PackageType="5"
-  DTS:VersionBuild="59"
-  DTS:VersionGUID="{F0F074CF-40D6-411F-919C-624C18FDFA6F}">
+  DTS:VersionBuild="62"
+  DTS:VersionGUID="{C985916C-0984-4319-B8DC-942B3BB5ECA3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADPxW/qDoIYErfRg3Eq51uSAAAAAASAAACgAAAAEAAAABYzDAKsNy9OvA9LR54HF4kQAAAAB1wS/zVsnMTZyPTCRlXbQxQAAADEXihch242ywZ0eg1t43EYvKuAxQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABe2JjOmIO1ZtVxmRRwmiVCAAAAAASAAACgAAAAEAAAAHT7VoH/rxJZGM/j8cHE4JEQAAAA8DJm1VCPt6wNGtd86FfW2BQAAAAbgD8wgvkzeG6qX6SnyMrZDZ87Bg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACSjv33E6tw2y6NXJtifXPEAAAAAASAAACgAAAAEAAAACD1Ay+p2nI9HyGp+me4npEQAAAAY00SwXTazhu/qIvijTs3CxQAAABUcvZfyAihm2y7RH5K+hxFkFuA5A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABIWK3M3ErQBmh6k8LfGuyFAAAAAASAAACgAAAAEAAAAP5nRpYpS9GilA8LEDosiEMQAAAAe4O1uxwGLCAqNAwAxfMbuhQAAAB4bOMNGkzIaiwY+IFg8jm49puIIQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACXaUC3RXXioKD8AS6Unz+JAAAAAASAAACgAAAAEAAAAIAxOt5FdbcktpNRPss+rYIQAAAA9NEhTqy85vjA3v4VwhztfhQAAAC6mjVcHQPqkNJqCgLdj1nlGNMItQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD75yoMwxFKRZaX3EUjY3zYAAAAAASAAACgAAAAEAAAAFtJmH79DYgzT1JYzRz06dcQAAAAiHLIVZftg1/zRhg2BL08UBQAAAAH/hKq9BBhTw2ZNSfe/bUxVeCSlQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZxnkTTGB9sOzShdnRa9UnAAAAAASAAACgAAAAEAAAANrXo/oEeInLh9QFIImGl6AQAAAA1EVWnUibasiBML28/vzFBhQAAAB4fX7PkVGV8wPoSJghe1kGLHvePw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACiNKcG5YU6dPuDG4KMHNQHAAAAAASAAACgAAAAEAAAAI7z64KLwEAZBqbH+m1I/LoQAAAAhW9WRbnpnk/di1XokO2HIhQAAABtVZTjFZbz0L4HLZABWHP1rFOjQg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -248,7 +248,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -272,7 +272,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -302,12 +302,12 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="MERGE Fact_Patient_Gait as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; G.*&#xA;&#x9;&#x9;,PV.Clinic_Key&#xA;&#x9;&#x9;,PV.PT_Key&#xA;&#x9;&#x9;,PV.Prev_PT_Key&#xA;&#x9;&#x9;,PV.Pathology_Key&#xA;&#x9;&#x9;,PV.IC_Date&#xA;&#x9;&#x9;,PV.Days_from_IC&#xA;&#x9;&#x9;,PV.Previous_Visit_Date&#xA;&#x9;&#x9;,PV.Previous_Visit_ID&#xA;&#x9;&#x9;,PV.Days_from_Prev_Visit&#xA;&#x9;&#x9;,IC.Step_Len_L as IC_Step_Len_L&#xA;&#x9;&#x9;,IC.Step_Len_R as IC_Step_Len_R&#xA;&#x9;&#x9;,IC.Step_Len_MS as IC_Step_Len_MS&#xA;&#x9;&#x9;,IC.Step_Len_LS as IC_Step_Len_LS&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_L - IC.Step_Len_L END as Step_Len_L_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_R - IC.Step_Len_R END as Step_Len_R_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_MS - IC.Step_Len_MS END as Step_Len_MS_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_LS - IC.Step_Len_LS END as Step_Len_LS_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.Step_Len_L = 0 THEN NULL ELSE (G.Step_Len_L - IC.Step_Len_L) / IC.Step_Len_L END as Step_Len_L_Change_Percent&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.Step_Len_R = 0 THEN NULL ELSE (G.Step_Len_R - IC.Step_Len_R) / IC.Step_Len_R END as Step_Len_R_Change_Percent&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.Step_Len_MS = 0 THEN NULL ELSE (G.Step_Len_MS - IC.Step_Len_MS) / IC.Step_Len_MS END as Step_Len_MS_Change_Percent&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.Step_Len_LS = 0 THEN NULL ELSE (G.Step_Len_LS - IC.Step_Len_LS) / IC.Step_Len_LS END as Step_Len_LS_Change_Percent&#xA;&#x9;&#x9;,IC.SLS_Time_L as IC_SLS_Time_L&#xA;&#x9;&#x9;,IC.SLS_Time_R as IC_SLS_Time_R&#xA;&#x9;&#x9;,IC.SLS_Time_MS as IC_SLS_Time_MS&#xA;&#x9;&#x9;,IC.SLS_Time_LS as IC_SLS_Time_LS&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_L - IC.SLS_Time_L END as SLS_Time_L_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_R - IC.SLS_Time_R END as SLS_Time_R_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_MS - IC.SLS_Time_MS END as SLS_Time_MS_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_LS - IC.SLS_Time_LS END as SLS_Time_LS_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.SLS_Time_L = 0 THEN NULL ELSE (G.SLS_Time_L - IC.SLS_Time_L) / IC.SLS_Time_L END as SLS_Time_L_Change_Percent&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.SLS_Time_R = 0 THEN NULL ELSE (G.SLS_Time_R - IC.SLS_Time_R) / IC.SLS_Time_R END as SLS_Time_R_Change_Percent&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.SLS_Time_MS = 0 THEN NULL ELSE (G.SLS_Time_MS - IC.SLS_Time_MS) / IC.SLS_Time_MS END as SLS_Time_MS_Change_Percent&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.SLS_Time_LS = 0 THEN NULL ELSE (G.SLS_Time_LS - IC.SLS_Time_LS) / IC.SLS_Time_LS END as SLS_Time_LS_Change_Percent&#xA;&#x9;&#x9;,IC.Velocity as IC_Velocity&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Velocity - IC.Velocity END as Velocity_Change&#xA;&#x9;&#x9;,CASE WHEN G.Is_IC = 1 OR IC.Velocity = 0 THEN NULL ELSE (G.Velocity - IC.Velocity) / IC.Velocity END as Velocity_Change_Percent&#xA;&#x9;FROM STG.dbo.Patient_Gait G&#xA;&#x9;INNER JOIN STG.dbo.Fact_Patient_Visits PV ON G.Visit_ID = PV.Visit_ID&#xA;&#x9;LEFT JOIN STG.dbo.Patient_Gait IC ON IC.Visit_ID = G.IC_Visit_ID AND IC.Is_IC = 1&#xA;&#x9;) as S ON T.Visit_ID = S.Visit_ID&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Gait_ID = S.Gait_ID,&#xA;&#x9;T.Test_Date = S.Test_Date,&#xA;&#x9;T.Visit_Date = S.Visit_Date,&#xA;&#x9;T.Clinic_Branch_Key = S.Clinic_Branch_Key,&#xA;&#x9;T.Visit_Src_ID = S.Visit_Src_ID,&#xA;&#x9;T.Patient_Key = S.Patient_Key,&#xA;&#x9;T.Gender_Key = S.Gender_Key,&#xA;&#x9;T.Questionnaire_Category_Key = S.Questionnaire_Category_Key,&#xA;&#x9;T.More_Symptomatic_Side_Key = S.More_Symptomatic_Side_Key,&#xA;&#x9;T.FC_Grade_Key = S.FC_Grade_Key,&#xA;&#x9;T.Clinic_Key = S.Clinic_Key,&#xA;&#x9;T.PT_Key = S.PT_Key,&#xA;&#x9;T.Prev_PT_Key = S.Prev_PT_Key,&#xA;&#x9;T.Pathology_Key = S.Pathology_Key,&#xA;&#x9;T.Is_IC = S.Is_IC,&#xA;&#x9;T.IC_Visit_ID = S.IC_Visit_ID,&#xA;&#x9;T.IC_Date = S.IC_Date,&#xA;&#x9;T.Days_from_IC = S.Days_from_IC,&#xA;&#x9;T.Previous_Visit_Date = S.Previous_Visit_Date,&#xA;&#x9;T.Previous_Visit_ID = S.Previous_Visit_ID,&#xA;&#x9;T.Days_from_Prev_Visit = S.Days_from_Prev_Visit,&#xA;&#x9;T.Step_Len_L = S.Step_Len_L,&#xA;&#x9;T.Step_Len_R = S.Step_Len_R,&#xA;&#x9;T.Step_Len_MS = S.Step_Len_MS,&#xA;&#x9;T.Step_Len_LS = S.Step_Len_LS,&#xA;&#x9;T.Step_Len_Diff = S.Step_Len_Diff,&#xA;&#x9;T.IC_Step_Len_L = S.IC_Step_Len_L,&#xA;&#x9;T.IC_Step_Len_R = S.IC_Step_Len_R,&#xA;&#x9;T.IC_Step_Len_MS = S.IC_Step_Len_MS,&#xA;&#x9;T.IC_Step_Len_LS = S.IC_Step_Len_LS,&#xA;&#x9;T.Step_Len_L_Change = S.Step_Len_L_Change,&#xA;&#x9;T.Step_Len_R_Change = S.Step_Len_R_Change,&#xA;&#x9;T.Step_Len_MS_Change = S.Step_Len_MS_Change,&#xA;&#x9;T.Step_Len_LS_Change = S.Step_Len_LS_Change,&#xA;&#x9;T.Step_Len_L_Change_Percent = S.Step_Len_L_Change_Percent,&#xA;&#x9;T.Step_Len_R_Change_Percent = S.Step_Len_R_Change_Percent,&#xA;&#x9;T.Step_Len_MS_Change_Percent = S.Step_Len_MS_Change_Percent,&#xA;&#x9;T.Step_Len_LS_Change_Percent = S.Step_Len_LS_Change_Percent,&#xA;&#x9;T.Stride_Len_L = S.Stride_Len_L,&#xA;&#x9;T.Stride_Len_R = S.Stride_Len_R,&#xA;&#x9;T.Support_Base_L = S.Support_Base_L,&#xA;&#x9;T.Support_Base_R = S.Support_Base_R,&#xA;&#x9;T.Support_Base = S.Support_Base,&#xA;&#x9;T.Step_Time_L = S.Step_Time_L,&#xA;&#x9;T.Step_Time_R = S.Step_Time_R,&#xA;&#x9;T.Swing_Time_L = S.Swing_Time_L,&#xA;&#x9;T.Swing_Percent_L = S.Swing_Percent_L,&#xA;&#x9;T.Swing_Time_R = S.Swing_Time_R,&#xA;&#x9;T.Swing_R = S.Swing_R,&#xA;&#x9;T.Stance_Time_L = S.Stance_Time_L,&#xA;&#x9;T.Stance_L = S.Stance_L,&#xA;&#x9;T.Stance_Time_R = S.Stance_Time_R,&#xA;&#x9;T.Stance_R = S.Stance_R,&#xA;&#x9;T.SLS_Time_L = S.SLS_Time_L,&#xA;&#x9;T.SLS_Time_R = S.SLS_Time_R,&#xA;&#x9;T.SLS_Time_MS = S.SLS_Time_MS,&#xA;&#x9;T.SLS_Time_LS = S.SLS_Time_LS,&#xA;&#x9;T.SLS_Diff = S.SLS_Diff,&#xA;&#x9;T.IC_SLS_Time_L = S.IC_SLS_Time_L,&#xA;&#x9;T.IC_SLS_Time_R = S.IC_SLS_Time_R,&#xA;&#x9;T.IC_SLS_Time_MS = S.IC_SLS_Time_MS,&#xA;&#x9;T.IC_SLS_Time_LS = S.IC_SLS_Time_LS,&#xA;&#x9;T.SLS_Time_L_Change = S.SLS_Time_L_Change,&#xA;&#x9;T.SLS_Time_R_Change = S.SLS_Time_R_Change,&#xA;&#x9;T.SLS_Time_MS_Change = S.SLS_Time_MS_Change,&#xA;&#x9;T.SLS_Time_LS_Change = S.SLS_Time_LS_Change,&#xA;&#x9;T.SLS_Time_L_Change_Percent = S.SLS_Time_L_Change_Percent,&#xA;&#x9;T.SLS_Time_R_Change_Percent = S.SLS_Time_R_Change_Percent,&#xA;&#x9;T.SLS_Time_MS_Change_Percent = S.SLS_Time_MS_Change_Percent,&#xA;&#x9;T.SLS_Time_LS_Change_Percent = S.SLS_Time_LS_Change_Percent,&#xA;&#x9;T.Support_Time_L = S.Support_Time_L,&#xA;&#x9;T.Support_Percent_L = S.Support_Percent_L,&#xA;&#x9;T.Support_Time_R = S.Support_Time_R,&#xA;&#x9;T.Support_Percent_R = S.Support_Percent_R,&#xA;&#x9;T.Velocity = S.Velocity,&#xA;&#x9;T.IC_Velocity = S.IC_Velocity,&#xA;&#x9;T.Velocity_Change = S.Velocity_Change,&#xA;&#x9;T.Velocity_Change_Percent = S.Velocity_Change_Percent,&#xA;&#x9;T.Cadence = S.Cadence,&#xA;&#x9;T.SD_Step_Len_L = S.SD_Step_Len_L,&#xA;&#x9;T.SD_Step_Len_R = S.SD_Step_Len_R,&#xA;&#x9;T.SD_Stride_Len_L = S.SD_Stride_Len_L,&#xA;&#x9;T.SD_Stride_Len_R = S.SD_Stride_Len_R,&#xA;&#x9;T.SD_Support_Base_L = S.SD_Support_Base_L,&#xA;&#x9;T.SD_Support_Base_R = S.SD_Support_Base_R,&#xA;&#x9;T.SD_Step_Time_L = S.SD_Step_Time_L,&#xA;&#x9;T.SD_Step_Time_R = S.SD_Step_Time_R,&#xA;&#x9;T.SD_Swing_Time_L = S.SD_Swing_Time_L,&#xA;&#x9;T.SD_Swing_Time_R = S.SD_Swing_Time_R,&#xA;&#x9;T.SD_Stance_Time_L = S.SD_Stance_Time_L,&#xA;&#x9;T.SD_Stance_Time_R = S.SD_Stance_Time_R,&#xA;&#x9;T.SD_SLS_Time_L = S.SD_SLS_Time_L,&#xA;&#x9;T.SD_SLS_Time_R = S.SD_SLS_Time_R,&#xA;&#x9;T.SD_Support_Time_L = S.SD_Support_Time_L,&#xA;&#x9;T.SD_Support_Time_R = S.SD_Support_Time_R,&#xA;&#x9;T.SD_Velocity = S.SD_Velocity,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Visit_ID, Gait_ID, Test_Date, Visit_Date, Clinic_Branch_Key, Visit_Src_ID, Patient_Key, Gender_Key, Questionnaire_Category_Key, More_Symptomatic_Side_Key, &#xA;&#x9;&#x9;&#x9;FC_Grade_Key, Clinic_Key, PT_Key, Prev_PT_Key, Pathology_Key, Is_IC, IC_Visit_ID, IC_Date, Days_from_IC, Previous_Visit_Date, Previous_Visit_ID, &#xA;&#x9;&#x9;&#x9;Days_from_Prev_Visit, Step_Len_L, Step_Len_R, Step_Len_MS, Step_Len_LS, Step_Len_Diff, IC_Step_Len_L, IC_Step_Len_R, IC_Step_Len_MS, IC_Step_Len_LS, &#xA;&#x9;&#x9;&#x9;Step_Len_L_Change, Step_Len_R_Change, Step_Len_MS_Change, Step_Len_LS_Change, Step_Len_L_Change_Percent, Step_Len_R_Change_Percent, Step_Len_MS_Change_Percent, &#xA;&#x9;&#x9;&#x9;Step_Len_LS_Change_Percent, Stride_Len_L, Stride_Len_R, Support_Base_L, Support_Base_R, Support_Base, Step_Time_L, Step_Time_R, Swing_Time_L, Swing_Percent_L, &#xA;&#x9;&#x9;&#x9;Swing_Time_R, Swing_R, Stance_Time_L, Stance_L, Stance_Time_R, Stance_R, SLS_Time_L, SLS_Time_R, SLS_Time_MS, SLS_Time_LS, SLS_Diff, IC_SLS_Time_L, &#xA;&#x9;&#x9;&#x9;IC_SLS_Time_R, IC_SLS_Time_MS, IC_SLS_Time_LS, SLS_Time_L_Change, SLS_Time_R_Change, SLS_Time_MS_Change, SLS_Time_LS_Change, SLS_Time_L_Change_Percent, &#xA;&#x9;&#x9;&#x9;SLS_Time_R_Change_Percent, SLS_Time_MS_Change_Percent, SLS_Time_LS_Change_Percent, Support_Time_L, Support_Percent_L, Support_Time_R, Support_Percent_R, &#xA;&#x9;&#x9;&#x9;Velocity, IC_Velocity, Velocity_Change, Velocity_Change_Percent, Cadence, SD_Step_Len_L, SD_Step_Len_R, SD_Stride_Len_L, SD_Stride_Len_R, SD_Support_Base_L, &#xA;&#x9;&#x9;&#x9;SD_Support_Base_R, SD_Step_Time_L, SD_Step_Time_R, SD_Swing_Time_L, SD_Swing_Time_R, SD_Stance_Time_L, SD_Stance_Time_R, SD_SLS_Time_L, SD_SLS_Time_R, &#xA;&#x9;&#x9;&#x9;SD_Support_Time_L, SD_Support_Time_R, SD_Velocity, DB_Create_Date, DB_Update_Date)&#xA;&#x9;VALUES (S.Visit_ID, S.Gait_ID, S.Test_Date, S.Visit_Date, S.Clinic_Branch_Key, S.Visit_Src_ID, S.Patient_Key, S.Gender_Key, S.Questionnaire_Category_Key, S.More_Symptomatic_Side_Key,&#xA;&#x9;&#x9;&#x9;S.FC_Grade_Key, S.Clinic_Key, S.PT_Key, S.Prev_PT_Key, S.Pathology_Key, S.Is_IC, S.IC_Visit_ID, S.IC_Date, S.Days_from_IC, S.Previous_Visit_Date, S.Previous_Visit_ID,&#xA;&#x9;&#x9;&#x9;S.Days_from_Prev_Visit, S.Step_Len_L, S.Step_Len_R, S.Step_Len_MS, S.Step_Len_LS, S.Step_Len_Diff, S.IC_Step_Len_L, S.IC_Step_Len_R, S.IC_Step_Len_MS, S.IC_Step_Len_LS,&#xA;&#x9;&#x9;&#x9;S.Step_Len_L_Change, S.Step_Len_R_Change, S.Step_Len_MS_Change, S.Step_Len_LS_Change, S.Step_Len_L_Change_Percent, S.Step_Len_R_Change_Percent, S.Step_Len_MS_Change_Percent,&#xA;&#x9;&#x9;&#x9;S.Step_Len_LS_Change_Percent, S.Stride_Len_L, S.Stride_Len_R, S.Support_Base_L, S.Support_Base_R, S.Support_Base, S.Step_Time_L, S.Step_Time_R, S.Swing_Time_L, S.Swing_Percent_L,&#xA;&#x9;&#x9;&#x9;S.Swing_Time_R, S.Swing_R, S.Stance_Time_L, S.Stance_L, S.Stance_Time_R, S.Stance_R, S.SLS_Time_L, S.SLS_Time_R, S.SLS_Time_MS, S.SLS_Time_LS, S.SLS_Diff, S.IC_SLS_Time_L,&#xA;&#x9;&#x9;&#x9;S.IC_SLS_Time_R, S.IC_SLS_Time_MS, S.IC_SLS_Time_LS, S.SLS_Time_L_Change, S.SLS_Time_R_Change, S.SLS_Time_MS_Change, S.SLS_Time_LS_Change, S.SLS_Time_L_Change_Percent,&#xA;&#x9;&#x9;&#x9;S.SLS_Time_R_Change_Percent, S.SLS_Time_MS_Change_Percent, S.SLS_Time_LS_Change_Percent, S.Support_Time_L, S.Support_Percent_L, S.Support_Time_R, S.Support_Percent_R,&#xA;&#x9;&#x9;&#x9;S.Velocity, S.IC_Velocity, S.Velocity_Change, S.Velocity_Change_Percent, S.Cadence, S.SD_Step_Len_L, S.SD_Step_Len_R, S.SD_Stride_Len_L, S.SD_Stride_Len_R, S.SD_Support_Base_L,&#xA;&#x9;&#x9;&#x9;S.SD_Support_Base_R, S.SD_Step_Time_L, S.SD_Step_Time_R, S.SD_Swing_Time_L, S.SD_Swing_Time_R, S.SD_Stance_Time_L, S.SD_Stance_Time_R, S.SD_SLS_Time_L, S.SD_SLS_Time_R,&#xA;&#x9;&#x9;&#x9;S.SD_Support_Time_L, S.SD_Support_Time_R, S.SD_Velocity, GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE Fact_Patient_Gait as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; G.*&#xA;&#x9;&#x9;,PV.Clinic_Key&#xA;&#x9;&#x9;,PV.PT_Key&#xA;&#x9;&#x9;,PV.Prev_PT_Key&#xA;&#x9;&#x9;,PV.Pathology_Key&#xA;&#x9;&#x9;,PV.IC_Date&#xA;&#x9;&#x9;,PV.Days_from_IC&#xA;&#x9;&#x9;,PV.Previous_Visit_Date&#xA;&#x9;&#x9;,PV.Previous_Visit_ID&#xA;&#x9;&#x9;,PV.Days_from_Prev_Visit&#xA;&#x9;&#x9;,IC.Step_Len_L as IC_Step_Len_L&#xA;&#x9;&#x9;,IC.Step_Len_R as IC_Step_Len_R&#xA;&#x9;&#x9;,IC.Step_Len_MS as IC_Step_Len_MS&#xA;&#x9;&#x9;,IC.Step_Len_LS as IC_Step_Len_LS&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_L - IC.Step_Len_L END,2) as Step_Len_L_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_R - IC.Step_Len_R END,2) as Step_Len_R_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_MS - IC.Step_Len_MS END,2) as Step_Len_MS_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Step_Len_LS - IC.Step_Len_LS END,2) as Step_Len_LS_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.Step_Len_L = 0 THEN 0 ELSE (G.Step_Len_L - IC.Step_Len_L) / IC.Step_Len_L END,4) as Step_Len_L_Change_Percent&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.Step_Len_R = 0 THEN 0 ELSE (G.Step_Len_R - IC.Step_Len_R) / IC.Step_Len_R END,4) as Step_Len_R_Change_Percent&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.Step_Len_MS = 0 THEN 0 ELSE (G.Step_Len_MS - IC.Step_Len_MS) / IC.Step_Len_MS END,4) as Step_Len_MS_Change_Percent&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.Step_Len_LS = 0 THEN 0 ELSE (G.Step_Len_LS - IC.Step_Len_LS) / IC.Step_Len_LS END,4) as Step_Len_LS_Change_Percent&#xA;&#x9;&#x9;,IC.SLS_Time_L as IC_SLS_Time_L&#xA;&#x9;&#x9;,IC.SLS_Time_R as IC_SLS_Time_R&#xA;&#x9;&#x9;,IC.SLS_Time_MS as IC_SLS_Time_MS&#xA;&#x9;&#x9;,IC.SLS_Time_LS as IC_SLS_Time_LS&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_L - IC.SLS_Time_L END,2) as SLS_Time_L_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_R - IC.SLS_Time_R END,2) as SLS_Time_R_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_MS - IC.SLS_Time_MS END,2) as SLS_Time_MS_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.SLS_Time_LS - IC.SLS_Time_LS END,2) as SLS_Time_LS_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.SLS_Time_L = 0 THEN 0 ELSE (G.SLS_Time_L - IC.SLS_Time_L) / IC.SLS_Time_L END,4) as SLS_Time_L_Change_Percent&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.SLS_Time_R = 0 THEN 0 ELSE (G.SLS_Time_R - IC.SLS_Time_R) / IC.SLS_Time_R END,4) as SLS_Time_R_Change_Percent&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.SLS_Time_MS = 0 THEN 0 ELSE (G.SLS_Time_MS - IC.SLS_Time_MS) / IC.SLS_Time_MS END,4) as SLS_Time_MS_Change_Percent&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.SLS_Time_LS = 0 THEN 0 ELSE (G.SLS_Time_LS - IC.SLS_Time_LS) / IC.SLS_Time_LS END,4) as SLS_Time_LS_Change_Percent&#xA;&#x9;&#x9;,IC.Velocity as IC_Velocity&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL ELSE G.Velocity - IC.Velocity END,2) as Velocity_Change&#xA;&#x9;&#x9;,ROUND(CASE WHEN G.Is_IC = 1 THEN NULL WHEN IC.Velocity = 0 THEN 0 ELSE (G.Velocity - IC.Velocity) / IC.Velocity END,2) as Velocity_Change_Percent&#xA;&#x9;FROM STG.dbo.Patient_Gait G&#xA;&#x9;INNER JOIN STG.dbo.Fact_Patient_Visits PV ON G.Visit_ID = PV.Visit_ID&#xA;&#x9;LEFT JOIN STG.dbo.Patient_Gait IC ON IC.Visit_ID = G.IC_Visit_ID AND IC.Is_IC = 1&#xA;&#x9;) as S ON T.Visit_ID = S.Visit_ID&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Gait_ID = S.Gait_ID,&#xA;&#x9;T.Test_Date = S.Test_Date,&#xA;&#x9;T.Visit_Date = S.Visit_Date,&#xA;&#x9;T.Clinic_Branch_Key = S.Clinic_Branch_Key,&#xA;&#x9;T.Visit_Src_ID = S.Visit_Src_ID,&#xA;&#x9;T.Patient_Key = S.Patient_Key,&#xA;&#x9;T.Gender_Key = S.Gender_Key,&#xA;&#x9;T.Questionnaire_Category_Key = S.Questionnaire_Category_Key,&#xA;&#x9;T.More_Symptomatic_Side_Key = S.More_Symptomatic_Side_Key,&#xA;&#x9;T.FC_Grade_Key = S.FC_Grade_Key,&#xA;&#x9;T.Clinic_Key = S.Clinic_Key,&#xA;&#x9;T.PT_Key = S.PT_Key,&#xA;&#x9;T.Prev_PT_Key = S.Prev_PT_Key,&#xA;&#x9;T.Pathology_Key = S.Pathology_Key,&#xA;&#x9;T.Is_IC = S.Is_IC,&#xA;&#x9;T.IC_Visit_ID = S.IC_Visit_ID,&#xA;&#x9;T.IC_Date = S.IC_Date,&#xA;&#x9;T.Days_from_IC = S.Days_from_IC,&#xA;&#x9;T.Previous_Visit_Date = S.Previous_Visit_Date,&#xA;&#x9;T.Previous_Visit_ID = S.Previous_Visit_ID,&#xA;&#x9;T.Days_from_Prev_Visit = S.Days_from_Prev_Visit,&#xA;&#x9;T.Step_Len_L = S.Step_Len_L,&#xA;&#x9;T.Step_Len_R = S.Step_Len_R,&#xA;&#x9;T.Step_Len_MS = S.Step_Len_MS,&#xA;&#x9;T.Step_Len_LS = S.Step_Len_LS,&#xA;&#x9;T.Step_Len_Diff = S.Step_Len_Diff,&#xA;&#x9;T.IC_Step_Len_L = S.IC_Step_Len_L,&#xA;&#x9;T.IC_Step_Len_R = S.IC_Step_Len_R,&#xA;&#x9;T.IC_Step_Len_MS = S.IC_Step_Len_MS,&#xA;&#x9;T.IC_Step_Len_LS = S.IC_Step_Len_LS,&#xA;&#x9;T.Step_Len_L_Change = S.Step_Len_L_Change,&#xA;&#x9;T.Step_Len_R_Change = S.Step_Len_R_Change,&#xA;&#x9;T.Step_Len_MS_Change = S.Step_Len_MS_Change,&#xA;&#x9;T.Step_Len_LS_Change = S.Step_Len_LS_Change,&#xA;&#x9;T.Step_Len_L_Change_Percent = S.Step_Len_L_Change_Percent,&#xA;&#x9;T.Step_Len_R_Change_Percent = S.Step_Len_R_Change_Percent,&#xA;&#x9;T.Step_Len_MS_Change_Percent = S.Step_Len_MS_Change_Percent,&#xA;&#x9;T.Step_Len_LS_Change_Percent = S.Step_Len_LS_Change_Percent,&#xA;&#x9;T.Stride_Len_L = S.Stride_Len_L,&#xA;&#x9;T.Stride_Len_R = S.Stride_Len_R,&#xA;&#x9;T.Support_Base_L = S.Support_Base_L,&#xA;&#x9;T.Support_Base_R = S.Support_Base_R,&#xA;&#x9;T.Support_Base = S.Support_Base,&#xA;&#x9;T.Step_Time_L = S.Step_Time_L,&#xA;&#x9;T.Step_Time_R = S.Step_Time_R,&#xA;&#x9;T.Swing_Time_L = S.Swing_Time_L,&#xA;&#x9;T.Swing_Percent_L = S.Swing_Percent_L,&#xA;&#x9;T.Swing_Time_R = S.Swing_Time_R,&#xA;&#x9;T.Swing_R = S.Swing_R,&#xA;&#x9;T.Stance_Time_L = S.Stance_Time_L,&#xA;&#x9;T.Stance_L = S.Stance_L,&#xA;&#x9;T.Stance_Time_R = S.Stance_Time_R,&#xA;&#x9;T.Stance_R = S.Stance_R,&#xA;&#x9;T.SLS_Time_L = S.SLS_Time_L,&#xA;&#x9;T.SLS_Time_R = S.SLS_Time_R,&#xA;&#x9;T.SLS_Time_MS = S.SLS_Time_MS,&#xA;&#x9;T.SLS_Time_LS = S.SLS_Time_LS,&#xA;&#x9;T.SLS_Diff = S.SLS_Diff,&#xA;&#x9;T.IC_SLS_Time_L = S.IC_SLS_Time_L,&#xA;&#x9;T.IC_SLS_Time_R = S.IC_SLS_Time_R,&#xA;&#x9;T.IC_SLS_Time_MS = S.IC_SLS_Time_MS,&#xA;&#x9;T.IC_SLS_Time_LS = S.IC_SLS_Time_LS,&#xA;&#x9;T.SLS_Time_L_Change = S.SLS_Time_L_Change,&#xA;&#x9;T.SLS_Time_R_Change = S.SLS_Time_R_Change,&#xA;&#x9;T.SLS_Time_MS_Change = S.SLS_Time_MS_Change,&#xA;&#x9;T.SLS_Time_LS_Change = S.SLS_Time_LS_Change,&#xA;&#x9;T.SLS_Time_L_Change_Percent = S.SLS_Time_L_Change_Percent,&#xA;&#x9;T.SLS_Time_R_Change_Percent = S.SLS_Time_R_Change_Percent,&#xA;&#x9;T.SLS_Time_MS_Change_Percent = S.SLS_Time_MS_Change_Percent,&#xA;&#x9;T.SLS_Time_LS_Change_Percent = S.SLS_Time_LS_Change_Percent,&#xA;&#x9;T.Support_Time_L = S.Support_Time_L,&#xA;&#x9;T.Support_Percent_L = S.Support_Percent_L,&#xA;&#x9;T.Support_Time_R = S.Support_Time_R,&#xA;&#x9;T.Support_Percent_R = S.Support_Percent_R,&#xA;&#x9;T.Velocity = S.Velocity,&#xA;&#x9;T.IC_Velocity = S.IC_Velocity,&#xA;&#x9;T.Velocity_Change = S.Velocity_Change,&#xA;&#x9;T.Velocity_Change_Percent = S.Velocity_Change_Percent,&#xA;&#x9;T.Cadence = S.Cadence,&#xA;&#x9;T.SD_Step_Len_L = S.SD_Step_Len_L,&#xA;&#x9;T.SD_Step_Len_R = S.SD_Step_Len_R,&#xA;&#x9;T.SD_Stride_Len_L = S.SD_Stride_Len_L,&#xA;&#x9;T.SD_Stride_Len_R = S.SD_Stride_Len_R,&#xA;&#x9;T.SD_Support_Base_L = S.SD_Support_Base_L,&#xA;&#x9;T.SD_Support_Base_R = S.SD_Support_Base_R,&#xA;&#x9;T.SD_Step_Time_L = S.SD_Step_Time_L,&#xA;&#x9;T.SD_Step_Time_R = S.SD_Step_Time_R,&#xA;&#x9;T.SD_Swing_Time_L = S.SD_Swing_Time_L,&#xA;&#x9;T.SD_Swing_Time_R = S.SD_Swing_Time_R,&#xA;&#x9;T.SD_Stance_Time_L = S.SD_Stance_Time_L,&#xA;&#x9;T.SD_Stance_Time_R = S.SD_Stance_Time_R,&#xA;&#x9;T.SD_SLS_Time_L = S.SD_SLS_Time_L,&#xA;&#x9;T.SD_SLS_Time_R = S.SD_SLS_Time_R,&#xA;&#x9;T.SD_Support_Time_L = S.SD_Support_Time_L,&#xA;&#x9;T.SD_Support_Time_R = S.SD_Support_Time_R,&#xA;&#x9;T.SD_Velocity = S.SD_Velocity,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Visit_ID, Gait_ID, Test_Date, Visit_Date, Clinic_Branch_Key, Visit_Src_ID, Patient_Key, Gender_Key, Questionnaire_Category_Key, More_Symptomatic_Side_Key, &#xA;&#x9;&#x9;&#x9;FC_Grade_Key, Clinic_Key, PT_Key, Prev_PT_Key, Pathology_Key, Is_IC, IC_Visit_ID, IC_Date, Days_from_IC, Previous_Visit_Date, Previous_Visit_ID, &#xA;&#x9;&#x9;&#x9;Days_from_Prev_Visit, Step_Len_L, Step_Len_R, Step_Len_MS, Step_Len_LS, Step_Len_Diff, IC_Step_Len_L, IC_Step_Len_R, IC_Step_Len_MS, IC_Step_Len_LS, &#xA;&#x9;&#x9;&#x9;Step_Len_L_Change, Step_Len_R_Change, Step_Len_MS_Change, Step_Len_LS_Change, Step_Len_L_Change_Percent, Step_Len_R_Change_Percent, Step_Len_MS_Change_Percent, &#xA;&#x9;&#x9;&#x9;Step_Len_LS_Change_Percent, Stride_Len_L, Stride_Len_R, Support_Base_L, Support_Base_R, Support_Base, Step_Time_L, Step_Time_R, Swing_Time_L, Swing_Percent_L, &#xA;&#x9;&#x9;&#x9;Swing_Time_R, Swing_R, Stance_Time_L, Stance_L, Stance_Time_R, Stance_R, SLS_Time_L, SLS_Time_R, SLS_Time_MS, SLS_Time_LS, SLS_Diff, IC_SLS_Time_L, &#xA;&#x9;&#x9;&#x9;IC_SLS_Time_R, IC_SLS_Time_MS, IC_SLS_Time_LS, SLS_Time_L_Change, SLS_Time_R_Change, SLS_Time_MS_Change, SLS_Time_LS_Change, SLS_Time_L_Change_Percent, &#xA;&#x9;&#x9;&#x9;SLS_Time_R_Change_Percent, SLS_Time_MS_Change_Percent, SLS_Time_LS_Change_Percent, Support_Time_L, Support_Percent_L, Support_Time_R, Support_Percent_R, &#xA;&#x9;&#x9;&#x9;Velocity, IC_Velocity, Velocity_Change, Velocity_Change_Percent, Cadence, SD_Step_Len_L, SD_Step_Len_R, SD_Stride_Len_L, SD_Stride_Len_R, SD_Support_Base_L, &#xA;&#x9;&#x9;&#x9;SD_Support_Base_R, SD_Step_Time_L, SD_Step_Time_R, SD_Swing_Time_L, SD_Swing_Time_R, SD_Stance_Time_L, SD_Stance_Time_R, SD_SLS_Time_L, SD_SLS_Time_R, &#xA;&#x9;&#x9;&#x9;SD_Support_Time_L, SD_Support_Time_R, SD_Velocity, DB_Create_Date, DB_Update_Date)&#xA;&#x9;VALUES (S.Visit_ID, S.Gait_ID, S.Test_Date, S.Visit_Date, S.Clinic_Branch_Key, S.Visit_Src_ID, S.Patient_Key, S.Gender_Key, S.Questionnaire_Category_Key, S.More_Symptomatic_Side_Key,&#xA;&#x9;&#x9;&#x9;S.FC_Grade_Key, S.Clinic_Key, S.PT_Key, S.Prev_PT_Key, S.Pathology_Key, S.Is_IC, S.IC_Visit_ID, S.IC_Date, S.Days_from_IC, S.Previous_Visit_Date, S.Previous_Visit_ID,&#xA;&#x9;&#x9;&#x9;S.Days_from_Prev_Visit, S.Step_Len_L, S.Step_Len_R, S.Step_Len_MS, S.Step_Len_LS, S.Step_Len_Diff, S.IC_Step_Len_L, S.IC_Step_Len_R, S.IC_Step_Len_MS, S.IC_Step_Len_LS,&#xA;&#x9;&#x9;&#x9;S.Step_Len_L_Change, S.Step_Len_R_Change, S.Step_Len_MS_Change, S.Step_Len_LS_Change, S.Step_Len_L_Change_Percent, S.Step_Len_R_Change_Percent, S.Step_Len_MS_Change_Percent,&#xA;&#x9;&#x9;&#x9;S.Step_Len_LS_Change_Percent, S.Stride_Len_L, S.Stride_Len_R, S.Support_Base_L, S.Support_Base_R, S.Support_Base, S.Step_Time_L, S.Step_Time_R, S.Swing_Time_L, S.Swing_Percent_L,&#xA;&#x9;&#x9;&#x9;S.Swing_Time_R, S.Swing_R, S.Stance_Time_L, S.Stance_L, S.Stance_Time_R, S.Stance_R, S.SLS_Time_L, S.SLS_Time_R, S.SLS_Time_MS, S.SLS_Time_LS, S.SLS_Diff, S.IC_SLS_Time_L,&#xA;&#x9;&#x9;&#x9;S.IC_SLS_Time_R, S.IC_SLS_Time_MS, S.IC_SLS_Time_LS, S.SLS_Time_L_Change, S.SLS_Time_R_Change, S.SLS_Time_MS_Change, S.SLS_Time_LS_Change, S.SLS_Time_L_Change_Percent,&#xA;&#x9;&#x9;&#x9;S.SLS_Time_R_Change_Percent, S.SLS_Time_MS_Change_Percent, S.SLS_Time_LS_Change_Percent, S.Support_Time_L, S.Support_Percent_L, S.Support_Time_R, S.Support_Percent_R,&#xA;&#x9;&#x9;&#x9;S.Velocity, S.IC_Velocity, S.Velocity_Change, S.Velocity_Change_Percent, S.Cadence, S.SD_Step_Len_L, S.SD_Step_Len_R, S.SD_Stride_Len_L, S.SD_Stride_Len_R, S.SD_Support_Base_L,&#xA;&#x9;&#x9;&#x9;S.SD_Support_Base_R, S.SD_Step_Time_L, S.SD_Step_Time_R, S.SD_Swing_Time_L, S.SD_Swing_Time_R, S.SD_Stance_Time_L, S.SD_Stance_Time_R, S.SD_SLS_Time_L, S.SD_SLS_Time_R,&#xA;&#x9;&#x9;&#x9;S.SD_Support_Time_L, S.SD_Support_Time_R, S.SD_Velocity, GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -1976,7 +1976,7 @@ where [refTable].[Grade_Name] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\352:invalid};</property>
+                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\473:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3227,7 +3227,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Update IC Data in Dim Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3244,7 +3244,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Update Last Refresh"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3315,7 +3315,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3339,7 +3339,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3369,7 +3369,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5853,7 +5853,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               DTS:LocaleID="-1"
               DTS:ObjectName="Update Change in Score"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5870,7 +5870,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               DTS:LocaleID="-1"
               DTS:ObjectName="Update IC Data in Dim Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5887,7 +5887,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               DTS:LocaleID="-1"
               DTS:ObjectName="Update Last Refresh"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -10802,6 +10802,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
 		,PV.ID as Visit_Src_ID
 		,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),PV.ClinicBranchID),'_',CONVERT(varchar(25),PV.PatientId))) as Patient_ID
 		,ISNULL(DP.Patient_Key,-1) as Patient_Key
+		,ISNULL(DP.Insurer_Key,-1) as Insurer_Key
 		,COALESCE(BR.BranchName,PBR.BranchName,CM.Clinic_Branch) as Clinic_Name
 		,CASE WHEN PV.PhysiotherapistID IS NULL THEN '-1' 
 			  ELSE CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),PV.ClinicBranchID),'_',CONVERT(varchar(25),PV.PhysiotherapistID))) 
@@ -10829,7 +10830,8 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
 	LEFT JOIN adm.Clinic_Mapping CM ON PV.ClinicBranchID = CM.ID -- Get the branch name for patients who aren't assigned to any clinic in the source
 	-- Join to Dim Patients on the Patient Parent ID (Clinic Branch ID and Patient Src ID concatenated) AND Visit Date between IC-Date and Last_VisitDate
 	LEFT JOIN DWH.dbo.Dim_Patients DP ON PV.PatientId = DP.Patient_Src_ID AND PV.ClinicBranchID = DP.Clinic_Branch_ID 
-									 AND CONVERT(date,PV.[Date]) BETWEEN DP.IC_Date AND DP.Last_Visit_Date -- for discharged patients 
+									 AND ((DP.Pathology_Change_Date IS NOT NULL AND CONVERT(date,PV.[Date]) &gt;= DP.IC_Date AND CONVERT(date,PV.[Date]) &lt; DP.Last_Visit_Date) -- change pathology
+									 OR (DP.Pathology_Change_Date IS NULL AND CONVERT(date,PV.[Date]) BETWEEN DP.IC_Date AND DP.Last_Visit_Date)) -- discharged 
 	)
 SELECT 
 	 Visit_ID
@@ -10838,6 +10840,7 @@ SELECT
 	,Visit_Src_ID
 	,Patient_ID
 	,Patient_Key
+	,Insurer_Key
 	,Clinic_Name
 	,PT_ID
 	,Prev_PT_ID
@@ -11041,6 +11044,15 @@ FROM PV</property>
                               lineageId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Output].Columns[Days_from_Prev_Visit]"
                               name="Days_from_Prev_Visit"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Output].Columns[Insurer_Key]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Output].ExternalColumns[Insurer_Key]"
+                              lineageId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Output].Columns[Insurer_Key]"
+                              name="Insurer_Key"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -11121,6 +11133,10 @@ FROM PV</property>
                               refId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Output].ExternalColumns[Days_from_Prev_Visit]"
                               dataType="i4"
                               name="Days_from_Prev_Visit" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Output].ExternalColumns[Insurer_Key]"
+                              dataType="i4"
+                              name="Insurer_Key" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -11162,6 +11178,11 @@ FROM PV</property>
                               dataType="i4"
                               lineageId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Error Output].Columns[Patient_Key]"
                               name="Patient_Key" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Error Output].Columns[Insurer_Key]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Error Output].Columns[Insurer_Key]"
+                              name="Insurer_Key" />
                             <outputColumn
                               refId="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits.Outputs[OLE DB Source Error Output].Columns[Clinic_Name]"
                               dataType="wstr"
@@ -11706,7 +11727,7 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="197,102"
+          PanelSize="197,103"
           Size="197,146"
           Id="Package\Log End of Package"
           TopLeft="180,1543.5" />
@@ -11743,7 +11764,7 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="165,204"
+          PanelSize="165,205"
           Size="165,248"
           Id="Package\Log Start of Package"
           TopLeft="196,5.5" />
@@ -11756,6 +11777,10 @@ FROM PV</property>
           Id="Package\Sequence Container\Fact Patient Gait\Log Start"
           TopLeft="57.5,5.5" />
         <NodeLayout
+          Size="148,42"
+          Id="Package\Sequence Container\Fact Patient Gait\Merge to DWH"
+          TopLeft="44.5,209.5" />
+        <NodeLayout
           Size="179,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait"
           TopLeft="29,107.5" />
@@ -11763,6 +11788,10 @@ FROM PV</property>
           Size="226,42"
           Id="Package\Sequence Container\Fact Patient Gait\Update IC Data in Dim Patients"
           TopLeft="5.50000000000006,413.5" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Sequence Container\Fact Patient Gait\Update Last Refresh"
+          TopLeft="31.5,311.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Gait.PrecedenceConstraints[Constraint]"
           TopLeft="118.5,47.5">
@@ -11786,8 +11815,8 @@ FROM PV</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait.PrecedenceConstraints[Constraint 2]"
-          TopLeft="118.5,455.5">
+          Id="Package\Sequence Container\Fact Patient Gait.PrecedenceConstraints[Constraint 1]"
+          TopLeft="118.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11807,17 +11836,9 @@ FROM PV</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Sequence Container\Fact Patient Gait\Update Last Refresh"
-          TopLeft="31.5,311.5" />
-        <NodeLayout
-          Size="148,42"
-          Id="Package\Sequence Container\Fact Patient Gait\Merge to DWH"
-          TopLeft="44.5,209.5" />
         <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait.PrecedenceConstraints[Constraint 1]"
-          TopLeft="118.5,149.5">
+          Id="Package\Sequence Container\Fact Patient Gait.PrecedenceConstraints[Constraint 2]"
+          TopLeft="118.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11884,7 +11905,7 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="237,612"
+          PanelSize="237,613"
           Size="237,656"
           Id="Package\Sequence Container\Fact Patient Gait"
           TopLeft="303.5,466.5" />
@@ -11897,9 +11918,25 @@ FROM PV</property>
           Id="Package\Sequence Container\Fact Patient Questionnaires\Log Start"
           TopLeft="57.5,5.5" />
         <NodeLayout
+          Size="148,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\Merge to DWH"
+          TopLeft="37,209.5" />
+        <NodeLayout
           Size="199,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires"
           TopLeft="19,107.5" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\Update Change in Score"
+          TopLeft="22.5,311.5" />
+        <NodeLayout
+          Size="226,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\Update IC Data in Dim Patients"
+          TopLeft="5.50000000000007,515.5" />
+        <NodeLayout
+          Size="174,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\Update Last Refresh"
+          TopLeft="31.5000000000001,413.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint]"
           TopLeft="118.5,47.5">
@@ -11922,40 +11959,6 @@ FROM PV</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="226,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\Update IC Data in Dim Patients"
-          TopLeft="5.50000000000007,515.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 2]"
-          TopLeft="118.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="148,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\Merge to DWH"
-          TopLeft="37,209.5" />
-        <NodeLayout
-          Size="174,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\Update Last Refresh"
-          TopLeft="31.5000000000001,413.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 1]"
           TopLeft="114.75,149.5">
@@ -11979,8 +11982,8 @@ FROM PV</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 4]"
-          TopLeft="118.5,455.5">
+          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 2]"
+          TopLeft="118.5,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12000,13 +12003,31 @@ FROM PV</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="192,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\Update Change in Score"
-          TopLeft="22.5,311.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 3]"
           TopLeft="114.75,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 4]"
+          TopLeft="118.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12051,7 +12072,7 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="237,714"
+          PanelSize="237,715"
           Size="237,758"
           Id="Package\Sequence Container\Fact Patient Questionnaires"
           TopLeft="5.50000000000017,415.5" />
@@ -12114,7 +12135,7 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="196,306"
+          PanelSize="196,307"
           Size="196,350"
           Id="Package\Sequence Container\Fact Patient Visits"
           TopLeft="324,5.5" />
@@ -12189,7 +12210,7 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="546,1228"
+          PanelSize="546,1229"
           Size="546,1272"
           Id="Package\Sequence Container"
           TopLeft="5.50000000000017,313.5" />
@@ -12252,71 +12273,13 @@ FROM PV</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="169,42"
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP FC_Grade_Key"
-          TopLeft="39.0000000000001,413.5" />
-        <NodeLayout
           Size="98,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Gait"
           TopLeft="74.5,5.5" />
         <NodeLayout
           Size="154,42"
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Derived Column"
-          TopLeft="46.5000000000001,515.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output]"
-          TopLeft="123.5,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="154,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\stg Patient_Gait"
           TopLeft="46.5000000000001,617.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Derived Column Output]"
-          TopLeft="123.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Key"
-          TopLeft="29.5,209.5" />
         <NodeLayout
           Size="186,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Clinic_Branch_Key"
@@ -12325,6 +12288,18 @@ FROM PV</property>
           Size="236,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Category_Key"
           TopLeft="5.50000000000004,311.5" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Key"
+          TopLeft="29.5,209.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP FC_Grade_Key"
+          TopLeft="39.0000000000001,413.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Derived Column"
+          TopLeft="46.5000000000001,515.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[OLE DB Source Output]"
           TopLeft="123.5,47.5">
@@ -12348,8 +12323,8 @@ FROM PV</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output1]"
-          TopLeft="123.5,149.5">
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output3]"
+          TopLeft="123.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12396,8 +12371,8 @@ FROM PV</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output3]"
-          TopLeft="123.5,353.5">
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output1]"
+          TopLeft="123.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12419,9 +12394,145 @@ FROM PV</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output]"
+          TopLeft="123.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Derived Column Output]"
+          TopLeft="123.5,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Gait">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\stg Patient_Gait">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Clinic_Branch_Key">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Clinic_Branch]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Category_Key">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Questionnaire_Category]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Key">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string">[dbo].[Dim_Questionnaire]</Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP FC_Grade_Key">
     <Properties>
@@ -12445,39 +12556,31 @@ FROM PV</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Gait">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="236,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key"
           TopLeft="5.50000000000003,209.5" />
         <NodeLayout
-          Size="196,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key"
-          TopLeft="25.5,107.5" />
+          Size="205,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires"
+          TopLeft="21,413.5" />
         <NodeLayout
           Size="149,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires"
           TopLeft="49,5.5" />
         <NodeLayout
-          Size="205,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires"
-          TopLeft="21,413.5" />
-        <NodeLayout
           Size="154,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Derived Column"
           TopLeft="46.5,311.5" />
+        <NodeLayout
+          Size="196,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key"
+          TopLeft="25.5,107.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Output 01]"
           TopLeft="123.5,251.5">
@@ -12497,7 +12600,9 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12519,29 +12624,9 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Derived Column Output]"
-          TopLeft="123.5,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12563,20 +12648,38 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Derived Column Output]"
+          TopLeft="123.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires">
     <Properties>
@@ -12590,27 +12693,19 @@ FROM PV</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <TaskHost
     design-time-name="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits">
     <LayoutInfo>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Clinic_Branch_Key"
-          TopLeft="5.50000000000001,107.5" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Clinic_Key"
-          TopLeft="25,209.5" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Pathology_Key"
-          TopLeft="14.0000000000001,515.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Prev_PT_Key"
-          TopLeft="18.0000000000001,413.5" />
         <NodeLayout
           Size="135,42"
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP PT_Key"
@@ -12620,13 +12715,29 @@ FROM PV</property>
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Patient Visits"
           TopLeft="29,5.5" />
         <NodeLayout
+          Size="169,42"
+          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Pathology_Key"
+          TopLeft="14.0000000000001,515.5" />
+        <NodeLayout
           Size="185,42"
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\stg Fact_Patient_Visits"
           TopLeft="6.00000000000009,719.5" />
         <NodeLayout
+          Size="186,42"
+          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Clinic_Branch_Key"
+          TopLeft="5.50000000000001,107.5" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Clinic_Key"
+          TopLeft="25,209.5" />
+        <NodeLayout
           Size="154,42"
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\Derived Column"
           TopLeft="21.5000000000001,617.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP Prev_PT_Key"
+          TopLeft="18.0000000000001,413.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits.Paths[Output 04]"
           TopLeft="98.5000000000001,557.5">
@@ -12802,88 +12913,6 @@ FROM PV</property>
         <Name>TableInfoObjectType</Name>
         <Value
           type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\stg Patient_Gait">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Questionnaire]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Clinic_Branch_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Clinic_Branch]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Questionnaire_Category_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:boolean">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Questionnaire_Category]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:int">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
