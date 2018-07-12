@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Facts"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{291A20F8-CECE-4AB3-B7FD-867959F1B59F}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{1D5E72DF-EB48-479D-897A-2908F510C19A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAD40+Pid1cEPopct0BM4MnRAAAAAASAAACgAAAAEAAAAGzgPBaQWOj9X7i8vG6JizcQAAAA/7c8u1eLARGwPewJ12qRUhQAAADSzeFanfjDECqT3qSE5mic6QMhSg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADSrjNm8nnEEwW89l7PrzfTAAAAAASAAACgAAAAEAAAADQX3QV408MfpqL+XxLcjFMQAAAAo/R32z9sqUOjC2lLoBCZExQAAAB3Y21zfktbvdPvpNxKgpjGKy7fUA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACD7pHEpI5YV9hotXRQ5P8iAAAAAASAAACgAAAAEAAAAOvjFXEgulhwfG8o6to20QYQAAAAukmY2ECQVIfEo3DQbp0TwRQAAACqXpaNUG4Iq4SJO6NKFX3/DrygKw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADWf8kVXd6VVe7qYdw/Ry2CAAAAAASAAACgAAAAEAAAAL7vhmcod4QTPmqV+hjhbMEQAAAAgyyfg965uqjFmjeo4YiJZxQAAAA5Qo+zK+OOhiR9AHzCFGQjP0tGtA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADU5zCiG1Q6B3YNl9Uyg9omAAAAAASAAACgAAAAEAAAAKdgQadmWte0uEO+2fWKwiAQAAAAtDxOkF/gcG+WnmsvFER4PBQAAABuDIJ6iCaxDSn3ODZlhPOrFPpacQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADRecyBTppHRTfKANH3S4oxAAAAAASAAACgAAAAEAAAAEQPst9+/KqUdWYpFylVChAQAAAA5iZeSkfBjq3zTVpqS5byghQAAAAH9mVGMWEIiEwh+EKYZkCcAoVq0g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABiIK9qt1qI0MO6yAqbvxPgAAAAAASAAACgAAAAEAAAANpRGF8yTHhR3C15MMTiBmAQAAAAUtpQr289QGbjfN+pLTzRbBQAAADbd5loqYekR7gtoLa6eXlJY+kcbQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAzT0Ds1PNA2iucSAFOGExvAAAAAASAAACgAAAAEAAAAH5nlavLIfjd/ssoIMl5nboQAAAAqQIl+j+D5qohHlH/ZrNShRQAAADCX4FLwUZVadAlSqV9yZZPHs7LMg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1976,7 +1976,7 @@ where [refTable].[Grade_Name] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\5320:invalid};</property>
+                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\1463:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -5858,7 +5858,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE Q&#xA;SET IC_Score = IC.Score,&#xA;&#x9;Score_Change = Q.Score - IC.Score,&#xA;&#x9;Score_Change_Percent = CASE WHEN IC.Score = 0 THEN NULL ELSE (Q.Score - IC.Score) / IC.Score END&#xA;FROM Fact_Patient_Questionnaires Q&#xA;LEFT JOIN Fact_Patient_Questionnaires IC ON Q.Patient_Key = IC.Patient_Key AND Q.Questionnaire_Category_Key = IC.Questionnaire_Category_Key AND IC.Is_IC = 1&#xA;WHERE Q.Score_Change IS NULL AND Q.Is_IC = 0;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="UPDATE Q&#xA;SET IC_Score = IC.Score,&#xA;&#x9;Score_Change = Q.Score - IC.Score,&#xA;&#x9;Score_Change_Percent = CASE WHEN IC.Score = 0 THEN NULL ELSE (Q.Score - IC.Score) / IC.Score END,&#xA;&#x9;IC_Questionnaire_Category_Key = IC.Questionnaire_Category_Key&#xA;FROM Fact_Patient_Questionnaires Q&#xA;LEFT JOIN Fact_Patient_Questionnaires IC ON Q.Patient_Key = IC.Patient_Key AND Q.Questionnaire_Category_Key = IC.Questionnaire_Category_Key AND IC.Is_IC = 1&#xA;WHERE Q.Score_Change IS NULL AND Q.Is_IC = 0;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -5875,7 +5875,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE P &#xA;SET &#xA;&#x9;IC_QoL_Level = Q.Score,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM dbo.Dim_Patients P&#xA;INNER JOIN dbo.Fact_Patient_Questionnaires Q ON P.IC_Visit_ID = Q.Visit_ID&#xA;INNER JOIN dbo.Dim_Questionnaire_Category DQC ON Q.Questionnaire_Category_Key = DQC.Questionnaire_Category_Key&#xA;INNER JOIN dbo.Dim_Questionnaire DQ ON DQC.Questionnaire_Key = DQ.Questionnaire_Key&#xA;WHERE DQ.Questionnaire_ID = 2 -- SF-36&#xA;AND Questionnaire_Category = 'Total'; -- QoL&#xA;&#xA;UPDATE P &#xA;SET &#xA;&#x9;IC_Pain_Level = Q.Score,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM dbo.Dim_Patients P&#xA;INNER JOIN dbo.Fact_Patient_Questionnaires Q ON P.IC_Visit_ID = Q.Visit_ID&#xA;INNER JOIN dbo.Dim_Questionnaire_Category DQC ON Q.Questionnaire_Category_Key = DQC.Questionnaire_Category_Key&#xA;INNER JOIN dbo.Dim_Questionnaire DQ ON DQC.Questionnaire_Key = DQ.Questionnaire_Key&#xA;WHERE DQ.Questionnaire_ID = 1 -- WOMAC&#xA;AND Questionnaire_Category = 'Pain' &#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="UPDATE P &#xA;SET &#xA;&#x9;IC_QoL_Level = Q.Score,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM dbo.Dim_Patients P&#xA;INNER JOIN dbo.Fact_Patient_Questionnaires Q ON P.IC_Visit_ID = Q.Visit_ID&#xA;INNER JOIN dbo.Dim_Questionnaire_Category DQC ON Q.Questionnaire_Category_Key = DQC.Questionnaire_Category_Key&#xA;INNER JOIN dbo.Dim_Questionnaire DQ ON DQC.Questionnaire_Key = DQ.Questionnaire_Key&#xA;WHERE DQ.Questionnaire_ID = 2 -- SF-36&#xA;AND Questionnaire_Category = 'Total'; -- QoL&#xA;&#xA;UPDATE P &#xA;SET &#xA;&#x9;IC_Pain_Level = Q.Score,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM dbo.Dim_Patients P&#xA;INNER JOIN dbo.Fact_Patient_Questionnaires Q ON P.IC_Visit_ID = Q.Visit_ID&#xA;INNER JOIN dbo.Dim_Questionnaire_Category DQC ON Q.Questionnaire_Category_Key = DQC.Questionnaire_Category_Key&#xA;INNER JOIN dbo.Dim_Questionnaire DQ ON DQC.Questionnaire_Key = DQ.Questionnaire_Key&#xA;WHERE DQ.Questionnaire_ID = 1 -- WOMAC&#xA;AND Questionnaire_Category = 'Pain';&#xA;&#xA;UPDATE P &#xA;SET &#xA;&#x9;IC_Function_Level = Q.Score,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM dbo.Dim_Patients P&#xA;INNER JOIN dbo.Fact_Patient_Questionnaires Q ON P.IC_Visit_ID = Q.Visit_ID&#xA;INNER JOIN dbo.Dim_Questionnaire_Category DQC ON Q.Questionnaire_Category_Key = DQC.Questionnaire_Category_Key&#xA;INNER JOIN dbo.Dim_Questionnaire DQ ON DQC.Questionnaire_Key = DQ.Questionnaire_Key&#xA;WHERE DQ.Questionnaire_ID = 1 -- WOMAC&#xA;AND Questionnaire_Category = 'Function';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -12325,9 +12325,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12445,9 +12443,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12570,7 +12566,7 @@ FROM PV</property>
     design-time-name="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="236,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key"
@@ -12610,9 +12606,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12634,9 +12628,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12658,9 +12650,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12682,9 +12672,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

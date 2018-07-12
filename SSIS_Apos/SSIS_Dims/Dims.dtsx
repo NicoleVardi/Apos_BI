@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Dims"
   DTS:PackageType="5"
-  DTS:VersionBuild="257"
-  DTS:VersionGUID="{829D1A23-1DC9-4E79-A5EF-29C224523FFE}">
+  DTS:VersionBuild="258"
+  DTS:VersionGUID="{96461993-7681-464C-98B0-918887198465}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAXss42rgakgLRAmho530W1AAAAAASAAACgAAAAEAAAAOOFGnm1VwtP2ejr+A9LDPUQAAAA5hnUY3PoMha/nH39EkJQHRQAAACth6DUXM5LIVU3pY+p98c1qSCbcw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABYahA3HIDcGEQThzyPcnt7AAAAAASAAACgAAAAEAAAANu0lepMliyxVQYoDdkTkMkQAAAADdnD4TLo0L0CYX5dfJ2CaBQAAACRY4XN+lIOR72t5nXVaDlqekOxMg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADGe5xJb5vx23pxG5uam/qdAAAAAASAAACgAAAAEAAAAP2tdi+sSZ332UrxQ6sjwyUQAAAAo7yOsh7jum3l4J3m0Dnt4hQAAADE/WHDRkZ7Nav/ZYcokOOh8WUvRQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADAj3KglMIS8irJvLr3q2FVAAAAAASAAACgAAAAEAAAAGp4+Ild7igkOPepHL0NJVMQAAAA3Q2Z/cMY5d1oy30My28lUxQAAABtZBgGAoNfylqMoQOv7HLva68f1A</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAdDDgOJLSu5q+v5cJRALPBAAAAAASAAACgAAAAEAAAAAmosteOZ6yu0mvoGA24KWoQAAAAD/tLQfgke6NFkQfzE+u7hBQAAABmz55Xt73UzULGnhJ4kNhnqO8Z+g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADAksV6Mu2VGH0tvwNhYt3dAAAAAASAAACgAAAAEAAAAJkxlgrQ9XI7mH9cjbqwaRwQAAAARjaAzn4+y6u47w+m4kTH6BQAAAAdS0jdXAnonFCohiEQLnmuPvoOlQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACDydK/s7/OnvJUYxIOAdLyAAAAAASAAACgAAAAEAAAAPPFckL8sLjJ8eKaPNhanokQAAAAP9K4E4N6VyT5Y/6mZ3fs+RQAAADhIvaVpIcWyibugfSspu864jsH2A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACf0tOAkP4OJ/YCNZ1C4BhrAAAAAASAAACgAAAAEAAAALcrvY9RF85ni71gWkh1FFcQAAAA6iKbcLvw4o7ReQFeIaAZnhQAAABPN/4etSe9b5XOxhV1EYq6DIN7Tw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -651,7 +651,7 @@ where [refTable].[Group_ID] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\18:invalid};</property>
+                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\1460:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3717,7 +3717,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3741,7 +3741,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3771,7 +3771,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4169,7 +4169,7 @@ FROM ext.KPI_Period_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4193,7 +4193,7 @@ FROM ext.KPI_Period_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4223,7 +4223,7 @@ FROM ext.KPI_Period_Definitions</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -14087,6 +14087,7 @@ SELECT
 		  ELSE ISNULL(FV.First_Visit_ID,'-1') END as IC_Visit_ID -- new patient
 	,CASE WHEN DP.Is_Discharged_Patient = 1 THEN DP.Last_Visit_ID ELSE ISNULL(LV.Last_Visit_ID,'-1') END as Last_Visit_ID
 	,CONVERT(varchar(50), CASE WHEN DO.Patient_ID IS NOT NULL THEN 'Dropped Out'
+		  WHEN PSS.Suitability_Status in ('Unsuitable','Declined') THEN 'N\A'
 		  WHEN DATEDIFF(DAY,ISNULL(LV.Visit_Date,'1900-01-01'),GETDATE()) &gt;= @Inactive AND DATEDIFF(DAY,ISNULL(LV.Visit_Date,'1900-01-01'),GETDATE()) &lt; @Discharged THEN 'Inactive'
 		  WHEN DATEDIFF(DAY,ISNULL(LV.Visit_Date,'1900-01-01'),GETDATE()) &gt;= @Discharged THEN 'Discharged'
 		  ELSE 'Active' END) as Activity_Status
@@ -19686,49 +19687,49 @@ LEFT JOIN DWH.dbo.Dim_Period_Base PB ON PB.Insurer_Key = 1 -- The seniority days
                   startId="Package\Patients\stg Dim_Patients\Is Activity Status Changed.Outputs[Changed]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output8]"
-                  endId="Package\Patients\stg Dim_Patients\Stg Dim_Patients.Inputs[OLE DB Destination Input]"
+                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 7]"
                   name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\DB_Create_Date.Outputs[Derived Column Output]" />
+                  startId="Package\Patients\stg Dim_Patients\DCP Record Type.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output7]"
-                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 4]"
-                  name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\UE Record Type.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output6]"
-                  endId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients.Inputs[Lookup Input]"
-                  name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\Discharged or Dropped Out Patients.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output4]"
-                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 3]"
-                  name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\DO Record Type.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output5]"
-                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 2]"
-                  name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\D Record Type.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output2]"
-                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 5]"
-                  name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\CA Record Type.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
-                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 1]"
-                  name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\IN Record Type.Outputs[Derived Column Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
                   endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 6]"
                   name="Derived Column Output"
                   startId="Package\Patients\stg Dim_Patients\CP Record Type.Outputs[Derived Column Output]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output3]"
-                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 7]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output6]"
+                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 1]"
                   name="Derived Column Output"
-                  startId="Package\Patients\stg Dim_Patients\DCP Record Type.Outputs[Derived Column Output]" />
+                  startId="Package\Patients\stg Dim_Patients\IN Record Type.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output4]"
+                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 2]"
+                  name="Derived Column Output"
+                  startId="Package\Patients\stg Dim_Patients\D Record Type.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output5]"
+                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 5]"
+                  name="Derived Column Output"
+                  startId="Package\Patients\stg Dim_Patients\CA Record Type.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output2]"
+                  endId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients.Inputs[Lookup Input]"
+                  name="Derived Column Output"
+                  startId="Package\Patients\stg Dim_Patients\Discharged or Dropped Out Patients.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
+                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 4]"
+                  name="Derived Column Output"
+                  startId="Package\Patients\stg Dim_Patients\UE Record Type.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
+                  endId="Package\Patients\stg Dim_Patients\Stg Dim_Patients.Inputs[OLE DB Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\Patients\stg Dim_Patients\DB_Create_Date.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Derived Column Output3]"
+                  endId="Package\Patients\stg Dim_Patients\Union All.Inputs[Union All Input 3]"
+                  name="Derived Column Output"
+                  startId="Package\Patients\stg Dim_Patients\DO Record Type.Outputs[Derived Column Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Discharged]"
                   endId="Package\Patients\stg Dim_Patients\Patient Discharged - Discharge &amp; Audit.Inputs[OLE DB Command Input]"
@@ -19741,29 +19742,29 @@ LEFT JOIN DWH.dbo.Dim_Period_Base PB ON PB.Insurer_Key = 1 -- The seniority days
                   startId="Package\Patients\stg Dim_Patients\Discharged or Dropped Out.Outputs[Dropped Out]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
+                  endId="Package\Patients\stg Dim_Patients\Discharged or Dropped Out Patients.Inputs[Derived Column Input]"
+                  name="Lookup Match Output"
+                  startId="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key.Outputs[Lookup Match Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
                   endId="Package\Patients\stg Dim_Patients\Matched Patients to Discharge Rows.Inputs[Multicast Input 1]"
                   name="Lookup Match Output"
                   startId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients Discharged Patients.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
                   endId="Package\Patients\stg Dim_Patients\Matched Active Patients Rows.Inputs[Multicast Input 1]"
                   name="Lookup Match Output"
                   startId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
                   endId="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key.Outputs[Lookup Match Output]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
                   endId="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key.Inputs[Lookup Input]"
                   name="Lookup Match Output"
                   startId="Package\Patients\stg Dim_Patients\LKP Gender_Key.Outputs[Lookup Match Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
-                  endId="Package\Patients\stg Dim_Patients\Discharged or Dropped Out Patients.Inputs[Derived Column Input]"
-                  name="Lookup Match Output"
-                  startId="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output5]"
                   endId="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key.Inputs[Lookup Input]"
@@ -19771,14 +19772,14 @@ LEFT JOIN DWH.dbo.Dim_Period_Base PB ON PB.Insurer_Key = 1 -- The seniority days
                   startId="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key.Outputs[Lookup Match Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output1]"
-                  endId="Package\Patients\stg Dim_Patients\IN Record Type.Inputs[Derived Column Input]"
-                  name="Lookup No Match Output"
-                  startId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients Discharged Patients.Outputs[Lookup No Match Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output]"
                   endId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients Discharged Patients.Inputs[Lookup Input]"
                   name="Lookup No Match Output"
                   startId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients.Outputs[Lookup No Match Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output]"
+                  endId="Package\Patients\stg Dim_Patients\IN Record Type.Inputs[Derived Column Input]"
+                  name="Lookup No Match Output"
+                  startId="Package\Patients\stg Dim_Patients\Lookup Dim_Patients Discharged Patients.Outputs[Lookup No Match Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Multicast Output 1]"
                   endId="Package\Patients\stg Dim_Patients\Union PT.Inputs[Union All Input 1]"
@@ -19831,24 +19832,24 @@ LEFT JOIN DWH.dbo.Dim_Period_Base PB ON PB.Insurer_Key = 1 -- The seniority days
                   startId="Package\Patients\stg Dim_Patients\Is Already Discharged.Outputs[Not Discharged]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output3]"
-                  endId="Package\Patients\stg Dim_Patients\Is Already Discharged.Inputs[Conditional Split Input]"
+                  endId="Package\Patients\stg Dim_Patients\DO Record Type.Inputs[Derived Column Input]"
                   name="OLE DB Command Output"
-                  startId="Package\Patients\stg Dim_Patients\Changed Pathology - Discharge &amp; Audit.Outputs[OLE DB Command Output]" />
+                  startId="Package\Patients\stg Dim_Patients\Patient Dropped Out - Discharge &amp; Audit.Outputs[OLE DB Command Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output2]"
-                  endId="Package\Patients\stg Dim_Patients\CA Record Type.Inputs[Derived Column Input]"
-                  name="OLE DB Command Output"
-                  startId="Package\Patients\stg Dim_Patients\Log Change in Activity Status.Outputs[OLE DB Command Output]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output]"
                   endId="Package\Patients\stg Dim_Patients\D Record Type.Inputs[Derived Column Input]"
                   name="OLE DB Command Output"
                   startId="Package\Patients\stg Dim_Patients\Patient Discharged - Discharge &amp; Audit.Outputs[OLE DB Command Output]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output1]"
-                  endId="Package\Patients\stg Dim_Patients\DO Record Type.Inputs[Derived Column Input]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output]"
+                  endId="Package\Patients\stg Dim_Patients\Is Already Discharged.Inputs[Conditional Split Input]"
                   name="OLE DB Command Output"
-                  startId="Package\Patients\stg Dim_Patients\Patient Dropped Out - Discharge &amp; Audit.Outputs[OLE DB Command Output]" />
+                  startId="Package\Patients\stg Dim_Patients\Changed Pathology - Discharge &amp; Audit.Outputs[OLE DB Command Output]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output1]"
+                  endId="Package\Patients\stg Dim_Patients\CA Record Type.Inputs[Derived Column Input]"
+                  name="OLE DB Command Output"
+                  startId="Package\Patients\stg Dim_Patients\Log Change in Activity Status.Outputs[OLE DB Command Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[OLE DB Source Output]"
                   endId="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key.Inputs[Input 0]"
@@ -19856,24 +19857,24 @@ LEFT JOIN DWH.dbo.Dim_Period_Base PB ON PB.Insurer_Key = 1 -- The seniority days
                   startId="Package\Patients\stg Dim_Patients\Patients.Outputs[OLE DB Source Output]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Output 03]"
+                  endId="Package\Patients\stg Dim_Patients\LKP Clinic_Key.Inputs[Input 0]"
+                  name="Output 0"
+                  startId="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key.Outputs[Output 0]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Output 0]"
                   endId="Package\Patients\stg Dim_Patients\LKP PT_Key.Inputs[Input 0]"
                   name="Output 0"
                   startId="Package\Patients\stg Dim_Patients\LKP Clinic_Key.Outputs[Output 0]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Output 0]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[Output 01]"
                   endId="Package\Patients\stg Dim_Patients\LKP Pathology_Key.Inputs[Input 0]"
                   name="Output 0"
                   startId="Package\Patients\stg Dim_Patients\LKP Insurer_Key.Outputs[Output 0]" />
                 <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Output 01]"
+                  refId="Package\Patients\stg Dim_Patients.Paths[Output 02]"
                   endId="Package\Patients\stg Dim_Patients\LKP Gender_Key.Inputs[Lookup Input]"
                   name="Output 0"
                   startId="Package\Patients\stg Dim_Patients\LKP Pathology_Key.Outputs[Output 0]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Output 02]"
-                  endId="Package\Patients\stg Dim_Patients\LKP Clinic_Key.Inputs[Input 0]"
-                  name="Output 0"
-                  startId="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key.Outputs[Output 0]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Output 04]"
                   endId="Package\Patients\stg Dim_Patients\LKP Insurer_Key.Inputs[Input 0]"
@@ -19881,14 +19882,14 @@ LEFT JOIN DWH.dbo.Dim_Period_Base PB ON PB.Insurer_Key = 1 -- The seniority days
                   startId="Package\Patients\stg Dim_Patients\LKP PT_Key.Outputs[Output 0]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Union All Output 11]"
-                  endId="Package\Patients\stg Dim_Patients\DB_Create_Date.Inputs[Derived Column Input]"
-                  name="Union All Output 1"
-                  startId="Package\Patients\stg Dim_Patients\Union All.Outputs[Union All Output 1]" />
-                <path
-                  refId="Package\Patients\stg Dim_Patients.Paths[Union All Output 1]"
                   endId="Package\Patients\stg Dim_Patients\Is Suitability Status Changed.Inputs[Conditional Split Input]"
                   name="Union All Output 1"
                   startId="Package\Patients\stg Dim_Patients\Union Suitability Status.Outputs[Union All Output 1]" />
+                <path
+                  refId="Package\Patients\stg Dim_Patients.Paths[Union All Output 1]"
+                  endId="Package\Patients\stg Dim_Patients\DB_Create_Date.Inputs[Derived Column Input]"
+                  name="Union All Output 1"
+                  startId="Package\Patients\stg Dim_Patients\Union All.Outputs[Union All Output 1]" />
                 <path
                   refId="Package\Patients\stg Dim_Patients.Paths[Union All Output 12]"
                   endId="Package\Patients\stg Dim_Patients\Is PT Changed.Inputs[Conditional Split Input]"
@@ -27075,23 +27076,135 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     design-time-name="Package\Patients\stg Dim_Patients">
     <LayoutInfo>
       <GraphLayout
-        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="128" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Patients\stg Dim_Patients\LKP PT_Key"
+          TopLeft="1019.5,311.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Patients\stg Dim_Patients\DCP Record Type"
+          TopLeft="1899.5,1638.5" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Key"
+          TopLeft="1013.5,209.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Patients\stg Dim_Patients\Stg Dim_Patients"
+          TopLeft="521,1943.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Patients\stg Dim_Patients\Is Already Discharged"
+          TopLeft="1790,1521" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Patients\stg Dim_Patients\DB_Create_Date"
+          TopLeft="522.5,1841.5" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Patients\stg Dim_Patients\Update Existing Rows"
+          TopLeft="1280.5,1535.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Pathology_Key"
+          TopLeft="1002.5,515.5" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key"
+          TopLeft="994,107.5" />
+        <NodeLayout
+          Size="202,42"
+          Id="Package\Patients\stg Dim_Patients\Is Activity Status Changed"
+          TopLeft="1270,1433.5" />
+        <NodeLayout
+          Size="162,42"
+          Id="Package\Patients\stg Dim_Patients\Log Change in PT"
+          TopLeft="776,1637.5" />
+        <NodeLayout
+          Size="274,42"
+          Id="Package\Patients\stg Dim_Patients\Lookup Dim_Patients Discharged Patients"
+          TopLeft="675.5,1229.5" />
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Patients\stg Dim_Patients\D Record Type"
+          TopLeft="313.5,1637.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Patients\stg Dim_Patients\UE Record Type"
+          TopLeft="1288,1637.5" />
+        <NodeLayout
+          Size="182,42"
+          Id="Package\Patients\stg Dim_Patients\Is Pathology Changed"
+          TopLeft="1280,1331.5" />
+        <NodeLayout
+          Size="153,42"
+          Id="Package\Patients\stg Dim_Patients\IN Record Type"
+          TopLeft="5.5,1331.5" />
+        <NodeLayout
+          Size="270,42"
+          Id="Package\Patients\stg Dim_Patients\Patient Dropped Out - Discharge &amp; Audit"
+          TopLeft="466,1535.5" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key"
+          TopLeft="967.5,923.5" />
+        <NodeLayout
+          Size="188,42"
+          Id="Package\Patients\stg Dim_Patients\Union Suitability Status"
+          TopLeft="993,1433.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Patients\stg Dim_Patients\CP Record Type"
+          TopLeft="1722,1637.5" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key"
+          TopLeft="991,821.5" />
         <NodeLayout
           Size="122,42"
           Id="Package\Patients\stg Dim_Patients\Union PT"
           TopLeft="810,1433.5" />
         <NodeLayout
-          Size="178,42"
-          Id="Package\Patients\stg Dim_Patients\Lookup Dim_Patients"
-          TopLeft="998,1127.5" />
+          Size="216,42"
+          Id="Package\Patients\stg Dim_Patients\Log Change in Activity Status"
+          TopLeft="1522,1535.5" />
         <NodeLayout
           Size="208,42"
           Id="Package\Patients\stg Dim_Patients\Discharged or Dropped Out"
           TopLeft="497,1433.5" />
         <NodeLayout
-          Size="262,42"
-          Id="Package\Patients\stg Dim_Patients\Patient Discharged - Discharge &amp; Audit"
-          TopLeft="143,1535.5" />
+          Size="116,42"
+          Id="Package\Patients\stg Dim_Patients\Patients"
+          TopLeft="1029,5.5" />
+        <NodeLayout
+          Size="156,42"
+          Id="Package\Patients\stg Dim_Patients\DO Record Type"
+          TopLeft="523,1637.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Patients\stg Dim_Patients\Union All"
+          TopLeft="540.5,1739.5" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Insurer_Key"
+          TopLeft="1008.5,413.5" />
+        <NodeLayout
+          Size="214,42"
+          Id="Package\Patients\stg Dim_Patients\Is Suitability Status Changed"
+          TopLeft="1006,1535.5" />
+        <NodeLayout
+          Size="178,42"
+          Id="Package\Patients\stg Dim_Patients\Lookup Dim_Patients"
+          TopLeft="998,1127.5" />
+        <NodeLayout
+          Size="219,42"
+          Id="Package\Patients\stg Dim_Patients\Matched Active Patients Rows"
+          TopLeft="977.5,1229.5" />
+        <NodeLayout
+          Size="249,42"
+          Id="Package\Patients\stg Dim_Patients\Discharged or Dropped Out Patients"
+          TopLeft="960.5,1026.5" />
         <NodeLayout
           Size="148,42"
           Id="Package\Patients\stg Dim_Patients\Is PT Changed"
@@ -27101,677 +27214,35 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Id="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key"
           TopLeft="985,719.5" />
         <NodeLayout
+          Size="265,42"
+          Id="Package\Patients\stg Dim_Patients\Changed Pathology - Discharge &amp; Audit"
+          TopLeft="1666.5,1433.5" />
+        <NodeLayout
           Size="250,42"
           Id="Package\Patients\stg Dim_Patients\Matched Patients to Discharge Rows"
           TopLeft="671,1331.5" />
         <NodeLayout
           Size="157,42"
-          Id="Package\Patients\stg Dim_Patients\DB_Create_Date"
-          TopLeft="522.5,1841.5" />
-        <NodeLayout
-          Size="157,42"
           Id="Package\Patients\stg Dim_Patients\LKP Gender_Key"
           TopLeft="1008.5,617.5" />
         <NodeLayout
-          Size="219,42"
-          Id="Package\Patients\stg Dim_Patients\Matched Active Patients Rows"
-          TopLeft="977.5,1229.5" />
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Patients\stg Dim_Patients\Is Pathology Changed"
-          TopLeft="1280,1331.5" />
-        <NodeLayout
-          Size="228,42"
-          Id="Package\Patients\stg Dim_Patients\Log Change in Suitability Status"
-          TopLeft="999,1637.5" />
-        <NodeLayout
-          Size="135,42"
-          Id="Package\Patients\stg Dim_Patients\LKP PT_Key"
-          TopLeft="1019.5,311.5" />
-        <NodeLayout
-          Size="149,42"
-          Id="Package\Patients\stg Dim_Patients\D Record Type"
-          TopLeft="313.5,1637.5" />
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Patients\stg Dim_Patients\Update Existing Rows"
-          TopLeft="1280.5,1535.5" />
-        <NodeLayout
-          Size="239,42"
-          Id="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key"
-          TopLeft="967.5,923.5" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Key"
-          TopLeft="1013.5,209.5" />
-        <NodeLayout
-          Size="202,42"
-          Id="Package\Patients\stg Dim_Patients\Is Activity Status Changed"
-          TopLeft="1270,1433.5" />
-        <NodeLayout
-          Size="188,42"
-          Id="Package\Patients\stg Dim_Patients\Union Suitability Status"
-          TopLeft="993,1433.5" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Pathology_Key"
-          TopLeft="1002.5,515.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Patients\stg Dim_Patients\CP Record Type"
-          TopLeft="1722,1637.5" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key"
-          TopLeft="994,107.5" />
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Patients\stg Dim_Patients\UE Record Type"
-          TopLeft="1288,1637.5" />
-        <NodeLayout
-          Size="153,42"
-          Id="Package\Patients\stg Dim_Patients\IN Record Type"
-          TopLeft="5.5,1331.5" />
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Patients\stg Dim_Patients\Patients"
-          TopLeft="1029,5.5" />
-        <NodeLayout
-          Size="274,42"
-          Id="Package\Patients\stg Dim_Patients\Lookup Dim_Patients Discharged Patients"
-          TopLeft="675.5,1229.5" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Patients\stg Dim_Patients\Stg Dim_Patients"
-          TopLeft="521,1943.5" />
-        <NodeLayout
-          Size="216,42"
-          Id="Package\Patients\stg Dim_Patients\Log Change in Activity Status"
-          TopLeft="1522,1535.5" />
-        <NodeLayout
-          Size="121,42"
-          Id="Package\Patients\stg Dim_Patients\Union All"
-          TopLeft="540.5,1739.5" />
-        <NodeLayout
-          Size="162,42"
-          Id="Package\Patients\stg Dim_Patients\Log Change in PT"
-          TopLeft="776,1637.5" />
-        <NodeLayout
-          Size="156,42"
-          Id="Package\Patients\stg Dim_Patients\DO Record Type"
-          TopLeft="523,1637.5" />
-        <NodeLayout
-          Size="192,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key"
-          TopLeft="991,821.5" />
-        <NodeLayout
-          Size="270,42"
-          Id="Package\Patients\stg Dim_Patients\Patient Dropped Out - Discharge &amp; Audit"
-          TopLeft="466,1535.5" />
-        <NodeLayout
-          Size="265,42"
-          Id="Package\Patients\stg Dim_Patients\Changed Pathology - Discharge &amp; Audit"
-          TopLeft="1666.5,1433.5" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Insurer_Key"
-          TopLeft="1008.5,413.5" />
-        <NodeLayout
-          Size="249,42"
-          Id="Package\Patients\stg Dim_Patients\Discharged or Dropped Out Patients"
-          TopLeft="960.5,1026.5" />
+          Size="262,42"
+          Id="Package\Patients\stg Dim_Patients\Patient Discharged - Discharge &amp; Audit"
+          TopLeft="143,1535.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Patients\stg Dim_Patients\CA Record Type"
           TopLeft="1503,1637.5" />
         <NodeLayout
-          Size="214,42"
-          Id="Package\Patients\stg Dim_Patients\Is Suitability Status Changed"
-          TopLeft="1006,1535.5" />
+          Size="228,42"
+          Id="Package\Patients\stg Dim_Patients\Log Change in Suitability Status"
+          TopLeft="999,1637.5" />
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 21]"
-          TopLeft="1087,1271.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="30,162"
-              Start="0,0"
-              End="30,154.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,92.379746835443" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,92.379746835443"
-                    Point2="0,96.379746835443"
-                    Point3="4,96.379746835443" />
-                  <mssgle:LineSegment
-                    End="26,96.379746835443" />
-                  <mssgle:CubicBezierSegment
-                    Point1="26,96.379746835443"
-                    Point2="30,96.379746835443"
-                    Point3="30,100.379746835443" />
-                  <mssgle:LineSegment
-                    End="30,154.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 2]"
-          TopLeft="856.5,1373.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="200.5,59.9999999999998"
-              Start="0,0"
-              End="200.5,52.4999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,21.8678802531465" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,21.8678802531465"
-                    Point2="0,25.8678802531465"
-                    Point3="4,25.8678802531465" />
-                  <mssgle:LineSegment
-                    End="196.5,25.8678802531465" />
-                  <mssgle:CubicBezierSegment
-                    Point1="196.5,25.8678802531465"
-                    Point2="200.5,25.8678802531465"
-                    Point3="200.5,29.8678802531465" />
-                  <mssgle:LineSegment
-                    End="200.5,52.4999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 12]"
-          TopLeft="735.5,1373.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-134.5,60"
-              Start="0,0"
-              End="-134.5,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.4221635883905" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.4221635883905"
-                    Point2="0,20.4221635883905"
-                    Point3="-4,20.4221635883905" />
-                  <mssgle:LineSegment
-                    End="-130.5,20.4221635883905" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-130.5,20.4221635883905"
-                    Point2="-134.5,20.4221635883905"
-                    Point3="-134.5,24.4221635883905" />
-                  <mssgle:LineSegment
-                    End="-134.5,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 1]"
-          TopLeft="1034.25,1271.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-144.25,162"
-              Start="0,0"
-              End="-144.25,154.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,65.572124181993" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,65.572124181993"
-                    Point2="0,69.572124181993"
-                    Point3="-4,69.572124181993" />
-                  <mssgle:LineSegment
-                    End="-140.25,69.572124181993" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-140.25,69.572124181993"
-                    Point2="-144.25,69.572124181993"
-                    Point3="-144.25,73.572124181993" />
-                  <mssgle:LineSegment
-                    End="-144.25,154.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 11]"
-          TopLeft="1368,1577.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output1]"
-          TopLeft="768.166666666667,1271.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-686.166666666667,60"
-              Start="0,0"
-              End="-686.166666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2089985486212" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2089985486212"
-                    Point2="0,24.2089985486212"
-                    Point3="-4,24.2089985486212" />
-                  <mssgle:LineSegment
-                    End="-682.166666666667,24.2089985486212" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-682.166666666667,24.2089985486212"
-                    Point2="-686.166666666667,24.2089985486212"
-                    Point3="-686.166666666667,28.2089985486212" />
-                  <mssgle:LineSegment
-                    End="-686.166666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-398.889720052083,29.2089985486212,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output]"
-          TopLeft="1058.66666666667,1169.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-246.166666666667,60"
-              Start="0,0"
-              End="-246.166666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.3207126948775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.3207126948775"
-                    Point2="0,24.3207126948775"
-                    Point3="-4,24.3207126948775" />
-                  <mssgle:LineSegment
-                    End="-242.166666666667,24.3207126948775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-242.166666666667,24.3207126948775"
-                    Point2="-246.166666666667,24.3207126948775"
-                    Point3="-246.166666666667,28.3207126948775" />
-                  <mssgle:LineSegment
-                    End="-246.166666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-178.889720052084,29.3207126948775,111.6127734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output5]"
-          TopLeft="1087,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
-          TopLeft="856.833333333333,1271.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-60.8333333333333,60"
-              Start="0,0"
-              End="-60.8333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2089985486212" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2089985486212"
-                    Point2="0,24.2089985486212"
-                    Point3="-4,24.2089985486212" />
-                  <mssgle:LineSegment
-                    End="-56.8333333333333,24.2089985486212" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-56.8333333333333,24.2089985486212"
-                    Point2="-60.8333333333333,24.2089985486212"
-                    Point3="-60.8333333333333,28.2089985486212" />
-                  <mssgle:LineSegment
-                    End="-60.8333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-78.6080533854167,29.2089985486212,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
-          TopLeft="1086,965.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,61"
-              Start="0,0"
-              End="0,53.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,53.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
-          TopLeft="1087,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
-          TopLeft="1087,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
-          TopLeft="1115.33333333333,1169.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-28.3333333333333,60"
-              Start="0,0"
-              End="-28.3333333333333,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.3207126948775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.3207126948775"
-                    Point2="0,24.3207126948775"
-                    Point3="-4,24.3207126948775" />
-                  <mssgle:LineSegment
-                    End="-24.3333333333333,24.3207126948775" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-24.3333333333333,24.3207126948775"
-                    Point2="-28.3333333333333,24.3207126948775"
-                    Point3="-28.3333333333333,28.3207126948775" />
-                  <mssgle:LineSegment
-                    End="-28.3333333333333,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-62.3580533854167,29.3207126948775,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Dropped Out]"
-          TopLeft="634.333333333333,1475.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-33.3333333333333,59.9999999999998"
-              Start="0,0"
-              End="-33.3333333333333,52.4999999999998">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-29.3333333333333,24.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-29.3333333333333,24.2748091603053"
-                    Point2="-33.3333333333333,24.2748091603053"
-                    Point3="-33.3333333333333,28.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-33.3333333333333,52.4999999999998" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-45.6880533854167,29.2748091603053,58.0427734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Discharged]"
-          TopLeft="567.666666666667,1475.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-293.666666666667,60"
-              Start="0,0"
-              End="-293.666666666667,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.2748091603053"
-                    Point2="0,24.2748091603053"
-                    Point3="-4,24.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-289.666666666667,24.2748091603053" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-289.666666666667,24.2748091603053"
-                    Point2="-293.666666666667,24.2748091603053"
-                    Point3="-293.666666666667,28.2748091603053" />
-                  <mssgle:LineSegment
-                    End="-293.666666666667,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-171.576321614584,29.2748091603053,49.4859765625,11.6630859375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
-          TopLeft="1799,1679.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-1157.64285714286,60"
-              Start="0,0"
-              End="-1157.64285714286,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.0132860938884" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,41.0132860938884"
-                    Point2="0,45.0132860938884"
-                    Point3="-4,45.0132860938884" />
-                  <mssgle:LineSegment
-                    End="-1153.64285714286,45.0132860938884" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-1153.64285714286,45.0132860938884"
-                    Point2="-1157.64285714286,45.0132860938884"
-                    Point3="-1157.64285714286,49.0132860938884" />
-                  <mssgle:LineSegment
-                    End="-1157.64285714286,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
-          TopLeft="82,1373.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="478.642857142857,366"
-              Start="0,0"
-              End="478.642857142857,358.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,343.581045172719" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,343.581045172719"
-                    Point2="0,347.581045172719"
-                    Point3="4,347.581045172719" />
-                  <mssgle:LineSegment
-                    End="474.642857142857,347.581045172719" />
-                  <mssgle:CubicBezierSegment
-                    Point1="474.642857142857,347.581045172719"
-                    Point2="478.642857142857,347.581045172719"
-                    Point3="478.642857142857,351.581045172719" />
-                  <mssgle:LineSegment
-                    End="478.642857142857,358.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output2]"
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output5]"
           TopLeft="1580,1679.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="-954.785714285714,60"
               Start="0,0"
               End="-954.785714285714,52.5">
@@ -27801,79 +27272,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output7]"
-          TopLeft="1365,1679.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-755.928571428571,60"
-              Start="0,0"
-              End="-755.928571428571,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.1442125237192" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.1442125237192"
-                    Point2="0,32.1442125237192"
-                    Point3="-4,32.1442125237192" />
-                  <mssgle:LineSegment
-                    End="-751.928571428571,32.1442125237192" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-751.928571428571,32.1442125237192"
-                    Point2="-755.928571428571,32.1442125237192"
-                    Point3="-755.928571428571,36.1442125237192" />
-                  <mssgle:LineSegment
-                    End="-755.928571428571,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output4]"
-          TopLeft="601,1679.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-8.07142857142856,60"
-              Start="0,0"
-              End="-8.07142857142856,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,28.1442125237192" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,28.1442125237192"
-                    Point2="0,32.1442125237192"
-                    Point3="-4,32.1442125237192" />
-                  <mssgle:LineSegment
-                    End="-4.07142857142856,32.1442125237192" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-4.07142857142856,32.1442125237192"
-                    Point2="-8.07142857142856,32.1442125237192"
-                    Point3="-8.07142857142856,36.1442125237192" />
-                  <mssgle:LineSegment
-                    End="-8.07142857142856,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output5]"
           TopLeft="388,1679.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="188.785714285714,59.9999999999998"
               Start="0,0"
               End="188.785714285714,52.4999999999998">
@@ -27903,11 +27306,45 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output6]"
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output3]"
+          TopLeft="601,1679.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-8.07142857142856,60"
+              Start="0,0"
+              End="-8.07142857142856,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1442125237192" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1442125237192"
+                    Point2="0,32.1442125237192"
+                    Point3="-4,32.1442125237192" />
+                  <mssgle:LineSegment
+                    End="-4.07142857142856,32.1442125237192" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-4.07142857142856,32.1442125237192"
+                    Point2="-8.07142857142856,32.1442125237192"
+                    Point3="-8.07142857142856,36.1442125237192" />
+                  <mssgle:LineSegment
+                    End="-8.07142857142856,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output2]"
           TopLeft="1086,1068.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,59"
               Start="0,0"
               End="0,51.5">
@@ -27925,11 +27362,45 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output8]"
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
+          TopLeft="1365,1679.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-755.928571428571,60"
+              Start="0,0"
+              End="-755.928571428571,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1442125237192" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1442125237192"
+                    Point2="0,32.1442125237192"
+                    Point3="-4,32.1442125237192" />
+                  <mssgle:LineSegment
+                    End="-751.928571428571,32.1442125237192" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-751.928571428571,32.1442125237192"
+                    Point2="-755.928571428571,32.1442125237192"
+                    Point3="-755.928571428571,36.1442125237192" />
+                  <mssgle:LineSegment
+                    End="-755.928571428571,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
           TopLeft="601,1883.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -27951,7 +27422,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="1403.33333333333,1475.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="226.666666666667,60"
               Start="0,0"
               End="226.666666666667,52.5">
@@ -27987,7 +27458,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="1113,1577.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -28011,7 +27482,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="871,1577.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="-14,60"
               Start="0,0"
               End="-14,52.5">
@@ -28047,7 +27518,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="1400,1373.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="399,60"
               Start="0,0"
               End="399,52.5">
@@ -28079,11 +27550,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Already Discharged]"
+          TopLeft="1910,1563">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="70,75.5"
+              Start="0,0"
+              End="70,68">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.5947712418301" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.5947712418301"
+                    Point2="0,30.5947712418301"
+                    Point3="4,30.5947712418301" />
+                  <mssgle:LineSegment
+                    End="66,30.5947712418301" />
+                  <mssgle:CubicBezierSegment
+                    Point1="66,30.5947712418301"
+                    Point2="70,30.5947712418301"
+                    Point3="70,34.5947712418301" />
+                  <mssgle:LineSegment
+                    End="70,68" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-8.1560546875,35.5947712418301,86.312109375,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Patients\stg Dim_Patients.Paths[Union All Output 12]"
           TopLeft="871,1475.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -28102,32 +27609,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Patients\stg Dim_Patients.Paths[Union All Output 11]"
-          TopLeft="601,1781.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Union All Output 1]"
           TopLeft="1087,1475.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="26,60"
               Start="0,0"
               End="26,52.5">
@@ -28157,77 +27642,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 03]"
-          TopLeft="1087,251.5">
+          Id="Package\Patients\stg Dim_Patients.Paths[Union All Output 1]"
+          TopLeft="601,1781.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 0]"
-          TopLeft="1087,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 01]"
-          TopLeft="1087,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 02]"
-          TopLeft="1087,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -28249,7 +27668,95 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="1087,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 03]"
+          TopLeft="1087,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 02]"
+          TopLeft="1087,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 01]"
+          TopLeft="1087,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 0]"
+          TopLeft="1087,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -28271,7 +27778,29 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="1087,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output3]"
+          TopLeft="601,1577.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -28290,66 +27819,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output2]"
-          TopLeft="1630,1577.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-50,60"
-              Start="0,0"
-              End="-50,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,26" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
-                  <mssgle:LineSegment
-                    End="-46,30" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-46,30"
-                    Point2="-50,30"
-                    Point3="-50,34" />
-                  <mssgle:LineSegment
-                    End="-50,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output1]"
-          TopLeft="601,1577.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output]"
           TopLeft="274,1577.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="114,60"
               Start="0,0"
               End="114,52.5">
@@ -28379,38 +27852,106 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Not Changed]"
-          TopLeft="1338.66666666667,1475.5">
+          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output1]"
+          TopLeft="1630,1577.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="32.3333333333333,60"
+              StartConnector="{assembly:Null}"
+              EndConnector="-50,60"
               Start="0,0"
-              End="32.3333333333333,52.5">
+              End="-50,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.2829076620825" />
+                    End="0,26" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,20.2829076620825"
-                    Point2="0,24.2829076620825"
-                    Point3="4,24.2829076620825" />
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
                   <mssgle:LineSegment
-                    End="28.3333333333333,24.2829076620825" />
+                    End="-46,30" />
                   <mssgle:CubicBezierSegment
-                    Point1="28.3333333333333,24.2829076620825"
-                    Point2="32.3333333333333,24.2829076620825"
-                    Point3="32.3333333333333,28.2829076620825" />
+                    Point1="-46,30"
+                    Point2="-50,30"
+                    Point3="-50,34" />
                   <mssgle:LineSegment
-                    End="32.3333333333333,52.5" />
+                    End="-50,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output]"
+          TopLeft="1799,1475.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82,45.5"
+              Start="0,0"
+              End="82,38">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.75"
+                    Point2="0,22.75"
+                    Point3="4,22.75" />
+                  <mssgle:LineSegment
+                    End="78,22.75" />
+                  <mssgle:CubicBezierSegment
+                    Point1="78,22.75"
+                    Point2="82,22.75"
+                    Point3="82,26.75" />
+                  <mssgle:LineSegment
+                    End="82,38" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Not Discharged]"
+          TopLeft="1881,1563">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82,74.5"
+              Start="0,0"
+              End="-82,67">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.25"
+                    Point2="0,37.25"
+                    Point3="-4,37.25" />
+                  <mssgle:LineSegment
+                    End="-78,37.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-78,37.25"
+                    Point2="-82,37.25"
+                    Point3="-82,41.25" />
+                  <mssgle:LineSegment
+                    End="-82,67" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-12.7863216145833,29.2829076620825,57.9059765625,11.6630859375"
+              BoundingBox="-75.02798828125,42.25,68.0559765625,11.6630859375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -28419,7 +27960,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="1342,1373.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="29,60"
               Start="0,0"
               End="29,52.5">
@@ -28451,11 +27992,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Not Changed]"
+          TopLeft="1338.66666666667,1475.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.3333333333333,60"
+              Start="0,0"
+              End="32.3333333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2829076620825" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2829076620825"
+                    Point2="0,24.2829076620825"
+                    Point3="4,24.2829076620825" />
+                  <mssgle:LineSegment
+                    End="28.3333333333333,24.2829076620825" />
+                  <mssgle:CubicBezierSegment
+                    Point1="28.3333333333333,24.2829076620825"
+                    Point2="32.3333333333333,24.2829076620825"
+                    Point3="32.3333333333333,28.2829076620825" />
+                  <mssgle:LineSegment
+                    End="32.3333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-12.7863216145833,29.2829076620825,57.9059765625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 4]"
           TopLeft="1139.75,1271.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="231.25,60"
               Start="0,0"
               End="231.25,52.5">
@@ -28489,7 +28066,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="796,1373.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="56,59.9999999999998"
               Start="0,0"
               End="56,52.4999999999998">
@@ -28518,36 +28095,32 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="182,42"
-          Id="Package\Patients\stg Dim_Patients\Is Already Discharged"
-          TopLeft="1790,1521" />
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Command Output3]"
-          TopLeft="1799,1475.5">
+          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 21]"
+          TopLeft="1087,1271.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="82,45.5"
+              StartConnector="{assembly:Null}"
+              EndConnector="30,162"
               Start="0,0"
-              End="82,38">
+              End="30,154.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,18.75" />
+                    End="0,92.379746835443" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,18.75"
-                    Point2="0,22.75"
-                    Point3="4,22.75" />
+                    Point1="0,92.379746835443"
+                    Point2="0,96.379746835443"
+                    Point3="4,96.379746835443" />
                   <mssgle:LineSegment
-                    End="78,22.75" />
+                    End="26,96.379746835443" />
                   <mssgle:CubicBezierSegment
-                    Point1="78,22.75"
-                    Point2="82,22.75"
-                    Point3="82,26.75" />
+                    Point1="26,96.379746835443"
+                    Point2="30,96.379746835443"
+                    Point3="30,100.379746835443" />
                   <mssgle:LineSegment
-                    End="82,38" />
+                    End="30,154.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -28556,88 +28129,448 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Patients\stg Dim_Patients\DCP Record Type"
-          TopLeft="1899.5,1638.5" />
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Not Discharged]"
-          TopLeft="1881,1563">
+          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 2]"
+          TopLeft="856.5,1373.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="-82,74.5"
+              StartConnector="{assembly:Null}"
+              EndConnector="200.5,59.9999999999998"
               Start="0,0"
-              End="-82,67">
+              End="200.5,52.4999999999998">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.25" />
+                    End="0,21.8678802531465" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,33.25"
-                    Point2="0,37.25"
-                    Point3="-4,37.25" />
+                    Point1="0,21.8678802531465"
+                    Point2="0,25.8678802531465"
+                    Point3="4,25.8678802531465" />
                   <mssgle:LineSegment
-                    End="-78,37.25" />
+                    End="196.5,25.8678802531465" />
                   <mssgle:CubicBezierSegment
-                    Point1="-78,37.25"
-                    Point2="-82,37.25"
-                    Point3="-82,41.25" />
+                    Point1="196.5,25.8678802531465"
+                    Point2="200.5,25.8678802531465"
+                    Point3="200.5,29.8678802531465" />
                   <mssgle:LineSegment
-                    End="-82,67" />
+                    End="200.5,52.4999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 12]"
+          TopLeft="735.5,1373.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-134.5,60"
+              Start="0,0"
+              End="-134.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.4221635883905" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.4221635883905"
+                    Point2="0,20.4221635883905"
+                    Point3="-4,20.4221635883905" />
+                  <mssgle:LineSegment
+                    End="-130.5,20.4221635883905" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-130.5,20.4221635883905"
+                    Point2="-134.5,20.4221635883905"
+                    Point3="-134.5,24.4221635883905" />
+                  <mssgle:LineSegment
+                    End="-134.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 11]"
+          TopLeft="1368,1577.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Multicast Output 1]"
+          TopLeft="1034.25,1271.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-144.25,162"
+              Start="0,0"
+              End="-144.25,154.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,65.572124181993" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,65.572124181993"
+                    Point2="0,69.572124181993"
+                    Point3="-4,69.572124181993" />
+                  <mssgle:LineSegment
+                    End="-140.25,69.572124181993" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-140.25,69.572124181993"
+                    Point2="-144.25,69.572124181993"
+                    Point3="-144.25,73.572124181993" />
+                  <mssgle:LineSegment
+                    End="-144.25,154.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output1]"
+          TopLeft="1058.66666666667,1169.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-246.166666666667,60"
+              Start="0,0"
+              End="-246.166666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3207126948775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3207126948775"
+                    Point2="0,24.3207126948775"
+                    Point3="-4,24.3207126948775" />
+                  <mssgle:LineSegment
+                    End="-242.166666666667,24.3207126948775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-242.166666666667,24.3207126948775"
+                    Point2="-246.166666666667,24.3207126948775"
+                    Point3="-246.166666666667,28.3207126948775" />
+                  <mssgle:LineSegment
+                    End="-246.166666666667,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-75.02798828125,42.25,68.0559765625,11.6630859375"
+              BoundingBox="-178.889720052084,29.3207126948775,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Already Discharged]"
-          TopLeft="1910,1563">
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup No Match Output]"
+          TopLeft="768.166666666667,1271.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
-              EndConnector="70,75.5"
+              StartConnector="{assembly:Null}"
+              EndConnector="-686.166666666667,60"
               Start="0,0"
-              End="70,68">
+              End="-686.166666666667,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26.5947712418301" />
+                    End="0,20.2089985486212" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26.5947712418301"
-                    Point2="0,30.5947712418301"
-                    Point3="4,30.5947712418301" />
+                    Point1="0,20.2089985486212"
+                    Point2="0,24.2089985486212"
+                    Point3="-4,24.2089985486212" />
                   <mssgle:LineSegment
-                    End="66,30.5947712418301" />
+                    End="-682.166666666667,24.2089985486212" />
                   <mssgle:CubicBezierSegment
-                    Point1="66,30.5947712418301"
-                    Point2="70,30.5947712418301"
-                    Point3="70,34.5947712418301" />
+                    Point1="-682.166666666667,24.2089985486212"
+                    Point2="-686.166666666667,24.2089985486212"
+                    Point3="-686.166666666667,28.2089985486212" />
                   <mssgle:LineSegment
-                    End="70,68" />
+                    End="-686.166666666667,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-8.1560546875,35.5947712418301,86.312109375,11.6630859375"
+              BoundingBox="-398.889720052083,29.2089985486212,111.6127734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output3]"
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output5]"
+          TopLeft="1087,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
+          TopLeft="1086,965.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,61"
+              Start="0,0"
+              End="0,53.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,53.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.9453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
+          TopLeft="1087,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
+          TopLeft="1087,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
+          TopLeft="1115.33333333333,1169.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-28.3333333333333,60"
+              Start="0,0"
+              End="-28.3333333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3207126948775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3207126948775"
+                    Point2="0,24.3207126948775"
+                    Point3="-4,24.3207126948775" />
+                  <mssgle:LineSegment
+                    End="-24.3333333333333,24.3207126948775" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-24.3333333333333,24.3207126948775"
+                    Point2="-28.3333333333333,24.3207126948775"
+                    Point3="-28.3333333333333,28.3207126948775" />
+                  <mssgle:LineSegment
+                    End="-28.3333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-62.3580533854167,29.3207126948775,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
+          TopLeft="856.833333333333,1271.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-60.8333333333333,60"
+              Start="0,0"
+              End="-60.8333333333333,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2089985486212" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2089985486212"
+                    Point2="0,24.2089985486212"
+                    Point3="-4,24.2089985486212" />
+                  <mssgle:LineSegment
+                    End="-56.8333333333333,24.2089985486212" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-56.8333333333333,24.2089985486212"
+                    Point2="-60.8333333333333,24.2089985486212"
+                    Point3="-60.8333333333333,28.2089985486212" />
+                  <mssgle:LineSegment
+                    End="-60.8333333333333,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-78.6080533854167,29.2089985486212,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Dropped Out]"
+          TopLeft="634.333333333333,1475.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-33.3333333333333,59.9999999999998"
+              Start="0,0"
+              End="-33.3333333333333,52.4999999999998">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2748091603053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2748091603053"
+                    Point2="0,24.2748091603053"
+                    Point3="-4,24.2748091603053" />
+                  <mssgle:LineSegment
+                    End="-29.3333333333333,24.2748091603053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.3333333333333,24.2748091603053"
+                    Point2="-33.3333333333333,24.2748091603053"
+                    Point3="-33.3333333333333,28.2748091603053" />
+                  <mssgle:LineSegment
+                    End="-33.3333333333333,52.4999999999998" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-45.6880533854167,29.2748091603053,58.0427734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Discharged]"
+          TopLeft="567.666666666667,1475.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-293.666666666667,60"
+              Start="0,0"
+              End="-293.666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2748091603053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2748091603053"
+                    Point2="0,24.2748091603053"
+                    Point3="-4,24.2748091603053" />
+                  <mssgle:LineSegment
+                    End="-289.666666666667,24.2748091603053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-289.666666666667,24.2748091603053"
+                    Point2="-293.666666666667,24.2748091603053"
+                    Point3="-293.666666666667,28.2748091603053" />
+                  <mssgle:LineSegment
+                    End="-293.666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-171.576321614584,29.2748091603053,49.4859765625,11.6630859375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output8]"
           TopLeft="1980,1680.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="-1336.625,59"
               Start="0,0"
               End="-1336.625,51.5">
@@ -28658,6 +28591,74 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point3="-1336.625,49.3990461049285" />
                   <mssgle:LineSegment
                     End="-1336.625,51.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output7]"
+          TopLeft="1799,1679.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-1157.64285714286,60"
+              Start="0,0"
+              End="-1157.64285714286,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,41.0132860938884" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,41.0132860938884"
+                    Point2="0,45.0132860938884"
+                    Point3="-4,45.0132860938884" />
+                  <mssgle:LineSegment
+                    End="-1153.64285714286,45.0132860938884" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-1153.64285714286,45.0132860938884"
+                    Point2="-1157.64285714286,45.0132860938884"
+                    Point3="-1157.64285714286,49.0132860938884" />
+                  <mssgle:LineSegment
+                    End="-1157.64285714286,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output6]"
+          TopLeft="82,1373.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="478.642857142857,366"
+              Start="0,0"
+              End="478.642857142857,358.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,343.581045172719" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,343.581045172719"
+                    Point2="0,347.581045172719"
+                    Point3="4,347.581045172719" />
+                  <mssgle:LineSegment
+                    End="474.642857142857,347.581045172719" />
+                  <mssgle:CubicBezierSegment
+                    Point1="474.642857142857,347.581045172719"
+                    Point2="478.642857142857,347.581045172719"
+                    Point3="478.642857142857,351.581045172719" />
+                  <mssgle:LineSegment
+                    End="478.642857142857,358.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
