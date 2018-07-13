@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Facts"
   DTS:PackageType="5"
-  DTS:VersionBuild="70"
-  DTS:VersionGUID="{1D5E72DF-EB48-479D-897A-2908F510C19A}">
+  DTS:VersionBuild="71"
+  DTS:VersionGUID="{6CB0AEF7-7C0E-4631-8AA9-C8C565688A6A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADSrjNm8nnEEwW89l7PrzfTAAAAAASAAACgAAAAEAAAADQX3QV408MfpqL+XxLcjFMQAAAAo/R32z9sqUOjC2lLoBCZExQAAAB3Y21zfktbvdPvpNxKgpjGKy7fUA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADnmh8E0803sfMa0+iR6yFqAAAAAASAAACgAAAAEAAAAPV85tMqv6uleD3Bl2gOuL8QAAAAYmloNegNSV2Ox/4MWqElFBQAAABa+6016mZsXCfqu84bqpydsLG2NQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADWf8kVXd6VVe7qYdw/Ry2CAAAAAASAAACgAAAAEAAAAL7vhmcod4QTPmqV+hjhbMEQAAAAgyyfg965uqjFmjeo4YiJZxQAAAA5Qo+zK+OOhiR9AHzCFGQjP0tGtA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABx/Yb6S3Eana8KmB3UVcL1AAAAAASAAACgAAAAEAAAAOLa2SqSifV4l0l89qK5Y2MQAAAAxgpXkNeEPk1zWrR+n2/IpBQAAADK46IJ4PipTi1TbIv0d6qOpT701g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADRecyBTppHRTfKANH3S4oxAAAAAASAAACgAAAAEAAAAEQPst9+/KqUdWYpFylVChAQAAAA5iZeSkfBjq3zTVpqS5byghQAAAAH9mVGMWEIiEwh+EKYZkCcAoVq0g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABIzcn/v77D3ERKN13eRQsAAAAAAASAAACgAAAAEAAAAIsVVIVJOMBPkqkbRNqhT8wQAAAANKMarTfcZG68WZUaHpbO0RQAAAB8T/+8hCzH0evLgL4fFyC7Jp4kWQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAzT0Ds1PNA2iucSAFOGExvAAAAAASAAACgAAAAEAAAAH5nlavLIfjd/ssoIMl5nboQAAAAqQIl+j+D5qohHlH/ZrNShRQAAADCX4FLwUZVadAlSqV9yZZPHs7LMg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAlM7B7H1otxnNyx8VfhQOwAAAAAASAAACgAAAAEAAAAIB/wOG+G0C0oO2Yj6BwjuUQAAAA4t5nAi2+5lOrzWrwmb15IRQAAAA5CuAFgis/ljP1c5ThDK1P3WukeA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -531,7 +531,8 @@ INNER JOIN dbo.PatientsVisits PV ON G.ClinicBranchID = PV.ClinicBranchID AND G.P
 INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON PV.ClinicBranchID = CB.Clinic_Branch_ID
 INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Gait' AND LR.Source_Name = 'dbo.GMTests' 
 LEFT JOIN DWH.dbo.Dim_Patients DP ON PV.PatientId = DP.Patient_Src_ID AND PV.ClinicBranchID = DP.Clinic_Branch_ID 
-								AND CONVERT(date,PV.[Date]) BETWEEN DP.IC_Date AND DP.Last_Visit_Date -- for discharged patients 
+								AND ((DP.Pathology_Change_Date IS NOT NULL AND CONVERT(date,PV.[Date]) &gt;= DP.IC_Date AND CONVERT(date,PV.[Date]) &lt; DP.Last_Visit_Date) -- change pathology
+								  OR (DP.Pathology_Change_Date IS NULL AND CONVERT(date,PV.[Date]) BETWEEN DP.IC_Date AND DP.Last_Visit_Date)) -- discharged 
 LEFT JOIN DWH.dbo.Dim_Gender DG ON DP.Gender_Key = DG.Gender_Key
 LEFT JOIN DWH.dbo.Dim_Side DS ON DP.More_Symptomatic_Side_Key = DS.Side_Key
 LEFT JOIN ext.Gait_FC_Grades FC1 ON FC1.Grade_Name = 'Grade 1' AND DG.Gender = FC1.Gender_Name AND FC1.R_Stride_Len_Min &lt; G.M_R_StridLen
@@ -1976,7 +1977,7 @@ where [refTable].[Grade_Name] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\1463:invalid};</property>
+                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\473:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
