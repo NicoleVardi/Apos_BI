@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Facts"
   DTS:PackageType="5"
-  DTS:VersionBuild="71"
-  DTS:VersionGUID="{6CB0AEF7-7C0E-4631-8AA9-C8C565688A6A}">
+  DTS:VersionBuild="81"
+  DTS:VersionGUID="{F306DA5B-66A9-4D11-AE75-2F57D9FFA4A0}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADnmh8E0803sfMa0+iR6yFqAAAAAASAAACgAAAAEAAAAPV85tMqv6uleD3Bl2gOuL8QAAAAYmloNegNSV2Ox/4MWqElFBQAAABa+6016mZsXCfqu84bqpydsLG2NQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAByqW2Tb7aSils1pdsCgzHIAAAAAASAAACgAAAAEAAAAFkLTNzOMFA5xP15W6NN7TMQAAAAh0/qZFOKxk0PGXBKcd8DIhQAAABzGlG9/CzPCTWuVTN5EAKVL3KmKg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABx/Yb6S3Eana8KmB3UVcL1AAAAAASAAACgAAAAEAAAAOLa2SqSifV4l0l89qK5Y2MQAAAAxgpXkNeEPk1zWrR+n2/IpBQAAADK46IJ4PipTi1TbIv0d6qOpT701g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABTwjeqc5o0wC3d6SQkOWz/AAAAAASAAACgAAAAEAAAAGc856b8uQgMnEp5YsHQD2AQAAAAi7OabsqURM4xn/znM47QDxQAAADsIBg6B9xOHOvueajXUfGQ3LPLIA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABIzcn/v77D3ERKN13eRQsAAAAAAASAAACgAAAAEAAAAIsVVIVJOMBPkqkbRNqhT8wQAAAANKMarTfcZG68WZUaHpbO0RQAAAB8T/+8hCzH0evLgL4fFyC7Jp4kWQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACewW9RV8lQajEFPOO9t6ekAAAAAASAAACgAAAAEAAAADizBHbRDpovC+u6u3xOVEwQAAAAeXpS+ZY//VvarRioRBY6wxQAAAA2ShgGhYSsKHem6tub17baJGWGdg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAlM7B7H1otxnNyx8VfhQOwAAAAAASAAACgAAAAEAAAAIB/wOG+G0C0oO2Yj6BwjuUQAAAA4t5nAi2+5lOrzWrwmb15IRQAAAA5CuAFgis/ljP1c5ThDK1P3WukeA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABVlgYFWhjEuVrEguRwesgIAAAAAASAAACgAAAAEAAAAGOjRa/vpCmrNsLRalr2w7YQAAAAzjUfZQ0fUbx3A0DZbYu4KxQAAADJ0q+ngF9jjRpF8wgnEXiU9WcviQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -248,7 +248,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -272,7 +272,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -302,7 +302,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3228,7 +3228,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Update IC Data in Dim Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3245,12 +3245,12 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Update Last Refresh"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE LR&#xA;SET Last_Record_ID = G.Last_Record_ID&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Gait_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Gait G&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) G ON LR.Clinic_Branch_Key = G.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Gait' AND Source_Name = 'dbo.GMTests';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="UPDATE LR&#xA;SET Last_Record_ID = G.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Gait_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Gait G&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) G ON LR.Clinic_Branch_Key = G.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Gait' AND Source_Name = 'dbo.GMTests';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -3316,7 +3316,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3340,7 +3340,7 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3370,12 +3370,12 @@ where [refTable].[Questionnaire] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="MERGE Fact_Patient_Questionnaires as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; Q.Visit_ID&#xA;&#x9;&#x9;,Q.Clinic_Branch_Key&#xA;&#x9;&#x9;,PV.Visit_Src_ID&#xA;&#x9;&#x9;,PV.Clinic_Key&#xA;&#x9;&#x9;,PV.Visit_Date&#xA;&#x9;&#x9;,PV.Patient_Key&#xA;&#x9;&#x9;,PV.PT_Key&#xA;&#x9;&#x9;,PV.Prev_PT_Key&#xA;&#x9;&#x9;,PV.Pathology_Key&#xA;&#x9;&#x9;,Q.Questionnaire_Category_Key&#xA;&#x9;&#x9;,Q.Score&#xA;&#x9;&#x9;,PV.Is_IC&#xA;&#x9;&#x9;,PV.IC_Visit_ID&#xA;&#x9;&#x9;,PV.IC_Date&#xA;&#x9;&#x9;,PV.Days_from_IC&#xA;&#x9;&#x9;,PV.Previous_Visit_Date&#xA;&#x9;&#x9;,PV.Previous_Visit_ID&#xA;&#x9;&#x9;,PV.Days_from_Prev_Visit&#xA;&#x9;FROM STG.dbo.Fact_Patient_Visits PV&#xA;&#x9;INNER JOIN STG.dbo.Patient_Questionnaires Q ON Q.Visit_ID = PV.Visit_ID&#xA;&#x9;) as S ON T.Visit_ID = S.Visit_ID AND T.Questionnaire_Category_Key = S.Questionnaire_Category_Key&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Clinic_Branch_Key = S.Clinic_Branch_Key,&#xA;&#x9;T.Visit_Src_ID = S.Visit_Src_ID,&#xA;&#x9;T.Clinic_Key = S.Clinic_Key,&#xA;&#x9;T.Visit_Date = S.Visit_Date,&#xA;&#x9;T.Patient_Key = S.Patient_Key,&#xA;&#x9;T.PT_Key = S.PT_Key,&#xA;&#x9;T.Prev_PT_Key = S.Prev_PT_Key,&#xA;&#x9;T.Pathology_Key = S.Pathology_Key,&#xA;&#x9;T.Score = S.Score,&#xA;&#x9;T.Is_IC = S.Is_IC,&#xA;&#x9;T.IC_Visit_ID = S.IC_Visit_ID,&#xA;&#x9;T.IC_Date = S.IC_Date,&#xA;&#x9;T.Days_from_IC = S.Days_from_IC,&#xA;&#x9;T.Previous_Visit_Date = S.Previous_Visit_Date,&#xA;&#x9;T.Previous_Visit_ID = S.Previous_Visit_ID,&#xA;&#x9;T.Days_from_Prev_Visit = S.Days_from_Prev_Visit,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Visit_ID, Clinic_Branch_Key, Visit_Src_ID, Clinic_Key, Visit_Date, Patient_Key, PT_Key, Prev_PT_Key, Pathology_Key, Questionnaire_Category_Key, Score, &#xA;&#x9;&#x9;&#x9;Is_IC, IC_Visit_ID, IC_Date, Days_from_IC, Previous_Visit_Date, Previous_Visit_ID, Days_from_Prev_Visit, DB_Create_Date, DB_Update_Date)&#xA;&#x9;VALUES (S.Visit_ID, S.Clinic_Branch_Key, S.Visit_Src_ID, S.Clinic_Key, S.Visit_Date, S.Patient_Key, S.PT_Key, S.Prev_PT_Key, S.Pathology_Key, S.Questionnaire_Category_Key, S.Score, &#xA;&#x9;&#x9;&#x9;S.Is_IC, S.IC_Visit_ID, S.IC_Date, S.Days_from_IC, S.Previous_Visit_Date, S.Previous_Visit_ID, S.Days_from_Prev_Visit, GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE Fact_Patient_Questionnaires as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; Q.Visit_ID&#xA;&#x9;&#x9;,Q.Clinic_Branch_Key&#xA;&#x9;&#x9;,PV.Visit_Src_ID&#xA;&#x9;&#x9;,PV.Clinic_Key&#xA;&#x9;&#x9;,PV.Visit_Date&#xA;&#x9;&#x9;,PV.Patient_Key&#xA;&#x9;&#x9;,PV.PT_Key&#xA;&#x9;&#x9;,PV.Prev_PT_Key&#xA;&#x9;&#x9;,PV.Pathology_Key&#xA;&#x9;&#x9;,Q.Questionnaire_Category_Key&#xA;&#x9;&#x9;,IC.IC_Score&#xA;&#x9;&#x9;,Q.Score&#xA;&#x9;&#x9;,CASE WHEN PV.Is_IC = 1 THEN 0 ELSE Q.Score - IC.IC_Score END as Score_Change &#xA;&#x9;&#x9;,CASE WHEN IC.IC_Score = 0 OR PV.Is_IC = 1 THEN NULL ELSE (Q.Score - IC.IC_Score) / IC.IC_Score END as Score_Change_Percent&#xA;&#x9;&#x9;,PV.Is_IC&#xA;&#x9;&#x9;,PV.IC_Visit_ID&#xA;&#x9;&#x9;,PV.IC_Date&#xA;&#x9;&#x9;,PV.Days_from_IC&#xA;&#x9;&#x9;,PV.Previous_Visit_Date&#xA;&#x9;&#x9;,PV.Previous_Visit_ID&#xA;&#x9;&#x9;,PV.Days_from_Prev_Visit&#xA;&#x9;FROM STG.dbo.Fact_Patient_Visits PV&#xA;&#x9;INNER JOIN STG.dbo.Patient_Questionnaires Q ON Q.Visit_ID = PV.Visit_ID&#xA;&#x9;INNER JOIN (&#xA;&#x9;&#x9;&#x9;&#x9;SELECT &#xA;&#x9;&#x9;&#x9;&#x9;&#x9; PV.Patient_Key&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;,Q.Questionnaire_Category_Key&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;,Q.Score as IC_Score&#xA;&#x9;&#x9;&#x9;&#x9;FROM STG.dbo.Fact_Patient_Visits PV&#xA;&#x9;&#x9;&#x9;&#x9;INNER JOIN STG.dbo.Patient_Questionnaires Q ON Q.Visit_ID = PV.Visit_ID&#xA;&#x9;&#x9;&#x9;&#x9;WHERE PV.Is_IC = 1&#xA;&#x9;&#x9;&#x9;&#x9;) IC ON PV.Patient_Key = IC.Patient_Key AND Q.Questionnaire_Category_Key = IC.Questionnaire_Category_Key&#xA;&#x9;) as S ON T.Visit_ID = S.Visit_ID AND T.Questionnaire_Category_Key = S.Questionnaire_Category_Key&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Clinic_Branch_Key = S.Clinic_Branch_Key,&#xA;&#x9;T.Visit_Src_ID = S.Visit_Src_ID,&#xA;&#x9;T.Clinic_Key = S.Clinic_Key,&#xA;&#x9;T.Visit_Date = S.Visit_Date,&#xA;&#x9;T.Patient_Key = S.Patient_Key,&#xA;&#x9;T.PT_Key = S.PT_Key,&#xA;&#x9;T.Prev_PT_Key = S.Prev_PT_Key,&#xA;&#x9;T.Pathology_Key = S.Pathology_Key,&#xA;&#x9;T.IC_Score = S.IC_Score,&#xA;&#x9;T.Score = S.Score,&#xA;&#x9;T.Score_Change = S.Score_Change,&#xA;&#x9;T.Score_Change_Percent = S.Score_Change_Percent,&#xA;&#x9;T.Is_IC = S.Is_IC,&#xA;&#x9;T.IC_Visit_ID = S.IC_Visit_ID,&#xA;&#x9;T.IC_Date = S.IC_Date,&#xA;&#x9;T.Days_from_IC = S.Days_from_IC,&#xA;&#x9;T.Previous_Visit_Date = S.Previous_Visit_Date,&#xA;&#x9;T.Previous_Visit_ID = S.Previous_Visit_ID,&#xA;&#x9;T.Days_from_Prev_Visit = S.Days_from_Prev_Visit,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Visit_ID, Clinic_Branch_Key, Visit_Src_ID, Clinic_Key, Visit_Date, Patient_Key, PT_Key, Prev_PT_Key, Pathology_Key, Questionnaire_Category_Key, IC_Score, Score, &#xA;&#x9;&#x9;&#x9;Score_Change, Score_Change_Percent, Is_IC, IC_Visit_ID, IC_Date, Days_from_IC, Previous_Visit_Date, Previous_Visit_ID, Days_from_Prev_Visit, DB_Create_Date, DB_Update_Date)&#xA;&#x9;VALUES (S.Visit_ID, S.Clinic_Branch_Key, S.Visit_Src_ID, S.Clinic_Key, S.Visit_Date, S.Patient_Key, S.PT_Key, S.Prev_PT_Key, S.Pathology_Key, S.Questionnaire_Category_Key, S.IC_Score, S.Score, &#xA;&#x9;&#x9;&#x9;S.Score_Change, S.Score_Change_Percent, S.Is_IC, S.IC_Visit_ID, S.IC_Date, S.Days_from_IC, S.Previous_Visit_Date, S.Previous_Visit_ID, S.Days_from_Prev_Visit, GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -5370,7 +5370,7 @@ SELECT -- Physical Score
 	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
 	,SQ.QuestionnaireId as Questionnaire_ID
 	,'Physical Score' as Questionnaire_Category
-	,SUM(Score) as Score
+	,AVG(Score) as Score
 FROM dbo.ScoreQuestionnaire SQ 
 INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
 INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
@@ -5387,7 +5387,7 @@ SELECT -- Mental Score
 	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
 	,SQ.QuestionnaireId as Questionnaire_ID
 	,'Mental Score' as Questionnaire_Category
-	,SUM(Score) as Score
+	,AVG(Score) as Score
 FROM dbo.ScoreQuestionnaire SQ 
 INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
 INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
@@ -5404,7 +5404,7 @@ SELECT -- Emotional Cluster
 	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
 	,SQ.QuestionnaireId as Questionnaire_ID
 	,'Emotional Cluster' as Questionnaire_Category
-	,SUM(Score) as Score
+	,AVG(Score) as Score
 FROM dbo.ScoreQuestionnaire SQ 
 INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
 INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
@@ -5846,23 +5846,6 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
-              DTS:refId="Package\Sequence Container\Fact Patient Questionnaires\Update Change in Score"
-              DTS:CreationName="Microsoft.ExecuteSQLTask"
-              DTS:Description="Execute SQL Task"
-              DTS:DTSID="{A15086B4-B298-4379-8A5E-2EFED0FB6DAA}"
-              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="Update Change in Score"
-              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <SQLTask:SqlTaskData
-                  SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE Q&#xA;SET IC_Score = IC.Score,&#xA;&#x9;Score_Change = Q.Score - IC.Score,&#xA;&#x9;Score_Change_Percent = CASE WHEN IC.Score = 0 THEN NULL ELSE (Q.Score - IC.Score) / IC.Score END,&#xA;&#x9;IC_Questionnaire_Category_Key = IC.Questionnaire_Category_Key&#xA;FROM Fact_Patient_Questionnaires Q&#xA;LEFT JOIN Fact_Patient_Questionnaires IC ON Q.Patient_Key = IC.Patient_Key AND Q.Questionnaire_Category_Key = IC.Questionnaire_Category_Key AND IC.Is_IC = 1&#xA;WHERE Q.Score_Change IS NULL AND Q.Is_IC = 0;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-              </DTS:ObjectData>
-            </DTS:Executable>
-            <DTS:Executable
               DTS:refId="Package\Sequence Container\Fact Patient Questionnaires\Update IC Data in Dim Patients"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
@@ -5871,7 +5854,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               DTS:LocaleID="-1"
               DTS:ObjectName="Update IC Data in Dim Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5888,12 +5871,12 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               DTS:LocaleID="-1"
               DTS:ObjectName="Update Last Refresh"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category = 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.PatientsAnswers';&#xA;&#xA;UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category &lt;&gt; 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.ScoreQuestionnaire';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category = 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.PatientsAnswers';&#xA;&#xA;UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category &lt;&gt; 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.ScoreQuestionnaire';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -5925,11 +5908,11 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 3]"
               DTS:CreationName=""
-              DTS:DTSID="{367FC482-D272-48DC-8147-EDBC34720350}"
+              DTS:DTSID="{48204022-2868-4E19-95A2-9A3B59805DEE}"
               DTS:From="Package\Sequence Container\Fact Patient Questionnaires\Merge to DWH"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 3"
-              DTS:To="Package\Sequence Container\Fact Patient Questionnaires\Update Change in Score" />
+              DTS:To="Package\Sequence Container\Fact Patient Questionnaires\Update Last Refresh" />
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 4]"
               DTS:CreationName=""
@@ -5938,14 +5921,6 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 4"
               DTS:To="Package\Sequence Container\Fact Patient Questionnaires\Update IC Data in Dim Patients" />
-            <DTS:PrecedenceConstraint
-              DTS:refId="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 5]"
-              DTS:CreationName=""
-              DTS:DTSID="{815894E3-FF62-4D5D-B208-11922811F85F}"
-              DTS:From="Package\Sequence Container\Fact Patient Questionnaires\Update Change in Score"
-              DTS:LogicalAnd="True"
-              DTS:ObjectName="Constraint 5"
-              DTS:To="Package\Sequence Container\Fact Patient Questionnaires\Update Last Refresh" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
         <DTS:Executable
@@ -10833,6 +10808,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
 	LEFT JOIN DWH.dbo.Dim_Patients DP ON PV.PatientId = DP.Patient_Src_ID AND PV.ClinicBranchID = DP.Clinic_Branch_ID 
 									 AND ((DP.Pathology_Change_Date IS NOT NULL AND CONVERT(date,PV.[Date]) &gt;= DP.IC_Date AND CONVERT(date,PV.[Date]) &lt; DP.Last_Visit_Date) -- change pathology
 									 OR (DP.Pathology_Change_Date IS NULL AND CONVERT(date,PV.[Date]) BETWEEN DP.IC_Date AND DP.Last_Visit_Date)) -- discharged 
+	WHERE PV.PatientId IS NOT NULL
 	)
 SELECT 
 	 Visit_ID
@@ -11731,7 +11707,7 @@ FROM PV</property>
           PanelSize="197,103"
           Size="197,146"
           Id="Package\Log End of Package"
-          TopLeft="640,1522.5" />
+          TopLeft="180,1543.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Log Start of Package\Get Max JobKey"
@@ -11909,11 +11885,11 @@ FROM PV</property>
           PanelSize="237,613"
           Size="237,656"
           Id="Package\Sequence Container\Fact Patient Gait"
-          TopLeft="303.5,466.5" />
+          TopLeft="303.5,415.5" />
         <NodeLayout
           Size="117,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\Log End"
-          TopLeft="60.0000000000001,617.5" />
+          TopLeft="60.0000000000001,515.5" />
         <NodeLayout
           Size="122,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\Log Start"
@@ -11921,23 +11897,19 @@ FROM PV</property>
         <NodeLayout
           Size="148,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\Merge to DWH"
-          TopLeft="37,209.5" />
+          TopLeft="44.5,209.5" />
         <NodeLayout
           Size="199,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires"
           TopLeft="19,107.5" />
         <NodeLayout
-          Size="192,42"
-          Id="Package\Sequence Container\Fact Patient Questionnaires\Update Change in Score"
-          TopLeft="22.5,311.5" />
-        <NodeLayout
           Size="226,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\Update IC Data in Dim Patients"
-          TopLeft="5.50000000000007,515.5" />
+          TopLeft="5.50000000000006,413.5" />
         <NodeLayout
           Size="174,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\Update Last Refresh"
-          TopLeft="31.5000000000001,413.5" />
+          TopLeft="31.5,311.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint]"
           TopLeft="118.5,47.5">
@@ -11962,7 +11934,7 @@ FROM PV</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 1]"
-          TopLeft="114.75,149.5">
+          TopLeft="118.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -11984,50 +11956,6 @@ FROM PV</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 2]"
-          TopLeft="118.5,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 3]"
-          TopLeft="114.75,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 4]"
           TopLeft="118.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12049,7 +11977,29 @@ FROM PV</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 5]"
+          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 3]"
+          TopLeft="118.5,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires.PrecedenceConstraints[Constraint 4]"
           TopLeft="118.5,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12073,10 +12023,10 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="237,715"
-          Size="237,758"
+          PanelSize="237,613"
+          Size="237,656"
           Id="Package\Sequence Container\Fact Patient Questionnaires"
-          TopLeft="5.50000000000017,415.5" />
+          TopLeft="5.50000000000011,415.5" />
         <NodeLayout
           Size="117,42"
           Id="Package\Sequence Container\Fact Patient Visits\Log End"
@@ -12180,26 +12130,26 @@ FROM PV</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-31.3333333333333,111"
+              EndConnector="-31.3333333333333,60"
               Start="0,0"
-              End="-31.3333333333333,103.5">
+              End="-31.3333333333333,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.9392712550607" />
+                    End="0,20.2914979757085" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,40.9392712550607"
-                    Point2="0,44.9392712550607"
-                    Point3="-4,44.9392712550607" />
+                    Point1="0,20.2914979757085"
+                    Point2="0,24.2914979757085"
+                    Point3="-4,24.2914979757085" />
                   <mssgle:LineSegment
-                    End="-27.3333333333333,44.9392712550607" />
+                    End="-27.3333333333333,24.2914979757085" />
                   <mssgle:CubicBezierSegment
-                    Point1="-27.3333333333333,44.9392712550607"
-                    Point2="-31.3333333333333,44.9392712550607"
-                    Point3="-31.3333333333333,48.9392712550607" />
+                    Point1="-27.3333333333333,24.2914979757085"
+                    Point2="-31.3333333333333,24.2914979757085"
+                    Point3="-31.3333333333333,28.2914979757085" />
                   <mssgle:LineSegment
-                    End="-31.3333333333333,103.5" />
+                    End="-31.3333333333333,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12211,8 +12161,8 @@ FROM PV</property>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="546,1229"
-          Size="546,1272"
+          PanelSize="546,1127"
+          Size="546,1170"
           Id="Package\Sequence Container"
           TopLeft="5.50000000000017,313.5" />
         <EdgeLayout
@@ -12239,30 +12189,18 @@ FROM PV</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="551.5,949.5">
+          TopLeft="278.5,1483.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="88.4999999999998,646"
+              EndConnector="0,60"
               Start="0,0"
-              End="80.9999999999998,646">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="40.2499999999999,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="40.2499999999999,0"
-                    Point2="44.2499999999999,0"
-                    Point3="44.2499999999999,4" />
-                  <mssgle:LineSegment
-                    End="44.2499999999999,642" />
-                  <mssgle:CubicBezierSegment
-                    Point1="44.2499999999999,642"
-                    Point2="44.2499999999999,646"
-                    Point3="48.2499999999999,646" />
-                  <mssgle:LineSegment
-                    End="80.9999999999998,646" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12704,7 +12642,7 @@ FROM PV</property>
     design-time-name="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="135,42"
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP PT_Key"
@@ -12756,9 +12694,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12780,9 +12716,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12804,9 +12738,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12828,9 +12760,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12852,9 +12782,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12876,9 +12804,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12900,9 +12826,7 @@ FROM PV</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

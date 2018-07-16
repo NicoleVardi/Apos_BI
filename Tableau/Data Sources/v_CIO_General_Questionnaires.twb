@@ -10,8 +10,21 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Period Type' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;First Year&quot;'>
+        <calculation class='tableau' formula='&quot;First Year&quot;' />
+        <members>
+          <member value='&quot;First Year&quot;' />
+          <member value='&quot;Second Year&quot;' />
+          <member value='&quot;Third Year&quot;' />
+          <member value='&quot;Not Matched&quot;' />
+          <member value='&quot;All&quot;' />
+        </members>
+      </column>
+    </datasource>
     <datasource caption='v_CIO_General_Questionnaires (DWH)' inline='true' name='federated.0bwys5f1ie5hec13el6bh1romwpb' version='18.1'>
-      <repository-location id='v_CIO_General_QuestionnairesDWH' path='datasources' revision='1.2' />
+      <repository-location id='v_CIO_General_QuestionnairesDWH' path='datasources' revision='2.2' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.19p60uh1jecxwz19xlvjm0ozvzl4'>
@@ -30,7 +43,7 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
@@ -116,7 +129,7 @@
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>20</width>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -256,7 +269,7 @@
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -361,7 +374,7 @@
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -380,7 +393,7 @@
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -441,32 +454,35 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>Visit_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Visit_ID]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Visit_ID</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>Days_from_IC</remote-name>
             <remote-type>3</remote-type>
             <local-name>[Days_from_IC]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Days_from_IC</remote-alias>
-            <ordinal>25</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>false</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Days_from_Prev_Visit</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[Days_from_Prev_Visit]</local-name>
-            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
-            <remote-alias>Days_from_Prev_Visit</remote-alias>
             <ordinal>26</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
@@ -482,7 +498,7 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
@@ -498,29 +514,10 @@
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Base_Period_Name</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Base_Period_Name]</local-name>
-            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
-            <remote-alias>Base_Period_Name</remote-alias>
-            <ordinal>29</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>50</width>
-            <contains-null>false</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
@@ -529,11 +526,11 @@
             <local-name>[Period_Key]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Key</remote-alias>
-            <ordinal>30</ordinal>
+            <ordinal>29</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
@@ -545,7 +542,7 @@
             <local-name>[Period_Number]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Number</remote-alias>
-            <ordinal>31</ordinal>
+            <ordinal>30</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -561,7 +558,7 @@
             <local-name>[Period_Full_Name]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Full_Name</remote-alias>
-            <ordinal>32</ordinal>
+            <ordinal>31</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -580,7 +577,7 @@
             <local-name>[Period_Name]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Name</remote-alias>
-            <ordinal>33</ordinal>
+            <ordinal>32</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -599,7 +596,7 @@
             <local-name>[Period_Year_Key]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Year_Key</remote-alias>
-            <ordinal>34</ordinal>
+            <ordinal>33</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -615,7 +612,7 @@
             <local-name>[Period_Year_Number]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Year_Number</remote-alias>
-            <ordinal>35</ordinal>
+            <ordinal>34</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -631,7 +628,7 @@
             <local-name>[Period_Year]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Period_Year</remote-alias>
-            <ordinal>36</ordinal>
+            <ordinal>35</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -645,47 +642,12 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Questionnaire_Category_Key</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[Questionnaire_Category_Key]</local-name>
-            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
-            <remote-alias>Questionnaire_Category_Key</remote-alias>
-            <ordinal>37</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>false</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Questionnaire_Category</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Questionnaire_Category]</local-name>
-            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
-            <remote-alias>Questionnaire_Category</remote-alias>
-            <ordinal>38</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>50</width>
-            <contains-null>false</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
             <remote-name>Questionnaire_Key</remote-name>
             <remote-type>3</remote-type>
             <local-name>[Questionnaire_Key]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Questionnaire_Key</remote-alias>
-            <ordinal>39</ordinal>
+            <ordinal>36</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -701,7 +663,42 @@
             <local-name>[Questionnaire]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Questionnaire</remote-alias>
-            <ordinal>40</ordinal>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Questionnaire_Category_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Questionnaire_Category_Key]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Questionnaire_Category_Key</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Questionnaire_Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Questionnaire_Category]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Questionnaire_Category</remote-alias>
+            <ordinal>39</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -720,7 +717,7 @@
             <local-name>[IC_Score]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>IC_Score</remote-alias>
-            <ordinal>41</ordinal>
+            <ordinal>40</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -736,7 +733,7 @@
             <local-name>[Score]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Score</remote-alias>
-            <ordinal>42</ordinal>
+            <ordinal>41</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -752,6 +749,22 @@
             <local-name>[Score_Change]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
             <remote-alias>Score_Change</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Score_Change_Percent</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Score_Change_Percent]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Score_Change_Percent</remote-alias>
             <ordinal>43</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
@@ -762,18 +775,224 @@
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
             </attributes>
           </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WOMAC_Is_First_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[WOMAC_Is_First_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>WOMAC_Is_First_Year</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WOMAC_Is_Second_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[WOMAC_Is_Second_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>WOMAC_Is_Second_Year</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WOMAC_Is_Third_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[WOMAC_Is_Third_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>WOMAC_Is_Third_Year</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF_Is_First_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SF_Is_First_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>SF_Is_First_Year</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF_Is_Second_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SF_Is_Second_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>SF_Is_Second_Year</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SF_Is_Third_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[SF_Is_Third_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>SF_Is_Third_Year</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oswestry_Is_First_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Oswestry_Is_First_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Oswestry_Is_First_Year</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oswestry_Is_Second_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Oswestry_Is_Second_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Oswestry_Is_Second_Year</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Oswestry_Is_Third_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Oswestry_Is_Third_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>Oswestry_Is_Third_Year</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OKS_Is_First_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OKS_Is_First_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>OKS_Is_First_Year</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OKS_Is_Second_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OKS_Is_Second_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>OKS_Is_Second_Year</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OKS_Is_Third_Year</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[OKS_Is_Third_Year]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>OKS_Is_Third_Year</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
       <column caption='Activity Status' datatype='string' name='[Activity_Status]' role='dimension' type='nominal' />
       <column caption='Activity Status Key' datatype='integer' name='[Activity_Status_Key]' role='dimension' type='ordinal' />
       <column caption='Base Period Key' datatype='integer' name='[Base_Period_Key]' role='dimension' type='ordinal' />
-      <column caption='Base Period' datatype='string' name='[Base_Period_Name]' role='dimension' type='nominal' />
       <column caption='Base Period Number' datatype='integer' name='[Base_Period_Number]' role='dimension' type='ordinal' />
+      <column caption='Period Type - OKS' datatype='string' name='[Calculation_434034434309812224]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [OKS Third Year] THEN &quot;Third Year&quot;&#13;&#10;ELSEIF [OKS Second Year] THEN &quot;Second Year&quot;&#13;&#10;ELSEIF [OKS First Year] THEN &quot;First Year&quot;&#13;&#10;ELSE &quot;Not Matched&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Period Type - SF-36' datatype='string' name='[Calculation_434034434309963777]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [SF Third Year] THEN &quot;Third Year&quot;&#13;&#10;ELSEIF [SF Second Year] THEN &quot;Second Year&quot;&#13;&#10;ELSEIF [SF First Year] THEN &quot;First Year&quot;&#13;&#10;ELSE &quot;Not Matched&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Period Type - WOMAC' datatype='string' name='[Calculation_434034434310197250]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [WOMAC Third Year] THEN &quot;Third Year&quot;&#13;&#10;ELSEIF [WOMAC Second Year] THEN &quot;Second Year&quot;&#13;&#10;ELSEIF [WOMAC First Year] THEN &quot;First Year&quot;&#13;&#10;ELSE &quot;Not Matched&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Period Type - Oswestry' datatype='string' name='[Calculation_434034434310324228]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Oswestry Third Year] THEN &quot;Third Year&quot;&#13;&#10;ELSEIF [Oswestry Second Year] THEN &quot;Second Year&quot;&#13;&#10;ELSEIF [Oswestry First Year] THEN &quot;First Year&quot;&#13;&#10;ELSE &quot;Not Matched&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Num of Visits' datatype='integer' name='[Calculation_434034434311864325]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Visit_ID])' />
+      </column>
       <column caption='Avg. Score Change Percent' datatype='real' default-format='p0.0%' name='[Calculation_921549090438467584]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='(AVG([Score]) - AVG([IC_Score])) / AVG([IC_Score])' />
       </column>
-      <column caption='Distinct Patients' datatype='integer' name='[Calculation_921549090439188481]' role='measure' type='quantitative'>
+      <column caption='Num of Patients' datatype='integer' name='[Calculation_921549090439188481]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Patient_Key])' />
       </column>
       <column caption='Clinic Branch' datatype='string' name='[Clinic_Branch]' role='dimension' type='nominal' />
@@ -782,14 +1001,19 @@
       <column caption='Clinic Name' datatype='string' name='[Clinic_Name]' role='dimension' type='nominal' />
       <column caption='Continent Key' datatype='integer' name='[Continent_Key]' role='dimension' type='ordinal' />
       <column caption='Days from IC' datatype='integer' name='[Days_from_IC]' role='measure' type='quantitative' />
-      <column caption='Days from Prev Visit' datatype='integer' name='[Days_from_Prev_Visit]' role='measure' type='quantitative' />
       <column caption='IC Date' datatype='date' name='[IC_Date]' role='dimension' type='ordinal' />
-      <column aggregation='Avg' caption='IC Score' datatype='real' name='[IC_Score]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='IC Score' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Score]' role='measure' type='quantitative' />
       <column caption='IC Visit ID' datatype='string' name='[IC_Visit_ID]' role='dimension' type='nominal' />
       <column caption='Insurer Key' datatype='integer' name='[Insurer_Key]' role='dimension' type='ordinal' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[OKS_Is_First_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[OKS_Is_Second_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[OKS_Is_Third_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[Oswestry_Is_First_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[Oswestry_Is_Second_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[Oswestry_Is_Third_Year]' role='dimension' type='ordinal' />
       <column caption='PT Key' datatype='integer' name='[PT_Key]' role='dimension' type='ordinal' />
       <column caption='PT Name' datatype='string' name='[PT_Name]' role='dimension' type='nominal' />
       <column caption='Pathology Area' datatype='string' name='[Pathology_Area]' role='dimension' type='nominal' />
@@ -808,12 +1032,55 @@
       <column caption='Questionnaire Category' datatype='string' name='[Questionnaire_Category]' role='dimension' type='nominal' />
       <column caption='Questionnaire Category Key' datatype='integer' name='[Questionnaire_Category_Key]' role='dimension' type='ordinal' />
       <column caption='Questionnaire Key' datatype='integer' name='[Questionnaire_Key]' role='dimension' type='ordinal' />
-      <column aggregation='Avg' datatype='real' name='[Score]' role='measure' type='quantitative' />
-      <column aggregation='Avg' caption='Score Change' datatype='real' name='[Score_Change]' role='measure' type='quantitative' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[SF_Is_First_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[SF_Is_Second_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[SF_Is_Third_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Score]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Score Change' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Score_Change]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Score Change Percent' datatype='real' default-format='p0.0%' name='[Score_Change_Percent]' role='measure' type='quantitative' />
       <column caption='Teritorry Key' datatype='integer' name='[Teritorry_Key]' role='dimension' type='ordinal' />
       <column caption='Visit Date' datatype='date' name='[Visit_Date]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[WOMAC_Is_First_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[WOMAC_Is_Second_Year]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[WOMAC_Is_Third_Year]' role='dimension' type='ordinal' />
       <column-instance column='[Period_Name]' derivation='None' name='[none:Period_Name:nk]' pivot='key' type='nominal' />
       <column-instance column='[Period_Year]' derivation='None' name='[none:Period_Year:nk]' pivot='key' type='nominal' />
+      <group hidden='true' name='[OKS First Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[OKS_Is_First_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[OKS Second Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[OKS_Is_Second_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[OKS Third Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[OKS_Is_Third_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[Oswestry First Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[Oswestry_Is_First_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[Oswestry Second Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[Oswestry_Is_Second_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[Oswestry Third Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[Oswestry_Is_Third_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[SF First Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[SF_Is_First_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[SF Second Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[SF_Is_Second_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[SF Third Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[SF_Is_Third_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[WOMAC First Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[WOMAC_Is_First_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[WOMAC Second Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[WOMAC_Is_Second_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
+      <group hidden='true' name='[WOMAC Third Year]' name-style='unqualified' user:ui-builder='filter-group'>
+        <groupfilter function='member' level='[WOMAC_Is_Third_Year]' member='1' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </group>
       <drill-paths>
         <drill-path name='Clinic'>
           <field>[Continent]</field>
@@ -828,6 +1095,10 @@
         <drill-path name='Pathology'>
           <field>[Pathology_Area]</field>
           <field>[Pathology]</field>
+        </drill-path>
+        <drill-path name='Questionnaire'>
+          <field>[Questionnaire]</field>
+          <field>[Questionnaire_Category]</field>
         </drill-path>
       </drill-paths>
       <folder name='Clinics' role='dimensions'>
@@ -853,8 +1124,11 @@
       </folder>
       <folder name='Periods' role='dimensions'>
         <folder-item name='[Base_Period_Key]' type='field' />
-        <folder-item name='[Base_Period_Name]' type='field' />
         <folder-item name='[Base_Period_Number]' type='field' />
+        <folder-item name='[Calculation_434034434309812224]' type='field' />
+        <folder-item name='[Calculation_434034434309963777]' type='field' />
+        <folder-item name='[Calculation_434034434310197250]' type='field' />
+        <folder-item name='[Calculation_434034434310324228]' type='field' />
         <folder-item name='[Period_Full_Name]' type='field' />
         <folder-item name='[Period_Key]' type='field' />
         <folder-item name='[Period_Number]' type='field' />
@@ -862,11 +1136,16 @@
         <folder-item name='[Period_Year_Number]' type='field' />
         <folder-item name='KPI Periods' type='drillpath' />
       </folder>
-      <extract count='-1' enabled='false' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Questionnaires (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/05/2018 01:17:51 PM' username='tableau_internal_user'>
+      <folder name='Questionnaire' role='dimensions'>
+        <folder-item name='[Questionnaire_Category_Key]' type='field' />
+        <folder-item name='[Questionnaire_Key]' type='field' />
+        <folder-item name='Questionnaire' type='drillpath' />
+      </folder>
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/nicole/AppData/Local/Temp/2/TableauTemp/TEMP_1n3eiz408piucs1dq89ol0v21ctv.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/16/2018 07:06:25 AM' updated-database='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Questionnaires (DWH).hyper' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='162248' timestamp-start='2018-07-05 13:17:51.746' />
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='3203240' timestamp-start='2018-07-16 07:06:25.551' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -879,7 +1158,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>21</approx-count>
+              <approx-count>19</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -892,7 +1171,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>21</approx-count>
+              <approx-count>19</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -906,7 +1185,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>21</approx-count>
+              <approx-count>18</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -919,7 +1198,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>21</approx-count>
+              <approx-count>18</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1014,7 +1293,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>65</approx-count>
+              <approx-count>38</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1027,7 +1306,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>65</approx-count>
+              <approx-count>38</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1041,7 +1320,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>7</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1054,7 +1333,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>7</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1095,7 +1374,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>78</approx-count>
+              <approx-count>77</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1108,7 +1387,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>77</approx-count>
+              <approx-count>75</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1122,7 +1401,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>20439</approx-count>
+              <approx-count>4422</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1135,7 +1414,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>20439</approx-count>
+              <approx-count>4422</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1149,7 +1428,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>20439</approx-count>
+              <approx-count>4422</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1163,7 +1442,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2039</approx-count>
+              <approx-count>1427</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1176,7 +1455,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>20439</approx-count>
+              <approx-count>4422</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1190,8 +1469,22 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2569</approx-count>
+              <approx-count>2111</approx-count>
               <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visit_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Visit_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit_ID</remote-alias>
+              <ordinal>24</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14520</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Days_from_IC</remote-name>
@@ -1199,24 +1492,11 @@
               <local-name>[Days_from_IC]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Days_from_IC</remote-alias>
-              <ordinal>24</ordinal>
-              <family>v_CIO_General_Questionnaires</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>600</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Days_from_Prev_Visit</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Days_from_Prev_Visit]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Days_from_Prev_Visit</remote-alias>
               <ordinal>25</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>177</approx-count>
+              <approx-count>268</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1229,7 +1509,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>31</approx-count>
+              <approx-count>29</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1242,22 +1522,8 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>31</approx-count>
+              <approx-count>29</approx-count>
               <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Base_Period_Name</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Base_Period_Name]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Base_Period_Name</remote-alias>
-              <ordinal>28</ordinal>
-              <family>v_CIO_General_Questionnaires</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>31</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Period_Key</remote-name>
@@ -1265,11 +1531,11 @@
               <local-name>[Period_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Key</remote-alias>
-              <ordinal>29</ordinal>
+              <ordinal>28</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>31</approx-count>
+              <approx-count>29</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1278,11 +1544,11 @@
               <local-name>[Period_Number]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Number</remote-alias>
-              <ordinal>30</ordinal>
+              <ordinal>29</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>31</approx-count>
+              <approx-count>29</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1291,11 +1557,11 @@
               <local-name>[Period_Full_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Full_Name</remote-alias>
-              <ordinal>31</ordinal>
+              <ordinal>30</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>31</approx-count>
+              <approx-count>29</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1305,11 +1571,11 @@
               <local-name>[Period_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Name</remote-alias>
-              <ordinal>32</ordinal>
+              <ordinal>31</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>31</approx-count>
+              <approx-count>29</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1319,7 +1585,7 @@
               <local-name>[Period_Year_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year_Key</remote-alias>
-              <ordinal>33</ordinal>
+              <ordinal>32</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1332,7 +1598,7 @@
               <local-name>[Period_Year_Number]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year_Number</remote-alias>
-              <ordinal>34</ordinal>
+              <ordinal>33</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1345,11 +1611,38 @@
               <local-name>[Period_Year]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year</remote-alias>
-              <ordinal>35</ordinal>
+              <ordinal>34</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
               <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Questionnaire_Key</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Questionnaire_Key]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Questionnaire_Key</remote-alias>
+              <ordinal>35</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Questionnaire</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Questionnaire]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Questionnaire</remote-alias>
+              <ordinal>36</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1359,37 +1652,24 @@
               <local-name>[Questionnaire_Category_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Questionnaire_Category_Key</remote-alias>
-              <ordinal>36</ordinal>
-              <family>v_CIO_General_Questionnaires</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>9</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Questionnaire_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Questionnaire_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Questionnaire_Key</remote-alias>
               <ordinal>37</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>4</approx-count>
+              <approx-count>24</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Questionnaire</remote-name>
+              <remote-name>Questionnaire_Category</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[Questionnaire]</local-name>
+              <local-name>[Questionnaire_Category]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Questionnaire</remote-alias>
+              <remote-alias>Questionnaire_Category</remote-alias>
               <ordinal>38</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>4</approx-count>
+              <approx-count>20</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1403,7 +1683,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>130</approx-count>
+              <approx-count>292</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1416,7 +1696,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>133</approx-count>
+              <approx-count>335</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1429,13 +1709,182 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>150</approx-count>
+              <approx-count>190</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Score_Change_Percent</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Score_Change_Percent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Score_Change_Percent</remote-alias>
+              <ordinal>42</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>239</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WOMAC_Is_First_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WOMAC_Is_First_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WOMAC_Is_First_Year</remote-alias>
+              <ordinal>43</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WOMAC_Is_Second_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WOMAC_Is_Second_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WOMAC_Is_Second_Year</remote-alias>
+              <ordinal>44</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WOMAC_Is_Third_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WOMAC_Is_Third_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WOMAC_Is_Third_Year</remote-alias>
+              <ordinal>45</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SF_Is_First_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SF_Is_First_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SF_Is_First_Year</remote-alias>
+              <ordinal>46</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SF_Is_Second_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SF_Is_Second_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SF_Is_Second_Year</remote-alias>
+              <ordinal>47</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SF_Is_Third_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SF_Is_Third_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SF_Is_Third_Year</remote-alias>
+              <ordinal>48</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oswestry_Is_First_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Oswestry_Is_First_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Oswestry_Is_First_Year</remote-alias>
+              <ordinal>49</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oswestry_Is_Second_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Oswestry_Is_Second_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Oswestry_Is_Second_Year</remote-alias>
+              <ordinal>50</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Oswestry_Is_Third_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Oswestry_Is_Third_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Oswestry_Is_Third_Year</remote-alias>
+              <ordinal>51</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OKS_Is_First_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OKS_Is_First_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OKS_Is_First_Year</remote-alias>
+              <ordinal>52</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OKS_Is_Second_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OKS_Is_Second_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OKS_Is_Second_Year</remote-alias>
+              <ordinal>53</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>OKS_Is_Third_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[OKS_Is_Third_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>OKS_Is_Third_Year</remote-alias>
+              <ordinal>54</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.632242' measure-ordering='alphabetic' measure-percentage='0.367758' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.523452' group-percentage='0.125704' measure-ordering='alphabetic' measure-percentage='0.273921' parameter-percentage='0.0769231' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
