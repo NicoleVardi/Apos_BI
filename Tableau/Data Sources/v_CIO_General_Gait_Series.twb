@@ -11,6 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_CIO_General_Gait_Series (DWH)' inline='true' name='federated.1e54g3i1pfujtt1dycdbt0jah8z9' version='18.1'>
+      <repository-location id='v_CIO_General_Gait_SeriesDWH' path='datasources' revision='2.1' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.10jzgnk1gbcpgm175vdgd14fo267'>
@@ -195,12 +196,28 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>Is_Historical_Patient</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Is_Historical_Patient]</local-name>
+            <parent-name>[v_CIO_General_Gait_Series]</parent-name>
+            <remote-alias>Is_Historical_Patient</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>Pathology_Key</remote-name>
             <remote-type>3</remote-type>
             <local-name>[Pathology_Key]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Pathology_Key</remote-alias>
-            <ordinal>11</ordinal>
+            <ordinal>12</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -216,7 +233,7 @@
             <local-name>[Pathology]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Pathology</remote-alias>
-            <ordinal>12</ordinal>
+            <ordinal>13</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>255</width>
@@ -235,7 +252,7 @@
             <local-name>[Pathology_Area_Key]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Pathology_Area_Key</remote-alias>
-            <ordinal>13</ordinal>
+            <ordinal>14</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -251,7 +268,7 @@
             <local-name>[Pathology_Area]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Pathology_Area</remote-alias>
-            <ordinal>14</ordinal>
+            <ordinal>15</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -270,7 +287,7 @@
             <local-name>[Insurer_Key]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Insurer_Key</remote-alias>
-            <ordinal>15</ordinal>
+            <ordinal>16</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -286,7 +303,7 @@
             <local-name>[Insurer]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Insurer</remote-alias>
-            <ordinal>16</ordinal>
+            <ordinal>17</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -305,7 +322,7 @@
             <local-name>[PT_Key]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>PT_Key</remote-alias>
-            <ordinal>17</ordinal>
+            <ordinal>18</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -321,7 +338,7 @@
             <local-name>[PT_Name]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>PT_Name</remote-alias>
-            <ordinal>18</ordinal>
+            <ordinal>19</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>101</width>
@@ -340,7 +357,7 @@
             <local-name>[Patient_Key]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Patient_Key</remote-alias>
-            <ordinal>19</ordinal>
+            <ordinal>20</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -356,7 +373,7 @@
             <local-name>[Patient_ID]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Patient_ID</remote-alias>
-            <ordinal>20</ordinal>
+            <ordinal>21</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -375,7 +392,7 @@
             <local-name>[Patient_Parent_ID]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Patient_Parent_ID</remote-alias>
-            <ordinal>21</ordinal>
+            <ordinal>22</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -394,7 +411,7 @@
             <local-name>[IC_Date]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>IC_Date</remote-alias>
-            <ordinal>22</ordinal>
+            <ordinal>23</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -410,7 +427,7 @@
             <local-name>[IC_Visit_ID]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>IC_Visit_ID</remote-alias>
-            <ordinal>23</ordinal>
+            <ordinal>24</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -429,7 +446,7 @@
             <local-name>[Visit_Date]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Visit_Date</remote-alias>
-            <ordinal>24</ordinal>
+            <ordinal>25</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -445,7 +462,7 @@
             <local-name>[Visit_ID]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Visit_ID</remote-alias>
-            <ordinal>25</ordinal>
+            <ordinal>26</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -464,7 +481,7 @@
             <local-name>[Days_from_IC]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Days_from_IC</remote-alias>
-            <ordinal>26</ordinal>
+            <ordinal>27</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -480,7 +497,7 @@
             <local-name>[Period_Key]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Period_Key</remote-alias>
-            <ordinal>27</ordinal>
+            <ordinal>28</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -496,7 +513,7 @@
             <local-name>[Period_Number]</local-name>
             <parent-name>[v_CIO_General_Gait_Series]</parent-name>
             <remote-alias>Period_Number</remote-alias>
-            <ordinal>28</ordinal>
+            <ordinal>29</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -504,25 +521,6 @@
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Period_Full_Name</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Period_Full_Name]</local-name>
-            <parent-name>[v_CIO_General_Gait_Series]</parent-name>
-            <remote-alias>Period_Full_Name</remote-alias>
-            <ordinal>29</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>50</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
@@ -918,24 +916,109 @@
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
             </attributes>
           </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_FC_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[IC_FC_Key]</local-name>
+            <parent-name>[v_CIO_General_Gait_Series]</parent-name>
+            <remote-alias>IC_FC_Key</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IC_Functional_Classification]</local-name>
+            <parent-name>[v_CIO_General_Gait_Series]</parent-name>
+            <remote-alias>IC_Functional_Classification</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FC_Grade_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FC_Grade_Key]</local-name>
+            <parent-name>[v_CIO_General_Gait_Series]</parent-name>
+            <remote-alias>FC_Grade_Key</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Visit_Functional_Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Visit_Functional_Classification]</local-name>
+            <parent-name>[v_CIO_General_Gait_Series]</parent-name>
+            <remote-alias>Visit_Functional_Classification</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
       <column caption='Activity Status' datatype='string' name='[Activity_Status]' role='dimension' type='nominal' />
-      <column caption='Activity Status Key' datatype='integer' name='[Activity_Status_Key]' role='dimension' type='ordinal' />
+      <column caption='Activity Status Key' datatype='integer' hidden='true' name='[Activity_Status_Key]' role='dimension' type='ordinal' />
+      <column caption='MS SLS Avg Change Percent' datatype='real' default-format='p0.0%' name='[Calculation_570549801600049152]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([More_Symptomatic_SLS]) - AVG([IC_More_Symptomatic_SLS])) / AVG([IC_More_Symptomatic_SLS])' />
+      </column>
+      <column caption='MS Step Length Avg Change Percent' datatype='real' default-format='p0.0%' name='[Calculation_570549801600360449]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([More_Symptomatic_Step_Length]) - AVG([IC_More_Symptomatic_Step_Length])) / AVG([IC_More_Symptomatic_Step_Length])' />
+      </column>
+      <column caption='LS Step Length Avg Change Percent' datatype='real' default-format='p0.0%' name='[Calculation_570549801600438274]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([Less_Symptomatic_Step_Length]) - AVG([IC_Less_Symptomatic_Step_Length])) / AVG([IC_Less_Symptomatic_Step_Length])' />
+      </column>
       <column caption='Num of Visits' datatype='integer' name='[Calculation_777152430908928000]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Visit_ID])' />
       </column>
       <column caption='Num of Patients' datatype='integer' name='[Calculation_777152430908993537]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Patient_Key])' />
       </column>
+      <column caption='Velocity Avg Change Percent' datatype='real' default-format='p0.0%' name='[Calculation_857935745677983748]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([Velocity]) - AVG([IC_Velocity])) / AVG([IC_Velocity])' />
+      </column>
       <column caption='Clinic Branch' datatype='string' name='[Clinic_Branch]' role='dimension' type='nominal' />
-      <column caption='Clinic Branch Key' datatype='integer' name='[Clinic_Branch_Key]' role='dimension' type='ordinal' />
-      <column caption='Clinic Key' datatype='integer' name='[Clinic_Key]' role='dimension' type='ordinal' />
+      <column caption='Clinic Branch Key' datatype='integer' hidden='true' name='[Clinic_Branch_Key]' role='dimension' type='ordinal' />
+      <column caption='Clinic Key' datatype='integer' hidden='true' name='[Clinic_Key]' role='dimension' type='ordinal' />
       <column caption='Clinic Name' datatype='string' name='[Clinic_Name]' role='dimension' type='nominal' />
-      <column caption='Continent Key' datatype='integer' name='[Continent_Key]' role='dimension' type='ordinal' />
+      <column caption='Continent Key' datatype='integer' hidden='true' name='[Continent_Key]' role='dimension' type='ordinal' />
       <column caption='Days from IC' datatype='integer' name='[Days_from_IC]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='FC Grade Key' datatype='integer' hidden='true' name='[FC_Grade_Key]' role='dimension' type='ordinal' />
       <column caption='IC Date' datatype='date' name='[IC_Date]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='IC FC Key' datatype='integer' hidden='true' name='[IC_FC_Key]' role='dimension' type='ordinal' />
+      <column caption='IC Functional Classification' datatype='string' name='[IC_Functional_Classification]' role='dimension' type='nominal' />
       <column aggregation='Avg' caption='IC Left SLS' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Left_SLS]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='IC Left Step Length' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Left_Step_Length]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='IC Less Symptomatic SLS' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Less_Symptomatic_SLS]' role='measure' type='quantitative' />
@@ -946,38 +1029,47 @@
       <column aggregation='Avg' caption='IC Right Step Length' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Right_Step_Length]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='IC Velocity' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Velocity]' role='measure' type='quantitative' />
       <column caption='IC Visit ID' datatype='string' name='[IC_Visit_ID]' role='dimension' type='nominal' />
-      <column caption='Insurer Key' datatype='integer' name='[Insurer_Key]' role='dimension' type='ordinal' />
+      <column caption='Insurer Key' datatype='integer' hidden='true' name='[Insurer_Key]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Is Historical Patient' datatype='integer' name='[Is_Historical_Patient]' role='dimension' type='ordinal'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
       <column aggregation='Avg' caption='Left SLS' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Left_SLS]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='Left Step Length' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Left_Step_Length]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='Less Symptomatic SLS' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Less_Symptomatic_SLS]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='Less Symptomatic Step Length' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Less_Symptomatic_Step_Length]' role='measure' type='quantitative' />
+      <column caption='LS SLS Avg Change Percent' datatype='real' default-format='p0.0%' name='[MS SLS Avg Change Percent (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([Less_Symptomatic_SLS]) - AVG([IC_Less_Symptomatic_SLS])) / AVG([IC_Less_Symptomatic_SLS])' />
+      </column>
       <column aggregation='Avg' caption='More Symptomatic SLS' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[More_Symptomatic_SLS]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='More Symptomatic Step Length' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[More_Symptomatic_Step_Length]' role='measure' type='quantitative' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
-      <column caption='PT Key' datatype='integer' name='[PT_Key]' role='dimension' type='ordinal' />
+      <column caption='PT Key' datatype='integer' hidden='true' name='[PT_Key]' role='dimension' type='ordinal' />
       <column caption='PT Name' datatype='string' name='[PT_Name]' role='dimension' type='nominal' />
       <column caption='Pathology Area' datatype='string' name='[Pathology_Area]' role='dimension' type='nominal' />
-      <column caption='Pathology Area Key' datatype='integer' name='[Pathology_Area_Key]' role='dimension' type='ordinal' />
-      <column caption='Pathology Key' datatype='integer' name='[Pathology_Key]' role='dimension' type='ordinal' />
+      <column caption='Pathology Area Key' datatype='integer' hidden='true' name='[Pathology_Area_Key]' role='dimension' type='ordinal' />
+      <column caption='Pathology Key' datatype='integer' hidden='true' name='[Pathology_Key]' role='dimension' type='ordinal' />
       <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
       <column caption='Patient Key' datatype='integer' name='[Patient_Key]' role='dimension' type='ordinal' />
       <column caption='Patient Parent ID' datatype='string' name='[Patient_Parent_ID]' role='dimension' type='nominal' />
-      <column caption='Period Full Name' datatype='string' name='[Period_Full_Name]' role='dimension' type='nominal' />
-      <column caption='Period Key' datatype='integer' name='[Period_Key]' role='dimension' type='ordinal' />
+      <column caption='Period Key' datatype='integer' hidden='true' name='[Period_Key]' role='dimension' type='ordinal' />
       <column caption='Period' datatype='string' name='[Period_Name]' role='dimension' type='nominal' />
       <column caption='Period Number' datatype='integer' name='[Period_Number]' role='dimension' type='ordinal' />
       <column caption='Period Year' datatype='string' name='[Period_Year]' role='dimension' type='nominal' />
-      <column caption='Period Year Key' datatype='integer' name='[Period_Year_Key]' role='dimension' type='ordinal' />
+      <column caption='Period Year Key' datatype='integer' hidden='true' name='[Period_Year_Key]' role='dimension' type='ordinal' />
       <column caption='Period Year Number' datatype='integer' name='[Period_Year_Number]' role='dimension' type='ordinal' />
       <column aggregation='Avg' caption='Right SLS' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Right_SLS]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='Right Step Length' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Right_Step_Length]' role='measure' type='quantitative' />
       <column caption='Series Period Key' datatype='integer' name='[Series_Period_Key]' role='dimension' type='ordinal' />
       <column caption='Series Period Name' datatype='string' name='[Series_Period_Name]' role='dimension' type='nominal' />
-      <column caption='Teritorry Key' datatype='integer' name='[Teritorry_Key]' role='dimension' type='ordinal' />
+      <column caption='Teritorry Key' datatype='integer' hidden='true' name='[Teritorry_Key]' role='dimension' type='ordinal' />
       <column aggregation='Avg' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Velocity]' role='measure' type='quantitative' />
       <column caption='Visit Date' datatype='date' name='[Visit_Date]' role='dimension' type='ordinal' />
+      <column caption='Visit Functional Classification' datatype='string' name='[Visit_Functional_Classification]' role='dimension' type='nominal' />
       <column caption='Visit ID' datatype='string' name='[Visit_ID]' role='dimension' type='nominal' />
       <column-instance column='[Period_Name]' derivation='None' name='[none:Period_Name:nk]' pivot='key' type='nominal' />
       <column-instance column='[Period_Year]' derivation='None' name='[none:Period_Year:nk]' pivot='key' type='nominal' />
@@ -993,9 +1085,10 @@
           <field>[Pathology_Area]</field>
           <field>[Pathology]</field>
         </drill-path>
-        <drill-path name='Patient'>
+        <drill-path name='Patient ID'>
           <field>[Patient_Parent_ID]</field>
           <field>[Patient_ID]</field>
+          <field>[Patient_Key]</field>
         </drill-path>
       </drill-paths>
       <folder name='Clinics' role='dimensions'>
@@ -1005,21 +1098,26 @@
         <folder-item name='[Teritorry_Key]' type='field' />
         <folder-item name='Clinic' type='drillpath' />
       </folder>
+      <folder name='Functional Classification' role='dimensions'>
+        <folder-item name='[FC_Grade_Key]' type='field' />
+        <folder-item name='[IC_FC_Key]' type='field' />
+        <folder-item name='[IC_Functional_Classification]' type='field' />
+        <folder-item name='[Visit_Functional_Classification]' type='field' />
+      </folder>
       <folder name='Patient Current Data' role='dimensions'>
         <folder-item name='[Activity_Status]' type='field' />
         <folder-item name='[Activity_Status_Key]' type='field' />
         <folder-item name='[Insurer]' type='field' />
         <folder-item name='[Insurer_Key]' type='field' />
+        <folder-item name='[Is_Historical_Patient]' type='field' />
         <folder-item name='[PT_Key]' type='field' />
         <folder-item name='[PT_Name]' type='field' />
         <folder-item name='[Pathology_Area_Key]' type='field' />
         <folder-item name='[Pathology_Key]' type='field' />
-        <folder-item name='[Patient_Key]' type='field' />
         <folder-item name='Pathology' type='drillpath' />
-        <folder-item name='Patient' type='drillpath' />
+        <folder-item name='Patient ID' type='drillpath' />
       </folder>
       <folder name='Periods' role='dimensions'>
-        <folder-item name='[Period_Full_Name]' type='field' />
         <folder-item name='[Period_Key]' type='field' />
         <folder-item name='[Period_Name]' type='field' />
         <folder-item name='[Period_Number]' type='field' />
@@ -1036,16 +1134,20 @@
         <folder-item name='[Visit_ID]' type='field' />
       </folder>
       <folder name='SLS' role='measures'>
+        <folder-item name='[Calculation_570549801600049152]' type='field' />
         <folder-item name='[IC_Left_SLS]' type='field' />
         <folder-item name='[IC_Less_Symptomatic_SLS]' type='field' />
         <folder-item name='[IC_More_Symptomatic_SLS]' type='field' />
         <folder-item name='[IC_Right_SLS]' type='field' />
         <folder-item name='[Left_SLS]' type='field' />
         <folder-item name='[Less_Symptomatic_SLS]' type='field' />
+        <folder-item name='[MS SLS Avg Change Percent (copy)]' type='field' />
         <folder-item name='[More_Symptomatic_SLS]' type='field' />
         <folder-item name='[Right_SLS]' type='field' />
       </folder>
       <folder name='Step Length' role='measures'>
+        <folder-item name='[Calculation_570549801600360449]' type='field' />
+        <folder-item name='[Calculation_570549801600438274]' type='field' />
         <folder-item name='[IC_Left_Step_Length]' type='field' />
         <folder-item name='[IC_Less_Symptomatic_Step_Length]' type='field' />
         <folder-item name='[IC_More_Symptomatic_Step_Length]' type='field' />
@@ -1056,55 +1158,30 @@
         <folder-item name='[Right_Step_Length]' type='field' />
       </folder>
       <folder name='Velocity' role='measures'>
+        <folder-item name='[Calculation_857935745677983748]' type='field' />
         <folder-item name='[IC_Velocity]' type='field' />
         <folder-item name='[Velocity]' type='field' />
       </folder>
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Gait_Series (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/15/2018 12:21:54 PM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Gait_Series (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2018 11:16:43 AM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='317132' timestamp-start='2018-07-15 12:21:54.886' />
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='317369' timestamp-start='2018-07-26 11:16:43.463' />
           </refresh>
           <metadata-records>
-            <metadata-record class='column'>
-              <remote-name>Clinic_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Clinic_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Clinic_Key</remote-alias>
-              <ordinal>0</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>10</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
             <metadata-record class='column'>
               <remote-name>Clinic_Name</remote-name>
               <remote-type>129</remote-type>
               <local-name>[Clinic_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Clinic_Name</remote-alias>
-              <ordinal>1</ordinal>
+              <ordinal>0</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>10</approx-count>
+              <approx-count>13</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Clinic_Branch_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Clinic_Branch_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Clinic_Branch_Key</remote-alias>
-              <ordinal>2</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>10</approx-count>
-              <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Clinic_Branch</remote-name>
@@ -1112,26 +1189,13 @@
               <local-name>[Clinic_Branch]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Clinic_Branch</remote-alias>
-              <ordinal>3</ordinal>
+              <ordinal>1</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>10</approx-count>
+              <approx-count>13</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Teritorry_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Teritorry_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Teritorry_Key</remote-alias>
-              <ordinal>4</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
-              <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Teritorry</remote-name>
@@ -1139,7 +1203,35 @@
               <local-name>[Teritorry]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Teritorry</remote-alias>
-              <ordinal>5</ordinal>
+              <ordinal>2</ordinal>
+              <family>v_CIO_General_Gait_Series</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Continent]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Continent</remote-alias>
+              <ordinal>3</ordinal>
+              <family>v_CIO_General_Gait_Series</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Activity_Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Activity_Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Activity_Status</remote-alias>
+              <ordinal>4</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1148,70 +1240,16 @@
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Continent_Key</remote-name>
+              <remote-name>Is_Historical_Patient</remote-name>
               <remote-type>20</remote-type>
-              <local-name>[Continent_Key]</local-name>
+              <local-name>[Is_Historical_Patient]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Continent_Key</remote-alias>
-              <ordinal>6</ordinal>
+              <remote-alias>Is_Historical_Patient</remote-alias>
+              <ordinal>5</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Continent</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Continent]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Continent</remote-alias>
-              <ordinal>7</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Activity_Status_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Activity_Status_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Activity_Status_Key</remote-alias>
-              <ordinal>8</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>3</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Activity_Status</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Activity_Status]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Activity_Status</remote-alias>
-              <ordinal>9</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Pathology_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Pathology_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Pathology_Key</remote-alias>
-              <ordinal>10</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>43</approx-count>
+              <approx-count>2</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1220,26 +1258,13 @@
               <local-name>[Pathology]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Pathology</remote-alias>
-              <ordinal>11</ordinal>
+              <ordinal>6</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>42</approx-count>
+              <approx-count>46</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Pathology_Area_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Pathology_Area_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Pathology_Area_Key</remote-alias>
-              <ordinal>12</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>5</approx-count>
-              <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pathology_Area</remote-name>
@@ -1247,26 +1272,13 @@
               <local-name>[Pathology_Area]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Pathology_Area</remote-alias>
-              <ordinal>13</ordinal>
+              <ordinal>7</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
+              <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Insurer_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Insurer_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Insurer_Key</remote-alias>
-              <ordinal>14</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
-              <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Insurer</remote-name>
@@ -1274,26 +1286,13 @@
               <local-name>[Insurer]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Insurer</remote-alias>
-              <ordinal>15</ordinal>
+              <ordinal>8</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>PT_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[PT_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>PT_Key</remote-alias>
-              <ordinal>16</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>59</approx-count>
-              <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>PT_Name</remote-name>
@@ -1301,11 +1300,11 @@
               <local-name>[PT_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>PT_Name</remote-alias>
-              <ordinal>17</ordinal>
+              <ordinal>9</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>58</approx-count>
+              <approx-count>63</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1315,11 +1314,11 @@
               <local-name>[Patient_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Patient_Key</remote-alias>
-              <ordinal>18</ordinal>
+              <ordinal>10</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>47251</approx-count>
+              <approx-count>29294</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1328,11 +1327,11 @@
               <local-name>[Patient_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Patient_ID</remote-alias>
-              <ordinal>19</ordinal>
+              <ordinal>11</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>47251</approx-count>
+              <approx-count>29294</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1342,11 +1341,11 @@
               <local-name>[Patient_Parent_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Patient_Parent_ID</remote-alias>
-              <ordinal>20</ordinal>
+              <ordinal>12</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>47251</approx-count>
+              <approx-count>29294</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1356,11 +1355,11 @@
               <local-name>[IC_Date]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Date</remote-alias>
-              <ordinal>21</ordinal>
+              <ordinal>13</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>1994</approx-count>
+              <approx-count>1638</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1369,11 +1368,11 @@
               <local-name>[IC_Visit_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Visit_ID</remote-alias>
-              <ordinal>22</ordinal>
+              <ordinal>14</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>47251</approx-count>
+              <approx-count>29294</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1383,11 +1382,11 @@
               <local-name>[Visit_Date]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Visit_Date</remote-alias>
-              <ordinal>23</ordinal>
+              <ordinal>15</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2060</approx-count>
+              <approx-count>2272</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1396,11 +1395,11 @@
               <local-name>[Visit_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Visit_ID</remote-alias>
-              <ordinal>24</ordinal>
+              <ordinal>16</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>142004</approx-count>
+              <approx-count>68554</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1410,24 +1409,11 @@
               <local-name>[Days_from_IC]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Days_from_IC</remote-alias>
-              <ordinal>25</ordinal>
+              <ordinal>17</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>177</approx-count>
-              <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Period_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Period_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Period_Key</remote-alias>
-              <ordinal>26</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>23</approx-count>
+              <approx-count>164</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1436,26 +1422,12 @@
               <local-name>[Period_Number]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Number</remote-alias>
-              <ordinal>27</ordinal>
+              <ordinal>18</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>23</approx-count>
+              <approx-count>27</approx-count>
               <contains-null>true</contains-null>
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Period_Full_Name</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Period_Full_Name]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Period_Full_Name</remote-alias>
-              <ordinal>28</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>23</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Period_Name</remote-name>
@@ -1463,26 +1435,13 @@
               <local-name>[Period_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Name</remote-alias>
-              <ordinal>29</ordinal>
+              <ordinal>19</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>23</approx-count>
+              <approx-count>27</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>Period_Year_Key</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[Period_Year_Key]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>Period_Year_Key</remote-alias>
-              <ordinal>30</ordinal>
-              <family>v_CIO_General_Gait_Series</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
-              <approx-count>8</approx-count>
-              <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Period_Year_Number</remote-name>
@@ -1490,11 +1449,11 @@
               <local-name>[Period_Year_Number]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year_Number</remote-alias>
-              <ordinal>31</ordinal>
+              <ordinal>20</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>8</approx-count>
+              <approx-count>9</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1503,11 +1462,11 @@
               <local-name>[Period_Year]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year</remote-alias>
-              <ordinal>32</ordinal>
+              <ordinal>21</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>8</approx-count>
+              <approx-count>9</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1517,11 +1476,11 @@
               <local-name>[Series_Period_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Series_Period_Key</remote-alias>
-              <ordinal>33</ordinal>
+              <ordinal>22</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>25</approx-count>
+              <approx-count>31</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1530,11 +1489,11 @@
               <local-name>[Series_Period_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Series_Period_Name</remote-alias>
-              <ordinal>34</ordinal>
+              <ordinal>23</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>25</approx-count>
+              <approx-count>31</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1544,11 +1503,11 @@
               <local-name>[IC_Left_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Left_SLS</remote-alias>
-              <ordinal>35</ordinal>
+              <ordinal>24</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>112</approx-count>
+              <approx-count>120</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1557,11 +1516,11 @@
               <local-name>[Left_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Left_SLS</remote-alias>
-              <ordinal>36</ordinal>
+              <ordinal>25</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>108</approx-count>
+              <approx-count>112</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1570,11 +1529,11 @@
               <local-name>[IC_Right_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Right_SLS</remote-alias>
-              <ordinal>37</ordinal>
+              <ordinal>26</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>114</approx-count>
+              <approx-count>113</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1583,11 +1542,11 @@
               <local-name>[Right_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Right_SLS</remote-alias>
-              <ordinal>38</ordinal>
+              <ordinal>27</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>109</approx-count>
+              <approx-count>116</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1596,11 +1555,11 @@
               <local-name>[IC_Less_Symptomatic_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Less_Symptomatic_SLS</remote-alias>
-              <ordinal>39</ordinal>
+              <ordinal>28</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>113</approx-count>
+              <approx-count>116</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1609,11 +1568,11 @@
               <local-name>[Less_Symptomatic_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Less_Symptomatic_SLS</remote-alias>
-              <ordinal>40</ordinal>
+              <ordinal>29</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>113</approx-count>
+              <approx-count>120</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1622,11 +1581,11 @@
               <local-name>[IC_More_Symptomatic_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_More_Symptomatic_SLS</remote-alias>
-              <ordinal>41</ordinal>
+              <ordinal>30</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>98</approx-count>
+              <approx-count>104</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1635,11 +1594,11 @@
               <local-name>[More_Symptomatic_SLS]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>More_Symptomatic_SLS</remote-alias>
-              <ordinal>42</ordinal>
+              <ordinal>31</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>97</approx-count>
+              <approx-count>104</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1648,11 +1607,11 @@
               <local-name>[IC_Left_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Left_Step_Length</remote-alias>
-              <ordinal>43</ordinal>
+              <ordinal>32</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>343</approx-count>
+              <approx-count>340</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1661,11 +1620,11 @@
               <local-name>[Left_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Left_Step_Length</remote-alias>
-              <ordinal>44</ordinal>
+              <ordinal>33</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>327</approx-count>
+              <approx-count>356</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1674,11 +1633,11 @@
               <local-name>[IC_Right_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Right_Step_Length</remote-alias>
-              <ordinal>45</ordinal>
+              <ordinal>34</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>356</approx-count>
+              <approx-count>365</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1687,11 +1646,11 @@
               <local-name>[Right_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Right_Step_Length</remote-alias>
-              <ordinal>46</ordinal>
+              <ordinal>35</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>324</approx-count>
+              <approx-count>335</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1700,11 +1659,11 @@
               <local-name>[IC_Less_Symptomatic_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Less_Symptomatic_Step_Length</remote-alias>
-              <ordinal>47</ordinal>
+              <ordinal>36</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>330</approx-count>
+              <approx-count>328</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1713,11 +1672,11 @@
               <local-name>[Less_Symptomatic_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Less_Symptomatic_Step_Length</remote-alias>
-              <ordinal>48</ordinal>
+              <ordinal>37</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>360</approx-count>
+              <approx-count>338</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1726,11 +1685,11 @@
               <local-name>[IC_More_Symptomatic_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_More_Symptomatic_Step_Length</remote-alias>
-              <ordinal>49</ordinal>
+              <ordinal>38</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>318</approx-count>
+              <approx-count>365</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1739,11 +1698,11 @@
               <local-name>[More_Symptomatic_Step_Length]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>More_Symptomatic_Step_Length</remote-alias>
-              <ordinal>50</ordinal>
+              <ordinal>39</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>333</approx-count>
+              <approx-count>359</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1752,11 +1711,11 @@
               <local-name>[IC_Velocity]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Velocity</remote-alias>
-              <ordinal>51</ordinal>
+              <ordinal>40</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>764</approx-count>
+              <approx-count>911</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1765,17 +1724,45 @@
               <local-name>[Velocity]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Velocity</remote-alias>
-              <ordinal>52</ordinal>
+              <ordinal>41</ordinal>
               <family>v_CIO_General_Gait_Series</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>753</approx-count>
+              <approx-count>829</approx-count>
               <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Functional_Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IC_Functional_Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Functional_Classification</remote-alias>
+              <ordinal>42</ordinal>
+              <family>v_CIO_General_Gait_Series</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Visit_Functional_Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Visit_Functional_Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Visit_Functional_Classification</remote-alias>
+              <ordinal>43</ordinal>
+              <family>v_CIO_General_Gait_Series</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.555366' measure-ordering='alphabetic' measure-percentage='0.444634' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.687657' measure-ordering='alphabetic' measure-percentage='0.312343' show-aliased-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="External_Config_Files"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{6F276909-90CA-415F-87A3-3EEA4BF9BA93}">
+  DTS:VersionBuild="43"
+  DTS:VersionGUID="{BC093FA3-F68A-4C0E-B824-1C4C8051BED5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACIX512xzger9VJDT3EJnqmAAAAAASAAACgAAAAEAAAAJiNL0S/kNjUfH+pHar/QxIQAAAAelEA7HmBSEKiBjXZlXTb/BQAAACfKXUSpUtbOPgRR52cFxtjHd6INA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADshcj0n4xHiNPISM3wIVMUAAAAAASAAACgAAAAEAAAABTwFT8+KBHoUlR+lih+ULMQAAAAMu1qhg3GwFZgziITW7dzCBQAAAA9RTbeMpc3exTB8/pLuyoxbmf+2g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -96,8 +96,28 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAC/P9xWhh7quvxqG1TKQWwGAAAAAASAAACgAAAAEAAAADL2HaSkuZGL1N7oSgL4BTcQAAAAoLs/T1PUHAY/UlRYmPRLphQAAAB8BD+sVFSbqrCx3lM1Na9rxqAGyw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB1DFyL6LzdCMZpRPOGIJsDAAAAAASAAACgAAAAEAAAAD+YNOYkOkkWnpJHvEAABJgQAAAAsUWA38iErf5EDNEoa3TfphQAAACOhVA+vDGe5aKSD/zWLpZtNh8NAg</DTS:Password>
         </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Traffic_Light_Definitions]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E7E33431-1088-4AD4-B12F-6E64D2656A87}"
+      DTS:ObjectName="Traffic_Light_Definitions">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Traffic_Light_Definitions.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Traffic_Light_Weights]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{FA32BFCE-CCB9-4BC4-9CAD-3EF331751FBE}"
+      DTS:ObjectName="Traffic_Light_Weights">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Traffic_Light_Weights.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -499,7 +519,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -523,7 +543,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1127,7 +1147,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1151,7 +1171,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1375,39 +1395,39 @@
                               externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Pathology_Area]"
                               lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Pathology_Area]" />
                             <inputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Gold_Data_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Gold_Data_Item_Name]"
                               cachedDataType="wstr"
                               cachedLength="255"
-                              cachedName="Gold_Data_Item"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Item]"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item]" />
+                              cachedName="Gold_Data_Item_Name"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Item_Name]"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item_Name]" />
                             <inputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Gold_Data_Sub_Item]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Gold_Data_Sub_Item"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Sub_Item]"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Sub_Item]" />
-                            <inputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Questionnnaire_ID]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Questionnaire_ID]"
                               cachedDataType="r8"
-                              cachedName="Questionnnaire_ID"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnnaire_ID]"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Questionnnaire_ID]" />
+                              cachedName="Questionnaire_ID"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_ID]"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_ID]" />
                             <inputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Base_Period_Name]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Gold_Data_Item_Display_Name]"
                               cachedDataType="wstr"
                               cachedLength="255"
-                              cachedName="Base_Period_Name"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Base_Period_Name]"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Base_Period_Name]" />
+                              cachedName="Gold_Data_Item_Display_Name"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Item_Display_Name]"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item_Display_Name]" />
                             <inputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Insurer]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Period_Name]"
                               cachedDataType="wstr"
                               cachedLength="255"
-                              cachedName="Insurer"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Insurer]"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Insurer]" />
+                              cachedName="Period_Name"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Name]"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Period_Name]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[Insurer_Group]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Insurer_Group"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Insurer_Group]"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Insurer_Group]" />
                             <inputColumn
                               refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
                               cachedDataType="dbTimeStamp"
@@ -1427,29 +1447,29 @@
                               length="255"
                               name="Pathology_Area" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Item_Name]"
                               dataType="wstr"
                               length="255"
-                              name="Gold_Data_Item" />
+                              name="Gold_Data_Item_Name" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Sub_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Item_Display_Name]"
                               dataType="wstr"
                               length="255"
-                              name="Gold_Data_Sub_Item" />
+                              name="Gold_Data_Item_Display_Name" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnnaire_ID]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_ID]"
                               dataType="i4"
-                              name="Questionnnaire_ID" />
+                              name="Questionnaire_ID" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Base_Period_Name]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Name]"
                               dataType="wstr"
                               length="255"
-                              name="Base_Period_Name" />
+                              name="Period_Name" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Insurer]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Insurer_Group]"
                               dataType="wstr"
                               length="255"
-                              name="Insurer" />
+                              name="Insurer_Group" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               dataType="dbTimeStamp"
@@ -1555,53 +1575,53 @@
                               name="Pathology_Area"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item_Name]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Item]"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Item_Name]"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item]"
-                              name="Gold_Data_Item"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item_Name]"
+                              name="Gold_Data_Item_Name"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Sub_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item_Display_Name]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Sub_Item]"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Item_Display_Name]"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Sub_Item]"
-                              name="Gold_Data_Sub_Item"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Gold_Data_Item_Display_Name]"
+                              name="Gold_Data_Item_Display_Name"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Questionnnaire_ID]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_ID]"
                               dataType="r8"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnnaire_ID]"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Questionnnaire_ID]"
-                              name="Questionnnaire_ID"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnaire_ID]"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_ID]"
+                              name="Questionnaire_ID"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Base_Period_Name]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Period_Name]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Base_Period_Name]"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Name]"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Base_Period_Name]"
-                              name="Base_Period_Name"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Period_Name]"
+                              name="Period_Name"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Insurer]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Insurer_Group]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Insurer]"
+                              externalMetadataColumnId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Insurer_Group]"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Insurer]"
-                              name="Insurer"
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].Columns[Insurer_Group]"
+                              name="Insurer_Group"
                               truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
@@ -1616,29 +1636,29 @@
                               length="255"
                               name="Pathology_Area" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Item_Name]"
                               dataType="wstr"
                               length="255"
-                              name="Gold_Data_Item" />
+                              name="Gold_Data_Item_Name" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Sub_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Gold_Data_Item_Display_Name]"
                               dataType="wstr"
                               length="255"
-                              name="Gold_Data_Sub_Item" />
+                              name="Gold_Data_Item_Display_Name" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnnaire_ID]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnaire_ID]"
                               dataType="r8"
-                              name="Questionnnaire_ID" />
+                              name="Questionnaire_ID" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Base_Period_Name]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Name]"
                               dataType="wstr"
                               length="255"
-                              name="Base_Period_Name" />
+                              name="Period_Name" />
                             <externalMetadataColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Insurer]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Output].ExternalColumns[Insurer_Group]"
                               dataType="wstr"
                               length="255"
-                              name="Insurer" />
+                              name="Insurer_Group" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -1658,34 +1678,34 @@
                               lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Pathology_Area]"
                               name="Pathology_Area" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Item_Name]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Item]"
-                              name="Gold_Data_Item" />
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Item_Name]"
+                              name="Gold_Data_Item_Name" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Sub_Item]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Item_Display_Name]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Sub_Item]"
-                              name="Gold_Data_Sub_Item" />
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Gold_Data_Item_Display_Name]"
+                              name="Gold_Data_Item_Display_Name" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Questionnnaire_ID]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Questionnaire_ID]"
                               dataType="r8"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Questionnnaire_ID]"
-                              name="Questionnnaire_ID" />
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Questionnaire_ID]"
+                              name="Questionnaire_ID" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Base_Period_Name]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Period_Name]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Base_Period_Name]"
-                              name="Base_Period_Name" />
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Period_Name]"
+                              name="Period_Name" />
                             <outputColumn
-                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Insurer]"
+                              refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Insurer_Group]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Insurer]"
-                              name="Insurer" />
+                              lineageId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[Insurer_Group]"
+                              name="Insurer_Group" />
                             <outputColumn
                               refId="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\Gold_Data_Definitions.Outputs[Excel Source Error Output].Columns[ErrorCode]"
                               dataType="i4"
@@ -1728,7 +1748,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1752,7 +1772,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2228,7 +2248,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2252,7 +2272,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2463,12 +2483,6 @@
                           name="OLE DB Destination Input">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Order]"
-                              cachedDataType="r8"
-                              cachedName="Order"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Order]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Order]" />
-                            <inputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Insurer_Group]"
                               cachedDataType="wstr"
                               cachedLength="255"
@@ -2487,31 +2501,6 @@
                               cachedName="Range_Max_Days"
                               externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Range_Max_Days]"
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Range_Max_Days]" />
-                            <inputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Display_Min_Days]"
-                              cachedDataType="r8"
-                              cachedName="Display_Min_Days"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Display_Min_Days]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Display_Min_Days]" />
-                            <inputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Display_Max_Days]"
-                              cachedDataType="r8"
-                              cachedName="Display_Max_Days"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Display_Max_Days]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Display_Max_Days]" />
-                            <inputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Base_Period_Name]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Base_Period_Name"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Base_Period_Name]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Base_Period_Name]" />
-                            <inputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Period_Number]"
-                              cachedDataType="r8"
-                              cachedName="Period_Number"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Number]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]" />
                             <inputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Period_Name]"
                               cachedDataType="wstr"
@@ -2545,13 +2534,19 @@
                               cachedName="DB_Create_Date"
                               externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
+                            <inputColumn
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].Columns[Period_Number]"
+                              cachedDataType="r8"
+                              cachedName="Period_Number"
+                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Number]"
+                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Order]"
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Number]"
                               dataType="i4"
-                              name="Order" />
+                              name="Period_Number" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Insurer_Group]"
                               dataType="wstr"
@@ -2565,23 +2560,6 @@
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Range_Max_Days]"
                               dataType="i4"
                               name="Range_Max_Days" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Display_Min_Days]"
-                              dataType="i4"
-                              name="Display_Min_Days" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Display_Max_Days]"
-                              dataType="i4"
-                              name="Display_Max_Days" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Base_Period_Name]"
-                              dataType="wstr"
-                              length="255"
-                              name="Base_Period_Name" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Number]"
-                              dataType="i4"
-                              name="Period_Number" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Period_Name]"
                               dataType="wstr"
@@ -2687,13 +2665,13 @@
                           name="Excel Source Output">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Order]"
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]"
                               dataType="r8"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Order]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Order]"
-                              name="Order"
+                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Number]"
+                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]"
+                              name="Period_Number"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Insurer_Group]"
@@ -2722,43 +2700,6 @@
                               externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Range_Max_Days]"
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Range_Max_Days]"
                               name="Range_Max_Days"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Display_Min_Days]"
-                              dataType="r8"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Display_Min_Days]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Display_Min_Days]"
-                              name="Display_Min_Days"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Display_Max_Days]"
-                              dataType="r8"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Display_Max_Days]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Display_Max_Days]"
-                              name="Display_Max_Days"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Base_Period_Name]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Base_Period_Name]"
-                              length="255"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Base_Period_Name]"
-                              name="Base_Period_Name"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]"
-                              dataType="r8"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Number]"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Number]"
-                              name="Period_Number"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].Columns[Period_Name]"
@@ -2803,9 +2744,9 @@
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Order]"
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Number]"
                               dataType="r8"
-                              name="Order" />
+                              name="Period_Number" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Insurer_Group]"
                               dataType="wstr"
@@ -2819,23 +2760,6 @@
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Range_Max_Days]"
                               dataType="r8"
                               name="Range_Max_Days" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Display_Min_Days]"
-                              dataType="r8"
-                              name="Display_Min_Days" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Display_Max_Days]"
-                              dataType="r8"
-                              name="Display_Max_Days" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Base_Period_Name]"
-                              dataType="wstr"
-                              length="255"
-                              name="Base_Period_Name" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Number]"
-                              dataType="r8"
-                              name="Period_Number" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Output].ExternalColumns[Period_Name]"
                               dataType="wstr"
@@ -2863,10 +2787,10 @@
                           name="Excel Source Error Output">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Order]"
+                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Period_Number]"
                               dataType="r8"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Order]"
-                              name="Order" />
+                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Period_Number]"
+                              name="Period_Number" />
                             <outputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Insurer_Group]"
                               dataType="wstr"
@@ -2883,27 +2807,6 @@
                               dataType="r8"
                               lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Range_Max_Days]"
                               name="Range_Max_Days" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Display_Min_Days]"
-                              dataType="r8"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Display_Min_Days]"
-                              name="Display_Min_Days" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Display_Max_Days]"
-                              dataType="r8"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Display_Max_Days]"
-                              name="Display_Max_Days" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Base_Period_Name]"
-                              dataType="wstr"
-                              length="255"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Base_Period_Name]"
-                              name="Base_Period_Name" />
-                            <outputColumn
-                              refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Period_Number]"
-                              dataType="r8"
-                              lineageId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Period_Number]"
-                              name="Period_Number" />
                             <outputColumn
                               refId="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions.Outputs[Excel Source Error Output].Columns[Period_Name]"
                               dataType="wstr"
@@ -2969,7 +2872,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2993,7 +2896,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3032,6 +2935,1319 @@
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 1"
               DTS:To="Package\Load External Files\KPI Period Definitions\Log End" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load External Files\Traffic Light Definitions"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:DTSID="{44e6151f-cfa8-49c0-beda-dab932a2a54f}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Traffic Light Definitions">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{43d7f5f9-ca75-44b7-a03c-7ba5b79fd5a1}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Load ext Traffic_Light_Definitions"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                      name="Derived Column"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input]"
+                          description="Input to the Derived Column Transformation"
+                          name="Derived Column Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input].Columns[TL Group]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="TL Group"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[TL Group]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input].Columns[Questionnaire]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Questionnaire"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input].Columns[Questionnaire_Category]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Questionnaire_Category"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_Category]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output]"
+                          description="Default Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          name="Derived Column Output"
+                          synchronousInputId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              name="DB_Create_Date"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">[GETDATE]()</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">GETDATE()</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[TL_Group_Str]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[TL_Group_Str]"
+                              name="TL_Group_Str"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_STR,50,1252)#{Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[TL Group]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_STR,50,1252)[TL Group]</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Short]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Short]"
+                              name="Questionnaire_Short"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_WSTR,50)#{Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_WSTR,50)Questionnaire</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Category_Short]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Category_Short]"
+                              name="Questionnaire_Category_Short"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_WSTR,50)#{Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_Category]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_WSTR,50)Questionnaire_Category</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Error Output]"
+                          description="Error Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Derived Column Error Output"
+                          synchronousInputId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="ext Traffic_Light_Definitions"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[ext].[Traffic_Light_Definitions]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[MRR]"
+                          connectionManagerRefId="Package.ConnectionManagers[MRR]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Score]"
+                              cachedDataType="r8"
+                              cachedName="Score"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Score]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Score]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Min_Eq_Percent]"
+                              cachedDataType="r8"
+                              cachedName="Min_Eq_Percent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Min_Eq_Percent]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Min_Eq_Percent]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Max_Percent]"
+                              cachedDataType="r8"
+                              cachedName="Max_Percent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Max_Percent]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Max_Percent]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Min_Eq_Value]"
+                              cachedDataType="r8"
+                              cachedName="Min_Eq_Value"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Min_Eq_Value]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Min_Eq_Value]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Max_Value]"
+                              cachedDataType="r8"
+                              cachedName="Max_Value"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Max_Value]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Max_Value]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="DB_Create_Date"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[TL_Group_Str]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="TL_Group_Str"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[TL_Group]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[TL_Group_Str]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Questionnaire_Short]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="Questionnaire_Short"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Short]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].Columns[Questionnaire_Category_Short]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="Questionnaire_Category_Short"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Category]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Category_Short]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[TL_Group]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="TL_Group" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Score]"
+                              dataType="i4"
+                              name="Score" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire]"
+                              dataType="wstr"
+                              length="50"
+                              name="Questionnaire" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Category]"
+                              dataType="wstr"
+                              length="50"
+                              name="Questionnaire_Category" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Min_Eq_Percent]"
+                              dataType="r8"
+                              name="Min_Eq_Percent" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Max_Percent]"
+                              dataType="r8"
+                              name="Max_Percent" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Min_Eq_Value]"
+                              dataType="i4"
+                              name="Min_Eq_Value" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[Max_Value]"
+                              dataType="i4"
+                              name="Max_Value" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              dataType="dbTimeStamp"
+                              name="DB_Create_Date" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions"
+                      componentClassID="Microsoft.ExcelSource"
+                      contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Excel Source"
+                      name="Traffic_Light_Definitions"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">Sheet1$</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.String"
+                          description="The variable that contains the SQL command to be executed."
+                          name="SqlCommandVariable"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">0</property>
+                        <property
+                          dataType="System.String"
+                          description="The mapping from parameters in the SQL command to variables."
+                          name="ParameterMapping"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[Traffic_Light_Definitions]"
+                          connectionManagerRefId="Package.ConnectionManagers[Traffic_Light_Definitions]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output]"
+                          name="Excel Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[TL Group]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[TL Group]"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[TL Group]"
+                              name="TL Group"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Score]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Score]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Score]"
+                              name="Score"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnaire]"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire]"
+                              name="Questionnaire"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_Category]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnaire_Category]"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Questionnaire_Category]"
+                              name="Questionnaire_Category"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Min_Eq_Percent]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Min_Eq_Percent]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Min_Eq_Percent]"
+                              name="Min_Eq_Percent"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Max_Percent]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Max_Percent]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Max_Percent]"
+                              name="Max_Percent"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Min_Eq_Value]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Min_Eq_Value]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Min_Eq_Value]"
+                              name="Min_Eq_Value"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Max_Value]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Max_Value]"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].Columns[Max_Value]"
+                              name="Max_Value"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[TL Group]"
+                              dataType="wstr"
+                              length="255"
+                              name="TL Group" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Score]"
+                              dataType="r8"
+                              name="Score" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnaire]"
+                              dataType="wstr"
+                              length="255"
+                              name="Questionnaire" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Questionnaire_Category]"
+                              dataType="wstr"
+                              length="255"
+                              name="Questionnaire_Category" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Min_Eq_Percent]"
+                              dataType="r8"
+                              name="Min_Eq_Percent" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Max_Percent]"
+                              dataType="r8"
+                              name="Max_Percent" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Min_Eq_Value]"
+                              dataType="r8"
+                              name="Min_Eq_Value" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output].ExternalColumns[Max_Value]"
+                              dataType="r8"
+                              name="Max_Value" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output]"
+                          isErrorOut="true"
+                          name="Excel Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[TL Group]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[TL Group]"
+                              name="TL Group" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Score]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Score]"
+                              name="Score" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Questionnaire]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Questionnaire]"
+                              name="Questionnaire" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Questionnaire_Category]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Questionnaire_Category]"
+                              name="Questionnaire_Category" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Min_Eq_Percent]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Min_Eq_Percent]"
+                              name="Min_Eq_Percent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Max_Percent]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Max_Percent]"
+                              name="Max_Percent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Min_Eq_Value]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Min_Eq_Value]"
+                              name="Min_Eq_Value" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Max_Value]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[Max_Value]"
+                              name="Max_Value" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions.Paths[Derived Column Output]"
+                      endId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions.Inputs[OLE DB Destination Input]"
+                      name="Derived Column Output"
+                      startId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Outputs[Derived Column Output]" />
+                    <path
+                      refId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions.Paths[Excel Source Output]"
+                      endId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column.Inputs[Derived Column Input]"
+                      name="Excel Source Output"
+                      startId="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions.Outputs[Excel Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Traffic Light Definitions\Log End"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{eae9c9f9-a5d6-4f13-9d20-0b8d58d851b4}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log End"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="6">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{219A720B-A3F6-4819-939A-B015563EF0AE}"
+                  SQLTask:SqlStatementSource="UPDATE DWH.adm.BI_Job_Monitoring &#xA;SET &#xA; EndTime = GETDATE(),&#xA; Duration = DATEDIFF(SECOND,StartTime,GETDATE()),&#xA; RecordCount = (SELECT COUNT(*) FROM ext.Traffic_Light_Definitions)&#xA;WHERE JobKey = ?&#xA;AND TableName = 'Ext Traffic_Light_Definitions';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::JobKey"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Traffic Light Definitions\Log Start"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{d53e9f84-0f17-4a15-88ab-e63d342251a2}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log Start"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="6">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{219A720B-A3F6-4819-939A-B015563EF0AE}"
+                  SQLTask:SqlStatementSource="TRUNCATE TABLE ext.Traffic_Light_Definitions;&#xA;&#xA;INSERT INTO DWH.adm.BI_Job_Monitoring (JobKey, PackageName, TableName, StartDate, StartTime)&#xA;VALUES (?, ?, 'Ext Traffic_Light_Definitions', GETDATE(), GETDATE());&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::JobKey"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Traffic Light Definitions.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{b9e25eb0-986c-4229-9ce7-b05f9e37bb1e}"
+              DTS:From="Package\Load External Files\Traffic Light Definitions\Log Start"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Traffic Light Definitions.PrecedenceConstraints[Constraint 1]"
+              DTS:CreationName=""
+              DTS:DTSID="{3f75acb1-1ec1-43ee-8fe2-32d8ba2cd8ab}"
+              DTS:From="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 1"
+              DTS:To="Package\Load External Files\Traffic Light Definitions\Log End" />
+          </DTS:PrecedenceConstraints>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Load External Files\Traffic Light Weights"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:DTSID="{a0127f9c-289e-4929-8976-f5970f75aae0}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Traffic Light Weights">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights"
+              DTS:CreationName="Microsoft.Pipeline"
+              DTS:Description="Data Flow Task"
+              DTS:DTSID="{9d8c2a38-3531-4c88-93c1-aad4c02718ca}"
+              DTS:ExecutableType="Microsoft.Pipeline"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Load ext Traffic_Light_Weights"
+              DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <pipeline
+                  version="1">
+                  <components>
+                    <component
+                      refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column"
+                      componentClassID="Microsoft.DerivedColumn"
+                      contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                      name="Derived Column"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input]"
+                          description="Input to the Derived Column Transformation"
+                          name="Derived Column Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input].Columns[Pathology_Area]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Pathology_Area"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Pathology_Area]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input].Columns[Weight_Group]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Weight_Group"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Weight_Group]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input].Columns[Questionnaire]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Questionnaire"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output]"
+                          description="Default Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          name="Derived Column Output"
+                          synchronousInputId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              dataType="dbTimeStamp"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              name="DB_Create_Date"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">[GETDATE]()</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">GETDATE()</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Pathology_Area_Str]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Pathology_Area_Str]"
+                              name="Pathology_Area_Str"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_STR,50,1252)#{Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Pathology_Area]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_STR,50,1252)Pathology_Area</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Weight_Group_Str]"
+                              codePage="1252"
+                              dataType="str"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Weight_Group_Str]"
+                              name="Weight_Group_Str"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_STR,50,1252)#{Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Weight_Group]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_STR,50,1252)Weight_Group</property>
+                              </properties>
+                            </outputColumn>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Short]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Computation"
+                              errorRowDisposition="FailComponent"
+                              length="50"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Short]"
+                              name="Questionnaire_Short"
+                              truncationRowDisposition="FailComponent">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Expression"
+                                  name="Expression">(DT_WSTR,50)#{Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire]}</property>
+                                <property
+                                  containsID="true"
+                                  dataType="System.String"
+                                  description="Derived Column Friendly Expression"
+                                  expressionType="Notify"
+                                  name="FriendlyExpression">(DT_WSTR,50)Questionnaire</property>
+                              </properties>
+                            </outputColumn>
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Error Output]"
+                          description="Error Output of the Derived Column Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Derived Column Error Output"
+                          synchronousInputId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights"
+                      componentClassID="Microsoft.OLEDBDestination"
+                      contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                      description="OLE DB Destination"
+                      name="ext Traffic_Light_Weights"
+                      usesDispositions="true"
+                      version="4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">[ext].[Traffic_Light_Weights]</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the column code page to use when code page information is unavailable from the data source."
+                          name="DefaultCodePage">1252</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Forces the use of the DefaultCodePage property value when describing character data."
+                          name="AlwaysUseDefaultCodePage">false</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">3</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepIdentity">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                          name="FastLoadKeepNulls">false</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                          name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                          name="FastLoadMaxInsertCommitSize">2147483647</property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[MRR]"
+                          connectionManagerRefId="Package.ConnectionManagers[MRR]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <inputs>
+                        <input
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input]"
+                          errorOrTruncationOperation="Insert"
+                          errorRowDisposition="FailComponent"
+                          hasSideEffects="true"
+                          name="OLE DB Destination Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].Columns[Questionnaire_Weight]"
+                              cachedDataType="r8"
+                              cachedName="Questionnaire_Weight"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Weight]"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire_Weight]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
+                              cachedDataType="dbTimeStamp"
+                              cachedName="DB_Create_Date"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].Columns[Pathology_Area_Str]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="Pathology_Area_Str"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Pathology_Area]"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Pathology_Area_Str]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].Columns[Weight_Group_Str]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="Weight_Group_Str"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Weight_Group]"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Weight_Group_Str]" />
+                            <inputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].Columns[Questionnaire_Short]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="Questionnaire_Short"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire]"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output].Columns[Questionnaire_Short]" />
+                          </inputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Pathology_Area]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="Pathology_Area" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Weight_Group]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="Weight_Group" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire]"
+                              dataType="wstr"
+                              length="50"
+                              name="Questionnaire" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Weight]"
+                              dataType="r8"
+                              name="Questionnaire_Weight" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              dataType="dbTimeStamp"
+                              name="DB_Create_Date" />
+                          </externalMetadataColumns>
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Outputs[OLE DB Destination Error Output]"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="OLE DB Destination Error Output"
+                          synchronousInputId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
+                      refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights"
+                      componentClassID="Microsoft.ExcelSource"
+                      contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Excel Source"
+                      name="Traffic_Light_Weights"
+                      usesDispositions="true"
+                      version="1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                          name="CommandTimeout">0</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the name of the database object used to open a rowset."
+                          name="OpenRowset">Sheet1$</property>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the variable that contains the name of the database object used to open a rowset."
+                          name="OpenRowsetVariable"></property>
+                        <property
+                          dataType="System.String"
+                          description="The SQL command to be executed."
+                          name="SqlCommand"
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                        <property
+                          dataType="System.String"
+                          description="The variable that contains the SQL command to be executed."
+                          name="SqlCommandVariable"></property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the mode used to access the database."
+                          name="AccessMode"
+                          typeConverter="AccessMode">0</property>
+                        <property
+                          dataType="System.String"
+                          description="The mapping from parameters in the SQL command to variables."
+                          name="ParameterMapping"></property>
+                      </properties>
+                      <connections>
+                        <connection
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Connections[OleDbConnection]"
+                          connectionManagerID="Package.ConnectionManagers[Traffic_Light_Weights]"
+                          connectionManagerRefId="Package.ConnectionManagers[Traffic_Light_Weights]"
+                          description="The OLE DB runtime connection used to access the database."
+                          name="OleDbConnection" />
+                      </connections>
+                      <outputs>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output]"
+                          name="Excel Source Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Pathology_Area]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Pathology_Area]"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Pathology_Area]"
+                              name="Pathology_Area"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Weight_Group]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Weight_Group]"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Weight_Group]"
+                              name="Weight_Group"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Questionnaire]"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire]"
+                              name="Questionnaire"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire_Weight]"
+                              dataType="r8"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Questionnaire_Weight]"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].Columns[Questionnaire_Weight]"
+                              name="Questionnaire_Weight"
+                              truncationRowDisposition="FailComponent" />
+                          </outputColumns>
+                          <externalMetadataColumns
+                            isUsed="True">
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Pathology_Area]"
+                              dataType="wstr"
+                              length="255"
+                              name="Pathology_Area" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Weight_Group]"
+                              dataType="wstr"
+                              length="255"
+                              name="Weight_Group" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Questionnaire]"
+                              dataType="wstr"
+                              length="255"
+                              name="Questionnaire" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output].ExternalColumns[Questionnaire_Weight]"
+                              dataType="r8"
+                              name="Questionnaire_Weight" />
+                          </externalMetadataColumns>
+                        </output>
+                        <output
+                          refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output]"
+                          isErrorOut="true"
+                          name="Excel Source Error Output">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Pathology_Area]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Pathology_Area]"
+                              name="Pathology_Area" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Weight_Group]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Weight_Group]"
+                              name="Weight_Group" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Questionnaire]"
+                              dataType="wstr"
+                              length="255"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Questionnaire]"
+                              name="Questionnaire" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Questionnaire_Weight]"
+                              dataType="r8"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[Questionnaire_Weight]"
+                              name="Questionnaire_Weight" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                  </components>
+                  <paths>
+                    <path
+                      refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights.Paths[Derived Column Output]"
+                      endId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights.Inputs[OLE DB Destination Input]"
+                      name="Derived Column Output"
+                      startId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Outputs[Derived Column Output]" />
+                    <path
+                      refId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights.Paths[Excel Source Output]"
+                      endId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column.Inputs[Derived Column Input]"
+                      name="Excel Source Output"
+                      startId="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights.Outputs[Excel Source Output]" />
+                  </paths>
+                </pipeline>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Traffic Light Weights\Log End"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{d68cf870-da35-4f5e-9d73-b8165767e5a0}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log End"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="5">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{219A720B-A3F6-4819-939A-B015563EF0AE}"
+                  SQLTask:SqlStatementSource="UPDATE DWH.adm.BI_Job_Monitoring &#xA;SET &#xA; EndTime = GETDATE(),&#xA; Duration = DATEDIFF(SECOND,StartTime,GETDATE()),&#xA; RecordCount = (SELECT COUNT(*) FROM ext.Traffic_Light_Weights)&#xA;WHERE JobKey = ?&#xA;AND TableName = 'Ext Traffic_Light_Weights';&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::JobKey"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Traffic Light Weights\Log Start"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{cc880ed4-ad63-4622-b32b-1cfe7b39f550}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Log Start"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="5">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{219A720B-A3F6-4819-939A-B015563EF0AE}"
+                  SQLTask:SqlStatementSource="TRUNCATE TABLE ext.Traffic_Light_Weights;&#xA;&#xA;INSERT INTO DWH.adm.BI_Job_Monitoring (JobKey, PackageName, TableName, StartDate, StartTime)&#xA;VALUES (?, ?, 'Ext Traffic_Light_Weights', GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="User::JobKey"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="3"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:PrecedenceConstraints>
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Traffic Light Weights.PrecedenceConstraints[Constraint]"
+              DTS:CreationName=""
+              DTS:DTSID="{e557955f-f8dd-4030-b3fc-1be8aa251041}"
+              DTS:From="Package\Load External Files\Traffic Light Weights\Log Start"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint"
+              DTS:To="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Traffic Light Weights.PrecedenceConstraints[Constraint 1]"
+              DTS:CreationName=""
+              DTS:DTSID="{c2165ee2-046e-49ed-b72c-46aaf99b5a5c}"
+              DTS:From="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 1"
+              DTS:To="Package\Load External Files\Traffic Light Weights\Log End" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
       </DTS:Executables>
@@ -3504,11 +4720,137 @@
           Size="241,350"
           Id="Package\Load External Files\KPI Period Definitions"
           TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="237,42"
+          Id="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions"
+          TopLeft="5.50000000000003,107.5" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Load External Files\Traffic Light Definitions\Log End"
+          TopLeft="60.5,209.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Load External Files\Traffic Light Definitions\Log Start"
+          TopLeft="58,5.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Definitions.PrecedenceConstraints[Constraint]"
+          TopLeft="121.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Definitions.PrecedenceConstraints[Constraint 1]"
+          TopLeft="121.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="1502,411"
-          Size="1502,454"
+          PanelSize="248,307"
+          Size="248,350"
+          Id="Package\Load External Files\Traffic Light Definitions"
+          TopLeft="11,391" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights"
+          TopLeft="5.50000000000003,107.5" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Load External Files\Traffic Light Weights\Log End"
+          TopLeft="60.5,209.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Load External Files\Traffic Light Weights\Log Start"
+          TopLeft="58,5.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Weights.PrecedenceConstraints[Constraint]"
+          TopLeft="118.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Weights.PrecedenceConstraints[Constraint 1]"
+          TopLeft="118.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="248,307"
+          Size="248,350"
+          Id="Package\Load External Files\Traffic Light Weights"
+          TopLeft="308,394" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="1502,807"
+          Size="1502,850"
           Id="Package\Load External Files"
           TopLeft="216.5,313.5" />
         <NodeLayout
@@ -3521,7 +4863,7 @@
           PanelSize="197,103"
           Size="197,146"
           Id="Package\Log End of Package"
-          TopLeft="603,827.5" />
+          TopLeft="894,1210.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Log Start of Package\Get Max JobKey"
@@ -3595,30 +4937,30 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="967.5,767.5">
+          TopLeft="967.5,1163.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-266,60"
+              EndConnector="25,47"
               Start="0,0"
-              End="-266,52.5">
+              End="25,39.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,26" />
+                    End="0,19.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,26"
-                    Point2="0,30"
-                    Point3="-4,30" />
+                    Point1="0,19.5"
+                    Point2="0,23.5"
+                    Point3="4,23.5" />
                   <mssgle:LineSegment
-                    End="-262,30" />
+                    End="21,23.5" />
                   <mssgle:CubicBezierSegment
-                    Point1="-262,30"
-                    Point2="-266,30"
-                    Point3="-266,34" />
+                    Point1="21,23.5"
+                    Point2="25,23.5"
+                    Point3="25,27.5" />
                   <mssgle:LineSegment
-                    End="-266,52.5" />
+                    End="25,39.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -3634,7 +4976,7 @@
     design-time-name="Package\Load External Files\Clinic Branch Data Groups\Load ext Clinic_Branch_Data_Groups">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="227,42"
           Id="Package\Load External Files\Clinic Branch Data Groups\Load ext Clinic_Branch_Data_Groups\ext Clinic_Branch_Data_Groups"
@@ -3652,7 +4994,7 @@
           TopLeft="119,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -3676,7 +5018,7 @@
           TopLeft="119,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -3728,7 +5070,7 @@
     design-time-name="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="172,42"
           Id="Package\Load External Files\Gait FC\Load ext Gait_FC_Definitions\ext Gait_FC_Grades"
@@ -3760,7 +5102,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3782,7 +5126,9 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3818,7 +5164,7 @@
     design-time-name="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="201,42"
           Id="Package\Load External Files\Gold Data Definitions\Load ext Gold_Data_Definitions\ext Gold_Data_Definitions"
@@ -3836,7 +5182,7 @@
           TopLeft="106,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -3858,7 +5204,7 @@
           TopLeft="106,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -3908,41 +5254,19 @@
     design-time-name="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent\Derived Column"
-          TopLeft="45.5,107.5" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="169,42"
           Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent\Gold_Data_Percent"
           TopLeft="38,5.5" />
         <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent\Derived Column"
+          TopLeft="45.5,107.5" />
+        <NodeLayout
           Size="234,42"
           Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent\ext Gold_Data_Allowed_Percents"
           TopLeft="5.50000000000003,209.5" />
-        <EdgeLayout
-          Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent.Paths[Excel Source Output]"
-          TopLeft="122.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent.Paths[Derived Column Output]"
           TopLeft="122.5,149.5">
@@ -3962,7 +5286,33 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Gold Data Percent\Load ext Gold_Data_Allowed_Percent.Paths[Excel Source Output]"
+          TopLeft="122.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -3998,11 +5348,7 @@
     design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="181,42"
-          Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions"
-          TopLeft="17,5.5" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="204,42"
           Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions"
@@ -4011,28 +5357,10 @@
           Size="154,42"
           Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\Derived Column"
           TopLeft="30.5,107.5" />
-        <EdgeLayout
-          Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions.Paths[Excel Source Output]"
-          TopLeft="107.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions"
+          TopLeft="17,5.5" />
         <EdgeLayout
           Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions.Paths[Derived Column Output]"
           TopLeft="107.5,149.5">
@@ -4052,12 +5380,51 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions.Paths[Excel Source Output]"
+          TopLeft="107.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\KPI Period Definitions">
     <Properties>
@@ -4071,8 +5438,183 @@
       </Property>
     </Properties>
   </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="193,42"
+          Id="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions"
+          TopLeft="14.5,5.5" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions"
+          TopLeft="5.50000000000003,209.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Derived Column"
+          TopLeft="34,107.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions.Paths[Excel Source Output]"
+          TopLeft="111,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions.Paths[Derived Column Output]"
+          TopLeft="111,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load External Files\KPI Period Definitions\Load ext KPI_Period_Definitions\ext KPI_Period_Definitions">
+    design-time-name="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\Traffic_Light_Definitions">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load External Files\Traffic Light Definitions\Load ext Traffic_Light_Definitions\ext Traffic_Light_Definitions">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="199,42"
+          Id="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights"
+          TopLeft="5.50000000000003,209.5" />
+        <NodeLayout
+          Size="181,42"
+          Id="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights"
+          TopLeft="14.5,5.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Derived Column"
+          TopLeft="28,107.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights.Paths[Excel Source Output]"
+          TopLeft="105,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights.Paths[Derived Column Output]"
+          TopLeft="105,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\ext Traffic_Light_Weights">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load External Files\Traffic Light Weights\Load ext Traffic_Light_Weights\Traffic_Light_Weights">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

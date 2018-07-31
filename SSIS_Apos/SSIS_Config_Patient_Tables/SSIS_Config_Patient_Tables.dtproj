@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">BISRV</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAACAAAAAAADZgAAwAAAABAAAADl4IR9dIJAztpmHaP20IkfAAAAAASAAACgAAAAEAAAALVJBnRSevyWRMVByYTUdceIAAAAVQD98eaDJUPiNhYEK+Soipq/wrmm1277u8xcKkPtELF7ladV0Th/Lt9C03uS5S9aTjj6GxG+Q65HRwGzlfBdxM8aPT3yLVk+lC+iogJprZN8vtwR4CV7pQyv4/+/u0sm6tELZc4pPWYmEFasM0EeZrsYsG7Yb/2ekOhdqktjj+TKOXyhnkv7WBQAAABn/52nVJ/vp/Ajgs8hyPvy1GPj7A==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAACAAAAAAADZgAAwAAAABAAAAD1dV/pQrkAUUNnu2ihBV2yAAAAAASAAACgAAAAEAAAAHSEXVH3M4m1dXod541+XxOIAAAAtELsdZXxPBsV5IBV3asZjgAFKxBnWNMPVjBPm0dVPFDRo/gE/nTC9fm5UWKem/wlsLCJ8IFzOwAezzxFKf7ZtViIMxkoECz/SABehg6yCdmbH+C4UHQ+hO9ceO68yf8TbOl3b8n1ZLlXr94+kR0S02OUXT2oDECV1/PBucETpFJQcz1eQ6B91RQAAAAOOsOeGDeywfrSxJYoRjiqIJmE5A==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Config_Patient_Files</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">33</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{F7DCC615-D032-437E-8EBF-70C54A4EB745}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{627665B5-C4E3-4AA9-8EEC-A2B3FCFAD763}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -328,7 +328,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Config_Tables\Pathology_Area_Mapping.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\External_Files\Pathology_Area\Pathology_Area_Mapping.xlsx;Extended Properties="EXCEL 12.0 XML;HDR=YES";</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -343,7 +343,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\External_Files\Config_Tables\Pathology_Area_Mapping.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\External_Files\Pathology_Area\Pathology_Area_Mapping.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -416,7 +416,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">C:\External_Files\Config_Tables\Pathology_Area_Mapping.xlsx</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\External_Files\Pathology_Area\Pathology_Area_Mapping.xlsx</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
