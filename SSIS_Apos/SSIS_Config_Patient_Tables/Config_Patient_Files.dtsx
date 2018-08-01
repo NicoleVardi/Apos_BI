@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Config_Patient_Files"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{06E2186D-D2A6-4E3D-AA4B-F0D971146234}">
+  DTS:VersionBuild="42"
+  DTS:VersionGUID="{8BFC7093-4E69-4415-B43D-7D3FA578CFE3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAQk8PKxlBS26keb/VnIxU/AAAAAASAAACgAAAAEAAAAAiEXPNwPu6y/4MYIibzb94QAAAA1lYsY7di/MoHXhCFnDi8uBQAAACcWS3WFFGL/7mgrZYAvtIapmp9+g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAdTYzWZlHvdp39EhHPBEG3AAAAAASAAACgAAAAEAAAAIt3K3/LhfdnbQQwu5aJWQQQAAAAuT6nmwL6p3o3lvYA42EbBxQAAACZlYhdyw9LBPljiQr6Kbn5Atr7Rw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -56,7 +56,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACzAIR5ZSBQ0HM6H/M1s1LZAAAAAASAAACgAAAAEAAAAKx4pINqvGbqfwn3saPZMs0QAAAA8JJCR/IL05ibVyZ84ZcT1RQAAADsH1wXofVohKmZBi4U3ywSWBF5GA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAp58wQ94Pd48uDEFCsGYRNAAAAAASAAACgAAAAEAAAANR2D8gZ6nQ9PpXYX+oQIwwQAAAAU5loeP9XtZV0TcmCqllOMBQAAAC51v69fpuXHK6AkSyj+ilFeH9pSA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -534,7 +534,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -558,7 +558,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -588,7 +588,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -617,7 +617,7 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load External Files\Dim Pathology Area.PrecedenceConstraints[Constraint 2]"
               DTS:CreationName=""
-              DTS:DTSID="{65C3CC35-8452-4ACA-97E9-441434F17209}"
+              DTS:DTSID="{5ADAFAB2-91D1-4E08-886E-F4FA7FB3852D}"
               DTS:From="Package\Load External Files\Dim Pathology Area\Merge to DWH"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
@@ -971,7 +971,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -995,7 +995,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1025,7 +1025,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to dbo Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1042,7 +1042,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Update DWH Dim_Patients"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="1">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1124,12 +1124,6 @@
                           name="Derived Column Input">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Inputs[Derived Column Input].Columns[Patient_ID]"
-                              cachedDataType="wstr"
-                              cachedLength="255"
-                              cachedName="Patient_ID"
-                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_ID]" />
-                            <inputColumn
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Inputs[Derived Column Input].Columns[Insurer_Name]"
                               cachedDataType="wstr"
                               cachedLength="255"
@@ -1167,30 +1161,6 @@
                                   description="Derived Column Friendly Expression"
                                   expressionType="Notify"
                                   name="FriendlyExpression">GETDATE()</property>
-                              </properties>
-                            </outputColumn>
-                            <outputColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Output].Columns[Patient_ID_Str]"
-                              codePage="1252"
-                              dataType="str"
-                              errorOrTruncationOperation="Computation"
-                              errorRowDisposition="FailComponent"
-                              length="50"
-                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Output].Columns[Patient_ID_Str]"
-                              name="Patient_ID_Str"
-                              truncationRowDisposition="FailComponent">
-                              <properties>
-                                <property
-                                  containsID="true"
-                                  dataType="System.String"
-                                  description="Derived Column Expression"
-                                  name="Expression">(DT_STR,50,1252)[SUBSTRING](#{Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_ID]},1,50)</property>
-                                <property
-                                  containsID="true"
-                                  dataType="System.String"
-                                  description="Derived Column Friendly Expression"
-                                  expressionType="Notify"
-                                  name="FriendlyExpression">(DT_STR,50,1252)SUBSTRING(Patient_ID,1,50)</property>
                               </properties>
                             </outputColumn>
                             <outputColumn
@@ -1332,22 +1302,15 @@
                               externalMetadataColumnId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Insurer]"
                               lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Output].Columns[Insurer]" />
                             <inputColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].Columns[Patient_ID_Str]"
-                              cachedCodepage="1252"
-                              cachedDataType="str"
-                              cachedLength="50"
-                              cachedName="Patient_ID_Str"
-                              externalMetadataColumnId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Patient_ID]"
-                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column.Outputs[Derived Column Output].Columns[Patient_ID_Str]" />
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].Columns[Patient_Key]"
+                              cachedDataType="wstr"
+                              cachedLength="255"
+                              cachedName="Patient_Key"
+                              externalMetadataColumnId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Patient_Key]"
+                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_Key]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Patient_ID]"
-                              codePage="1252"
-                              dataType="str"
-                              length="50"
-                              name="Patient_ID" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Insurer]"
                               codePage="1252"
@@ -1358,6 +1321,10 @@
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               dataType="dbTimeStamp"
                               name="DB_Create_Date" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Patient_Key]"
+                              dataType="i4"
+                              name="Patient_Key" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -1440,16 +1407,6 @@
                           name="Excel Source Output">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_ID]"
-                              dataType="wstr"
-                              errorOrTruncationOperation="Conversion"
-                              errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].ExternalColumns[Patient_ID]"
-                              length="255"
-                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_ID]"
-                              name="Patient_ID"
-                              truncationRowDisposition="FailComponent" />
-                            <outputColumn
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Insurer_Name]"
                               dataType="wstr"
                               errorOrTruncationOperation="Conversion"
@@ -1459,19 +1416,29 @@
                               lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Insurer_Name]"
                               name="Insurer_Name"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_Key]"
+                              dataType="wstr"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].ExternalColumns[Patient_Key]"
+                              length="255"
+                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].Columns[Patient_Key]"
+                              name="Patient_Key"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].ExternalColumns[Patient_ID]"
-                              dataType="wstr"
-                              length="255"
-                              name="Patient_ID" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].ExternalColumns[Insurer_Name]"
                               dataType="wstr"
                               length="255"
                               name="Insurer_Name" />
+                            <externalMetadataColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Output].ExternalColumns[Patient_Key]"
+                              dataType="wstr"
+                              length="255"
+                              name="Patient_Key" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -1480,11 +1447,11 @@
                           name="Excel Source Error Output">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Error Output].Columns[Patient_ID]"
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Error Output].Columns[Patient_Key]"
                               dataType="wstr"
                               length="255"
-                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Error Output].Columns[Patient_ID]"
-                              name="Patient_ID" />
+                              lineageId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Error Output].Columns[Patient_Key]"
+                              name="Patient_Key" />
                             <outputColumn
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer.Outputs[Excel Source Error Output].Columns[Insurer_Name]"
                               dataType="wstr"
@@ -1533,7 +1500,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1557,7 +1524,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -1587,12 +1554,12 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to dbo Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="0">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{29EE997F-F1B1-4626-89B5-F86153921C33}"
-                  SQLTask:SqlStatementSource="MERGE dbo.Patient_Insurer as T&#xA;USING ext.Patient_Insurer as S ON T.Patient_ID = S.Patient_ID&#xA;&#xA;WHEN MATCHED THEN &#xA; UPDATE SET &#xA; T.Insurer = S.Insurer,&#xA; T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA; INSERT (Patient_ID, Insurer)&#xA; VALUES (S.Patient_ID, S.Insurer);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE dbo.Patient_Insurer as T&#xA;USING ext.Patient_Insurer as S ON T.Patient_Key = S.Patient_Key&#xA;&#xA;WHEN MATCHED THEN &#xA; UPDATE SET &#xA; T.Insurer = S.Insurer,&#xA; T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA; INSERT (Patient_Key, Insurer)&#xA; VALUES (S.Patient_Key, S.Insurer);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1821,7 +1788,8 @@
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
                             <inputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status.Inputs[OLE DB Destination Input].Columns[Patient_Key]"
-                              cachedDataType="r8"
+                              cachedDataType="wstr"
+                              cachedLength="255"
                               cachedName="Patient_Key"
                               externalMetadataColumnId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status.Inputs[OLE DB Destination Input].ExternalColumns[Patient_Key]"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Patient_Key]" />
@@ -1964,10 +1932,11 @@
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Patient_Key]"
-                              dataType="r8"
+                              dataType="wstr"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
                               externalMetadataColumnId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Patient_Key]"
+                              length="255"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].Columns[Patient_Key]"
                               name="Patient_Key"
                               truncationRowDisposition="FailComponent" />
@@ -1976,7 +1945,8 @@
                             isUsed="True">
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Is_Joined]"
-                              dataType="r8"
+                              dataType="wstr"
+                              length="255"
                               name="Is_Joined" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Is_Unsuitable]"
@@ -1990,7 +1960,8 @@
                               name="Is_Declined" />
                             <externalMetadataColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Output].ExternalColumns[Patient_Key]"
-                              dataType="r8"
+                              dataType="wstr"
+                              length="255"
                               name="Patient_Key" />
                           </externalMetadataColumns>
                         </output>
@@ -2001,12 +1972,14 @@
                           <outputColumns>
                             <outputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Error Output].Columns[Patient_Key]"
-                              dataType="r8"
+                              dataType="wstr"
+                              length="255"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Error Output].Columns[Patient_Key]"
                               name="Patient_Key" />
                             <outputColumn
                               refId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Error Output].Columns[Is_Joined]"
-                              dataType="r8"
+                              dataType="wstr"
+                              length="255"
                               lineageId="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status.Outputs[Excel Source Error Output].Columns[Is_Joined]"
                               name="Is_Joined" />
                             <outputColumn
@@ -2063,7 +2036,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2087,7 +2060,7 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -2117,12 +2090,29 @@
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge to dbo Table"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="1">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{29EE997F-F1B1-4626-89B5-F86153921C33}"
                   SQLTask:SqlStatementSource="MERGE dbo.Suitability_Status as T&#xA;USING (&#xA;&#x9;SELECT &#xA;&#x9;&#x9; Patient_Key&#xA;&#x9;&#x9;,CONVERT(varchar(50),&#xA;&#x9;&#x9;&#x9;CASE WHEN Is_Joined IS NOT NULL THEN 'Joined' &#xA;&#x9;&#x9;&#x9;&#x9; WHEN Is_Unsuitable IS NOT NULL THEN 'Unsuitable'&#xA;&#x9;&#x9;&#x9;&#x9; WHEN Is_Declined IS NOT NULL THEN 'Declined' &#xA;&#x9;&#x9;&#x9;&#x9; END&#xA;&#x9;&#x9;&#x9;) as Suitability_Status&#xA;&#x9;FROM ext.Suitability_Status&#xA;&#x9;WHERE NOT ( -- exclude rows with multiple statuses marked&#xA;&#x9;&#x9;(Is_Joined IS NOT NULL AND Is_Unsuitable IS NOT NULL) &#xA;&#x9;&#x9;OR (Is_Unsuitable IS NOT NULL AND Is_Declined IS NOT NULL) &#xA;&#x9;&#x9;OR (Is_Joined IS NOT NULL AND Is_Declined IS NOT NULL)&#xA;&#x9;&#x9;OR (Is_Joined IS NULL AND Is_Unsuitable IS NULL AND Is_Joined IS NULL))&#xA;&#x9;) as S ON T.Patient_Key = S.Patient_Key&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Suitability_Status = S.Suitability_Status,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Patient_Key, Suitability_Status)&#xA;&#x9;VALUES (S.Patient_Key, S.Suitability_Status);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Load External Files\Patient Suitabillity Status\Update DWH Dim_Patients"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{8c80f7f7-a74a-4113-84ec-5082da72e127}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Update DWH Dim_Patients"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="2">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{81711585-5519-47F4-84E9-DA1F86305F26}"
+                  SQLTask:SqlStatementSource="-- Update Suitability Status&#xA;SELECT P.Patient_Key, PSS.Suitability_Status_Key, SS.Suitability_Status, Patient_Parent_ID, IC_Date&#xA;INTO #Temp&#xA;FROM DWH.dbo.Dim_Patients P&#xA;INNER JOIN MRR.dbo.Suitability_Status SS ON P.Patient_Key = SS.Patient_Key&#xA;INNER JOIN Dim_Patient_Suitability_Status PSS ON SS.Suitability_Status = PSS.Suitability_Status&#xA;WHERE P.Suitability_Status_Key &lt;&gt; PSS.Suitability_Status_Key&#xA;&#xA;UPDATE P&#xA;SET Suitability_Status_Key = T.Suitability_Status_Key,&#xA;DB_Update_Date = GETDATE()&#xA;FROM DWH.dbo.Dim_Patients P&#xA;INNER JOIN #Temp T ON P.Patient_Key = T.Patient_Key&#xA;&#xA;&#xA;-- Audit Status Change&#xA;DECLARE &#xA; @Patient_Parent_ID varchar (50),&#xA; @Suitability_Status_Key int,&#xA; @Old_Suitability_Status_Key int,&#xA; @IC_Date date&#xA; &#xA;DECLARE cur CURSOR LOCAL FOR&#xA;&#xA; SELECT Patient_Parent_ID, Suitability_Status_Key, IC_Date &#xA; FROM #Temp&#xA;&#xA;OPEN cur&#xA;&#xA;FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Suitability_Status_Key, @Old_Suitability_Status_Key, @IC_Date&#xA;&#xA;WHILE @@FETCH_STATUS = 0 BEGIN&#xA;&#xA;    --execute your sproc on each row&#xA;    EXEC DWH.adm.Log_Patient_Suitability_Status_Change @Patient_Parent_ID, @Suitability_Status_Key, @Old_Suitability_Status_Key, @IC_Date&#xA;&#xA;    FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Suitability_Status_Key, @Old_Suitability_Status_Key, @IC_Date&#xA;END&#xA;&#xA;CLOSE cur&#xA;DEALLOCATE cur;&#xA;&#xA;DROP TABLE #Temp;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -2146,10 +2136,18 @@
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint 2]"
               DTS:CreationName=""
-              DTS:DTSID="{1F9A1849-62E4-4250-8214-3C061E20F705}"
+              DTS:DTSID="{C1A711FA-FFBB-410E-AB51-D055D9EED487}"
               DTS:From="Package\Load External Files\Patient Suitabillity Status\Merge to dbo Table"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
+              DTS:To="Package\Load External Files\Patient Suitabillity Status\Update DWH Dim_Patients" />
+            <DTS:PrecedenceConstraint
+              DTS:refId="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint 3]"
+              DTS:CreationName=""
+              DTS:DTSID="{18783F03-C288-42FD-9399-C418DB9B5C6C}"
+              DTS:From="Package\Load External Files\Patient Suitabillity Status\Update DWH Dim_Patients"
+              DTS:LogicalAnd="True"
+              DTS:ObjectName="Constraint 3"
               DTS:To="Package\Load External Files\Patient Suitabillity Status\Log End" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
@@ -2393,10 +2391,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="253,409"
+          PanelSize="253,408"
           Size="253,452"
           Id="Package\Load External Files\Dim Pathology Area"
-          TopLeft="301.5,5.5" />
+          TopLeft="5.5,56.4999999999999" />
         <NodeLayout
           Size="224,42"
           Id="Package\Load External Files\Dropped Out Patients\Load ext Dropped Out Patients"
@@ -2508,10 +2506,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="235,511"
+          PanelSize="235,510"
           Size="235,554"
           Id="Package\Load External Files\Dropped Out Patients"
-          TopLeft="5.5,5.5" />
+          TopLeft="319.5,5.49999999999989" />
         <NodeLayout
           Size="195,42"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer"
@@ -2597,29 +2595,29 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="206,409"
+          PanelSize="206,408"
           Size="206,452"
           Id="Package\Load External Files\Patient Insurer"
-          TopLeft="891,5.49999999999989" />
+          TopLeft="615,56.4999999999998" />
         <NodeLayout
           Size="204,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status"
-          TopLeft="5.50000000000001,107.5" />
+          TopLeft="6.00000000000001,107.5" />
         <NodeLayout
           Size="117,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Log End"
-          TopLeft="49,311.5" />
+          TopLeft="49.5,413.5" />
         <NodeLayout
           Size="122,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Log Start"
-          TopLeft="46.5,5.5" />
+          TopLeft="47,5.5" />
         <NodeLayout
           Size="171,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Merge to dbo Table"
-          TopLeft="22,209.5" />
+          TopLeft="22.5,209.5" />
         <EdgeLayout
           Id="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint]"
-          TopLeft="107.5,47.5">
+          TopLeft="108,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2641,7 +2639,33 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint 1]"
-          TopLeft="107.5,149.5">
+          TopLeft="108,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="205,42"
+          Id="Package\Load External Files\Patient Suitabillity Status\Update DWH Dim_Patients"
+          TopLeft="5.50000000000004,311.5" />
+        <EdgeLayout
+          Id="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint 2]"
+          TopLeft="108,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2662,8 +2686,8 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint 2]"
-          TopLeft="107.5,251.5">
+          Id="Package\Load External Files\Patient Suitabillity Status.PrecedenceConstraints[Constraint 3]"
+          TopLeft="108,353.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2686,15 +2710,15 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="215,409"
-          Size="215,452"
+          PanelSize="216,510"
+          Size="216,554"
           Id="Package\Load External Files\Patient Suitabillity Status"
-          TopLeft="615.5,5.49999999999989" />
+          TopLeft="882,5.49999999999977" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="1102,615"
-          Size="1102,658"
+          PanelSize="1104,614"
+          Size="1104,657"
           Id="Package\Load External Files"
           TopLeft="5.50000000000011,313.5" />
         <NodeLayout
@@ -2704,10 +2728,10 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="197,103"
+          PanelSize="197,102"
           Size="197,146"
           Id="Package\Log End of Package"
-          TopLeft="458,929.5" />
+          TopLeft="459,1030.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Log Start of Package\Get Max JobKey"
@@ -2741,13 +2765,13 @@
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="165,205"
+          PanelSize="165,204"
           Size="165,248"
           Id="Package\Log Start of Package"
-          TopLeft="474,5.5" />
+          TopLeft="475,5.5" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="556.5,253.5">
+          TopLeft="557.5,253.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -2769,24 +2793,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="556.5,971.5">
+          TopLeft="557.5,970.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="98.4999999999999,31"
+              EndConnector="0,60"
               Start="0,0"
-              End="90.9999999999999,31">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27"
-                    Point2="0,31"
-                    Point3="4,31" />
-                  <mssgle:LineSegment
-                    End="90.9999999999999,31" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2982,15 +3000,15 @@
     design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="154,42"
-          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column"
-          TopLeft="13,107.5" />
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="151,42"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer"
           TopLeft="14.5,5.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Derived Column"
+          TopLeft="13,107.5" />
         <NodeLayout
           Size="169,42"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer"
@@ -3000,7 +3018,7 @@
           TopLeft="90,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -3022,7 +3040,7 @@
           TopLeft="90,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
-              StartConnector="{x:Null}"
+              StartConnector="{assembly:Null}"
               EndConnector="0,60"
               Start="0,0"
               End="0,52.5">
@@ -3043,7 +3061,7 @@
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer">
+    design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3056,7 +3074,7 @@
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\Patient_Insurer">
+    design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3074,10 +3092,6 @@
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154,42"
-          Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column"
-          TopLeft="29,107.5" />
-        <NodeLayout
           Size="178,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\ext Suitability_Status"
           TopLeft="17,209.5" />
@@ -3085,6 +3099,10 @@
           Size="201,42"
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Patient_Suitabillity_Status"
           TopLeft="5.50000000000001,5.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status\Derived Column"
+          TopLeft="29,107.5" />
         <EdgeLayout
           Id="Package\Load External Files\Patient Suitabillity Status\Load ext Suitability_Status.Paths[Excel Source Output]"
           TopLeft="106,47.5">
