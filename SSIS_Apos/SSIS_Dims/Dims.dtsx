@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Dims"
   DTS:PackageType="5"
-  DTS:VersionBuild="313"
-  DTS:VersionGUID="{20C09ED6-0C7D-406C-9DE8-E29DA7856718}">
+  DTS:VersionBuild="314"
+  DTS:VersionGUID="{59542840-31A6-4042-A383-8BD5241AAB38}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACnIE3+Ht2n+5w5LpT78vUxAAAAAASAAACgAAAAEAAAAEH/vx1FJtw/FTx3akE0j7sQAAAAMb+frzs1KlL3h2wXl+rV2BQAAABUIJzkpQZ7JouFbLtN0xv0pTf9iQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAPuOJ8k6N9N8XY42tkMjFoAAAAAASAAACgAAAAEAAAADP83kvD6kFvvVEtA2Z4TcsQAAAAqL7rfCBYdwKeP4FVHEFYGRQAAADumMwR/1bvuhtd9QEfjT3xyPpaOg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABGkYtBddoSMUKyKiygKNvdAAAAAASAAACgAAAAEAAAAOocL2/KqpOyPFaMix1KFvMQAAAA1U31o8PG9tc7AVXr77nClBQAAAD+t5jdckdDxr9VnMPP0l5L9w3aYA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADMEDr9H9GqMK0P8Hc4YMelAAAAAASAAACgAAAAEAAAAHKHbqUgvACxVaqEuI9Oe2EQAAAA6NZrd/AuMB+9WAKuLOlXLxQAAAAjvUN9w/o2HiKYcC2NYgvKghsbVw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADpOMu6+qvCt5ed4FTm5OgxAAAAAASAAACgAAAAEAAAAOQL/aEy2mGX40DD0Xeoct4QAAAAKQbfkNlba38GqWhCxCEVzRQAAADY3//v9fuIowDfGYUFgHNmmej4pA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADjV3py5fqVHtLh1M+5P89dAAAAAASAAACgAAAAEAAAABI1CoQ8qC/OHVMwv5eyqccQAAAAxhoyjapB/spkvKq2hINhvBQAAACH8yiezVtsMkqw8Hg4xkxlzGwJrQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAQqKhopH3kWwcji0tDD0CyAAAAAASAAACgAAAAEAAAAHwml/S9LZxtc2C5PqbJUOMQAAAAADJZIDKGLmnmeof8gNfHGxQAAABAS4z4wmx9pIqtCR1Ic80HrI/j6A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABdZZOJ7ZqpbAK6AfnMoVyQAAAAAASAAACgAAAAEAAAAGnFWkxad+LkGgjZ3jShdn4QAAAA/wLbVVYVzfMCc6YzpDzymxQAAACSCuyMnf0+kB0/JUjr2OJ0L2O60A</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -651,7 +651,7 @@ where [refTable].[Group_ID] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\474:invalid};</property>
+                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\1243:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3717,7 +3717,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3741,7 +3741,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3771,7 +3771,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4337,23 +4337,6 @@ where [refTable].[Insurer_Group] = ?</property>
                 </pipeline>
               </DTS:ObjectData>
             </DTS:Executable>
-            <DTS:Executable
-              DTS:refId="Package\Patient-Related\Insurers\Update Insurer to Existing Patients"
-              DTS:CreationName="Microsoft.ExecuteSQLTask"
-              DTS:Description="Execute SQL Task"
-              DTS:DTSID="{47A9B98E-23E4-44C6-B6AD-35F6FADB8620}"
-              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-              DTS:LocaleID="-1"
-              DTS:ObjectName="Update Insurer to Existing Patients"
-              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
-              <DTS:Variables />
-              <DTS:ObjectData>
-                <SQLTask:SqlTaskData
-                  SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE P&#xA;SET Insurer_Key = DI.Insurer_Key&#xA;FROM Dim_Patients P&#xA;INNER JOIN MRR.dbo.Patient_Insurer I ON I.Patient_Key = P.Patient_Key&#xA;INNER JOIN Dim_Insurers DI ON I.Insurer = DI.Insurer&#xA;WHERE DI.Insurer_Key &lt;&gt; P.Insurer_Key" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-              </DTS:ObjectData>
-            </DTS:Executable>
           </DTS:Executables>
           <DTS:PrecedenceConstraints>
             <DTS:PrecedenceConstraint
@@ -4375,18 +4358,10 @@ where [refTable].[Insurer_Group] = ?</property>
             <DTS:PrecedenceConstraint
               DTS:refId="Package\Patient-Related\Insurers.PrecedenceConstraints[Constraint 2]"
               DTS:CreationName=""
-              DTS:DTSID="{9104A01C-D2F4-42A6-A8B2-D408AB4DCA2B}"
+              DTS:DTSID="{32D17467-CA9C-42CD-A74A-54CC29BA10B2}"
               DTS:From="Package\Patient-Related\Insurers\Merge DWH"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
-              DTS:To="Package\Patient-Related\Insurers\Update Insurer to Existing Patients" />
-            <DTS:PrecedenceConstraint
-              DTS:refId="Package\Patient-Related\Insurers.PrecedenceConstraints[Constraint 3]"
-              DTS:CreationName=""
-              DTS:DTSID="{F9C0BEC6-03D0-43DB-9BB5-2BDB3A322AE6}"
-              DTS:From="Package\Patient-Related\Insurers\Update Insurer to Existing Patients"
-              DTS:LogicalAnd="True"
-              DTS:ObjectName="Constraint 3"
               DTS:To="Package\Patient-Related\Insurers\Log End" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
@@ -4409,7 +4384,7 @@ where [refTable].[Insurer_Group] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4433,7 +4408,7 @@ where [refTable].[Insurer_Group] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -4463,7 +4438,7 @@ where [refTable].[Insurer_Group] = ?</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="3">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5141,7 +5116,7 @@ LEFT JOIN ext.Pathology_Area_Mapping PM ON P.PathologyID = PM.Pathology_ID</prop
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5165,7 +5140,7 @@ LEFT JOIN ext.Pathology_Area_Mapping PM ON P.PathologyID = PM.Pathology_ID</prop
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5195,7 +5170,7 @@ LEFT JOIN ext.Pathology_Area_Mapping PM ON P.PathologyID = PM.Pathology_ID</prop
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -11769,7 +11744,7 @@ SELECT
 	,First_Name
 	,Gender
 	,Age
-	,ISNULL(DWH.Insurer, P.Insurer) as Insurer
+	,Insurer
 	,Is_Agreement
 	,Pathology_ID
 	,PT_ID
@@ -11947,10 +11922,9 @@ FROM (
 		AND FV.IsFirstVisit = 1 AND LV.IsLastVisit = 1 AND DATEDIFF(DAY,CASE WHEN DP.Is_Discharged_Patient = 1 THEN FVR.Visit_Date ELSE FV.Visit_Date END, LV.Visit_Date) BETWEEN SP.Range_Min_Days AND SP.Range_Max_Days 
 	) P
 LEFT JOIN (
-	SELECT A.Patient_ID, I.Insurer, SS.Suitability_Status as DWH_Suitability_Status -- Updated Insurer and Suitablity Status from Excel File
+	SELECT A.Patient_ID, SS.Suitability_Status as DWH_Suitability_Status -- Updated Insurer and Suitablity Status from Excel File
 	FROM DWH.dbo.Dim_Patients A
 	LEFT JOIN MRR.dbo.Suitability_Status SS ON A.Patient_Key = SS.Patient_Key
-	LEFT JOIN MRR.dbo.Patient_Insurer I ON I.Patient_Key = A.Patient_Key
 	) DWH ON DWH.Patient_ID = P.Patient_ID</property>
                     <property
                       dataType="System.String"
@@ -12343,7 +12317,7 @@ LEFT JOIN (
                           refId="Package\Patients\stg Dim_Patients\Patients.Outputs[OLE DB Source Output].ExternalColumns[Insurer]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="5"
                           name="Insurer" />
                         <externalMetadataColumn
                           refId="Package\Patients\stg Dim_Patients\Patients.Outputs[OLE DB Source Output].ExternalColumns[Is_Agreement]"
@@ -12505,7 +12479,7 @@ LEFT JOIN (
                           refId="Package\Patients\stg Dim_Patients\Patients.Outputs[OLE DB Source Error Output].Columns[Insurer]"
                           codePage="1252"
                           dataType="str"
-                          length="50"
+                          length="5"
                           lineageId="Package\Patients\stg Dim_Patients\Patients.Outputs[OLE DB Source Error Output].Columns[Insurer]"
                           name="Insurer" />
                         <outputColumn
@@ -13437,6 +13411,23 @@ LEFT JOIN (
               SQLTask:SqlStatementSource="/*** Existing NOT Changed Pathology ***/&#xA;MERGE DWH.dbo.Dim_Patients as T&#xA;USING (&#xA;&#x9;SELECT *&#xA;&#x9;FROM STG.dbo.Dim_Patients&#xA;&#x9;WHERE Is_Changed_Pathology = 0 AND Record_Type in ('N\A Status','Update Existing')&#xA;&#x9;) as S ON T.Patient_ID = S.Patient_ID&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Patient_Parent_ID = S.Patient_Parent_ID,&#xA;&#x9;T.Clinic_Key = S.Clinic_Key,&#xA;&#x9;T.Clinic_Branch_ID = S.Clinic_Branch_ID,&#xA;&#x9;T.Patient_Src_ID = S.Patient_Src_ID,&#xA;&#x9;T.Patient_External_ID = S.Patient_External_ID,&#xA;&#x9;T.Patient_Name = S.Patient_Name,&#xA;&#x9;T.Last_Name = S.Last_Name,&#xA;&#x9;T.First_Name = S.First_Name,&#xA;&#x9;T.Gender_Key = S.Gender_Key,&#xA;&#x9;T.Age = S.Age,&#xA;&#x9;T.Insurer_Key = S.Insurer_Key,&#xA;&#x9;T.Is_Agreement = S.Is_Agreement,&#xA;&#x9;T.Pathology_Key = S.Pathology_Key,&#xA;&#x9;T.PT_Key = S.PT_Key,&#xA;&#x9;T.IC_Date = S.IC_Date,&#xA;&#x9;T.IC_Visit_ID = S.IC_Visit_ID,&#xA;&#x9;T.Last_Visit_ID = S.Last_Visit_ID,&#xA;&#x9;T.Last_Visit_Date = S.Last_Visit_Date,&#xA;&#x9;T.Seniority_Days = S.Seniority_Days,&#xA;&#x9;T.Seniority_Period_Key = S.Seniority_Period_Key,&#xA;&#x9;T.Activity_Status_Key = S.Activity_Status_Key,&#xA;&#x9;T.Suitability_Status_Key = S.Suitability_Status_Key,&#xA;&#x9;T.More_Symptomatic_Side_Key = S.More_Symptomatic_Side_Key,&#xA;&#x9;T.Is_Historical = S.Is_Historical_Patient,&#xA;&#x9;T.DB_Update_Date = GETDATE();&#xA;&#xA;-- Audit Activit Status Change&#xA;DECLARE &#xA;&#x9;@Patient_Parent_ID varchar (50),&#xA;&#x9;@New_Activity_Status_Key int,&#xA;&#x9;@Old_Activity_Status_Key int,&#xA;&#x9;@IC_Date date&#xA;&#x9;&#xA;DECLARE cur CURSOR LOCAL FOR&#xA;&#xA;&#x9;SELECT Patient_Parent_ID, Activity_Status_Key, Old_Activity_Status_Key, IC_Date &#xA;&#x9;FROM STG.dbo.Dim_Patients&#xA;&#x9;WHERE Record_Type in ('N\A Status','Update Existing') AND Is_Changed_Pathology = 0 AND Is_Changed_Activity_Status = 1&#xA;&#xA;OPEN cur&#xA;&#xA;FETCH NEXT FROM cur INTO @Patient_Parent_ID, @New_Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;WHILE @@FETCH_STATUS = 0 BEGIN&#xA;&#xA;    --execute your sproc on each row&#xA;    EXEC DWH.adm.Log_Patient_Activity_Status_Change @Patient_Parent_ID, @New_Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;    FETCH NEXT FROM cur INTO @Patient_Parent_ID, @New_Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;END&#xA;&#xA;CLOSE cur&#xA;DEALLOCATE cur;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
           </DTS:ObjectData>
         </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Patients\Update Insurer by Parent ID"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{51BE2DAA-5183-4979-B1A8-6BD80D29D888}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Update Insurer by Parent ID"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
+              SQLTask:SqlStatementSource="UPDATE P&#xA;SET Insurer_Key = DI.Insurer_Key&#xA;FROM Dim_Patients P&#xA;INNER JOIN MRR.dbo.Patient_Insurer I ON I.Patient_Parent_ID = P.Patient_Parent_ID&#xA;INNER JOIN Dim_Insurers DI ON I.Insurer = DI.Insurer&#xA;WHERE DI.Insurer_Key &lt;&gt; P.Insurer_Key" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
@@ -13498,11 +13489,11 @@ LEFT JOIN (
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Patients.PrecedenceConstraints[Constraint 7]"
           DTS:CreationName=""
-          DTS:DTSID="{0034D606-5304-4F23-8412-9CA56EBB5C6B}"
+          DTS:DTSID="{4BAB1544-81E6-4DDF-B9E3-ED72107E1B95}"
           DTS:From="Package\Patients\Audit Suitability Status"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 7"
-          DTS:To="Package\Patients\Log End" />
+          DTS:To="Package\Patients\Update Insurer by Parent ID" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Patients.PrecedenceConstraints[Constraint 8]"
           DTS:CreationName=""
@@ -13511,6 +13502,14 @@ LEFT JOIN (
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 8"
           DTS:To="Package\Patients\Merge Remaining to DWH" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Patients.PrecedenceConstraints[Constraint 9]"
+          DTS:CreationName=""
+          DTS:DTSID="{E698DFA1-34B2-4DF0-84A4-1A96EAAB031A}"
+          DTS:From="Package\Patients\Update Insurer by Parent ID"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 9"
+          DTS:To="Package\Patients\Log End" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -18865,22 +18864,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <NodeLayout
           Size="117,42"
           Id="Package\Patient-Related\Insurers\Log End"
-          TopLeft="68.5,413.5" />
+          TopLeft="27,311.5" />
         <NodeLayout
           Size="122,42"
           Id="Package\Patient-Related\Insurers\Log Start"
-          TopLeft="66,5.5" />
+          TopLeft="24.5,5.5" />
         <NodeLayout
           Size="136,42"
           Id="Package\Patient-Related\Insurers\Merge DWH"
-          TopLeft="59,209.5" />
+          TopLeft="17.5,209.5" />
         <NodeLayout
           Size="160,42"
           Id="Package\Patient-Related\Insurers\stg Dim_Insurers"
-          TopLeft="47,107.5" />
+          TopLeft="5.50000000000001,107.5" />
         <EdgeLayout
           Id="Package\Patient-Related\Insurers.PrecedenceConstraints[Constraint]"
-          TopLeft="127,47.5">
+          TopLeft="85.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -18902,7 +18901,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Patient-Related\Insurers.PrecedenceConstraints[Constraint 1]"
-          TopLeft="127,149.5">
+          TopLeft="85.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -18922,35 +18921,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="243,42"
-          Id="Package\Patient-Related\Insurers\Update Insurer to Existing Patients"
-          TopLeft="5.50000000000004,311.5" />
         <EdgeLayout
           Id="Package\Patient-Related\Insurers.PrecedenceConstraints[Constraint 2]"
-          TopLeft="127,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patient-Related\Insurers.PrecedenceConstraints[Constraint 3]"
-          TopLeft="127,353.5">
+          TopLeft="85.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -18973,10 +18946,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="254,510"
-          Size="254,554"
+          PanelSize="171,409"
+          Size="171,452"
           Id="Package\Patient-Related\Insurers"
-          TopLeft="5.5,5.50000000000011" />
+          TopLeft="5.5,5.49999999999989" />
         <NodeLayout
           Size="117,42"
           Id="Package\Patient-Related\Pathology\Log End"
@@ -19065,7 +19038,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           PanelSize="178,409"
           Size="178,452"
           Id="Package\Patient-Related\Pathology"
-          TopLeft="320.5,56.5" />
+          TopLeft="237,5.49999999999989" />
         <NodeLayout
           Size="117,42"
           Id="Package\Patient-Related\PTs\Log End"
@@ -19154,259 +19127,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           PanelSize="150,409"
           Size="150,452"
           Id="Package\Patient-Related\PTs"
-          TopLeft="559.5,56.5" />
+          TopLeft="476,5.49999999999989" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="715,615"
-          Size="715,658"
+          PanelSize="632,512"
+          Size="632,555"
           Id="Package\Patient-Related"
           TopLeft="1069.95238095238,426.333333333333" />
-        <NodeLayout
-          Size="119,42"
-          Id="Package\Patients\Audit PT"
-          TopLeft="81.5000000000001,719.5" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Patients\Audit Suitability Status"
-          TopLeft="48.5000000000001,821.5" />
-        <NodeLayout
-          Size="211,42"
-          Id="Package\Patients\Changed Pathology Patients"
-          TopLeft="35.5,209.5" />
-        <NodeLayout
-          Size="201,42"
-          Id="Package\Patients\Discharge Existing Patient"
-          TopLeft="40.5000000000001,515.5" />
-        <NodeLayout
-          Size="117,42"
-          Id="Package\Patients\Log End"
-          TopLeft="82.5000000000001,923.5" />
-        <NodeLayout
-          Size="122,42"
-          Id="Package\Patients\Log Start"
-          TopLeft="80,5.5" />
-        <NodeLayout
-          Size="201,42"
-          Id="Package\Patients\Merge Remaining to DWH"
-          TopLeft="40.5000000000001,617.5" />
-        <NodeLayout
-          Size="221,42"
-          Id="Package\Patients\Returning Discharged Patients"
-          TopLeft="30.5000000000001,413.5" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Patients\stg Dim_Patients"
-          TopLeft="62,107.5" />
-        <NodeLayout
-          Size="271,42"
-          Id="Package\Patients\Update Existing NOT Changed Pathology"
-          TopLeft="5.50000000000003,311.5" />
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint]"
-          TopLeft="141,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 1]"
-          TopLeft="141,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 2]"
-          TopLeft="141,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 3]"
-          TopLeft="141,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 4]"
-          TopLeft="141,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 5]"
-          TopLeft="141,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 6]"
-          TopLeft="141,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 7]"
-          TopLeft="141,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 8]"
-          TopLeft="141,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="282,1021"
-          Size="282,1064"
-          Id="Package\Patients"
-          TopLeft="1625.8253968254,1164.9126984127" />
         <NodeLayout
           Size="117,42"
           Id="Package\Questionnaire\Question\Log End"
@@ -19731,9 +19459,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-11.0238095238099,119.166666666666"
+              EndConnector="-52.5238095238099,119.166666666666"
               Start="0,0"
-              End="-11.0238095238099,111.666666666666">
+              End="-52.5238095238099,111.666666666666">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -19744,13 +19472,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point2="0,59.5833333333332"
                     Point3="-4,59.5833333333332" />
                   <mssgle:LineSegment
-                    End="-7.02380952380986,59.5833333333332" />
+                    End="-48.5238095238099,59.5833333333332" />
                   <mssgle:CubicBezierSegment
-                    Point1="-7.02380952380986,59.5833333333332"
-                    Point2="-11.0238095238099,59.5833333333332"
-                    Point3="-11.0238095238099,63.5833333333332" />
+                    Point1="-48.5238095238099,59.5833333333332"
+                    Point2="-52.5238095238099,59.5833333333332"
+                    Point3="-52.5238095238099,63.5833333333332" />
                   <mssgle:LineSegment
-                    End="-11.0238095238099,111.666666666666" />
+                    End="-52.5238095238099,111.666666666666" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19785,40 +19513,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point3="859.94047619048,44.642405063291" />
                   <mssgle:LineSegment
                     End="859.94047619048,111.416666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="2348.41666666667,982.083333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-535.924603174603,182.829365079367"
-              Start="0,0"
-              End="-535.924603174603,175.329365079367">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,105.078732621399" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,105.078732621399"
-                    Point2="0,109.078732621399"
-                    Point3="-4,109.078732621399" />
-                  <mssgle:LineSegment
-                    End="-531.924603174603,109.078732621399" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-531.924603174603,109.078732621399"
-                    Point2="-535.924603174603,109.078732621399"
-                    Point3="-535.924603174603,113.078732621399" />
-                  <mssgle:LineSegment
-                    End="-535.924603174603,175.329365079367" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19895,32 +19589,64 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="119,42"
+          Id="Package\Patients\Audit PT"
+          TopLeft="81.5000000000001,719.5" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Patients\Audit Suitability Status"
+          TopLeft="48.5000000000001,821.5" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Patients\Changed Pathology Patients"
+          TopLeft="35.5,209.5" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Patients\Discharge Existing Patient"
+          TopLeft="40.5000000000001,515.5" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Patients\Update Insurer by Parent ID"
+          TopLeft="34.5000000000001,923.5" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Patients\Log End"
+          TopLeft="82.5000000000001,1025.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Patients\Log Start"
+          TopLeft="80,5.5" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Patients\Merge Remaining to DWH"
+          TopLeft="40.5000000000001,617.5" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\Patients\Returning Discharged Patients"
+          TopLeft="30.5000000000001,413.5" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Patients\stg Dim_Patients"
+          TopLeft="62,107.5" />
+        <NodeLayout
+          Size="271,42"
+          Id="Package\Patients\Update Existing NOT Changed Pathology"
+          TopLeft="5.50000000000006,311.5" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="1427.45238095238,1084.33333333333">
+          Id="Package\Patients.PrecedenceConstraints[Constraint]"
+          TopLeft="141,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="293.706349206353,80.5793650793669"
+              EndConnector="0,60"
               Start="0,0"
-              End="293.706349206353,73.0793650793669">
+              End="0,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44.0748539190017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,44.0748539190017"
-                    Point2="0,48.0748539190017"
-                    Point3="4,48.0748539190017" />
-                  <mssgle:LineSegment
-                    End="289.706349206353,48.0748539190017" />
-                  <mssgle:CubicBezierSegment
-                    Point1="289.706349206353,48.0748539190017"
-                    Point2="293.706349206353,48.0748539190017"
-                    Point3="293.706349206353,52.0748539190017" />
-                  <mssgle:LineSegment
-                    End="293.706349206353,73.0793650793669" />
+                    End="0,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19930,14 +19656,219 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="1625.8253968254,1696.9126984127">
+          Id="Package\Patients.PrecedenceConstraints[Constraint 1]"
+          TopLeft="141,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-603.15873015873,-413.24603174603"
+              EndConnector="0,60"
               Start="0,0"
-              End="-595.65873015873,-413.24603174603">
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 2]"
+          TopLeft="141,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 3]"
+          TopLeft="141,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 4]"
+          TopLeft="141,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 5]"
+          TopLeft="141,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 6]"
+          TopLeft="141,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 8]"
+          TopLeft="141,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 7]"
+          TopLeft="141,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 9]"
+          TopLeft="141,965.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="282,1122"
+          Size="282,1166"
+          Id="Package\Patients"
+          TopLeft="1625.8253968254,1164.9126984127" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="1625.8253968254,1747.9126984127">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-603.15873015873,-464.24603174603"
+              Start="0,0"
+              End="-595.65873015873,-464.24603174603">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -19948,13 +19879,81 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                     Point2="-301.579365079365,0"
                     Point3="-301.579365079365,-4" />
                   <mssgle:LineSegment
-                    End="-301.579365079365,-409.24603174603" />
+                    End="-301.579365079365,-460.24603174603" />
                   <mssgle:CubicBezierSegment
-                    Point1="-301.579365079365,-409.24603174603"
-                    Point2="-301.579365079365,-413.24603174603"
-                    Point3="-305.579365079365,-413.24603174603" />
+                    Point1="-301.579365079365,-460.24603174603"
+                    Point2="-301.579365079365,-464.24603174603"
+                    Point3="-305.579365079365,-464.24603174603" />
                   <mssgle:LineSegment
-                    End="-595.65873015873,-413.24603174603" />
+                    End="-595.65873015873,-464.24603174603" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="1385.95238095238,981.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="335.206349206353,183.579365079367"
+              Start="0,0"
+              End="335.206349206353,176.079365079367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,105.526193834375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,105.526193834375"
+                    Point2="0,109.526193834375"
+                    Point3="4,109.526193834375" />
+                  <mssgle:LineSegment
+                    End="331.206349206353,109.526193834375" />
+                  <mssgle:CubicBezierSegment
+                    Point1="331.206349206353,109.526193834375"
+                    Point2="335.206349206353,109.526193834375"
+                    Point3="335.206349206353,113.526193834375" />
+                  <mssgle:LineSegment
+                    End="335.206349206353,176.079365079367" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="2348.41666666667,982.083333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-535.924603174603,182.829365079367"
+              Start="0,0"
+              End="-535.924603174603,175.329365079367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,105.078732621399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,105.078732621399"
+                    Point2="0,109.078732621399"
+                    Point3="-4,109.078732621399" />
+                  <mssgle:LineSegment
+                    End="-531.924603174603,109.078732621399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-531.924603174603,109.078732621399"
+                    Point2="-535.924603174603,109.078732621399"
+                    Point3="-535.924603174603,113.078732621399" />
+                  <mssgle:LineSegment
+                    End="-535.924603174603,175.329365079367" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -20896,502 +20895,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Patients\stg Dim_Patients">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Insurer_Key"
-          TopLeft="46.5000000000001,413.5" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Pathology_Key"
-          TopLeft="40.5000000000001,515.5" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Key"
-          TopLeft="51.5,209.5" />
-        <NodeLayout
-          Size="192,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key"
-          TopLeft="29.0000000000001,821.5" />
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key"
-          TopLeft="23.0000000000001,719.5" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Gender_Key"
-          TopLeft="46.5000000000001,617.5" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Patients\stg Dim_Patients\Stg Dim_Patients"
-          TopLeft="45.0000000000002,1331.5" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key"
-          TopLeft="32,107.5" />
-        <NodeLayout
-          Size="239,42"
-          Id="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key"
-          TopLeft="5.50000000000011,923.5" />
-        <NodeLayout
-          Size="135,42"
-          Id="Package\Patients\stg Dim_Patients\LKP PT_Key"
-          TopLeft="57.5,311.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Patients\stg Dim_Patients\Record Type - CP"
-          TopLeft="44.5000000000002,1229.5" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Patients\stg Dim_Patients\Is_Changed Indicators"
-          TopLeft="32.5000000000001,1127.5" />
-        <NodeLayout
-          Size="141,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Old Keys"
-          TopLeft="54.5000000000001,1025.5" />
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Patients\stg Dim_Patients\Patients"
-          TopLeft="67,5.5" />
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 04]"
-          TopLeft="125,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 03]"
-          TopLeft="125,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 02]"
-          TopLeft="125,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 01]"
-          TopLeft="125,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 0]"
-          TopLeft="125,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Source Output]"
-          TopLeft="125,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
-          TopLeft="125,1067.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
-          TopLeft="125,965.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
-          TopLeft="125,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
-          TopLeft="125,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
-          TopLeft="125,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
-          TopLeft="125,1271.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
-          TopLeft="125,1169.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Patient_Activity_Status]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Patient_Suitability_Status]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\LKP Gender_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Gender]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\Stg Dim_Patients">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Side]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\LKP Old Keys">
-    <Properties>
-      <Property>
-        <Name>OverwriteParamsSQLProp</Name>
-        <Value
-          type="q2:string">false</Value>
-      </Property>
-      <Property>
-        <Name>UsedTableName</Name>
-        <Value
-          type="q3:string">[dbo].[Dim_Patients]</Value>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q4:string">0</Value>
-      </Property>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\Patients">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\Questionnaire\Question\stg Dim_Questionnaire_Category">
     <LayoutInfo>
       <GraphLayout
@@ -21852,6 +21355,374 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Questionnaire\Questionnaire Category\stg Dim_Questionnaire_Category\adm Questionnaire_Additional_Categories">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Patients\stg Dim_Patients">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Insurer_Key"
+          TopLeft="46.5000000000001,413.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Pathology_Key"
+          TopLeft="40.5000000000001,515.5" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Key"
+          TopLeft="51.5,209.5" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key"
+          TopLeft="29.0000000000001,821.5" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key"
+          TopLeft="23.0000000000001,719.5" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Gender_Key"
+          TopLeft="46.5000000000001,617.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Patients\stg Dim_Patients\Stg Dim_Patients"
+          TopLeft="45.0000000000002,1331.5" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key"
+          TopLeft="32,107.5" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key"
+          TopLeft="5.50000000000011,923.5" />
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Patients\stg Dim_Patients\LKP PT_Key"
+          TopLeft="57.5,311.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Patients\stg Dim_Patients\Record Type - CP"
+          TopLeft="44.5000000000002,1229.5" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Patients\stg Dim_Patients\Is_Changed Indicators"
+          TopLeft="32.5000000000001,1127.5" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Old Keys"
+          TopLeft="54.5000000000001,1025.5" />
+        <NodeLayout
+          Size="116,42"
+          Id="Package\Patients\stg Dim_Patients\Patients"
+          TopLeft="67,5.5" />
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 04]"
+          TopLeft="125,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 03]"
+          TopLeft="125,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 02]"
+          TopLeft="125,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 01]"
+          TopLeft="125,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 0]"
+          TopLeft="125,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Source Output]"
+          TopLeft="125,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
+          TopLeft="125,1067.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
+          TopLeft="125,965.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
+          TopLeft="125,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
+          TopLeft="125,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
+          TopLeft="125,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
+          TopLeft="125,1271.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
+          TopLeft="125,1169.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Patients\stg Dim_Patients\Patients">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

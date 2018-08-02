@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Facts"
   DTS:PackageType="5"
-  DTS:VersionBuild="91"
-  DTS:VersionGUID="{D899F139-5CD8-46E1-B548-6C7450152A7C}">
+  DTS:VersionBuild="92"
+  DTS:VersionGUID="{E360951A-C2FE-44B3-9D23-4E8AED963C46}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABCWtGeEcyqQhOdOzUnxrZWAAAAAASAAACgAAAAEAAAAIoQiDVG75YJznSyycF1q8EQAAAA1H4shUou8wu4QN32uapEvBQAAAA4ebqM9PL2FF2PbNkqZHfEFcpL+g</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAX11Rkw81xkNdP1gBVNegKAAAAAASAAACgAAAAEAAAAF1x/xjb8/Uq/fwXIiEe/tMQAAAAogyxQ81h69bYxCxWcni3vhQAAACoUgqFVhBcm48hdfXLltL6Eh6l8g</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADwJVwF1nSDBCk/oYupvf+wAAAAAASAAACgAAAAEAAAABYAT4JPl2bRTbW4wipTN8YQAAAASdVzlu3tnjAFlz2u69AUnhQAAAD/KsemhgaTCgYZ7L1p0nKLCdtrqQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAADChUNfyX1j3dz5NB0Q28UAAAAAASAAACgAAAAEAAAAGm1wGvJIJDc3BkB8mi6VscQAAAAu/KNGnEoQYUyXGJCXv4SNhQAAAD0sOjpMRJxQJKM6BiQhbSLjCZmtg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABfymzYyLbFPef0igfCU9lmAAAAAASAAACgAAAAEAAAAJxWHSNRowXQ67KWpxfSTKMQAAAA4Grpnd2QcgQBZKMf7hxtIxQAAADB76lwlRc3XKZQMCq9BIruZgo+rg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADdJmlYVRAWCr+hLShJlZm8AAAAAASAAACgAAAAEAAAAF6Imp9rELOni1slWIoIlfAQAAAA6tvQetbPzxmX6bja0lBrOxQAAABhRy16nBfOGn0uhW1ff/+nqpQ4kw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABjdI62UbzUaOF2s7hLvySIAAAAAASAAACgAAAAEAAAAHPO8W/eozd7fXGcN4BojNIQAAAAOBqq3Wh5prsgOg0+iTcLARQAAADl+JJOBXXElG1nezBSrW+hY7QqSw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACzjj5E1MzdM0Q2HqiU+sb4AAAAAASAAACgAAAAEAAAAOrrmsv/qqcNqfV44wTy/2wQAAAA7zM1Xbh99gGX4LR/aoU6HRQAAADBk0sjpAQ/2XtUKe64En9Rh9Q8eA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1933,7 +1933,7 @@ where [refTable].[Grade_Name] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\410:invalid};</property>
+                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\476:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -10447,7 +10447,8 @@ SELECT
 	,Previous_Visit_Date
 	,CONVERT(varchar(50),CASE WHEN Previous_Visit_ID IS NULL THEN NULL ELSE CONCAT(CONVERT(varchar(10),Clinic_Branch_ID),'_',CONVERT(varchar(25),Previous_Visit_ID)) END) as Previous_Visit_ID
 	,ISNULL(DATEDIFF(DAY,Previous_Visit_Date, Visit_Date),0) as Days_from_Prev_Visit
-FROM PV</property>
+FROM PV
+WHERE pv.Patient_Key &gt; 0</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."

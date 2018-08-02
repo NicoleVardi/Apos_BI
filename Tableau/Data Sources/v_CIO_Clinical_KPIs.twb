@@ -8,6 +8,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_CIO_Clinical_KPIs (DWH)' inline='true' name='federated.1ey8tjw0gjs6jr191dt8r0wm7k8f' version='18.1'>
+      <repository-location id='v_CIO_Clinical_KPIsDWH' path='datasources' revision='2.3' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.104pqln0vl8pcx1048uwa1x5bmoo'>
@@ -879,7 +880,7 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
-            <contains-null>true</contains-null>
+            <contains-null>false</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
@@ -895,7 +896,7 @@
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
-            <contains-null>true</contains-null>
+            <contains-null>false</contains-null>
             <attributes>
               <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
@@ -922,6 +923,12 @@
       <aliases enabled='yes' />
       <column caption='Activity Status' datatype='string' name='[Activity_Status]' role='dimension' type='nominal' />
       <column caption='Activity Status Key' datatype='integer' hidden='true' name='[Activity_Status_Key]' role='dimension' type='ordinal' />
+      <column caption='Avg. Imp. %' datatype='real' default-format='p0.0%' name='[Calculation_752945588971110400]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([Visit_Value]) - AVG([IC_Value])) / AVG([Visit_Value])' />
+      </column>
+      <column caption='Avg. Imp. % (WOMAC)' datatype='real' default-format='p0.0%' name='[Calculation_752945588971163649]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(AVG([Visit_Value]) - AVG([IC_Value])) / AVG([Visit_Value]) *-1' />
+      </column>
       <column caption='Num of Patients' datatype='integer' name='[Calculation_816840403684802561]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Patient_Key])' />
       </column>
@@ -1060,10 +1067,10 @@
         <folder-item name='Period' type='drillpath' />
       </folder>
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_Clinical_KPIs (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2018 11:11:34 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_Clinical_KPIs (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/01/2018 03:18:35 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='0' timestamp-start='2018-07-26 11:11:33.997' />
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='1455113' timestamp-start='2018-08-01 15:18:35.641' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -1076,7 +1083,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1090,7 +1097,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>8</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1104,7 +1111,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1118,7 +1125,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1132,7 +1139,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1146,7 +1153,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1160,7 +1167,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>8</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1174,7 +1181,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>3</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1187,7 +1194,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1200,7 +1207,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>16</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1214,7 +1221,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>15</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1228,7 +1235,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1242,7 +1249,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1256,7 +1263,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1270,7 +1277,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1284,7 +1291,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1297,7 +1304,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>44</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1311,7 +1318,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1325,7 +1332,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1339,7 +1346,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>81</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1353,7 +1360,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>16970</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1366,7 +1373,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>16970</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1380,7 +1387,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>16970</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1394,7 +1401,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2221</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1407,7 +1414,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>16970</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1421,7 +1428,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2744</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1434,7 +1441,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>108490</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1448,7 +1455,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>381</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1461,7 +1468,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>28</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1475,7 +1482,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>8</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1489,7 +1496,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>3736</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1502,7 +1509,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2912</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1515,7 +1522,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>809</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1528,7 +1535,7 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>848</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1541,13 +1548,13 @@
               <family>v_CIO_Clinical_KPIs</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1</approx-count>
+              <approx-count>2</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.455919' measure-ordering='alphabetic' measure-percentage='0.544081' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.488927' measure-ordering='alphabetic' measure-percentage='0.511073' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
