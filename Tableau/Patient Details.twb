@@ -1,0 +1,2321 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20181.18.0615.1128                               -->
+<workbook original-version='18.1' source-build='2018.1.2 (20181.18.0615.1128)' source-platform='win' version='18.1' xml:base='https://eu-west-1a.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <CascadingFilters />
+    <SavingAnalyticObjects />
+  </document-format-change-manifest>
+  <repository-location id='PatientDetails' path='/t/apostherapy/workbooks' revision='1.3' site='apostherapy' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='v_Patient_Demographics (DWH) (2)' inline='true' name='sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)' version='18.1'>
+      <repository-location id='v_Patient_DemographicsDWH' path='/t/apostherapy/datasources' revision='2.4' site='apostherapy' />
+      <connection channel='https' class='sqlproxy' dbname='v_Patient_DemographicsDWH' directory='/dataserver' port='443' server='eu-west-1a.online.tableau.com' server-oauth='' username='' workgroup-auth-mode='prompt'>
+        <relation name='sqlproxy' table='[sqlproxy]' type='table' />
+        <calculations>
+          <calculation column='[Age (bin)]' formula='SYS_NUMBIN([Age],10)' />
+          <calculation column='[Calculation_811773851905421312]' formula='COUNTD([Patient_Parent_ID])' />
+          <calculation column='[Calculation_811773851905781761]' formula='COUNT([Patient_Key])' />
+          <calculation column='[IC Function Level (bin)]' formula='SYS_NUMBIN([IC_Function_Level],10)' />
+          <calculation column='[IC Pain Level (bin)]' formula='SYS_NUMBIN([IC_Pain_Level],10)' />
+          <calculation column='[IC QoL Level (bin)]' formula='SYS_NUMBIN([IC_QoL_Level],10)' />
+          <calculation column='[IC Velocity (bin)]' formula='SYS_NUMBIN([IC_Velocity],10)' />
+          <calculation column='[Number of Records]' formula='1' />
+        </calculations>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Activity_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Activity_Status]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Activity_Status</remote-alias>
+            <ordinal>32</ordinal>
+            <layered>true</layered>
+            <caption>Activity Status</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age (bin)</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Age (bin)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Age (bin)</remote-alias>
+            <ordinal>56</ordinal>
+            <layered>true</layered>
+            <caption>Age Group</caption>
+            <local-type>integer</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='string' name='formula'>&quot;SYS_NUMBIN([Age],10)&quot;</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>11</ordinal>
+            <layered>true</layered>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_811773851905421312</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_811773851905421312]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_811773851905421312</remote-alias>
+            <ordinal>41</ordinal>
+            <layered>true</layered>
+            <caption>Total Parent Patients</caption>
+            <local-type>integer</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;COUNTD([Patient_Parent_ID])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Calculation_811773851905781761</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Calculation_811773851905781761]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Calculation_811773851905781761</remote-alias>
+            <ordinal>42</ordinal>
+            <layered>true</layered>
+            <caption>Total Patients</caption>
+            <local-type>integer</local-type>
+            <aggregation>User</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;COUNT([Patient_Key])&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinic_Branch</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clinic_Branch]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Clinic_Branch</remote-alias>
+            <ordinal>4</ordinal>
+            <layered>true</layered>
+            <caption>Clinic Branch</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Clinic_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Clinic_Name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Clinic_Name</remote-alias>
+            <ordinal>3</ordinal>
+            <layered>true</layered>
+            <caption>Clinic Name</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>6</ordinal>
+            <layered>true</layered>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Discharge_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Discharge_Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Discharge_Date</remote-alias>
+            <ordinal>34</ordinal>
+            <layered>true</layered>
+            <caption>Discharge Date</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>10</ordinal>
+            <layered>true</layered>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC Function Level (bin)</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[IC Function Level (bin)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC Function Level (bin)</remote-alias>
+            <ordinal>57</ordinal>
+            <layered>true</layered>
+            <caption>IC Function Level Group</caption>
+            <local-type>integer</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='string' name='formula'>&quot;SYS_NUMBIN([IC_Function_Level],10)&quot;</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC Pain Level (bin)</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[IC Pain Level (bin)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC Pain Level (bin)</remote-alias>
+            <ordinal>58</ordinal>
+            <layered>true</layered>
+            <caption>IC Pain Level Group</caption>
+            <local-type>integer</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='string' name='formula'>&quot;SYS_NUMBIN([IC_Pain_Level],10)&quot;</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC QoL Level (bin)</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[IC QoL Level (bin)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC QoL Level (bin)</remote-alias>
+            <ordinal>59</ordinal>
+            <layered>true</layered>
+            <caption>IC QoL Level Group</caption>
+            <local-type>integer</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='string' name='formula'>&quot;SYS_NUMBIN([IC_QoL_Level],10)&quot;</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC Velocity (bin)</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[IC Velocity (bin)]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC Velocity (bin)</remote-alias>
+            <ordinal>60</ordinal>
+            <layered>true</layered>
+            <caption>IC Velocity Group</caption>
+            <local-type>integer</local-type>
+            <aggregation>None</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='string' name='formula'>&quot;SYS_NUMBIN([IC_Velocity],10)&quot;</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[IC_Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC_Date</remote-alias>
+            <ordinal>18</ordinal>
+            <layered>true</layered>
+            <caption>IC Date</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IC_Function_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IC_Function_Level]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC_Function_Level</remote-alias>
+            <ordinal>21</ordinal>
+            <layered>true</layered>
+            <caption>IC Function Level</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>real</local-type>
+            <aggregation>Avg</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IC_Pain_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IC_Pain_Level]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC_Pain_Level</remote-alias>
+            <ordinal>19</ordinal>
+            <layered>true</layered>
+            <caption>IC Pain Level</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>real</local-type>
+            <aggregation>Avg</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IC_QoL_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IC_QoL_Level]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC_QoL_Level</remote-alias>
+            <ordinal>20</ordinal>
+            <layered>true</layered>
+            <caption>IC QoL Level</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>real</local-type>
+            <aggregation>Avg</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>IC_Velocity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IC_Velocity]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC_Velocity</remote-alias>
+            <ordinal>22</ordinal>
+            <layered>true</layered>
+            <caption>IC Velocity</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>real</local-type>
+            <aggregation>Avg</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Visit_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IC_Visit_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>IC_Visit_ID</remote-alias>
+            <ordinal>23</ordinal>
+            <layered>true</layered>
+            <caption>IC Visit ID</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Insurer]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Insurer</remote-alias>
+            <ordinal>12</ordinal>
+            <layered>true</layered>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurer_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Insurer_Group]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Insurer_Group</remote-alias>
+            <ordinal>13</ordinal>
+            <layered>true</layered>
+            <caption>Insurer Group</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Is_Agreement</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Agreement]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Is_Agreement</remote-alias>
+            <ordinal>14</ordinal>
+            <layered>true</layered>
+            <caption>Agreement Patients</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Is_Discharged_Patient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Discharged_Patient]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Is_Discharged_Patient</remote-alias>
+            <ordinal>36</ordinal>
+            <layered>true</layered>
+            <caption>Discharged Patients</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Historical</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Is_Historical]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Is_Historical</remote-alias>
+            <ordinal>37</ordinal>
+            <layered>true</layered>
+            <caption>Is Historical Patient</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LROOT' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Visit_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Last_Visit_Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Last_Visit_Date</remote-alias>
+            <ordinal>25</ordinal>
+            <layered>true</layered>
+            <caption>Last Visit Date</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last_Visit_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Last_Visit_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Last_Visit_ID</remote-alias>
+            <ordinal>24</ordinal>
+            <layered>true</layered>
+            <caption>Last Visit ID</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='measure'>
+            <remote-name>Number of Records</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[Number of Records]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Number of Records</remote-alias>
+            <ordinal>49</ordinal>
+            <layered>true</layered>
+            <caption>Number of Records</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>0</attribute>
+              <attribute datatype='string' name='formula'>&quot;1&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PT_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PT_Name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>PT_Name</remote-alias>
+            <ordinal>17</ordinal>
+            <layered>true</layered>
+            <caption>PT Name</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pathology]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Pathology</remote-alias>
+            <ordinal>15</ordinal>
+            <layered>true</layered>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology_Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pathology_Area]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Pathology_Area</remote-alias>
+            <ordinal>16</ordinal>
+            <layered>true</layered>
+            <caption>Pathology Area</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pathology_Change_Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Pathology_Change_Date]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Pathology_Change_Date</remote-alias>
+            <ordinal>35</ordinal>
+            <layered>true</layered>
+            <caption>Pathology Change Date</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_External_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_External_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patient_External_ID</remote-alias>
+            <ordinal>8</ordinal>
+            <layered>true</layered>
+            <caption>Patient External ID</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patient_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <layered>true</layered>
+            <caption>Patient ID</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Key</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient_Key]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patient_Key</remote-alias>
+            <ordinal>0</ordinal>
+            <layered>true</layered>
+            <caption>Patient Key</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patient_Name</remote-alias>
+            <ordinal>9</ordinal>
+            <layered>true</layered>
+            <caption>Patient Name</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Parent_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Patient_Parent_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patient_Parent_ID</remote-alias>
+            <ordinal>1</ordinal>
+            <layered>true</layered>
+            <caption>Patient Parent ID</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Patient_Src_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Patient_Src_ID]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Patient_Src_ID</remote-alias>
+            <ordinal>7</ordinal>
+            <layered>true</layered>
+            <caption>Patient Src ID</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period_Name]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Period_Name</remote-alias>
+            <ordinal>28</ordinal>
+            <layered>true</layered>
+            <caption>Period Name</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Period_Number]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Period_Number</remote-alias>
+            <ordinal>27</ordinal>
+            <layered>true</layered>
+            <caption>Period Number</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Period_Year]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Period_Year</remote-alias>
+            <ordinal>31</ordinal>
+            <layered>true</layered>
+            <caption>Period Year</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Year_Key</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Period_Year_Key]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Period_Year_Key</remote-alias>
+            <ordinal>29</ordinal>
+            <layered>true</layered>
+            <caption>Period Year Key</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Period_Year_Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Period_Year_Number]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Period_Year_Number</remote-alias>
+            <ordinal>30</ordinal>
+            <layered>true</layered>
+            <caption>Period Year Number</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seniority_Period_Key</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Seniority_Period_Key]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Seniority_Period_Key</remote-alias>
+            <ordinal>26</ordinal>
+            <layered>true</layered>
+            <caption>Seniority Period Key</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>integer</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='field-type'>1</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Suitability_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Suitability_Status]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Suitability_Status</remote-alias>
+            <ordinal>33</ordinal>
+            <layered>true</layered>
+            <caption>Suitability Status</caption>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Teritorry</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Teritorry]</local-name>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias>Teritorry</remote-alias>
+            <ordinal>5</ordinal>
+            <layered>true</layered>
+            <family>v_Patient_Demographics</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='integer' name='field-type'>2</attribute>
+              <attribute datatype='integer' name='role'>0</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sqlproxy]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='boolean' name='CAP_CREATE_TEMP_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_ALWAYS_USE_LOCAL_MAPPING_TABLES'>false</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_PREFER_LOCAL_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_BLENDING_REMOTE_MAPPING_TABLES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_EXTRACT_RANGES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SORT_BY'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERIES'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUBQUERY_QUERY_CONTEXT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_SUPPORTS_LODJOINS'>true</attribute>
+              <attribute datatype='boolean' name='CAP_QUERY_USE_QUERY_FUSION'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_LEFT'>true</attribute>
+              <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
+              <attribute datatype='integer' name='charset'>0</attribute>
+              <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;v_Patient_Demographics (DWH)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://eu-west-1a.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;repository-location id=&apos;v_Patient_DemographicsDWH&apos; path=&apos;/t/apostherapy/datasources&apos; revision=&apos;2.4&apos; site=&apos;apostherapy&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;v_Patient_DemographicsDWH&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;eu-west-1a.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Activity_Status]&apos; value=&apos;[sqlproxy].[Activity_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Age (bin)]&apos; value=&apos;[sqlproxy].[Age (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[Age]&apos; value=&apos;[sqlproxy].[Age]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_811773851905421312]&apos; value=&apos;[sqlproxy].[Calculation_811773851905421312]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_811773851905781761]&apos; value=&apos;[sqlproxy].[Calculation_811773851905781761]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Branch]&apos; value=&apos;[sqlproxy].[Clinic_Branch]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Name]&apos; value=&apos;[sqlproxy].[Clinic_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Continent]&apos; value=&apos;[sqlproxy].[Continent]&apos; /&gt;&#10;      &lt;map key=&apos;[Discharge_Date]&apos; value=&apos;[sqlproxy].[Discharge_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Gender]&apos; value=&apos;[sqlproxy].[Gender]&apos; /&gt;&#10;      &lt;map key=&apos;[IC Function Level (bin)]&apos; value=&apos;[sqlproxy].[IC Function Level (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[IC Pain Level (bin)]&apos; value=&apos;[sqlproxy].[IC Pain Level (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[IC QoL Level (bin)]&apos; value=&apos;[sqlproxy].[IC QoL Level (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[IC Velocity (bin)]&apos; value=&apos;[sqlproxy].[IC Velocity (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Date]&apos; value=&apos;[sqlproxy].[IC_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Function_Level]&apos; value=&apos;[sqlproxy].[IC_Function_Level]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Pain_Level]&apos; value=&apos;[sqlproxy].[IC_Pain_Level]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_QoL_Level]&apos; value=&apos;[sqlproxy].[IC_QoL_Level]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Velocity]&apos; value=&apos;[sqlproxy].[IC_Velocity]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Visit_ID]&apos; value=&apos;[sqlproxy].[IC_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer]&apos; value=&apos;[sqlproxy].[Insurer]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer_Group]&apos; value=&apos;[sqlproxy].[Insurer_Group]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Agreement]&apos; value=&apos;[sqlproxy].[Is_Agreement]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Discharged_Patient]&apos; value=&apos;[sqlproxy].[Is_Discharged_Patient]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Historical]&apos; value=&apos;[sqlproxy].[Is_Historical]&apos; /&gt;&#10;      &lt;map key=&apos;[Last_Visit_Date]&apos; value=&apos;[sqlproxy].[Last_Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Last_Visit_ID]&apos; value=&apos;[sqlproxy].[Last_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[PT_Name]&apos; value=&apos;[sqlproxy].[PT_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology]&apos; value=&apos;[sqlproxy].[Pathology]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology_Area]&apos; value=&apos;[sqlproxy].[Pathology_Area]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology_Change_Date]&apos; value=&apos;[sqlproxy].[Pathology_Change_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_External_ID]&apos; value=&apos;[sqlproxy].[Patient_External_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_ID]&apos; value=&apos;[sqlproxy].[Patient_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Key]&apos; value=&apos;[sqlproxy].[Patient_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Name]&apos; value=&apos;[sqlproxy].[Patient_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Parent_ID]&apos; value=&apos;[sqlproxy].[Patient_Parent_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Src_ID]&apos; value=&apos;[sqlproxy].[Patient_Src_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Name]&apos; value=&apos;[sqlproxy].[Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Number]&apos; value=&apos;[sqlproxy].[Period_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year]&apos; value=&apos;[sqlproxy].[Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year_Key]&apos; value=&apos;[sqlproxy].[Period_Year_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year_Number]&apos; value=&apos;[sqlproxy].[Period_Year_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Seniority_Period_Key]&apos; value=&apos;[sqlproxy].[Seniority_Period_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Suitability_Status]&apos; value=&apos;[sqlproxy].[Suitability_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Teritorry]&apos; value=&apos;[sqlproxy].[Teritorry]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Activity_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Activity_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;Age Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Age (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[Age]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Age]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Total Parent Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_811773851905421312]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Patient_Parent_ID])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Total Patients&apos; datatype=&apos;integer&apos; default-format=&apos;n\#,\#\#0;-\#,\#\#0&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_811773851905781761]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Sum&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNT([Patient_Key])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Branch]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Branch_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Continent Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Continent_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Discharge Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Discharge_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Gender Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Gender_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;IC Function Level Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[IC Function Level (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[IC_Function_Level]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;IC Pain Level Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[IC Pain Level (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[IC_Pain_Level]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;IC QoL Level Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[IC QoL Level (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[IC_QoL_Level]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;IC Velocity Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[IC Velocity (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[IC_Velocity]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;IC Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[IC_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Function Level&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Function_Level]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Pain Level&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Pain_Level]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC QoL Level&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_QoL_Level]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Velocity&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Velocity]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Group&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Insurer_Group]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Insurer Group Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Group_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Agreement Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Is_Agreement]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Discharged Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Is_Discharged_Patient]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Is Historical Patient&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Historical]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;No&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Yes&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Last Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Last_Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Last Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Last_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[PT_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PT_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Pathology_Area]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Area_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Pathology Change Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Pathology_Change_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient External ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_External_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Patient_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Parent ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_Parent_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Src ID&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Patient_Src_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Year_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Year_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Seniority Days&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; hidden=&apos;true&apos; name=&apos;[Seniority_Days]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Seniority Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Seniority_Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Suitability Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Suitability_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Suitability Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Suitability_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Teritorry Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Teritorry_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;drill-paths&gt;&#10;    &lt;drill-path name=&apos;Clinic&apos;&gt;&#10;      &lt;field&gt;[Continent]&lt;/field&gt;&#10;      &lt;field&gt;[Teritorry]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Branch]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Insurers&apos;&gt;&#10;      &lt;field&gt;[Insurer]&lt;/field&gt;&#10;      &lt;field&gt;[Insurer_Group]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Pathology&apos;&gt;&#10;      &lt;field&gt;[Pathology_Area]&lt;/field&gt;&#10;      &lt;field&gt;[Pathology]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Patient ID&apos;&gt;&#10;      &lt;field&gt;[Patient_Parent_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_Src_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_External_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_Key]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Seniority Period&apos;&gt;&#10;      &lt;field&gt;[Period_Year]&lt;/field&gt;&#10;      &lt;field&gt;[Period_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;  &lt;/drill-paths&gt;&#10;  &lt;folder name=&apos;Clinics&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Clinic_Branch_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Clinic_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Continent_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Teritorry_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Clinic&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;IC Data&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[IC Function Level (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC Pain Level (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC QoL Level (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC Velocity (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Date]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Visit_ID]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Pathology &amp;amp; PT&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[PT_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Area_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Change_Date]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Pathology&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Patient&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Age (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Gender]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Gender_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Insurer_Group_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Insurer_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Patient_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Insurers&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Patient ID&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Periods&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Period_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Seniority_Period_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Seniority Period&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Statuses&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Is_Historical]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Suitability_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Suitability_Status_Key]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.654391&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.345609&apos; show-aliased-fields=&apos;true&apos; show-hidden-fields=&apos;true&apos; show-structure=&apos;false&apos; user-set-layout=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
+              <attribute datatype='boolean' name='extract-active'>true</attribute>
+              <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
+              <attribute datatype='string' name='update-time'>&quot;8/7/2018 9:05:38 AM&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <overridable-settings>
+        <date-options fiscal-year-start='january' start-of-week='sunday' />
+        <default-date-format />
+      </overridable-settings>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_Function_Level:qk]&quot;' value='IC Function Level' />
+          <alias key='&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_Pain_Level:qk]&quot;' value='IC Pain Level' />
+          <alias key='&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_QoL_Level:qk]&quot;' value='IC QoL Level' />
+          <alias key='&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_Velocity:qk]&quot;' value='IC Velocity' />
+        </aliases>
+      </column>
+      <column aggregation='Count' caption='Activity Status' datatype='string' default-type='nominal' layered='true' name='[Activity_Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='None' caption='Age Group' datatype='integer' default-type='ordinal' layered='true' name='[Age (bin)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+        <calculation class='bin' decimals='1' formula='[Age]' peg='0' size='10' />
+      </column>
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Age]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='User' caption='Total Parent Patients' datatype='integer' default-type='quantitative' layered='true' name='[Calculation_811773851905421312]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default'>
+        <calculation class='tableau' formula='COUNTD([Patient_Parent_ID])' />
+      </column>
+      <column aggregation='User' caption='Total Patients' datatype='integer' default-format='n#,##0;-#,##0' default-type='quantitative' layered='true' name='[Calculation_811773851905781761]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Sum'>
+        <calculation class='tableau' formula='COUNT([Patient_Key])' />
+      </column>
+      <column aggregation='Count' caption='Clinic Branch' datatype='string' default-type='nominal' layered='true' name='[Clinic_Branch]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Clinic Name' datatype='string' default-type='nominal' layered='true' name='[Clinic_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Continent]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' caption='Discharge Date' datatype='date' default-type='ordinal' layered='true' name='[Discharge_Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Gender]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='None' caption='IC Function Level Group' datatype='integer' default-type='ordinal' layered='true' name='[IC Function Level (bin)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+        <calculation class='bin' decimals='1' formula='[IC_Function_Level]' peg='0' size='10' />
+      </column>
+      <column aggregation='None' caption='IC Pain Level Group' datatype='integer' default-type='ordinal' layered='true' name='[IC Pain Level (bin)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+        <calculation class='bin' decimals='1' formula='[IC_Pain_Level]' peg='0' size='10' />
+      </column>
+      <column aggregation='None' caption='IC QoL Level Group' datatype='integer' default-type='ordinal' layered='true' name='[IC QoL Level (bin)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+        <calculation class='bin' decimals='1' formula='[IC_QoL_Level]' peg='0' size='10' />
+      </column>
+      <column aggregation='None' caption='IC Velocity Group' datatype='integer' default-type='ordinal' layered='true' name='[IC Velocity (bin)]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+        <calculation class='bin' decimals='1' formula='[IC_Velocity]' peg='0' size='10' />
+      </column>
+      <column aggregation='Year' caption='IC Date' datatype='date' default-type='ordinal' layered='true' name='[IC_Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Sum' caption='IC Function Level' datatype='real' default-format='n#,##0.0;-#,##0.0' default-type='quantitative' layered='true' name='[IC_Function_Level]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='IC Pain Level' datatype='real' default-format='n#,##0.0;-#,##0.0' default-type='quantitative' layered='true' name='[IC_Pain_Level]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='IC QoL Level' datatype='real' default-format='n#,##0.0;-#,##0.0' default-type='quantitative' layered='true' name='[IC_QoL_Level]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Sum' caption='IC Velocity' datatype='real' default-format='n#,##0.0;-#,##0.0' default-type='quantitative' layered='true' name='[IC_Velocity]' pivot='key' role='measure' type='quantitative' user-datatype='real' visual-totals='Default' />
+      <column aggregation='Count' caption='IC Visit ID' datatype='string' default-type='nominal' layered='true' name='[IC_Visit_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column caption='# Patients by Insurer Group' datatype='string' name='[Insurer (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Insurer_Group]' />
+      </column>
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Insurer]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Insurer Group' datatype='string' default-type='nominal' layered='true' name='[Insurer_Group]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' caption='Agreement Patients' datatype='integer' default-type='quantitative' layered='true' name='[Is_Agreement]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Discharged Patients' datatype='integer' default-type='quantitative' layered='true' name='[Is_Discharged_Patient]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Sum' caption='Is Historical Patient' datatype='integer' default-type='ordinal' layered='true' name='[Is_Historical]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+        <aliases>
+          <alias key='0' value='No' />
+          <alias key='1' value='Yes' />
+        </aliases>
+      </column>
+      <column aggregation='Year' caption='Last Visit Date' datatype='date' default-type='ordinal' layered='true' name='[Last_Visit_Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' caption='Last Visit ID' datatype='string' default-type='nominal' layered='true' name='[Last_Visit_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Sum' datatype='integer' default-type='quantitative' layered='true' name='[Number of Records]' pivot='key' role='measure' type='quantitative' user-datatype='integer' user:auto-column='numrec' visual-totals='Default'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column aggregation='Count' caption='PT Name' datatype='string' default-type='nominal' layered='true' name='[PT_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Pathology]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Pathology Area' datatype='string' default-type='nominal' layered='true' name='[Pathology_Area]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Year' caption='Pathology Change Date' datatype='date' default-type='ordinal' layered='true' name='[Pathology_Change_Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+      <column aggregation='Count' caption='Patient External ID' datatype='string' default-type='nominal' layered='true' name='[Patient_External_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Patient ID' datatype='string' default-type='nominal' layered='true' name='[Patient_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Patient Key' datatype='integer' default-type='ordinal' layered='true' name='[Patient_Key]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Patient Name' datatype='string' default-type='nominal' layered='true' name='[Patient_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Patient Parent ID' datatype='string' default-type='nominal' layered='true' name='[Patient_Parent_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Patient Src ID' datatype='integer' default-type='ordinal' layered='true' name='[Patient_Src_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Period Name' datatype='string' default-type='nominal' layered='true' name='[Period_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Period Number' datatype='integer' default-type='ordinal' layered='true' name='[Period_Number]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Period Year' datatype='string' default-type='nominal' layered='true' name='[Period_Year]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' caption='Period Year Key' datatype='integer' default-type='ordinal' layered='true' name='[Period_Year_Key]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Period Year Number' datatype='integer' default-type='ordinal' layered='true' name='[Period_Year_Number]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column aggregation='Count' caption='Seniority Period Key' datatype='integer' default-type='ordinal' layered='true' name='[Seniority_Period_Key]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+      <column caption='Exclude Suitability Status' datatype='string' name='[Suitability Status (copy)]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='[Suitability_Status]' />
+      </column>
+      <column aggregation='Count' caption='Suitability Status' datatype='string' default-type='nominal' layered='true' name='[Suitability_Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Teritorry]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+      <column-instance column='[IC_Function_Level]' derivation='Avg' name='[avg:IC_Function_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_Pain_Level]' derivation='Avg' name='[avg:IC_Pain_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_QoL_Level]' derivation='Avg' name='[avg:IC_QoL_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_Velocity]' derivation='Avg' name='[avg:IC_Velocity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Activity_Status]' derivation='None' name='[none:Activity_Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Age (bin)]' derivation='None' name='[none:Age (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Clinic_Branch]' derivation='None' name='[none:Clinic_Branch:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[IC Function Level (bin)]' derivation='None' name='[none:IC Function Level (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[IC Pain Level (bin)]' derivation='None' name='[none:IC Pain Level (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[IC QoL Level (bin)]' derivation='None' name='[none:IC QoL Level (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[IC Velocity (bin)]' derivation='None' name='[none:IC Velocity (bin):ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Insurer]' derivation='None' name='[none:Insurer:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Suitability_Status]' derivation='None' name='[none:Suitability_Status:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_811773851905781761]' derivation='User' name='[pcto:usr:Calculation_811773851905781761:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[Age]' derivation='Sum' name='[sum:Age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_Function_Level]' derivation='Sum' name='[sum:IC_Function_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_Pain_Level]' derivation='Sum' name='[sum:IC_Pain_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_QoL_Level]' derivation='Sum' name='[sum:IC_QoL_Level:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[IC_Velocity]' derivation='Sum' name='[sum:IC_Velocity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Is_Agreement]' derivation='Sum' name='[sum:Is_Agreement:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Is_Discharged_Patient]' derivation='Sum' name='[sum:Is_Discharged_Patient:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_811773851905421312]' derivation='User' name='[usr:Calculation_811773851905421312:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_811773851905781761]' derivation='User' name='[usr:Calculation_811773851905781761:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+      <drill-paths>
+        <drill-path layered='true' name='Clinic'>
+          <field>[Continent]</field>
+          <field>[Teritorry]</field>
+          <field>[Clinic_Branch]</field>
+          <field>[Clinic_Name]</field>
+        </drill-path>
+        <drill-path layered='true' name='Insurers'>
+          <field>[Insurer]</field>
+          <field>[Insurer_Group]</field>
+        </drill-path>
+        <drill-path layered='true' name='Pathology'>
+          <field>[Pathology_Area]</field>
+          <field>[Pathology]</field>
+        </drill-path>
+        <drill-path layered='true' name='Patient ID'>
+          <field>[Patient_Parent_ID]</field>
+          <field>[Patient_ID]</field>
+          <field>[Patient_Src_ID]</field>
+          <field>[Patient_External_ID]</field>
+          <field>[Patient_Key]</field>
+        </drill-path>
+        <drill-path layered='true' name='Seniority Period'>
+          <field>[Period_Year]</field>
+          <field>[Period_Name]</field>
+        </drill-path>
+      </drill-paths>
+      <folder layered='true' name='Clinics' role='dimensions'>
+        <folder-item name='[Clinic_Branch_Key]' type='field' />
+        <folder-item name='[Clinic_Key]' type='field' />
+        <folder-item name='[Continent_Key]' type='field' />
+        <folder-item name='[Teritorry_Key]' type='field' />
+        <folder-item name='Clinic' type='drillpath' />
+      </folder>
+      <folder layered='true' name='IC Data' role='dimensions'>
+        <folder-item name='[IC Function Level (bin)]' type='field' />
+        <folder-item name='[IC Pain Level (bin)]' type='field' />
+        <folder-item name='[IC QoL Level (bin)]' type='field' />
+        <folder-item name='[IC Velocity (bin)]' type='field' />
+        <folder-item name='[IC_Date]' type='field' />
+        <folder-item name='[IC_Visit_ID]' type='field' />
+      </folder>
+      <folder layered='true' name='Pathology &amp; PT' role='dimensions'>
+        <folder-item name='[PT_Key]' type='field' />
+        <folder-item name='[PT_Name]' type='field' />
+        <folder-item name='[Pathology_Area_Key]' type='field' />
+        <folder-item name='[Pathology_Change_Date]' type='field' />
+        <folder-item name='[Pathology_Key]' type='field' />
+        <folder-item name='Pathology' type='drillpath' />
+      </folder>
+      <folder layered='true' name='Patient' role='dimensions'>
+        <folder-item name='[Age (bin)]' type='field' />
+        <folder-item name='[Gender]' type='field' />
+        <folder-item name='[Gender_Key]' type='field' />
+        <folder-item name='[Insurer_Group_Key]' type='field' />
+        <folder-item name='[Insurer_Key]' type='field' />
+        <folder-item name='[Patient_Name]' type='field' />
+        <folder-item name='Insurers' type='drillpath' />
+        <folder-item name='Patient ID' type='drillpath' />
+      </folder>
+      <folder layered='true' name='Periods' role='dimensions'>
+        <folder-item name='[Period_Number]' type='field' />
+        <folder-item name='[Period_Year_Key]' type='field' />
+        <folder-item name='[Period_Year_Number]' type='field' />
+        <folder-item name='[Seniority_Period_Key]' type='field' />
+        <folder-item name='Seniority Period' type='drillpath' />
+      </folder>
+      <folder layered='true' name='Statuses' role='dimensions'>
+        <folder-item name='[Activity_Status]' type='field' />
+        <folder-item name='[Activity_Status_Key]' type='field' />
+        <folder-item name='[Is_Historical]' type='field' />
+        <folder-item name='[Suitability_Status]' type='field' />
+        <folder-item name='[Suitability_Status_Key]' type='field' />
+      </folder>
+      <layout dim-ordering='alphabetic' dim-percentage='0.567291' measure-ordering='alphabetic' measure-percentage='0.432709' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Age (bin):ok]' palette='orange_gold_10_0' type='palette'>
+            <map to='#9e3a26'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#b34223'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#c84b22'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#da5821'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#e7681d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f17b23'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#f49135'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#f7a648'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f8bb5a'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Clinic_Branch:nk]' type='palette'>
+            <map to='#2cb5c0'>
+              <bucket>&quot;Apos Israel&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Blackberry Oxford&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Central Health - Chelsea&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Valerie Storm&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Abbey&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JAG&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shire&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Atkins&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sprint&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Harris &amp; Ross&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Health Plus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Central Health - Chancery Lane&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Balanced&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;TA physio&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;HSS&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Physio 1 Manchester&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pro Health&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Advanced&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rehab Works Bury St. Edmunds&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Singapore, Core Concept&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kima&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bend&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bern Trial&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Therapeutics&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Heritage&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Ice&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hnd&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mid Essex&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Physio 1 Birmingham&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Premier&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Pro Physio&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Circle&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Blackberry - Milton Keynes&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;One Physical Therapy&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tracey Miles&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kaiser&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Rehab Works Milton Keynes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Somers&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jefford&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Lido&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Emma James&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Apos UK Flagship&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sports Med East&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Insurer:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Self Pay&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;(N/A)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;CIGNA&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Vitality&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Heritage&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;AXA&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;NHS - Circle&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;WPA&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;NHS - MECCG&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;BUPA&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bupa International&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:IC QoL Level (bin):ok]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#27763d'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#308344'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#519c51'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#64ac5a'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#75bc69'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#85ca77'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#8ed07f'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#98d687'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>9</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:IC Velocity (bin):ok]' type='palette'>
+            <map to='#2a5783'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#305d8a'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#3d6a98'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#5b8cb8'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#92c0df'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>16</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:IC Pain Level (bin):ok]' palette='red_10_0' type='palette'>
+            <map to='#ae123a'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#c11a3b'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#d2283d'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#e03841'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#eb4c48'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f26250'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#f67561'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#fa8971'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#fc9b87'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#feac9d'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:IC Function Level (bin):ok]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#2f6690'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#32759a'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#3484a5'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#3992b0'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#5eafc0'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#75bcc7'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#8cc9cd'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#a3d6d2'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>0</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#26897e'>
+              <bucket>&quot;(Unknown)&quot;</bucket>
+            </map>
+            <map to='#3ca8bc'>
+              <bucket>&quot;Male&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Female&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_Function_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:Age:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:IC_Pain_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:IC_Function_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#7dc370'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_Velocity:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905421312:qk]&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_Pain_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:IC_Velocity:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[pcto:usr:Calculation_811773851905781761:qk]&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905781761:vtsum:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:Is_Discharged_Patient:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:IC_QoL_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:Is_Agreement:qk]&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[avg:IC_QoL_Level:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Suitability_Status:nk]' palette='superfishel_stone_10_0' type='palette'>
+            <map to='#6388b4'>
+              <bucket>&quot;(Unknown)&quot;</bucket>
+            </map>
+            <map to='#8cc2ca'>
+              <bucket>&quot;Declined&quot;</bucket>
+            </map>
+            <map to='#ef6f6a'>
+              <bucket>&quot;Unsuitable&quot;</bucket>
+            </map>
+            <map to='#ffae34'>
+              <bucket>&quot;Joined&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Activity_Status:nk]' palette='green_gold_10_0' type='palette'>
+            <map to='#146c36'>
+              <bucket>&quot;Changed Pathology&quot;</bucket>
+            </map>
+            <map to='#4b9c53'>
+              <bucket>&quot;Dropped Out&quot;</bucket>
+            </map>
+            <map to='#84b457'>
+              <bucket>&quot;Active&quot;</bucket>
+            </map>
+            <map to='#989ca3'>
+              <bucket>&quot;N\\A&quot;</bucket>
+            </map>
+            <map to='#c3c55d'>
+              <bucket>&quot;Inactive&quot;</bucket>
+            </map>
+            <map to='#f4d166'>
+              <bucket>&quot;Discharged&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{5db62fb1-3032-415f-a27d-f53e01b69b37}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905781761:vtsum:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{71daa06d-dc39-40e5-a66d-64fb85dbb28b}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905781761:vtsum:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>0</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)'>
+      <datasources>
+        <datasource caption='v_Patient_Demographics (DWH) (2)' name='sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)' />
+      </datasources>
+      <datasource-dependencies datasource='sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)'>
+        <column aggregation='Count' caption='Activity Status' datatype='string' default-type='nominal' layered='true' name='[Activity_Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Clinic Branch' datatype='string' default-type='nominal' layered='true' name='[Clinic_Branch]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Clinic Name' datatype='string' default-type='nominal' layered='true' name='[Clinic_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Continent]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Insurer]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Sum' caption='Is Historical Patient' datatype='integer' default-type='ordinal' layered='true' name='[Is_Historical]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+          <aliases>
+            <alias key='0' value='No' />
+            <alias key='1' value='Yes' />
+          </aliases>
+        </column>
+        <column aggregation='Count' caption='PT Name' datatype='string' default-type='nominal' layered='true' name='[PT_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Pathology]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Pathology Area' datatype='string' default-type='nominal' layered='true' name='[Pathology_Area]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' caption='Suitability Status' datatype='string' default-type='nominal' layered='true' name='[Suitability_Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Teritorry]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+        <column-instance column='[Activity_Status]' derivation='None' name='[none:Activity_Status:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Clinic_Branch]' derivation='None' name='[none:Clinic_Branch:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Clinic_Name]' derivation='None' name='[none:Clinic_Name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Insurer]' derivation='None' name='[none:Insurer:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Is_Historical]' derivation='None' name='[none:Is_Historical:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[PT_Name]' derivation='None' name='[none:PT_Name:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Pathology]' derivation='None' name='[none:Pathology:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Pathology_Area]' derivation='None' name='[none:Pathology_Area:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Suitability_Status]' derivation='None' name='[none:Suitability_Status:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Teritorry]' derivation='None' name='[none:Teritorry:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Activity_Status:nk]'>
+        <groupfilter function='level-members' level='[none:Activity_Status:nk]' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Branch:nk]'>
+        <groupfilter function='member' level='[none:Clinic_Branch:nk]' member='&quot;Circle&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Name:nk]'>
+        <groupfilter from='&quot;Abby&quot;' function='range' level='[none:Clinic_Name:nk]' to='&quot;Young PT&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Continent:nk]'>
+        <groupfilter from='&quot;America&quot;' function='range' level='[none:Continent:nk]' to='&quot;Europe&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Insurer:nk]'>
+        <groupfilter function='level-members' level='[none:Insurer:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Is_Historical:ok]'>
+        <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:Is_Historical:ok]' member='0' />
+          <groupfilter function='member' level='[none:Is_Historical:ok]' member='1' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:PT_Name:nk]'>
+        <groupfilter function='level-members' level='[none:PT_Name:nk]' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology:nk]'>
+        <groupfilter function='level-members' level='[none:Pathology:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology_Area:nk]'>
+        <groupfilter function='level-members' level='[none:Pathology_Area:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk]'>
+        <groupfilter function='level-members' level='[none:Suitability_Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Teritorry:nk]'>
+        <groupfilter from='&quot;CH&quot;' function='range' level='[none:Teritorry:nk]' to='&quot;US&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Patient Status Details'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Suitability &amp; Activity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='v_Patient_Demographics (DWH) (2)' name='sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)' />
+          </datasources>
+          <datasource-dependencies datasource='sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)'>
+            <column aggregation='Count' caption='Activity Status' datatype='string' default-type='nominal' layered='true' name='[Activity_Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='User' caption='Total Patients' datatype='integer' default-format='n#,##0;-#,##0' default-type='quantitative' layered='true' name='[Calculation_811773851905781761]' pivot='key' role='measure' type='quantitative' user-datatype='integer' visual-totals='Sum'>
+              <calculation class='tableau' formula='COUNT([Patient_Key])' />
+            </column>
+            <column aggregation='Count' caption='Clinic Branch' datatype='string' default-type='nominal' layered='true' name='[Clinic_Branch]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Clinic Name' datatype='string' default-type='nominal' layered='true' name='[Clinic_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Continent]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Year' caption='IC Date' datatype='date' default-type='ordinal' layered='true' name='[IC_Date]' pivot='key' role='dimension' type='ordinal' user-datatype='date' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Insurer]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Sum' caption='Is Historical Patient' datatype='integer' default-type='ordinal' layered='true' name='[Is_Historical]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default'>
+              <aliases>
+                <alias key='0' value='No' />
+                <alias key='1' value='Yes' />
+              </aliases>
+            </column>
+            <column aggregation='Count' caption='PT Name' datatype='string' default-type='nominal' layered='true' name='[PT_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Pathology]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Pathology Area' datatype='string' default-type='nominal' layered='true' name='[Pathology_Area]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Patient External ID' datatype='string' default-type='nominal' layered='true' name='[Patient_External_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Patient ID' datatype='string' default-type='nominal' layered='true' name='[Patient_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Patient Key' datatype='integer' default-type='ordinal' layered='true' name='[Patient_Key]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' caption='Patient Name' datatype='string' default-type='nominal' layered='true' name='[Patient_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Patient Parent ID' datatype='string' default-type='nominal' layered='true' name='[Patient_Parent_ID]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' caption='Patient Src ID' datatype='integer' default-type='ordinal' layered='true' name='[Patient_Src_ID]' pivot='key' role='dimension' type='ordinal' user-datatype='integer' visual-totals='Default' />
+            <column aggregation='Count' caption='Suitability Status' datatype='string' default-type='nominal' layered='true' name='[Suitability_Status]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Teritorry]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
+            <column-instance column='[Activity_Status]' derivation='None' name='[none:Activity_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Clinic_Branch]' derivation='None' name='[none:Clinic_Branch:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Clinic_Name]' derivation='None' name='[none:Clinic_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Continent]' derivation='None' name='[none:Continent:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Insurer]' derivation='None' name='[none:Insurer:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Is_Historical]' derivation='None' name='[none:Is_Historical:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[PT_Name]' derivation='None' name='[none:PT_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pathology]' derivation='None' name='[none:Pathology:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Pathology_Area]' derivation='None' name='[none:Pathology_Area:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Patient_External_ID]' derivation='None' name='[none:Patient_External_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Patient_ID]' derivation='None' name='[none:Patient_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Patient_Key]' derivation='None' name='[none:Patient_Key:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Patient_Name]' derivation='None' name='[none:Patient_Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Patient_Parent_ID]' derivation='None' name='[none:Patient_Parent_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Patient_Src_ID]' derivation='None' name='[none:Patient_Src_ID:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Suitability_Status]' derivation='None' name='[none:Suitability_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Teritorry]' derivation='None' name='[none:Teritorry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[IC_Date]' derivation='Day-Trunc' name='[tdy:IC_Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_811773851905781761]' derivation='User' name='[usr:Calculation_811773851905781761:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+          </datasource-dependencies>
+          <slices>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Activity_Status:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Is_Historical:ok]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Continent:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Teritorry:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Branch:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Name:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology_Area:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Insurer:nk]</column>
+            <column>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:PT_Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk]' value='179' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Parent_ID:nk]' value='112' />
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Src_ID:ok]' value='116' />
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Name:nk]' value='156' />
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Activity_Status:nk]' value='96' />
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk]' value='112' />
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_ID:nk]' value='96' />
+            <format attr='width' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_External_ID:nk]' value='128' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Parent_ID:nk]' value='0' />
+            <format attr='text-orientation' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_ID:nk]' value='0' />
+            <format attr='text-orientation' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Key:ok]' value='0' />
+            <format attr='text-orientation' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_External_ID:nk]' value='0' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905781761:vtsum:qk]' palette='green_blue_white_diverging_10_0' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='row-levels' value='12' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+            <format attr='line-visibility' id='refline0' value='off' />
+            <format attr='text-align' id='refline0' value='center' />
+            <format attr='font-weight' id='refline0' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905781761:vtsum:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='aspect' value='1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Parent_ID:nk] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_ID:nk] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_External_ID:nk] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Name:nk] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Key:ok] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Insurer:nk] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Activity_Status:nk] / ([sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk] / [sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[tdy:IC_Date:ok]))))))))</rows>
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Patient Status Details'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Activity_Status:nk]' type='filter' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Is_Historical:ok]' type='filter' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk]' type='filter' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology_Area:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Continent:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Teritorry:nk]' type='filter' values='relevant' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Branch:nk]' type='filter' values='relevant' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Name:nk]' type='filter' values='relevant' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Insurer:nk]' type='filter' values='cascading' />
+            <card mode='checkdropdown' param='[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:PT_Name:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Activity_Status:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Age (bin):ok]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Branch:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Clinic_Name:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Continent:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:IC_Date:qk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Insurer:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Is_Historical:ok]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Pathology_Area:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_External_ID:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Key:ok]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Name:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Patient_Parent_ID:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Suitability_Status:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[none:Teritorry:nk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[tdy:IC_Date:ok]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[usr:Calculation_811773851905781761:vtsum:qk]</field>
+            <field>[sqlproxy.1wpczq21bdtikm1ccdtr90saxqk5 (copy)].[yr:IC_Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Patient Status Details' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>

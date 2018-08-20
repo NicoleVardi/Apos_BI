@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Facts"
   DTS:PackageType="5"
-  DTS:VersionBuild="93"
-  DTS:VersionGUID="{CF91006C-9165-4489-85D6-7087C789EE92}">
+  DTS:VersionBuild="97"
+  DTS:VersionGUID="{DDA2A627-B13B-423D-B910-F3DC6D96C58E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAuRyuRaQOtECIIB6HmUOQpAAAAAASAAACgAAAAEAAAAAJZ6DrPMWPwkL+71PHOkYgQAAAAdg2KwcUkXXaFnqjav8JBFBQAAABZBvUgHI7mw8usWpbgfMSjqCLE9w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAA/0MiE0jT+h7bqXIIn1S5wAAAAAASAAACgAAAAEAAAAJ/mdik9VCEygUi2z4ZgdLwQAAAA0Fpj1kY7D57OGKn4V62azBQAAAByRtUyNJ8RN/9w0eqi15eQbZLjwQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABK7GlanNMLj4GlRk+HF/NHAAAAAASAAACgAAAAEAAAANl62Jl1CWzPdBQrL7RWKzsQAAAAwH6ndaCdxrChQeVHQrTJLhQAAADn/rQJV9GT6KFD3fbuWnl04BynFw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAB9z+WBGn2mCAD3sYPHb0hwAAAAAASAAACgAAAAEAAAAMMKHXUx0PaDn5YCUuhDc0sQAAAAvA21GENrnxvIDnpnuhyfDxQAAABKiEwyWfZgJ3T/sOa0KN+y/9BcNg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACVeGhBwun7r5eOElcdHdShAAAAAASAAACgAAAAEAAAANtb/D6YuAdVqp5XxT3iUJoQAAAAmV/4KbysKehrUhFYsoDyDBQAAABP7Rb3as0OCQMqgCUjlxWC87KQQQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADJjYd18vMOHlcpgQPnHYbBAAAAAASAAACgAAAAEAAAAM+gXX7/5CgJ0gX45GSXgP4QAAAAxoKjh1e7HD2wT0BHl/RtPBQAAAAVBwztN0CfbpFgtiGJASnY21Uuuw</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAABP4pQFmqy9uFpiGdipRYgAAAAAASAAACgAAAAEAAAAI9RmcEi1mmcLBbKiDEuWAoQAAAAmm2G+VJcBkSAiqxVO7AS3hQAAADdUv7WmqBPhD+yH7RTGrCtMxXjJg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADnV5SD40OYKJF0WrHyVW2pAAAAAASAAACgAAAAEAAAAEqkWHioEiwHGhumjxmbZZ4QAAAAgJoqH/Qxf0eIRj7XF+WkxRQAAAD/lE2bpvXvcTrMxrhdiuavXYERng</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -527,7 +527,7 @@ FROM (
 	) G
 INNER JOIN dbo.PatientsVisits PV ON G.ClinicBranchID = PV.ClinicBranchID AND G.PatientVisitId = PV.ID
 INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON PV.ClinicBranchID = CB.Clinic_Branch_ID
-INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Gait' AND LR.Source_Name = 'dbo.GMTests' 
+--INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Gait' AND LR.Source_Name = 'dbo.GMTests' 
 LEFT JOIN DWH.dbo.Dim_Patients DP ON PV.PatientId = DP.Patient_Src_ID AND PV.ClinicBranchID = DP.Clinic_Branch_ID 
 								AND ((DP.Pathology_Change_Date IS NOT NULL AND CONVERT(date,PV.[Date]) &gt;= DP.IC_Date AND CONVERT(date,PV.[Date]) &lt; DP.Last_Visit_Date) -- change pathology
 								  OR (DP.Pathology_Change_Date IS NULL AND CONVERT(date,PV.[Date]) BETWEEN DP.IC_Date AND DP.Last_Visit_Date)) -- discharged 
@@ -551,7 +551,7 @@ LEFT JOIN ext.Gait_FC_Grades FC4 ON FC4.Grade_Name = 'Grade 4' AND DG.Gender = F
 									OR (FC4.R_Stride_Len_Min &lt; G.M_R_StridLen AND G.M_R_StridLen &lt;= FC4.R_Stride_Len_Max_Eql AND G.Cadence &lt;= FC4.Cadence_Max_Eql)
 									)
 WHERE RowNum = 1 -- take the first test done in each visit
-AND G.ID &gt;= ISNULL(LR.Last_Record_ID,-1)</property>
+--AND G.ID &gt;= ISNULL(LR.Last_Record_ID,-1)</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -1933,7 +1933,7 @@ where [refTable].[Grade_Name] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\410:invalid};</property>
+                          name="ParameterMap">#{Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\3038:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2995,6 +2995,95 @@ where [refTable].[Grade_Name] = ?</property>
                   version="1">
                   <components>
                     <component
+                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split"
+                      componentClassID="Microsoft.ConditionalSplit"
+                      contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                      description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                      name="Conditional Split"
+                      usesDispositions="true">
+                      <inputs>
+                        <input
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Inputs[Conditional Split Input]"
+                          description="Input to the Conditional Split Transformation"
+                          name="Conditional Split Input">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Inputs[Conditional Split Input].Columns[Questionnaire_Category_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Category_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]" />
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[New Category]"
+                          description="Output 1 of the Conditional Split Transformation"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          exclusionGroup="1"
+                          name="New Category"
+                          synchronousInputId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Inputs[Conditional Split Input]"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                              name="Expression">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]} == -1</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Specifies the friendly version of the expression. This expression version uses column names."
+                              expressionType="Notify"
+                              name="FriendlyExpression">Questionnaire_Category_Key == -1</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                              name="EvaluationOrder">0</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Existing Category]"
+                          description="Default Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          name="Existing Category"
+                          synchronousInputId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Inputs[Conditional Split Input]">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              name="IsDefaultOut">true</property>
+                          </properties>
+                          <externalMetadataColumns />
+                        </output>
+                        <output
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Conditional Split Error Output]"
+                          description="Error Output of the Conditional Split Transformation"
+                          exclusionGroup="1"
+                          isErrorOut="true"
+                          name="Conditional Split Error Output"
+                          synchronousInputId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Inputs[Conditional Split Input]">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                              name="ErrorCode"
+                              specialFlags="1" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                              name="ErrorColumn"
+                              specialFlags="2" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
+                    <component
                       refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Derived Column"
                       componentClassID="Microsoft.DerivedColumn"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -3974,13 +4063,19 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Inputs[Input 0].Columns[Questionnaire_Key]"
                               cachedDataType="i4"
                               cachedName="Questionnaire_Key"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Outputs[Output 0].Columns[Questionnaire_Key]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Key]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Inputs[Input 0].Columns[Questionnaire_Category]"
                               cachedDataType="wstr"
                               cachedLength="50"
                               cachedName="Questionnaire_Category"
                               lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Inputs[Input 0].Columns[Questionnaire_Category_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Category_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]"
+                              usageType="readWrite" />
                           </inputColumns>
                           <externalMetadataColumns />
                         </input>
@@ -3990,13 +4085,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Outputs[Output 0]"
                           name="Output 0"
                           synchronousInputId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Inputs[Input 0]">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Outputs[Output 0].Columns[Questionnaire_Category_Key]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Outputs[Output 0].Columns[Questionnaire_Category_Key]"
-                              name="Questionnaire_Category_Key" />
-                          </outputColumns>
                           <externalMetadataColumns />
                         </output>
                       </outputs>
@@ -4893,6 +4981,12 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                               cachedDataType="i4"
                               cachedName="Questionnaire_ID"
                               lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_ID]" />
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Inputs[Input 0].Columns[Questionnaire_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Key]"
+                              usageType="readWrite" />
                           </inputColumns>
                           <externalMetadataColumns />
                         </input>
@@ -4902,13 +4996,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Outputs[Output 0]"
                           name="Output 0"
                           synchronousInputId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Inputs[Input 0]">
-                          <outputColumns>
-                            <outputColumn
-                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Outputs[Output 0].Columns[Questionnaire_Key]"
-                              dataType="i4"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Outputs[Output 0].Columns[Questionnaire_Key]"
-                              name="Questionnaire_Key" />
-                          </outputColumns>
                           <externalMetadataColumns />
                         </output>
                       </outputs>
@@ -4938,83 +5025,99 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           dataType="System.String"
                           description="The SQL command to be executed."
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
-	 SQ.ClinicBranchID as Clinic_Branch_ID
-	,CB.Clinic_Branch_Key
-	,SQ.PatientVisitId as Visit_Src_ID
-	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
-	,SQ.QuestionnaireId as Questionnaire_ID
-	,GL.[Text] as Questionnaire_Category
-	,Score
-FROM dbo.ScoreQuestionnaire SQ 
-INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
-INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
-INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
-WHERE SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
-UNION ALL
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">WITH QuestionnaireData as (
+	SELECT 
+		 SQ.ClinicBranchID as Clinic_Branch_ID
+		,CB.Clinic_Branch_Key
+		,SQ.PatientVisitId as Visit_Src_ID
+		,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
+		,SQ.QuestionnaireId as Questionnaire_ID
+		,GL.[Text] as Questionnaire_Category
+		,Score
+	FROM dbo.ScoreQuestionnaire SQ 
+	INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
+	INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
+	--INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
+	--WHERE SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
+	UNION ALL
+	SELECT 
+		 ClinicBranchID as Clinic_Branch_ID
+		,CB.Clinic_Branch_Key
+		,PatientVisitId as Visit_Src_ID
+		,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),ClinicBranchID),'_',CONVERT(varchar(25),PatientVisitId))) as Visit_ID
+		,QuestionnaireId as Questionnaire_ID
+		,'VAS' as Questionnaire_Category
+		,CONVERT(float,UserAnswer) as Score
+	FROM dbo.PatientsAnswers PA
+	INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON PA.ClinicBranchID = CB.Clinic_Branch_ID
+	--INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.PatientsAnswers' 
+	WHERE QuestionId = 321 
+	--AND PA.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
+	UNION ALL 
+	SELECT -- Physical Score
+		 SQ.ClinicBranchID as Clinic_Branch_ID
+		,CB.Clinic_Branch_Key
+		,SQ.PatientVisitId as Visit_Src_ID
+		,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
+		,SQ.QuestionnaireId as Questionnaire_ID
+		,'Physical Score' as Questionnaire_Category
+		,AVG(Score) as Score
+	FROM dbo.ScoreQuestionnaire SQ 
+	INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
+	INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
+	--INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
+	WHERE SQ.QuestionnaireId = 2 -- SF-36
+	AND GL.GroupLogicalCode in (24,25,27,28)
+	--AND SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
+	GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.QuestionnaireId
+	UNION ALL
+	SELECT -- Mental Score
+		 SQ.ClinicBranchID as Clinic_Branch_ID
+		,CB.Clinic_Branch_Key
+		,SQ.PatientVisitId as Visit_Src_ID
+		,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
+		,SQ.QuestionnaireId as Questionnaire_ID
+		,'Mental Score' as Questionnaire_Category
+		,AVG(Score) as Score
+	FROM dbo.ScoreQuestionnaire SQ 
+	INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
+	INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
+	--INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
+	WHERE SQ.QuestionnaireId = 2 -- SF-36
+	AND GL.GroupLogicalCode in (21,22,23,26)
+	--AND SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
+	GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.QuestionnaireId
+	UNION ALL
+	SELECT -- Emotional Cluster
+		 SQ.ClinicBranchID as Clinic_Branch_ID
+		,CB.Clinic_Branch_Key
+		,SQ.PatientVisitId as Visit_Src_ID
+		,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
+		,SQ.QuestionnaireId as Questionnaire_ID
+		,'Emotional Cluster' as Questionnaire_Category
+		,AVG(Score) as Score
+	FROM dbo.ScoreQuestionnaire SQ 
+	INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
+	INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
+	--INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
+	WHERE SQ.QuestionnaireId = 2 -- SF-36
+	AND GL.GroupLogicalCode in (21,22,26)
+	--AND SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
+	GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.QuestionnaireId
+	)
 SELECT 
-	 ClinicBranchID as Clinic_Branch_ID
-	,CB.Clinic_Branch_Key
-	,PatientVisitId as Visit_Src_ID
-	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),ClinicBranchID),'_',CONVERT(varchar(25),PatientVisitId))) as Visit_ID
-	,QuestionnaireId as Questionnaire_ID
-	,'VAS' as Questionnaire_Category
-	,CONVERT(float,UserAnswer) as Score
-FROM dbo.PatientsAnswers PA
-INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON PA.ClinicBranchID = CB.Clinic_Branch_ID
-INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.PatientsAnswers' 
-WHERE QuestionId = 321 AND PA.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
-UNION ALL 
-SELECT -- Physical Score
-	 SQ.ClinicBranchID as Clinic_Branch_ID
-	,CB.Clinic_Branch_Key
-	,SQ.PatientVisitId as Visit_Src_ID
-	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
-	,SQ.QuestionnaireId as Questionnaire_ID
-	,'Physical Score' as Questionnaire_Category
-	,AVG(Score) as Score
-FROM dbo.ScoreQuestionnaire SQ 
-INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
-INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
-INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
-WHERE SQ.QuestionnaireId = 2 -- SF-36
-AND GL.GroupLogicalCode in (24,25,27,28)
-AND SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
-GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.QuestionnaireId
-UNION ALL
-SELECT -- Mental Score
-	 SQ.ClinicBranchID as Clinic_Branch_ID
-	,CB.Clinic_Branch_Key
-	,SQ.PatientVisitId as Visit_Src_ID
-	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
-	,SQ.QuestionnaireId as Questionnaire_ID
-	,'Mental Score' as Questionnaire_Category
-	,AVG(Score) as Score
-FROM dbo.ScoreQuestionnaire SQ 
-INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
-INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
-INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
-WHERE SQ.QuestionnaireId = 2 -- SF-36
-AND GL.GroupLogicalCode in (21,22,23,26)
-AND SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
-GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.QuestionnaireId
-UNION ALL
-SELECT -- Emotional Cluster
-	 SQ.ClinicBranchID as Clinic_Branch_ID
-	,CB.Clinic_Branch_Key
-	,SQ.PatientVisitId as Visit_Src_ID
-	,CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),SQ.ClinicBranchID),'_',CONVERT(varchar(25),SQ.PatientVisitId))) as Visit_ID
-	,SQ.QuestionnaireId as Questionnaire_ID
-	,'Emotional Cluster' as Questionnaire_Category
-	,AVG(Score) as Score
-FROM dbo.ScoreQuestionnaire SQ 
-INNER JOIN dbo.GroupLogical GL ON SQ.ClinicBranchID = GL.ClinicBranchID AND SQ.GroupLogicalId = GL.GroupLogicalCode AND SQ.QuestionnaireId = GL.QuestionnaireId
-INNER JOIN DWH.dbo.Dim_Clinic_Branch CB ON SQ.ClinicBranchID = CB.Clinic_Branch_ID
-INNER JOIN STG.adm.Last_Refresh LR ON CB.Clinic_Branch_Key = LR.Clinic_Branch_Key AND LR.Table_Name = 'Fact_Patient_Questionnaires' AND LR.Source_Name = 'dbo.ScoreQuestionnaire' 
-WHERE SQ.QuestionnaireId = 2 -- SF-36
-AND GL.GroupLogicalCode in (21,22,26)
-AND SQ.PatientVisitId &gt;= ISNULL(LR.Last_Record_ID,-1)
-GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.QuestionnaireId</property>
+	 Clinic_Branch_ID
+	,Clinic_Branch_Key
+	,Visit_Src_ID
+	,Visit_ID
+	,Q.Questionnaire_ID
+	,Q.Questionnaire_Category
+	,Score
+	,ISNULL(DQ.Questionnaire_Key,-1) as Questionnaire_Key
+	,ISNULL(DQC.Questionnaire_Category_Key,-1) as Questionnaire_Category_Key
+FROM QuestionnaireData Q
+LEFT JOIN DWH.dbo.Dim_Questionnaire DQ ON Q.Questionnaire_ID = DQ.Questionnaire_ID
+LEFT JOIN DWH.dbo.Dim_Questionnaire_Category DQC ON Q.Questionnaire_Category = DQC.Questionnaire_Category AND DQ.Questionnaire_Key = DQC.Questionnaire_Key</property>
                         <property
                           dataType="System.String"
                           description="The variable that contains the SQL command to be executed."
@@ -5116,6 +5219,24 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                               lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Score]"
                               name="Score"
                               truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Key]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].ExternalColumns[Questionnaire_Key]"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Key]"
+                              name="Questionnaire_Key"
+                              truncationRowDisposition="FailComponent" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]"
+                              dataType="i4"
+                              errorOrTruncationOperation="Conversion"
+                              errorRowDisposition="FailComponent"
+                              externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].ExternalColumns[Questionnaire_Category_Key]"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]"
+                              name="Questionnaire_Category_Key"
+                              truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -5150,6 +5271,14 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].ExternalColumns[Score]"
                               dataType="r8"
                               name="Score" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].ExternalColumns[Questionnaire_Key]"
+                              dataType="i4"
+                              name="Questionnaire_Key" />
+                            <externalMetadataColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].ExternalColumns[Questionnaire_Category_Key]"
+                              dataType="i4"
+                              name="Questionnaire_Category_Key" />
                           </externalMetadataColumns>
                         </output>
                         <output
@@ -5195,6 +5324,16 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                               dataType="r8"
                               lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Error Output].Columns[Score]"
                               name="Score" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Error Output].Columns[Questionnaire_Key]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Error Output].Columns[Questionnaire_Key]"
+                              name="Questionnaire_Key" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Error Output].Columns[Questionnaire_Category_Key]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Error Output].Columns[Questionnaire_Category_Key]"
+                              name="Questionnaire_Category_Key" />
                             <outputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                               dataType="i4"
@@ -5289,13 +5428,13 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                               cachedDataType="i4"
                               cachedName="Clinic_Branch_ID"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Clinic_Branch_ID]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Clinic_Branch_ID]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_ID]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Visit_Src_ID]"
                               cachedDataType="i4"
                               cachedName="Visit_Src_ID"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Visit_Src_ID]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Visit_Src_ID]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_Src_ID]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Visit_ID]"
                               cachedCodepage="1252"
@@ -5303,44 +5442,44 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                               cachedLength="50"
                               cachedName="Visit_ID"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Visit_ID]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Visit_ID]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_ID]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Questionnaire_ID]"
                               cachedDataType="i4"
                               cachedName="Questionnaire_ID"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_ID]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_ID]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_ID]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Questionnaire_Category]"
                               cachedDataType="wstr"
                               cachedLength="50"
                               cachedName="Questionnaire_Category"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Category]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Score]"
                               cachedDataType="r8"
                               cachedName="Score"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Score]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Score]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Score]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Clinic_Branch_Key]"
                               cachedDataType="i4"
                               cachedName="Clinic_Branch_Key"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Clinic_Branch_Key]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Clinic_Branch_Key]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_Key]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Questionnaire_Key]"
                               cachedDataType="i4"
                               cachedName="Questionnaire_Key"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Key]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Outputs[Output 0].Columns[Questionnaire_Key]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Key]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[Questionnaire_Category_Key]"
                               cachedDataType="i4"
                               cachedName="Questionnaire_Category_Key"
                               externalMetadataColumnId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].ExternalColumns[Questionnaire_Category_Key]"
-                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Outputs[Output 0].Columns[Questionnaire_Category_Key]" />
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category_Key]" />
                             <inputColumn
                               refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
                               cachedDataType="dbTimeStamp"
@@ -5421,6 +5560,335 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                         </output>
                       </outputs>
                     </component>
+                    <component
+                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All"
+                      componentClassID="Microsoft.UnionAll"
+                      contactInfo="Union All;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                      description="Combines rows from multiple data flows without sorting. For example, add rows back to a data flow after correction of errors. If sorting is important, we recommend using the Merge transformation."
+                      name="Union All"
+                      version="1">
+                      <inputs>
+                        <input
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1]"
+                          name="Union All Input 1">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Clinic_Branch_ID]"
+                              cachedDataType="i4"
+                              cachedName="Clinic_Branch_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Clinic_Branch_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Clinic_Branch_Key]"
+                              cachedDataType="i4"
+                              cachedName="Clinic_Branch_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Clinic_Branch_Key]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_Key]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Visit_Src_ID]"
+                              cachedDataType="i4"
+                              cachedName="Visit_Src_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Visit_Src_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_Src_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Visit_ID]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="Visit_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Visit_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Questionnaire_ID]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Questionnaire_Category]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="Questionnaire_Category"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Score]"
+                              cachedDataType="r8"
+                              cachedName="Score"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Score]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Score]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Questionnaire_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Key]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Key]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1].Columns[Questionnaire_Category_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Category_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category_Key]}</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                        <input
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2]"
+                          hasSideEffects="true"
+                          name="Union All Input 2">
+                          <inputColumns>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Clinic_Branch_ID]"
+                              cachedDataType="i4"
+                              cachedName="Clinic_Branch_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Clinic_Branch_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Clinic_Branch_Key]"
+                              cachedDataType="i4"
+                              cachedName="Clinic_Branch_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Clinic_Branch_Key]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_Key]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Visit_Src_ID]"
+                              cachedDataType="i4"
+                              cachedName="Visit_Src_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Visit_Src_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_Src_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Visit_ID]"
+                              cachedCodepage="1252"
+                              cachedDataType="str"
+                              cachedLength="50"
+                              cachedName="Visit_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Visit_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Questionnaire_ID]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_ID"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_ID]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_ID]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Questionnaire_Category]"
+                              cachedDataType="wstr"
+                              cachedLength="50"
+                              cachedName="Questionnaire_Category"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Score]"
+                              cachedDataType="r8"
+                              cachedName="Score"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Score]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Score]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Questionnaire_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Key]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Key]}</property>
+                              </properties>
+                            </inputColumn>
+                            <inputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2].Columns[Questionnaire_Category_Key]"
+                              cachedDataType="i4"
+                              cachedName="Questionnaire_Category_Key"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output].Columns[Questionnaire_Category_Key]">
+                              <properties>
+                                <property
+                                  containsID="true"
+                                  dataType="System.Int32"
+                                  description="Output column lineage ID"
+                                  name="OutputColumnLineageID">#{Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category_Key]}</property>
+                              </properties>
+                            </inputColumn>
+                          </inputColumns>
+                          <externalMetadataColumns />
+                        </input>
+                        <input
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 3]"
+                          dangling="true"
+                          hasSideEffects="true"
+                          name="Union All Input 3">
+                          <externalMetadataColumns />
+                        </input>
+                      </inputs>
+                      <outputs>
+                        <output
+                          refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1]"
+                          name="Union All Output 1">
+                          <outputColumns>
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_ID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_ID]"
+                              name="Clinic_Branch_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_Key]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Clinic_Branch_Key]"
+                              name="Clinic_Branch_Key" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_Src_ID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_Src_ID]"
+                              name="Visit_Src_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_ID]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Visit_ID]"
+                              name="Visit_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_ID]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_ID]"
+                              name="Questionnaire_ID" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category]"
+                              dataType="wstr"
+                              length="50"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category]"
+                              name="Questionnaire_Category" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Score]"
+                              dataType="r8"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Score]"
+                              name="Score" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Key]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Key]"
+                              name="Questionnaire_Key" />
+                            <outputColumn
+                              refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category_Key]"
+                              dataType="i4"
+                              lineageId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1].Columns[Questionnaire_Category_Key]"
+                              name="Questionnaire_Category_Key" />
+                          </outputColumns>
+                          <externalMetadataColumns />
+                        </output>
+                      </outputs>
+                    </component>
                   </components>
                   <paths>
                     <path
@@ -5429,8 +5897,18 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                       name="Derived Column Output"
                       startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Derived Column.Outputs[Derived Column Output]" />
                     <path
-                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[OLE DB Source Output]"
+                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Existing Category]"
+                      endId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 1]"
+                      name="Existing Category"
+                      startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[Existing Category]" />
+                    <path
+                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[New Category]"
                       endId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Inputs[Input 0]"
+                      name="New Category"
+                      startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Outputs[New Category]" />
+                    <path
+                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[OLE DB Source Output]"
+                      endId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split.Inputs[Conditional Split Input]"
                       name="OLE DB Source Output"
                       startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires.Outputs[OLE DB Source Output]" />
                     <path
@@ -5440,9 +5918,14 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
                       startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key.Outputs[Output 0]" />
                     <path
                       refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Output 01]"
-                      endId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Derived Column.Inputs[Derived Column Input]"
+                      endId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Inputs[Union All Input 2]"
                       name="Output 0"
                       startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key.Outputs[Output 0]" />
+                    <path
+                      refId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Union All Output 1]"
+                      endId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Derived Column.Inputs[Derived Column Input]"
+                      name="Union All Output 1"
+                      startId="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All.Outputs[Union All Output 1]" />
                   </paths>
                 </pipeline>
               </DTS:ObjectData>
@@ -5478,7 +5961,7 @@ GROUP BY SQ.ClinicBranchID, CB.Clinic_Branch_Key, SQ.PatientVisitId, SQ.Question
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category = 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.PatientsAnswers';&#xA;&#xA;UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;INNER JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category &lt;&gt; 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.ScoreQuestionnaire';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="--Last Refresh Date - Update&#xA;UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;LEFT JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category = 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.PatientsAnswers';&#xA;&#xA;UPDATE LR&#xA;SET Last_Record_ID = Q.Last_Record_ID,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM STG.adm.Last_Refresh LR&#xA;LEFT JOIN (&#xA;&#x9;SELECT Clinic_Branch_Key, MAX(Visit_Src_ID) as Last_Record_ID&#xA;&#x9;FROM Fact_Patient_Questionnaires Q&#xA;&#x9;INNER JOIN Dim_Questionnaire_Category DQ ON Q.Questionnaire_Category_Key = DQ.Questionnaire_Category_Key&#xA;&#x9;WHERE Questionnaire_Category &lt;&gt; 'VAS'&#xA;&#x9;GROUP BY Clinic_Branch_Key&#xA;&#x9;) Q ON LR.Clinic_Branch_Key = Q.Clinic_Branch_Key&#xA;WHERE LR.Table_Name = 'Fact_Patient_Questionnaires' AND Source_Name = 'dbo.ScoreQuestionnaire';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -10405,7 +10888,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
 		,CASE WHEN PV.PrevPhysiotherapistID IS NULL THEN '-1' 
 			  ELSE CONVERT(varchar(50),CONCAT(CONVERT(varchar(10),PV.ClinicBranchID),'_',CONVERT(varchar(25),PV.PrevPhysiotherapistID))) 
 			  END as Prev_PT_ID
-		,ISNULL(PathologyId,-1) as Pathology_ID
+		,CASE WHEN ISNULL(PathologyId,0) = 0 THEN -1 ELSE PathologyId END as Pathology_ID
 		,CONVERT(date,[Date]) as Visit_Date
 		,ISNULL(DP.IC_Date, '1900-01-01') as IC_Date
 		,ISNULL(DP.IC_Visit_ID,'-1') as IC_Visit_ID
@@ -11876,17 +12359,17 @@ WHERE pv.Patient_Key &gt; 0</property>
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Gait"
           TopLeft="49.5,5.5" />
         <NodeLayout
-          Size="154,42"
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\stg Patient_Gait"
-          TopLeft="21.5,413.5" />
+          Size="169,42"
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP FC_Grade_Key"
+          TopLeft="14,209.5" />
         <NodeLayout
           Size="186,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP Clinic_Branch_Key"
           TopLeft="5.50000000000001,107.5" />
         <NodeLayout
-          Size="169,42"
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\LKP FC_Grade_Key"
-          TopLeft="14,209.5" />
+          Size="154,42"
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\stg Patient_Gait"
+          TopLeft="21.5,413.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait\Derived Column"
@@ -11911,6 +12394,30 @@ WHERE pv.Patient_Key &gt; 0</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output1]"
+          TopLeft="98.5,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -11957,30 +12464,6 @@ WHERE pv.Patient_Key &gt; 0</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Gait\stg Fact_Patient_Gait.Paths[Lookup Match Output1]"
-          TopLeft="98.5,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12061,98 +12544,60 @@ WHERE pv.Patient_Key &gt; 0</property>
         <NodeLayout
           Size="236,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Category_Key"
-          TopLeft="5.50000000000003,209.5" />
+          TopLeft="5.50000000000006,311.5" />
         <NodeLayout
           Size="205,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\stg Patient_Questionnaires"
-          TopLeft="21,413.5" />
+          TopLeft="200,617.5" />
         <NodeLayout
           Size="149,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Questionnaires"
-          TopLeft="49,5.5" />
+          TopLeft="228,5.5" />
         <NodeLayout
           Size="154,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Derived Column"
-          TopLeft="46.5,311.5" />
+          TopLeft="225.5,515.5" />
         <NodeLayout
           Size="196,42"
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\LKP Questionnaire_Key"
-          TopLeft="25.5,107.5" />
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Output 01]"
-          TopLeft="123.5,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          TopLeft="45.5000000000001,209.5" />
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Output 0]"
-          TopLeft="123.5,149.5">
+          TopLeft="143.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="-20,60"
               Start="0,0"
-              End="0,52.5">
+              End="-20,52.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="-4,30" />
+                  <mssgle:LineSegment
+                    End="-16,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16,30"
+                    Point2="-20,30"
+                    Point3="-20,34" />
+                  <mssgle:LineSegment
+                    End="-20,52.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[OLE DB Source Output]"
-          TopLeft="123.5,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Derived Column Output]"
-          TopLeft="123.5,353.5">
+          TopLeft="302.5,557.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -12169,9 +12614,153 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Conditional Split"
+          TopLeft="225,107.5" />
+        <NodeLayout
+          Size="121,42"
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires\Union All"
+          TopLeft="242,413.5" />
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[OLE DB Source Output]"
+          TopLeft="302.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[New Category]"
+          TopLeft="278,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-134.5,60"
+              Start="0,0"
+              End="-134.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.367816091954" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.367816091954"
+                    Point2="0,24.367816091954"
+                    Point3="-4,24.367816091954" />
+                  <mssgle:LineSegment
+                    End="-130.5,24.367816091954" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-130.5,24.367816091954"
+                    Point2="-134.5,24.367816091954"
+                    Point3="-134.5,28.367816091954" />
+                  <mssgle:LineSegment
+                    End="-134.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
+              BoundingBox="-98.80693359375,29.367816091954,63.1138671875,11.4677734375"
               RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Existing Category]"
+          TopLeft="324.166666666667,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,264"
+              Start="0,0"
+              End="0,256.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,256.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-38.90693359375,122.51611328125,77.8138671875,11.4677734375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Output 01]"
+          TopLeft="123.5,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="160.166666666667,60"
+              Start="0,0"
+              End="160.166666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.5301794453507"
+                    Point2="0,35.5301794453507"
+                    Point3="4,35.5301794453507" />
+                  <mssgle:LineSegment
+                    End="156.166666666667,35.5301794453507" />
+                  <mssgle:CubicBezierSegment
+                    Point1="156.166666666667,35.5301794453507"
+                    Point2="160.166666666667,35.5301794453507"
+                    Point3="160.166666666667,39.5301794453507" />
+                  <mssgle:LineSegment
+                    End="160.166666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\Fact Patient Questionnaires\stg Patient_Qestionnaires.Paths[Union All Output 1]"
+          TopLeft="302.5,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -12202,7 +12791,7 @@ WHERE pv.Patient_Key &gt; 0</property>
     design-time-name="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="135,42"
           Id="Package\Sequence Container\Fact Patient Visits\stg Fact_Patient_Visits\LKP PT_Key"
@@ -12254,7 +12843,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12276,7 +12867,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12298,7 +12891,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12320,7 +12915,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12342,7 +12939,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12364,7 +12963,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -12386,7 +12987,9 @@ WHERE pv.Patient_Key &gt; 0</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

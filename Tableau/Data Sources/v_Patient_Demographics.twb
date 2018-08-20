@@ -8,7 +8,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_Patient_Demographics (DWH)' inline='true' name='federated.04e26720d0jmgv1ggsklu0mumnxv' version='18.1'>
-      <repository-location id='v_Patient_DemographicsDWH' path='datasources' revision='2.2' />
+      <repository-location id='v_Patient_DemographicsDWH' path='datasources' revision='2.8' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.1wooez11vh54y51fc3z6f1ngiuf5'>
@@ -142,11 +142,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Teritorry_Key</remote-name>
+            <remote-name>Territory_Key</remote-name>
             <remote-type>3</remote-type>
-            <local-name>[Teritorry_Key]</local-name>
+            <local-name>[Territory_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
-            <remote-alias>Teritorry_Key</remote-alias>
+            <remote-alias>Territory_Key</remote-alias>
             <ordinal>8</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -158,16 +158,16 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Teritorry</remote-name>
+            <remote-name>Territory</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Teritorry]</local-name>
+            <local-name>[Territory]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
-            <remote-alias>Teritorry</remote-alias>
+            <remote-alias>Territory</remote-alias>
             <ordinal>9</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>20</width>
-            <contains-null>false</contains-null>
+            <contains-null>true</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -352,12 +352,47 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
+            <remote-name>Insurer_Group_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Insurer_Group_Key]</local-name>
+            <parent-name>[v_Patient_Demographics]</parent-name>
+            <remote-alias>Insurer_Group_Key</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Insurer_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Insurer_Group]</local-name>
+            <parent-name>[v_Patient_Demographics]</parent-name>
+            <remote-alias>Insurer_Group</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
             <remote-name>Is_Agreement</remote-name>
             <remote-type>3</remote-type>
             <local-name>[Is_Agreement]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Is_Agreement</remote-alias>
-            <ordinal>20</ordinal>
+            <ordinal>22</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -373,7 +408,7 @@
             <local-name>[Pathology_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Pathology_Key</remote-alias>
-            <ordinal>21</ordinal>
+            <ordinal>23</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -389,7 +424,7 @@
             <local-name>[Pathology]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Pathology</remote-alias>
-            <ordinal>22</ordinal>
+            <ordinal>24</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>255</width>
@@ -408,7 +443,7 @@
             <local-name>[Pathology_Area_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Pathology_Area_Key</remote-alias>
-            <ordinal>23</ordinal>
+            <ordinal>25</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -424,7 +459,7 @@
             <local-name>[Pathology_Area]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Pathology_Area</remote-alias>
-            <ordinal>24</ordinal>
+            <ordinal>26</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -443,7 +478,7 @@
             <local-name>[PT_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>PT_Key</remote-alias>
-            <ordinal>25</ordinal>
+            <ordinal>27</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -459,7 +494,7 @@
             <local-name>[PT_Name]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>PT_Name</remote-alias>
-            <ordinal>26</ordinal>
+            <ordinal>28</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>101</width>
@@ -478,7 +513,7 @@
             <local-name>[IC_Date]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>IC_Date</remote-alias>
-            <ordinal>27</ordinal>
+            <ordinal>29</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -494,7 +529,7 @@
             <local-name>[IC_Pain_Level]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>IC_Pain_Level</remote-alias>
-            <ordinal>28</ordinal>
+            <ordinal>30</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -510,7 +545,7 @@
             <local-name>[IC_QoL_Level]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>IC_QoL_Level</remote-alias>
-            <ordinal>29</ordinal>
+            <ordinal>31</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -526,7 +561,7 @@
             <local-name>[IC_Function_Level]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>IC_Function_Level</remote-alias>
-            <ordinal>30</ordinal>
+            <ordinal>32</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -542,7 +577,7 @@
             <local-name>[IC_Velocity]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>IC_Velocity</remote-alias>
-            <ordinal>31</ordinal>
+            <ordinal>33</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -558,7 +593,7 @@
             <local-name>[IC_Visit_ID]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>IC_Visit_ID</remote-alias>
-            <ordinal>32</ordinal>
+            <ordinal>34</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -577,7 +612,7 @@
             <local-name>[Last_Visit_ID]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Last_Visit_ID</remote-alias>
-            <ordinal>33</ordinal>
+            <ordinal>35</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -596,7 +631,7 @@
             <local-name>[Last_Visit_Date]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Last_Visit_Date</remote-alias>
-            <ordinal>34</ordinal>
+            <ordinal>36</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -612,7 +647,7 @@
             <local-name>[Seniority_Days]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Seniority_Days</remote-alias>
-            <ordinal>35</ordinal>
+            <ordinal>37</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -628,7 +663,7 @@
             <local-name>[Seniority_Period_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Seniority_Period_Key</remote-alias>
-            <ordinal>36</ordinal>
+            <ordinal>38</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -644,7 +679,7 @@
             <local-name>[Period_Number]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Period_Number</remote-alias>
-            <ordinal>37</ordinal>
+            <ordinal>39</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -660,7 +695,7 @@
             <local-name>[Period_Name]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Period_Name</remote-alias>
-            <ordinal>38</ordinal>
+            <ordinal>40</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -679,7 +714,7 @@
             <local-name>[Period_Year_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Period_Year_Key</remote-alias>
-            <ordinal>39</ordinal>
+            <ordinal>41</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -695,7 +730,7 @@
             <local-name>[Period_Year_Number]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Period_Year_Number</remote-alias>
-            <ordinal>40</ordinal>
+            <ordinal>42</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -711,7 +746,7 @@
             <local-name>[Period_Year]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Period_Year</remote-alias>
-            <ordinal>41</ordinal>
+            <ordinal>43</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -730,7 +765,7 @@
             <local-name>[Activity_Status_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Activity_Status_Key</remote-alias>
-            <ordinal>42</ordinal>
+            <ordinal>44</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -746,7 +781,7 @@
             <local-name>[Activity_Status]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Activity_Status</remote-alias>
-            <ordinal>43</ordinal>
+            <ordinal>45</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -765,7 +800,7 @@
             <local-name>[Suitability_Status_Key]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Suitability_Status_Key</remote-alias>
-            <ordinal>44</ordinal>
+            <ordinal>46</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -781,7 +816,7 @@
             <local-name>[Suitability_Status]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Suitability_Status</remote-alias>
-            <ordinal>45</ordinal>
+            <ordinal>47</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -800,7 +835,7 @@
             <local-name>[Discharge_Date]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Discharge_Date</remote-alias>
-            <ordinal>46</ordinal>
+            <ordinal>48</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -816,7 +851,7 @@
             <local-name>[Pathology_Change_Date]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Pathology_Change_Date</remote-alias>
-            <ordinal>47</ordinal>
+            <ordinal>49</ordinal>
             <local-type>date</local-type>
             <aggregation>Year</aggregation>
             <contains-null>true</contains-null>
@@ -832,7 +867,7 @@
             <local-name>[Is_Discharged_Patient]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Is_Discharged_Patient</remote-alias>
-            <ordinal>48</ordinal>
+            <ordinal>50</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -848,7 +883,7 @@
             <local-name>[Is_Historical]</local-name>
             <parent-name>[v_Patient_Demographics]</parent-name>
             <remote-alias>Is_Historical</remote-alias>
-            <ordinal>49</ordinal>
+            <ordinal>51</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -898,6 +933,8 @@
       <column aggregation='Avg' caption='IC QoL Level' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_QoL_Level]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='IC Velocity' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Velocity]' role='measure' type='quantitative' />
       <column caption='IC Visit ID' datatype='string' name='[IC_Visit_ID]' role='dimension' type='nominal' />
+      <column caption='Insurer Group' datatype='string' name='[Insurer_Group]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='Insurer Group Key' datatype='integer' hidden='true' name='[Insurer_Group_Key]' role='dimension' type='ordinal' />
       <column caption='Insurer Key' datatype='integer' hidden='true' name='[Insurer_Key]' role='dimension' type='ordinal' />
       <column caption='Agreement Patients' datatype='integer' name='[Is_Agreement]' role='measure' type='quantitative' />
       <column caption='Discharged Patients' datatype='integer' name='[Is_Discharged_Patient]' role='measure' type='quantitative' />
@@ -918,7 +955,7 @@
       <column caption='Pathology Area Key' datatype='integer' hidden='true' name='[Pathology_Area_Key]' role='dimension' type='ordinal' />
       <column caption='Pathology Change Date' datatype='date' name='[Pathology_Change_Date]' role='dimension' type='ordinal' />
       <column caption='Pathology Key' datatype='integer' hidden='true' name='[Pathology_Key]' role='dimension' type='ordinal' />
-      <column caption='Patient External ID' datatype='string' hidden='true' name='[Patient_External_ID]' role='dimension' type='nominal' />
+      <column caption='Patient External ID' datatype='string' name='[Patient_External_ID]' role='dimension' type='nominal' />
       <column caption='Patient ID' datatype='string' name='[Patient_ID]' role='dimension' type='nominal' />
       <column caption='Patient Key' datatype='integer' name='[Patient_Key]' role='dimension' type='ordinal' />
       <column caption='Patient Name' datatype='string' name='[Patient_Name]' role='dimension' type='nominal' />
@@ -934,12 +971,17 @@
       <column caption='Suitability Status' datatype='string' name='[Suitability_Status]' role='dimension' type='nominal' />
       <column caption='Suitability Status Key' datatype='integer' hidden='true' name='[Suitability_Status_Key]' role='dimension' type='ordinal' />
       <column caption='Teritorry Key' datatype='integer' hidden='true' name='[Teritorry_Key]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' caption='Territory Key' datatype='integer' hidden='true' name='[Territory_Key]' role='dimension' type='ordinal' />
       <drill-paths>
         <drill-path name='Clinic'>
           <field>[Continent]</field>
-          <field>[Teritorry]</field>
+          <field>[Territory]</field>
           <field>[Clinic_Branch]</field>
           <field>[Clinic_Name]</field>
+        </drill-path>
+        <drill-path name='Insurers'>
+          <field>[Insurer_Group]</field>
+          <field>[Insurer]</field>
         </drill-path>
         <drill-path name='Pathology'>
           <field>[Pathology_Area]</field>
@@ -949,6 +991,7 @@
           <field>[Patient_Parent_ID]</field>
           <field>[Patient_ID]</field>
           <field>[Patient_Src_ID]</field>
+          <field>[Patient_External_ID]</field>
           <field>[Patient_Key]</field>
         </drill-path>
         <drill-path name='Seniority Period'>
@@ -983,9 +1026,10 @@
         <folder-item name='[Age (bin)]' type='field' />
         <folder-item name='[Gender]' type='field' />
         <folder-item name='[Gender_Key]' type='field' />
-        <folder-item name='[Insurer]' type='field' />
+        <folder-item name='[Insurer_Group_Key]' type='field' />
         <folder-item name='[Insurer_Key]' type='field' />
         <folder-item name='[Patient_Name]' type='field' />
+        <folder-item name='Insurers' type='drillpath' />
         <folder-item name='Patient ID' type='drillpath' />
       </folder>
       <folder name='Periods' role='dimensions'>
@@ -1003,10 +1047,10 @@
         <folder-item name='[Suitability_Status_Key]' type='field' />
       </folder>
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_Patient_Demographics (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2018 11:14:26 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_Patient_Demographics (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/14/2018 02:21:28 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='71175' timestamp-start='2018-07-26 11:14:26.345' />
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='72144' timestamp-start='2018-08-14 14:21:28.682' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -1019,7 +1063,7 @@
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>72144</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1032,7 +1076,7 @@
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>72144</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1046,7 +1090,7 @@
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>72144</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1060,7 +1104,7 @@
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>21</approx-count>
+              <approx-count>15</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1074,21 +1118,34 @@
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>19</approx-count>
+              <approx-count>12</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Teritorry</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[Teritorry]</local-name>
+              <remote-name>Territory_Key</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Territory_Key]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Teritorry</remote-alias>
+              <remote-alias>Territory_Key</remote-alias>
               <ordinal>5</ordinal>
+              <family>v_Patient_Demographics</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Territory</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Territory]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Territory</remote-alias>
+              <ordinal>6</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1098,7 +1155,7 @@
               <local-name>[Continent]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Continent</remote-alias>
-              <ordinal>6</ordinal>
+              <ordinal>7</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1112,12 +1169,26 @@
               <local-name>[Patient_Src_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Patient_Src_ID</remote-alias>
-              <ordinal>7</ordinal>
+              <ordinal>8</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>52258</approx-count>
               <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Patient_External_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Patient_External_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Patient_External_ID</remote-alias>
+              <ordinal>9</ordinal>
+              <family>v_Patient_Demographics</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>72144</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Patient_Name</remote-name>
@@ -1125,11 +1196,11 @@
               <local-name>[Patient_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Patient_Name</remote-alias>
-              <ordinal>8</ordinal>
+              <ordinal>10</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>72144</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1139,7 +1210,7 @@
               <local-name>[Gender]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Gender</remote-alias>
-              <ordinal>9</ordinal>
+              <ordinal>11</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1153,11 +1224,11 @@
               <local-name>[Age]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Age</remote-alias>
-              <ordinal>10</ordinal>
+              <ordinal>12</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>76</approx-count>
+              <approx-count>70</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1166,11 +1237,25 @@
               <local-name>[Insurer]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Insurer</remote-alias>
-              <ordinal>11</ordinal>
+              <ordinal>13</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Insurer_Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Insurer_Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Insurer_Group</remote-alias>
+              <ordinal>14</ordinal>
+              <family>v_Patient_Demographics</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1180,7 +1265,7 @@
               <local-name>[Is_Agreement]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Is_Agreement</remote-alias>
-              <ordinal>12</ordinal>
+              <ordinal>15</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1193,11 +1278,11 @@
               <local-name>[Pathology]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Pathology</remote-alias>
-              <ordinal>13</ordinal>
+              <ordinal>16</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>72</approx-count>
+              <approx-count>58</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1207,7 +1292,7 @@
               <local-name>[Pathology_Area]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Pathology_Area</remote-alias>
-              <ordinal>14</ordinal>
+              <ordinal>17</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1221,11 +1306,11 @@
               <local-name>[PT_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>PT_Name</remote-alias>
-              <ordinal>15</ordinal>
+              <ordinal>18</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>86</approx-count>
+              <approx-count>76</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1235,11 +1320,11 @@
               <local-name>[IC_Date]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Date</remote-alias>
-              <ordinal>16</ordinal>
+              <ordinal>19</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2587</approx-count>
+              <approx-count>3064</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1248,11 +1333,11 @@
               <local-name>[IC_Pain_Level]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Pain_Level</remote-alias>
-              <ordinal>17</ordinal>
+              <ordinal>20</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>338</approx-count>
+              <approx-count>310</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1261,11 +1346,11 @@
               <local-name>[IC_QoL_Level]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_QoL_Level</remote-alias>
-              <ordinal>18</ordinal>
+              <ordinal>21</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>384</approx-count>
+              <approx-count>359</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1274,11 +1359,11 @@
               <local-name>[IC_Function_Level]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Function_Level</remote-alias>
-              <ordinal>19</ordinal>
+              <ordinal>22</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>642</approx-count>
+              <approx-count>592</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1287,11 +1372,11 @@
               <local-name>[IC_Velocity]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Velocity</remote-alias>
-              <ordinal>20</ordinal>
+              <ordinal>23</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>375</approx-count>
+              <approx-count>463</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1300,11 +1385,11 @@
               <local-name>[IC_Visit_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>IC_Visit_ID</remote-alias>
-              <ordinal>21</ordinal>
+              <ordinal>24</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>72144</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1314,11 +1399,11 @@
               <local-name>[Last_Visit_ID]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Last_Visit_ID</remote-alias>
-              <ordinal>22</ordinal>
+              <ordinal>25</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>71175</approx-count>
+              <approx-count>72144</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1328,11 +1413,11 @@
               <local-name>[Last_Visit_Date]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Last_Visit_Date</remote-alias>
-              <ordinal>23</ordinal>
+              <ordinal>26</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2199</approx-count>
+              <approx-count>2188</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1341,11 +1426,11 @@
               <local-name>[Seniority_Period_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Seniority_Period_Key</remote-alias>
-              <ordinal>24</ordinal>
+              <ordinal>27</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>29</approx-count>
+              <approx-count>31</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1354,11 +1439,11 @@
               <local-name>[Period_Number]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Number</remote-alias>
-              <ordinal>25</ordinal>
+              <ordinal>28</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>29</approx-count>
+              <approx-count>31</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1367,11 +1452,11 @@
               <local-name>[Period_Name]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Name</remote-alias>
-              <ordinal>26</ordinal>
+              <ordinal>29</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>29</approx-count>
+              <approx-count>31</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1381,7 +1466,7 @@
               <local-name>[Period_Year_Key]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year_Key</remote-alias>
-              <ordinal>27</ordinal>
+              <ordinal>30</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1394,7 +1479,7 @@
               <local-name>[Period_Year_Number]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year_Number</remote-alias>
-              <ordinal>28</ordinal>
+              <ordinal>31</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1407,7 +1492,7 @@
               <local-name>[Period_Year]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Period_Year</remote-alias>
-              <ordinal>29</ordinal>
+              <ordinal>32</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1421,7 +1506,7 @@
               <local-name>[Activity_Status]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Activity_Status</remote-alias>
-              <ordinal>30</ordinal>
+              <ordinal>33</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1435,11 +1520,11 @@
               <local-name>[Suitability_Status]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Suitability_Status</remote-alias>
-              <ordinal>31</ordinal>
+              <ordinal>34</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1449,11 +1534,11 @@
               <local-name>[Discharge_Date]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Discharge_Date</remote-alias>
-              <ordinal>32</ordinal>
+              <ordinal>35</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2093</approx-count>
+              <approx-count>1633</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1462,7 +1547,7 @@
               <local-name>[Pathology_Change_Date]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Pathology_Change_Date</remote-alias>
-              <ordinal>33</ordinal>
+              <ordinal>36</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
@@ -1475,7 +1560,7 @@
               <local-name>[Is_Discharged_Patient]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Is_Discharged_Patient</remote-alias>
-              <ordinal>34</ordinal>
+              <ordinal>37</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1488,7 +1573,7 @@
               <local-name>[Is_Historical]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Is_Historical</remote-alias>
-              <ordinal>35</ordinal>
+              <ordinal>38</ordinal>
               <family>v_Patient_Demographics</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1498,7 +1583,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.565491' measure-ordering='alphabetic' measure-percentage='0.434509' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.683135' measure-ordering='alphabetic' measure-percentage='0.316865' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

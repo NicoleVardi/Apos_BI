@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Dims"
   DTS:PackageType="5"
-  DTS:VersionBuild="314"
-  DTS:VersionGUID="{59542840-31A6-4042-A383-8BD5241AAB38}">
+  DTS:VersionBuild="316"
+  DTS:VersionGUID="{E71224E2-B79F-45F1-B449-C4CD60556256}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAPuOJ8k6N9N8XY42tkMjFoAAAAAASAAACgAAAAEAAAADP83kvD6kFvvVEtA2Z4TcsQAAAAqL7rfCBYdwKeP4FVHEFYGRQAAADumMwR/1bvuhtd9QEfjT3xyPpaOg</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAVCep+2vu9r4cS0N9zHGc2AAAAAASAAACgAAAAEAAAAKCtTJLjVrE+HVlPAnhpGw0QAAAAPEknrYrnnOcEpBP/egAwIBQAAAAMcVOrNtg+ks1ixeg5/QdVlOrJHQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADMEDr9H9GqMK0P8Hc4YMelAAAAAASAAACgAAAAEAAAAHKHbqUgvACxVaqEuI9Oe2EQAAAA6NZrd/AuMB+9WAKuLOlXLxQAAAAjvUN9w/o2HiKYcC2NYgvKghsbVw</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAAAseEU73jUxxGS2SIXbgx4KAAAAAASAAACgAAAAEAAAADAK74kouWSwVg5OOn7fVGUQAAAA+V4XU/gBi3a7+p+SQvDlpRQAAACtWhimJ6VbhwhRooaDeWyn0lap0w</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -63,7 +63,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADjV3py5fqVHtLh1M+5P89dAAAAAASAAACgAAAAEAAAABI1CoQ8qC/OHVMwv5eyqccQAAAAxhoyjapB/spkvKq2hINhvBQAAACH8yiezVtsMkqw8Hg4xkxlzGwJrQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACNT0NXCff97JPrrhv5g/4MAAAAAASAAACgAAAAEAAAAMlqaASlK4P60OQveh5l5Y8QAAAAF7S8o2baWfPQfl6q/u/QvRQAAAA2p4z81IIFGKAhEgqX5VJtnUekcQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -80,7 +80,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPzkwECdMHUiJduI4dv63rgAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABdZZOJ7ZqpbAK6AfnMoVyQAAAAAASAAACgAAAAEAAAAGnFWkxad+LkGgjZ3jShdn4QAAAA/wLbVVYVzfMCc6YzpDzymxQAAACSCuyMnf0+kB0/JUjr2OJ0L2O60A</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADYyKG205EgMP1YInbjKpw8AAAAAASAAACgAAAAEAAAAFn+qj30/dmary9bscABwE4QAAAA5ZjBNK4z7cBfo4Y0G4Jk4BQAAAANkY2cwMqRufuQahnYWRZjuaGqRQ</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -307,7 +307,7 @@
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="MERGE dbo.Dim_Clinic_Branch as T &#xA;USING STG.dbo.Dim_Clinic_Branch as S ON T.Clinic_Branch_ID = S.Clinic_Branch_ID&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Clinic_Branch = S.Clinic_Branch,&#xA;&#x9;T.Teritorry_Key = S.Teritorry_Key,&#xA;&#x9;T.Gold_Data_Group_Key = S.Gold_Data_Group_Key,&#xA;&#x9;T.Is_Historical = S.Is_Historical,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Clinic_Branch_ID, Clinic_Branch, Teritorry_Key, Gold_Data_Group_Key, Is_Historical)&#xA;&#x9;VALUES (S.Clinic_Branch_ID, S.Clinic_Branch, S.Teritorry_Key, S.Gold_Data_Group_Key, S.Is_Historical);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE dbo.Dim_Clinic_Branch as T &#xA;USING STG.dbo.Dim_Clinic_Branch as S ON T.Clinic_Branch_ID = S.Clinic_Branch_ID&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Clinic_Branch = S.Clinic_Branch,&#xA;&#x9;T.Territory_Key = S.Territory_Key,&#xA;&#x9;T.Gold_Data_Group_Key = S.Gold_Data_Group_Key,&#xA;&#x9;T.Is_Historical = S.Is_Historical,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Clinic_Branch_ID, Clinic_Branch, Territory_Key, Gold_Data_Group_Key, Is_Historical)&#xA;&#x9;VALUES (S.Clinic_Branch_ID, S.Clinic_Branch, S.Territory_Key, S.Gold_Data_Group_Key, S.Is_Historical);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -352,7 +352,7 @@
                           UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT 
 	 ID
 	,CM.Clinic_Branch
-	,Teritorry
+	,Territory
 	,Is_Historical
 	,ISNULL(DG.Gold_Data_Group_ID,-1) as Gold_Data_Group_ID
 FROM adm.Clinic_Mapping CM
@@ -413,15 +413,15 @@ LEFT JOIN ext.Clinic_Branch_Data_Groups DG ON CM.Clinic_Branch = DG.Clinic_Branc
                               name="Clinic_Branch"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Territory]"
                               codePage="1252"
                               dataType="str"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].ExternalColumns[Teritorry]"
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].ExternalColumns[Territory]"
                               length="5"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Teritorry]"
-                              name="Teritorry"
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Territory]"
+                              name="Territory"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
                               refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Is_Historical]"
@@ -455,11 +455,11 @@ LEFT JOIN ext.Clinic_Branch_Data_Groups DG ON CM.Clinic_Branch = DG.Clinic_Branc
                               length="100"
                               name="Clinic_Branch" />
                             <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].ExternalColumns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].ExternalColumns[Territory]"
                               codePage="1252"
                               dataType="str"
                               length="5"
-                              name="Teritorry" />
+                              name="Territory" />
                             <externalMetadataColumn
                               refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].ExternalColumns[Is_Historical]"
                               dataType="i4"
@@ -488,12 +488,12 @@ LEFT JOIN ext.Clinic_Branch_Data_Groups DG ON CM.Clinic_Branch = DG.Clinic_Branc
                               lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Error Output].Columns[Clinic_Branch]"
                               name="Clinic_Branch" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Error Output].Columns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Error Output].Columns[Territory]"
                               codePage="1252"
                               dataType="str"
                               length="5"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Error Output].Columns[Teritorry]"
-                              name="Teritorry" />
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Error Output].Columns[Territory]"
+                              name="Territory" />
                             <outputColumn
                               refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Error Output].Columns[Is_Historical]"
                               dataType="i4"
@@ -651,7 +651,7 @@ where [refTable].[Group_ID] = ?</property>
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\1243:invalid};</property>
+                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\474:invalid};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -753,11 +753,11 @@ where [refTable].[Group_ID] = ?</property>
                       </outputs>
                     </component>
                     <component
-                      refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key"
+                      refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key"
                       componentClassID="Microsoft.Lookup"
                       contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
                       description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
-                      name="LKP Teritorry_Key"
+                      name="LKP Territory_Key"
                       usesDispositions="true"
                       version="6">
                       <properties>
@@ -766,14 +766,14 @@ where [refTable].[Group_ID] = ?</property>
                           description="Specifies the SQL statement that generates the lookup table."
                           expressionType="Notify"
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Dim_Teritorry]</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Dim_Territory]</property>
                         <property
                           dataType="System.String"
                           description="Specifies a SQL statement that uses parameters to generate the lookup table."
                           expressionType="Notify"
                           name="SqlCommandParam"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Dim_Teritorry]) [refTable]
-where [refTable].[Teritorry] = ?</property>
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Dim_Territory]) [refTable]
+where [refTable].[Territory] = ?</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the type of connection used to access the reference dataset."
@@ -804,12 +804,12 @@ where [refTable].[Teritorry] = ?</property>
                         <property
                           dataType="System.String"
                           description="Indicates whether to reference metadata in an XML format."
-                          name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Teritorry_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Teritorry" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Continent_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RI_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DB_Create_Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DB_Update_Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                          name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Territory_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Territory" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Continent_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RI_Key" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DB_Create_Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DB_Update_Date" dataType="DT_DBTIMESTAMP" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                         <property
                           containsID="true"
                           dataType="System.String"
                           description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Teritorry]};</property>
+                          name="ParameterMap">#{Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Territory]};</property>
                         <property
                           dataType="System.Int32"
                           description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -821,7 +821,7 @@ where [refTable].[Teritorry] = ?</property>
                       </properties>
                       <connections>
                         <connection
-                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Connections[OleDbConnection]"
+                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Connections[OleDbConnection]"
                           connectionManagerID="Package.ConnectionManagers[DWH]"
                           connectionManagerRefId="Package.ConnectionManagers[DWH]"
                           description="Connection manager used to access lookup data."
@@ -829,21 +829,21 @@ where [refTable].[Teritorry] = ?</property>
                       </connections>
                       <inputs>
                         <input
-                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Inputs[Lookup Input]"
+                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Inputs[Lookup Input]"
                           name="Lookup Input">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Inputs[Lookup Input].Columns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Inputs[Lookup Input].Columns[Territory]"
                               cachedCodepage="1252"
                               cachedDataType="str"
                               cachedLength="5"
-                              cachedName="Teritorry"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Teritorry]">
+                              cachedName="Territory"
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Territory]">
                               <properties>
                                 <property
                                   dataType="System.String"
                                   description="Specifies the column in the reference table that a column joins."
-                                  name="JoinToReferenceColumn">Teritorry</property>
+                                  name="JoinToReferenceColumn">Territory</property>
                                 <property
                                   dataType="System.Null"
                                   description="Specifies the column in the reference table from which a column is copied."
@@ -856,55 +856,55 @@ where [refTable].[Teritorry] = ?</property>
                       </inputs>
                       <outputs>
                         <output
-                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Match Output]"
+                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Match Output]"
                           errorOrTruncationOperation="Lookup"
                           errorRowDisposition="FailComponent"
                           exclusionGroup="1"
                           name="Lookup Match Output"
-                          synchronousInputId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Inputs[Lookup Input]">
+                          synchronousInputId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Inputs[Lookup Input]">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Match Output].Columns[Teritorry_Key]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Match Output].Columns[Territory_Key]"
                               dataType="i4"
                               errorOrTruncationOperation="Copy Column"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Match Output].Columns[Teritorry_Key]"
-                              name="Teritorry_Key"
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Match Output].Columns[Territory_Key]"
+                              name="Territory_Key"
                               truncationRowDisposition="FailComponent">
                               <properties>
                                 <property
                                   dataType="System.String"
                                   description="Specifies the column in the reference table from which a column is copied."
-                                  name="CopyFromReferenceColumn">Teritorry_Key</property>
+                                  name="CopyFromReferenceColumn">Territory_Key</property>
                               </properties>
                             </outputColumn>
                           </outputColumns>
                           <externalMetadataColumns />
                         </output>
                         <output
-                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup No Match Output]"
+                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup No Match Output]"
                           description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
                           exclusionGroup="1"
                           name="Lookup No Match Output"
-                          synchronousInputId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Inputs[Lookup Input]">
+                          synchronousInputId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Inputs[Lookup Input]">
                           <externalMetadataColumns />
                         </output>
                         <output
-                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Error Output]"
+                          refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Error Output]"
                           exclusionGroup="1"
                           isErrorOut="true"
                           name="Lookup Error Output"
-                          synchronousInputId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Inputs[Lookup Input]">
+                          synchronousInputId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Inputs[Lookup Input]">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Error Output].Columns[ErrorCode]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Error Output].Columns[ErrorCode]"
                               name="ErrorCode"
                               specialFlags="1" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                               name="ErrorColumn"
                               specialFlags="2" />
                           </outputColumns>
@@ -999,12 +999,6 @@ where [refTable].[Teritorry] = ?</property>
                               externalMetadataColumnId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Is_Historical]"
                               lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[Is_Historical]" />
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].Columns[Teritorry_Key]"
-                              cachedDataType="i4"
-                              cachedName="Teritorry_Key"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Teritorry_Key]"
-                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Match Output].Columns[Teritorry_Key]" />
-                            <inputColumn
                               refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].Columns[Gold_Data_Group_Key]"
                               cachedDataType="i4"
                               cachedName="Gold_Data_Group_Key"
@@ -1022,6 +1016,12 @@ where [refTable].[Teritorry] = ?</property>
                               cachedName="ID"
                               externalMetadataColumnId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Clinic_Branch_ID]"
                               lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output].Columns[ID]" />
+                            <inputColumn
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].Columns[Territory_Key]"
+                              cachedDataType="i4"
+                              cachedName="Territory_Key"
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Territory_Key]"
+                              lineageId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Match Output].Columns[Territory_Key]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
@@ -1036,10 +1036,6 @@ where [refTable].[Teritorry] = ?</property>
                               length="100"
                               name="Clinic_Branch" />
                             <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Teritorry_Key]"
-                              dataType="i4"
-                              name="Teritorry_Key" />
-                            <externalMetadataColumn
                               refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Gold_Data_Group_Key]"
                               dataType="i4"
                               name="Gold_Data_Group_Key" />
@@ -1051,6 +1047,10 @@ where [refTable].[Teritorry] = ?</property>
                               refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               dataType="dbTimeStamp"
                               name="DB_Create_Date" />
+                            <externalMetadataColumn
+                              refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\stg Dim_Clinic_Branch.Inputs[OLE DB Destination Input].ExternalColumns[Territory_Key]"
+                              dataType="i4"
+                              name="Territory_Key" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -1090,7 +1090,7 @@ where [refTable].[Teritorry] = ?</property>
                       refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch.Paths[Lookup Match Output]"
                       endId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Gold_Data_Group_Key.Inputs[Lookup Input]"
                       name="Lookup Match Output"
-                      startId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Outputs[Lookup Match Output]" />
+                      startId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Outputs[Lookup Match Output]" />
                     <path
                       refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch.Paths[Lookup Match Output1]"
                       endId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Derived Column.Inputs[Derived Column Input]"
@@ -1098,7 +1098,7 @@ where [refTable].[Teritorry] = ?</property>
                       startId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Gold_Data_Group_Key.Outputs[Lookup Match Output]" />
                     <path
                       refId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch.Paths[OLE DB Source Output]"
-                      endId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key.Inputs[Lookup Input]"
+                      endId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key.Inputs[Lookup Input]"
                       name="OLE DB Source Output"
                       startId="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\Clinic Branch.Outputs[OLE DB Source Output]" />
                   </paths>
@@ -2231,17 +2231,17 @@ FROM adm.Clinic_Mapping</property>
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
         <DTS:Executable
-          DTS:refId="Package\Organizational Hierarchy\Teritorry"
+          DTS:refId="Package\Organizational Hierarchy\Territory"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Sequence Container"
           DTS:DTSID="{B46003E5-D0CE-45A2-91AE-17F8C7B62769}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
-          DTS:ObjectName="Teritorry">
+          DTS:ObjectName="Territory">
           <DTS:Variables />
           <DTS:Executables>
             <DTS:Executable
-              DTS:refId="Package\Organizational Hierarchy\Teritorry\Log End"
+              DTS:refId="Package\Organizational Hierarchy\Territory\Log End"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
               DTS:DTSID="{7DB46D4B-A840-4AB1-A139-8641DBAA1235}"
@@ -2254,7 +2254,7 @@ FROM adm.Clinic_Mapping</property>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{9F1F468C-F80D-4420-B65F-CD3B2BE8BA1E}"
-                  SQLTask:SqlStatementSource="UPDATE DWH.adm.BI_Job_Monitoring &#xA;SET &#xA; EndTime = GETDATE(),&#xA; Duration = DATEDIFF(SECOND,StartTime,GETDATE()),&#xA; RecordCount = (SELECT COUNT(*) FROM dbo.Dim_Teritorry)&#xA;WHERE JobKey = ?&#xA;AND TableName = 'Dim_Teritorry';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  SQLTask:SqlStatementSource="UPDATE DWH.adm.BI_Job_Monitoring &#xA;SET &#xA; EndTime = GETDATE(),&#xA; Duration = DATEDIFF(SECOND,StartTime,GETDATE()),&#xA; RecordCount = (SELECT COUNT(*) FROM dbo.Dim_Territory)&#xA;WHERE JobKey = ?&#xA;AND TableName = 'Dim_Territory';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="0"
                     SQLTask:DtsVariableName="User::JobKey"
@@ -2265,7 +2265,7 @@ FROM adm.Clinic_Mapping</property>
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
-              DTS:refId="Package\Organizational Hierarchy\Teritorry\Log Start"
+              DTS:refId="Package\Organizational Hierarchy\Territory\Log Start"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
               DTS:DTSID="{0DF80379-9CB3-4F7C-8F8F-2192BAA98990}"
@@ -2278,7 +2278,7 @@ FROM adm.Clinic_Mapping</property>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{9F1F468C-F80D-4420-B65F-CD3B2BE8BA1E}"
-                  SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Dim_Teritorry;&#xA;&#xA;INSERT INTO DWH.adm.BI_Job_Monitoring (JobKey, PackageName, TableName, StartDate, StartTime)&#xA;VALUES (?, ?, 'Dim_Teritorry', GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  SQLTask:SqlStatementSource="TRUNCATE TABLE dbo.Dim_Territory;&#xA;&#xA;INSERT INTO DWH.adm.BI_Job_Monitoring (JobKey, PackageName, TableName, StartDate, StartTime)&#xA;VALUES (?, ?, 'Dim_Territory', GETDATE(), GETDATE());" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
                   <SQLTask:ParameterBinding
                     SQLTask:ParameterName="0"
                     SQLTask:DtsVariableName="User::JobKey"
@@ -2295,7 +2295,7 @@ FROM adm.Clinic_Mapping</property>
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
-              DTS:refId="Package\Organizational Hierarchy\Teritorry\Merge DWH"
+              DTS:refId="Package\Organizational Hierarchy\Territory\Merge DWH"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
               DTS:DTSID="{ADA2556D-F3C8-4CF5-9F70-2E1D82617192}"
@@ -2308,17 +2308,17 @@ FROM adm.Clinic_Mapping</property>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{63805235-B06F-44EB-8011-1133275DB568}"
-                  SQLTask:SqlStatementSource="MERGE dbo.Dim_Teritorry as T &#xA;USING STG.dbo.Dim_Teritorry as S ON T.Teritorry = S.Teritorry&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Continent_Key = S.Continent_Key,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Teritorry, Continent_Key)&#xA;&#x9;VALUES (S.Teritorry, S.Continent_Key)&#xA;;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE dbo.Dim_Territory as T &#xA;USING STG.dbo.Dim_Territory as S ON T.Territory = S.Territory&#xA;&#xA;WHEN MATCHED THEN &#xA;&#x9;UPDATE SET &#xA;&#x9;T.Continent_Key = S.Continent_Key,&#xA;&#x9;T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (Territory, Continent_Key)&#xA;&#x9;VALUES (S.Territory, S.Continent_Key)&#xA;;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
-              DTS:refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry"
+              DTS:refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
               DTS:DTSID="{3D228B1B-F5BB-43E4-B3DE-2E69875EFB82}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
-              DTS:ObjectName="stg Dim_Teritorry"
+              DTS:ObjectName="stg Dim_Territory"
               DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
               <DTS:Variables />
               <DTS:ObjectData>
@@ -2326,7 +2326,7 @@ FROM adm.Clinic_Mapping</property>
                   version="1">
                   <components>
                     <component
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column"
                       componentClassID="Microsoft.DerivedColumn"
                       contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
                       description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
@@ -2334,17 +2334,17 @@ FROM adm.Clinic_Mapping</property>
                       usesDispositions="true">
                       <inputs>
                         <input
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Inputs[Derived Column Input]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Inputs[Derived Column Input]"
                           description="Input to the Derived Column Transformation"
                           name="Derived Column Input">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Inputs[Derived Column Input].Columns[Continent_Key]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Inputs[Derived Column Input].Columns[Continent_Key]"
                               cachedDataType="i4"
                               cachedName="Continent_Key"
                               errorOrTruncationOperation="Computation"
                               errorRowDisposition="FailComponent"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
                               truncationRowDisposition="FailComponent"
                               usageType="readWrite">
                               <properties>
@@ -2352,7 +2352,7 @@ FROM adm.Clinic_Mapping</property>
                                   containsID="true"
                                   dataType="System.String"
                                   description="Derived Column Expression"
-                                  name="Expression">[ISNULL](#{Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]}) ? -1 : #{Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]}</property>
+                                  name="Expression">[ISNULL](#{Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]}) ? -1 : #{Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]}</property>
                                 <property
                                   containsID="true"
                                   dataType="System.String"
@@ -2367,18 +2367,18 @@ FROM adm.Clinic_Mapping</property>
                       </inputs>
                       <outputs>
                         <output
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Output]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Output]"
                           description="Default Output of the Derived Column Transformation"
                           exclusionGroup="1"
                           name="Derived Column Output"
-                          synchronousInputId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Inputs[Derived Column Input]">
+                          synchronousInputId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Inputs[Derived Column Input]">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
                               dataType="dbTimeStamp"
                               errorOrTruncationOperation="Computation"
                               errorRowDisposition="FailComponent"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]"
                               name="DB_Create_Date"
                               truncationRowDisposition="FailComponent">
                               <properties>
@@ -2399,23 +2399,23 @@ FROM adm.Clinic_Mapping</property>
                           <externalMetadataColumns />
                         </output>
                         <output
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Error Output]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Error Output]"
                           description="Error Output of the Derived Column Transformation"
                           exclusionGroup="1"
                           isErrorOut="true"
                           name="Derived Column Error Output"
-                          synchronousInputId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Inputs[Derived Column Input]">
+                          synchronousInputId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Inputs[Derived Column Input]">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
                               name="ErrorCode"
                               specialFlags="1" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                               name="ErrorColumn"
                               specialFlags="2" />
                           </outputColumns>
@@ -2424,7 +2424,7 @@ FROM adm.Clinic_Mapping</property>
                       </outputs>
                     </component>
                     <component
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key"
                       componentClassID="Microsoft.ManagedComponentHost"
                       contactInfo="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum.;Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;11"
                       description="Includes and runs custom script code. For example, apply a business rule that limits the range of valid values in an &quot;income&quot; column or add values in two columns and calculate the average of the sum."
@@ -3299,38 +3299,38 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                       <connections>
                         <connection
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Connections[STG_ADO]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Connections[STG_ADO]"
                           connectionManagerID="Package.ConnectionManagers[STG_ADO]"
                           connectionManagerRefId="Package.ConnectionManagers[STG_ADO]"
                           name="STG_ADO" />
                       </connections>
                       <inputs>
                         <input
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Inputs[Input 0]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Inputs[Input 0]"
                           hasSideEffects="true"
                           name="Input 0">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Inputs[Input 0].Columns[Continent]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Inputs[Input 0].Columns[Continent]"
                               cachedCodepage="1252"
                               cachedDataType="str"
                               cachedLength="20"
                               cachedName="Continent"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Continent]" />
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].Columns[Continent]" />
                           </inputColumns>
                           <externalMetadataColumns />
                         </input>
                       </inputs>
                       <outputs>
                         <output
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0]"
                           name="Output 0"
-                          synchronousInputId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Inputs[Input 0]">
+                          synchronousInputId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Inputs[Input 0]">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]"
                               name="Continent_Key" />
                           </outputColumns>
                           <externalMetadataColumns />
@@ -3338,11 +3338,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </outputs>
                     </component>
                     <component
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory"
                       componentClassID="Microsoft.OLEDBDestination"
                       contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
                       description="OLE DB Destination"
-                      name="stg Dim_Teritorry"
+                      name="stg Dim_Territory"
                       usesDispositions="true"
                       version="4">
                       <properties>
@@ -3353,7 +3353,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                         <property
                           dataType="System.String"
                           description="Specifies the name of the database object used to open a rowset."
-                          name="OpenRowset">[dbo].[Dim_Teritorry]</property>
+                          name="OpenRowset">[dbo].[Dim_Territory]</property>
                         <property
                           dataType="System.String"
                           description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3395,7 +3395,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </properties>
                       <connections>
                         <connection
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Connections[OleDbConnection]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Connections[OleDbConnection]"
                           connectionManagerID="Package.ConnectionManagers[STG]"
                           connectionManagerRefId="Package.ConnectionManagers[STG]"
                           description="The OLE DB runtime connection used to access the database."
@@ -3403,47 +3403,47 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </connections>
                       <inputs>
                         <input
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input]"
                           errorOrTruncationOperation="Insert"
                           errorRowDisposition="FailComponent"
                           hasSideEffects="true"
                           name="OLE DB Destination Input">
                           <inputColumns>
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].Columns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].Columns[Territory]"
                               cachedCodepage="1252"
                               cachedDataType="str"
                               cachedLength="5"
-                              cachedName="Teritorry"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Teritorry]"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Teritorry]" />
+                              cachedName="Territory"
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].ExternalColumns[Territory]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].Columns[Territory]" />
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].Columns[Continent_Key]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].Columns[Continent_Key]"
                               cachedDataType="i4"
                               cachedName="Continent_Key"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Continent_Key]"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]" />
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].ExternalColumns[Continent_Key]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0].Columns[Continent_Key]" />
                             <inputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].Columns[DB_Create_Date]"
                               cachedDataType="dbTimeStamp"
                               cachedName="DB_Create_Date"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Output].Columns[DB_Create_Date]" />
                           </inputColumns>
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].ExternalColumns[Territory]"
                               codePage="1252"
                               dataType="str"
                               length="20"
-                              name="Teritorry" />
+                              name="Territory" />
                             <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[Continent_Key]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].ExternalColumns[Continent_Key]"
                               dataType="i4"
                               name="Continent_Key" />
                             <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               dataType="dbTimeStamp"
                               name="DB_Create_Date" />
                           </externalMetadataColumns>
@@ -3451,22 +3451,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </inputs>
                       <outputs>
                         <output
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Outputs[OLE DB Destination Error Output]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Outputs[OLE DB Destination Error Output]"
                           exclusionGroup="1"
                           isErrorOut="true"
                           name="OLE DB Destination Error Output"
-                          synchronousInputId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input]">
+                          synchronousInputId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input]">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
                               name="ErrorCode"
                               specialFlags="1" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
                               name="ErrorColumn"
                               specialFlags="2" />
                           </outputColumns>
@@ -3475,11 +3475,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                       </outputs>
                     </component>
                     <component
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory"
                       componentClassID="Microsoft.OLEDBSource"
                       contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
                       description="OLE DB Source"
-                      name="Teritorry"
+                      name="Territory"
                       usesDispositions="true"
                       version="7">
                       <properties>
@@ -3499,7 +3499,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
                           dataType="System.String"
                           description="The SQL command to be executed."
                           name="SqlCommand"
-                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT Teritorry, Continent
+                          UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">SELECT DISTINCT Territory, Continent
 FROM adm.Clinic_Mapping</property>
                         <property
                           dataType="System.String"
@@ -3525,7 +3525,7 @@ FROM adm.Clinic_Mapping</property>
                       </properties>
                       <connections>
                         <connection
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Connections[OleDbConnection]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Connections[OleDbConnection]"
                           connectionManagerID="Package.ConnectionManagers[MRR]"
                           connectionManagerRefId="Package.ConnectionManagers[MRR]"
                           description="The OLE DB runtime connection used to access the database."
@@ -3533,77 +3533,77 @@ FROM adm.Clinic_Mapping</property>
                       </connections>
                       <outputs>
                         <output
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output]"
                           name="OLE DB Source Output">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].Columns[Continent]"
                               codePage="1252"
                               dataType="str"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].ExternalColumns[Teritorry]"
-                              length="5"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Teritorry]"
-                              name="Teritorry"
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
+                              length="20"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].Columns[Continent]"
+                              name="Continent"
                               truncationRowDisposition="FailComponent" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Continent]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].Columns[Territory]"
                               codePage="1252"
                               dataType="str"
                               errorOrTruncationOperation="Conversion"
                               errorRowDisposition="FailComponent"
-                              externalMetadataColumnId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
-                              length="20"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].Columns[Continent]"
-                              name="Continent"
+                              externalMetadataColumnId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].ExternalColumns[Territory]"
+                              length="5"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].Columns[Territory]"
+                              name="Territory"
                               truncationRowDisposition="FailComponent" />
                           </outputColumns>
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].ExternalColumns[Teritorry]"
-                              codePage="1252"
-                              dataType="str"
-                              length="5"
-                              name="Teritorry" />
-                            <externalMetadataColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].ExternalColumns[Continent]"
                               codePage="1252"
                               dataType="str"
                               length="20"
                               name="Continent" />
+                            <externalMetadataColumn
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output].ExternalColumns[Territory]"
+                              codePage="1252"
+                              dataType="str"
+                              length="5"
+                              name="Territory" />
                           </externalMetadataColumns>
                         </output>
                         <output
-                          refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output]"
+                          refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output]"
                           isErrorOut="true"
                           name="OLE DB Source Error Output">
                           <outputColumns>
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[Teritorry]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[Territory]"
                               codePage="1252"
                               dataType="str"
                               length="5"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[Teritorry]"
-                              name="Teritorry" />
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[Territory]"
+                              name="Territory" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[Continent]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[Continent]"
                               codePage="1252"
                               dataType="str"
                               length="20"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[Continent]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[Continent]"
                               name="Continent" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                               name="ErrorCode"
                               specialFlags="1" />
                             <outputColumn
-                              refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                              refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                               dataType="i4"
-                              lineageId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                              lineageId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                               name="ErrorColumn"
                               specialFlags="2" />
                           </outputColumns>
@@ -3614,20 +3614,20 @@ FROM adm.Clinic_Mapping</property>
                   </components>
                   <paths>
                     <path
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry.Paths[Derived Column Output]"
-                      endId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry.Inputs[OLE DB Destination Input]"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory.Paths[Derived Column Output]"
+                      endId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory.Inputs[OLE DB Destination Input]"
                       name="Derived Column Output"
-                      startId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Outputs[Derived Column Output]" />
+                      startId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Outputs[Derived Column Output]" />
                     <path
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry.Paths[OLE DB Source Output]"
-                      endId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Inputs[Input 0]"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory.Paths[OLE DB Source Output]"
+                      endId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Inputs[Input 0]"
                       name="OLE DB Source Output"
-                      startId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry.Outputs[OLE DB Source Output]" />
+                      startId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory.Outputs[OLE DB Source Output]" />
                     <path
-                      refId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry.Paths[Output 0]"
-                      endId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column.Inputs[Derived Column Input]"
+                      refId="Package\Organizational Hierarchy\Territory\stg Dim_Territory.Paths[Output 0]"
+                      endId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column.Inputs[Derived Column Input]"
                       name="Output 0"
-                      startId="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key.Outputs[Output 0]" />
+                      startId="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key.Outputs[Output 0]" />
                   </paths>
                 </pipeline>
               </DTS:ObjectData>
@@ -3635,29 +3635,29 @@ FROM adm.Clinic_Mapping</property>
           </DTS:Executables>
           <DTS:PrecedenceConstraints>
             <DTS:PrecedenceConstraint
-              DTS:refId="Package\Organizational Hierarchy\Teritorry.PrecedenceConstraints[Constraint]"
+              DTS:refId="Package\Organizational Hierarchy\Territory.PrecedenceConstraints[Constraint]"
               DTS:CreationName=""
               DTS:DTSID="{C7007D4B-D3FD-4E59-8ACC-C70B787CBA5C}"
-              DTS:From="Package\Organizational Hierarchy\Teritorry\Log Start"
+              DTS:From="Package\Organizational Hierarchy\Territory\Log Start"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint"
-              DTS:To="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry" />
+              DTS:To="Package\Organizational Hierarchy\Territory\stg Dim_Territory" />
             <DTS:PrecedenceConstraint
-              DTS:refId="Package\Organizational Hierarchy\Teritorry.PrecedenceConstraints[Constraint 1]"
+              DTS:refId="Package\Organizational Hierarchy\Territory.PrecedenceConstraints[Constraint 1]"
               DTS:CreationName=""
               DTS:DTSID="{CDA91C04-3879-48DD-8702-BE7831202A6B}"
-              DTS:From="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry"
+              DTS:From="Package\Organizational Hierarchy\Territory\stg Dim_Territory"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 1"
-              DTS:To="Package\Organizational Hierarchy\Teritorry\Merge DWH" />
+              DTS:To="Package\Organizational Hierarchy\Territory\Merge DWH" />
             <DTS:PrecedenceConstraint
-              DTS:refId="Package\Organizational Hierarchy\Teritorry.PrecedenceConstraints[Constraint 2]"
+              DTS:refId="Package\Organizational Hierarchy\Territory.PrecedenceConstraints[Constraint 2]"
               DTS:CreationName=""
               DTS:DTSID="{A53339A5-6D5E-4912-AF8D-2F4360CD772A}"
-              DTS:From="Package\Organizational Hierarchy\Teritorry\Merge DWH"
+              DTS:From="Package\Organizational Hierarchy\Territory\Merge DWH"
               DTS:LogicalAnd="True"
               DTS:ObjectName="Constraint 2"
-              DTS:To="Package\Organizational Hierarchy\Teritorry\Log End" />
+              DTS:To="Package\Organizational Hierarchy\Territory\Log End" />
           </DTS:PrecedenceConstraints>
         </DTS:Executable>
       </DTS:Executables>
@@ -3669,12 +3669,12 @@ FROM adm.Clinic_Mapping</property>
           DTS:From="Package\Organizational Hierarchy\Continent"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint"
-          DTS:To="Package\Organizational Hierarchy\Teritorry" />
+          DTS:To="Package\Organizational Hierarchy\Territory" />
         <DTS:PrecedenceConstraint
           DTS:refId="Package\Organizational Hierarchy.PrecedenceConstraints[Constraint 1]"
           DTS:CreationName=""
           DTS:DTSID="{52041302-F6EF-4A23-AA51-1007009C72D6}"
-          DTS:From="Package\Organizational Hierarchy\Teritorry"
+          DTS:From="Package\Organizational Hierarchy\Territory"
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 1"
           DTS:To="Package\Organizational Hierarchy\Clinic Branch" />
@@ -3717,7 +3717,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3741,7 +3741,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -3771,7 +3771,7 @@ FROM adm.Clinic_Mapping</property>
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="4">
+              DTS:ThreadHint="2">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5116,7 +5116,7 @@ LEFT JOIN ext.Pathology_Area_Mapping PM ON P.PathologyID = PM.Pathology_ID</prop
               DTS:LocaleID="-1"
               DTS:ObjectName="Log End"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5140,7 +5140,7 @@ LEFT JOIN ext.Pathology_Area_Mapping PM ON P.PathologyID = PM.Pathology_ID</prop
               DTS:LocaleID="-1"
               DTS:ObjectName="Log Start"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -5170,7 +5170,7 @@ LEFT JOIN ext.Pathology_Area_Mapping PM ON P.PathologyID = PM.Pathology_ID</prop
               DTS:LocaleID="-1"
               DTS:ObjectName="Merge DWH"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="2">
+              DTS:ThreadHint="4">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -18701,22 +18701,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="5.5,5.5" />
         <NodeLayout
           Size="117,42"
-          Id="Package\Organizational Hierarchy\Teritorry\Log End"
+          Id="Package\Organizational Hierarchy\Territory\Log End"
           TopLeft="27.5,311.5" />
         <NodeLayout
           Size="122,42"
-          Id="Package\Organizational Hierarchy\Teritorry\Log Start"
+          Id="Package\Organizational Hierarchy\Territory\Log Start"
           TopLeft="25,5.5" />
         <NodeLayout
           Size="136,42"
-          Id="Package\Organizational Hierarchy\Teritorry\Merge DWH"
+          Id="Package\Organizational Hierarchy\Territory\Merge DWH"
           TopLeft="18,209.5" />
         <NodeLayout
           Size="161,42"
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory"
           TopLeft="5.50000000000001,107.5" />
         <EdgeLayout
-          Id="Package\Organizational Hierarchy\Teritorry.PrecedenceConstraints[Constraint]"
+          Id="Package\Organizational Hierarchy\Territory.PrecedenceConstraints[Constraint]"
           TopLeft="86,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -18738,7 +18738,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Organizational Hierarchy\Teritorry.PrecedenceConstraints[Constraint 1]"
+          Id="Package\Organizational Hierarchy\Territory.PrecedenceConstraints[Constraint 1]"
           TopLeft="86,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -18760,7 +18760,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Organizational Hierarchy\Teritorry.PrecedenceConstraints[Constraint 2]"
+          Id="Package\Organizational Hierarchy\Territory.PrecedenceConstraints[Constraint 2]"
           TopLeft="86,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -18786,7 +18786,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           IsExpanded="True"
           PanelSize="172,409"
           Size="172,452"
-          Id="Package\Organizational Hierarchy\Teritorry"
+          Id="Package\Organizational Hierarchy\Territory"
           TopLeft="264.5,5.5" />
         <EdgeLayout
           Id="Package\Organizational Hierarchy.PrecedenceConstraints[Constraint]"
@@ -19135,6 +19135,277 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           Size="632,555"
           Id="Package\Patient-Related"
           TopLeft="1069.95238095238,426.333333333333" />
+        <NodeLayout
+          Size="119,42"
+          Id="Package\Patients\Audit PT"
+          TopLeft="81.5000000000001,719.5" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Patients\Audit Suitability Status"
+          TopLeft="48.5000000000001,821.5" />
+        <NodeLayout
+          Size="211,42"
+          Id="Package\Patients\Changed Pathology Patients"
+          TopLeft="35.5,209.5" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Patients\Discharge Existing Patient"
+          TopLeft="40.5000000000001,515.5" />
+        <NodeLayout
+          Size="117,42"
+          Id="Package\Patients\Log End"
+          TopLeft="82.5000000000001,1025.5" />
+        <NodeLayout
+          Size="122,42"
+          Id="Package\Patients\Log Start"
+          TopLeft="80,5.5" />
+        <NodeLayout
+          Size="201,42"
+          Id="Package\Patients\Merge Remaining to DWH"
+          TopLeft="40.5000000000001,617.5" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\Patients\Returning Discharged Patients"
+          TopLeft="30.5000000000001,413.5" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Patients\stg Dim_Patients"
+          TopLeft="62,107.5" />
+        <NodeLayout
+          Size="271,42"
+          Id="Package\Patients\Update Existing NOT Changed Pathology"
+          TopLeft="5.50000000000006,311.5" />
+        <NodeLayout
+          Size="213,42"
+          Id="Package\Patients\Update Insurer by Parent ID"
+          TopLeft="34.5000000000001,923.5" />
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint]"
+          TopLeft="141,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 1]"
+          TopLeft="141,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 2]"
+          TopLeft="141,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 3]"
+          TopLeft="141,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 4]"
+          TopLeft="141,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 5]"
+          TopLeft="141,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 6]"
+          TopLeft="141,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 7]"
+          TopLeft="141,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 8]"
+          TopLeft="141,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients.PrecedenceConstraints[Constraint 9]"
+          TopLeft="141,965.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="282,1123"
+          Size="282,1166"
+          Id="Package\Patients"
+          TopLeft="1625.8253968254,1164.9126984127" />
         <NodeLayout
           Size="117,42"
           Id="Package\Questionnaire\Question\Log End"
@@ -19522,6 +19793,40 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="2348.41666666667,982.083333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-535.924603174603,182.829365079367"
+              Start="0,0"
+              End="-535.924603174603,175.329365079367">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,105.078732621399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,105.078732621399"
+                    Point2="0,109.078732621399"
+                    Point3="-4,109.078732621399" />
+                  <mssgle:LineSegment
+                    End="-531.924603174603,109.078732621399" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-531.924603174603,109.078732621399"
+                    Point2="-535.924603174603,109.078732621399"
+                    Point3="-535.924603174603,113.078732621399" />
+                  <mssgle:LineSegment
+                    End="-535.924603174603,175.329365079367" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="1388.47619047619,307.166666666667">
           <EdgeLayout.Curve>
@@ -19589,311 +19894,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="119,42"
-          Id="Package\Patients\Audit PT"
-          TopLeft="81.5000000000001,719.5" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Patients\Audit Suitability Status"
-          TopLeft="48.5000000000001,821.5" />
-        <NodeLayout
-          Size="211,42"
-          Id="Package\Patients\Changed Pathology Patients"
-          TopLeft="35.5,209.5" />
-        <NodeLayout
-          Size="201,42"
-          Id="Package\Patients\Discharge Existing Patient"
-          TopLeft="40.5000000000001,515.5" />
-        <NodeLayout
-          Size="213,42"
-          Id="Package\Patients\Update Insurer by Parent ID"
-          TopLeft="34.5000000000001,923.5" />
-        <NodeLayout
-          Size="117,42"
-          Id="Package\Patients\Log End"
-          TopLeft="82.5000000000001,1025.5" />
-        <NodeLayout
-          Size="122,42"
-          Id="Package\Patients\Log Start"
-          TopLeft="80,5.5" />
-        <NodeLayout
-          Size="201,42"
-          Id="Package\Patients\Merge Remaining to DWH"
-          TopLeft="40.5000000000001,617.5" />
-        <NodeLayout
-          Size="221,42"
-          Id="Package\Patients\Returning Discharged Patients"
-          TopLeft="30.5000000000001,413.5" />
-        <NodeLayout
-          Size="158,42"
-          Id="Package\Patients\stg Dim_Patients"
-          TopLeft="62,107.5" />
-        <NodeLayout
-          Size="271,42"
-          Id="Package\Patients\Update Existing NOT Changed Pathology"
-          TopLeft="5.50000000000006,311.5" />
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint]"
-          TopLeft="141,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 1]"
-          TopLeft="141,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 2]"
-          TopLeft="141,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 3]"
-          TopLeft="141,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 4]"
-          TopLeft="141,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 5]"
-          TopLeft="141,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 6]"
-          TopLeft="141,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 8]"
-          TopLeft="141,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 7]"
-          TopLeft="141,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients.PrecedenceConstraints[Constraint 9]"
-          TopLeft="141,965.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="282,1122"
-          Size="282,1166"
-          Id="Package\Patients"
-          TopLeft="1625.8253968254,1164.9126984127" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="1625.8253968254,1747.9126984127">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-603.15873015873,-464.24603174603"
-              Start="0,0"
-              End="-595.65873015873,-464.24603174603">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-297.579365079365,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-297.579365079365,0"
-                    Point2="-301.579365079365,0"
-                    Point3="-301.579365079365,-4" />
-                  <mssgle:LineSegment
-                    End="-301.579365079365,-460.24603174603" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-301.579365079365,-460.24603174603"
-                    Point2="-301.579365079365,-464.24603174603"
-                    Point3="-305.579365079365,-464.24603174603" />
-                  <mssgle:LineSegment
-                    End="-595.65873015873,-464.24603174603" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
           TopLeft="1385.95238095238,981.333333333333">
@@ -19929,31 +19929,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="2348.41666666667,982.083333333333">
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="1625.8253968254,1747.9126984127">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-535.924603174603,182.829365079367"
+              EndConnector="-603.15873015873,-464.24603174603"
               Start="0,0"
-              End="-535.924603174603,175.329365079367">
+              End="-595.65873015873,-464.24603174603">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,105.078732621399" />
+                    End="-297.579365079365,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,105.078732621399"
-                    Point2="0,109.078732621399"
-                    Point3="-4,109.078732621399" />
+                    Point1="-297.579365079365,0"
+                    Point2="-301.579365079365,0"
+                    Point3="-301.579365079365,-4" />
                   <mssgle:LineSegment
-                    End="-531.924603174603,109.078732621399" />
+                    End="-301.579365079365,-460.24603174603" />
                   <mssgle:CubicBezierSegment
-                    Point1="-531.924603174603,109.078732621399"
-                    Point2="-535.924603174603,109.078732621399"
-                    Point3="-535.924603174603,113.078732621399" />
+                    Point1="-301.579365079365,-460.24603174603"
+                    Point2="-301.579365079365,-464.24603174603"
+                    Point3="-305.579365079365,-464.24603174603" />
                   <mssgle:LineSegment
-                    End="-535.924603174603,175.329365079367" />
+                    End="-595.65873015873,-464.24603174603" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -19976,7 +19976,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
           TopLeft="31.5,311.5" />
         <NodeLayout
           Size="163,42"
-          Id="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key"
+          Id="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key"
           TopLeft="27,107.5" />
         <NodeLayout
           Size="206,42"
@@ -20009,9 +20009,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -20081,9 +20079,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -20113,22 +20109,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Teritorry_Key">
+    design-time-name="Package\Organizational Hierarchy\Clinic Branch\stg Dim_Clinic_Branch\LKP Territory_Key">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Dim_Teritorry]</Value>
+          type="q3:string">[dbo].[Dim_Territory]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -20358,28 +20354,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry">
+    design-time-name="Package\Organizational Hierarchy\Territory\stg Dim_Territory">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="119,42"
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory"
           TopLeft="27,5.5" />
         <NodeLayout
           Size="154,42"
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Derived Column"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Derived Column"
           TopLeft="9.50000000000003,209.5" />
         <NodeLayout
           Size="161,42"
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory"
           TopLeft="6.00000000000003,311.5" />
         <NodeLayout
           Size="162,42"
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\LKP Continet_Key"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory\LKP Continet_Key"
           TopLeft="5.50000000000001,107.5" />
         <EdgeLayout
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry.Paths[Output 0]"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory.Paths[Output 0]"
           TopLeft="86.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -20397,13 +20393,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry.Paths[OLE DB Source Output]"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory.Paths[OLE DB Source Output]"
           TopLeft="86.5,47.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -20421,13 +20415,11 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry.Paths[Derived Column Output]"
+          Id="Package\Organizational Hierarchy\Territory\stg Dim_Territory.Paths[Derived Column Output]"
           TopLeft="86.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -20445,16 +20437,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\Teritorry">
+    design-time-name="Package\Organizational Hierarchy\Territory\stg Dim_Territory\Territory">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -20462,7 +20452,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Organizational Hierarchy\Teritorry\stg Dim_Teritorry\stg Dim_Teritorry">
+    design-time-name="Package\Organizational Hierarchy\Territory\stg Dim_Territory\stg Dim_Territory">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -20888,6 +20878,390 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Patient-Related\PTs\stg Dim_PTs\Pathology">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Patients\stg Dim_Patients">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Insurer_Key"
+          TopLeft="46.5000000000001,413.5" />
+        <NodeLayout
+          Size="169,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Pathology_Key"
+          TopLeft="40.5000000000001,515.5" />
+        <NodeLayout
+          Size="147,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Key"
+          TopLeft="51.5,209.5" />
+        <NodeLayout
+          Size="192,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key"
+          TopLeft="29.0000000000001,821.5" />
+        <NodeLayout
+          Size="204,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key"
+          TopLeft="23.0000000000001,719.5" />
+        <NodeLayout
+          Size="157,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Gender_Key"
+          TopLeft="46.5000000000001,617.5" />
+        <NodeLayout
+          Size="160,42"
+          Id="Package\Patients\stg Dim_Patients\Stg Dim_Patients"
+          TopLeft="45.0000000000002,1331.5" />
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key"
+          TopLeft="32,107.5" />
+        <NodeLayout
+          Size="239,42"
+          Id="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key"
+          TopLeft="5.50000000000011,923.5" />
+        <NodeLayout
+          Size="135,42"
+          Id="Package\Patients\stg Dim_Patients\LKP PT_Key"
+          TopLeft="57.5,311.5" />
+        <NodeLayout
+          Size="161,42"
+          Id="Package\Patients\stg Dim_Patients\Record Type - CP"
+          TopLeft="44.5000000000002,1229.5" />
+        <NodeLayout
+          Size="185,42"
+          Id="Package\Patients\stg Dim_Patients\Is_Changed Indicators"
+          TopLeft="32.5000000000001,1127.5" />
+        <NodeLayout
+          Size="141,42"
+          Id="Package\Patients\stg Dim_Patients\LKP Old Keys"
+          TopLeft="54.5000000000001,1025.5" />
+        <NodeLayout
+          Size="116,42"
+          Id="Package\Patients\stg Dim_Patients\Patients"
+          TopLeft="67,5.5" />
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 04]"
+          TopLeft="125,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 03]"
+          TopLeft="125,455.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 02]"
+          TopLeft="125,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 01]"
+          TopLeft="125,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Output 0]"
+          TopLeft="125,557.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Source Output]"
+          TopLeft="125,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
+          TopLeft="125,1067.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
+          TopLeft="125,965.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
+          TopLeft="125,863.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
+          TopLeft="125,761.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
+          TopLeft="125,659.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
+          TopLeft="125,1271.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
+          TopLeft="125,1169.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Patients\stg Dim_Patients\Patients">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -21355,374 +21729,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]]></arrayElement>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Questionnaire\Questionnaire Category\stg Dim_Questionnaire_Category\adm Questionnaire_Additional_Categories">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Patients\stg Dim_Patients">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Insurer_Key"
-          TopLeft="46.5000000000001,413.5" />
-        <NodeLayout
-          Size="169,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Pathology_Key"
-          TopLeft="40.5000000000001,515.5" />
-        <NodeLayout
-          Size="147,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Key"
-          TopLeft="51.5,209.5" />
-        <NodeLayout
-          Size="192,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Activity_Status_Key"
-          TopLeft="29.0000000000001,821.5" />
-        <NodeLayout
-          Size="204,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Suitability_Status_Key"
-          TopLeft="23.0000000000001,719.5" />
-        <NodeLayout
-          Size="157,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Gender_Key"
-          TopLeft="46.5000000000001,617.5" />
-        <NodeLayout
-          Size="160,42"
-          Id="Package\Patients\stg Dim_Patients\Stg Dim_Patients"
-          TopLeft="45.0000000000002,1331.5" />
-        <NodeLayout
-          Size="186,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Clinic_Branch_Key"
-          TopLeft="32,107.5" />
-        <NodeLayout
-          Size="239,42"
-          Id="Package\Patients\stg Dim_Patients\LKP More_Symptomatic_Side_Key"
-          TopLeft="5.50000000000011,923.5" />
-        <NodeLayout
-          Size="135,42"
-          Id="Package\Patients\stg Dim_Patients\LKP PT_Key"
-          TopLeft="57.5,311.5" />
-        <NodeLayout
-          Size="161,42"
-          Id="Package\Patients\stg Dim_Patients\Record Type - CP"
-          TopLeft="44.5000000000002,1229.5" />
-        <NodeLayout
-          Size="185,42"
-          Id="Package\Patients\stg Dim_Patients\Is_Changed Indicators"
-          TopLeft="32.5000000000001,1127.5" />
-        <NodeLayout
-          Size="141,42"
-          Id="Package\Patients\stg Dim_Patients\LKP Old Keys"
-          TopLeft="54.5000000000001,1025.5" />
-        <NodeLayout
-          Size="116,42"
-          Id="Package\Patients\stg Dim_Patients\Patients"
-          TopLeft="67,5.5" />
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 04]"
-          TopLeft="125,149.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 03]"
-          TopLeft="125,455.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 02]"
-          TopLeft="125,251.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 01]"
-          TopLeft="125,353.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Output 0]"
-          TopLeft="125,557.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[OLE DB Source Output]"
-          TopLeft="125,47.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output4]"
-          TopLeft="125,1067.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output3]"
-          TopLeft="125,965.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output2]"
-          TopLeft="125,863.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output1]"
-          TopLeft="125,761.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Lookup Match Output]"
-          TopLeft="125,659.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output1]"
-          TopLeft="125,1271.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Patients\stg Dim_Patients.Paths[Derived Column Output]"
-          TopLeft="125,1169.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Patients\stg Dim_Patients\Patients">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

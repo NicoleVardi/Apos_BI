@@ -11,7 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_CIO_General_Questionnaires (DWH)' inline='true' name='federated.0bwys5f1ie5hec13el6bh1romwpb' version='18.1'>
-      <repository-location id='v_CIO_General_QuestionnairesDWH' path='datasources' revision='2.6' />
+      <repository-location id='v_CIO_General_QuestionnairesDWH' path='datasources' revision='3.0' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.19p60uh1jecxwz19xlvjm0ozvzl4'>
@@ -91,11 +91,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Teritorry_Key</remote-name>
+            <remote-name>Territory_Key</remote-name>
             <remote-type>3</remote-type>
-            <local-name>[Teritorry_Key]</local-name>
+            <local-name>[Territory_Key]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
-            <remote-alias>Teritorry_Key</remote-alias>
+            <remote-alias>Territory_Key</remote-alias>
             <ordinal>5</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -107,11 +107,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Teritorry</remote-name>
+            <remote-name>Territory</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Teritorry]</local-name>
+            <local-name>[Territory]</local-name>
             <parent-name>[v_CIO_General_Questionnaires]</parent-name>
-            <remote-alias>Teritorry</remote-alias>
+            <remote-alias>Territory</remote-alias>
             <ordinal>6</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -919,6 +919,57 @@
               <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
             </attributes>
           </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[IC_Functional_Classification_Key]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>IC_Functional_Classification_Key</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IC_Functional_Classification]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>IC_Functional_Classification</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Pain_Level</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[IC_Pain_Level]</local-name>
+            <parent-name>[v_CIO_General_Questionnaires]</parent-name>
+            <remote-alias>IC_Pain_Level</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
@@ -953,7 +1004,26 @@
       <column caption='Clinic Name' datatype='string' name='[Clinic_Name]' role='dimension' type='nominal' />
       <column caption='Continent Key' datatype='integer' hidden='true' name='[Continent_Key]' role='dimension' type='ordinal' />
       <column caption='Days from IC' datatype='integer' name='[Days_from_IC]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='IC Pain Level Group' datatype='integer' name='[IC Pain Level (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[IC_Pain_Level]' peg='0' size='10' />
+        <aliases>
+          <alias key='0' value='0-10' />
+          <alias key='1' value='10-20' />
+          <alias key='2' value='20-30' />
+          <alias key='3' value='30-40' />
+          <alias key='4' value='40-50' />
+          <alias key='5' value='50-60' />
+          <alias key='6' value='60-70' />
+          <alias key='7' value='70-80' />
+          <alias key='8' value='80-90' />
+          <alias key='9' value='90-100' />
+          <alias key='10' value='100-110' />
+        </aliases>
+      </column>
       <column caption='IC Date' datatype='date' name='[IC_Date]' role='dimension' type='ordinal' />
+      <column caption='IC Functional Classification' datatype='string' name='[IC_Functional_Classification]' role='dimension' type='nominal' />
+      <column caption='IC Functional Classification Key' datatype='integer' hidden='true' name='[IC_Functional_Classification_Key]' role='measure' type='quantitative' />
+      <column caption='IC Pain Level' datatype='real' name='[IC_Pain_Level]' role='measure' type='quantitative' />
       <column aggregation='Avg' caption='IC Score' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[IC_Score]' role='measure' type='quantitative' />
       <column caption='IC Visit ID' datatype='string' name='[IC_Visit_ID]' role='dimension' type='nominal' />
       <column caption='Insurer Key' datatype='integer' hidden='true' name='[Insurer_Key]' role='dimension' type='ordinal' />
@@ -996,6 +1066,7 @@
       <column aggregation='Avg' caption='Score Change' datatype='real' default-format='n#,##0.0;-#,##0.0' name='[Score_Change]' role='measure' type='quantitative' />
       <column caption='Score Change Percent' datatype='real' name='[Score_Change_Percent]' role='measure' type='quantitative' />
       <column caption='Teritorry Key' datatype='integer' hidden='true' name='[Teritorry_Key]' role='dimension' type='ordinal' />
+      <column aggregation='Count' caption='Territory Key' datatype='integer' datatype-customized='true' hidden='true' name='[Territory_Key]' role='measure' type='quantitative' />
       <column caption='Visit Date' datatype='date' name='[Visit_Date]' role='dimension' type='ordinal' />
       <column caption='Visit ID' datatype='string' name='[Visit_ID]' role='dimension' type='nominal' />
       <column aggregation='Sum' datatype='integer' hidden='true' name='[WOMAC_Is_First_Year]' role='dimension' type='ordinal' />
@@ -1042,7 +1113,7 @@
       <drill-paths>
         <drill-path name='Clinic'>
           <field>[Continent]</field>
-          <field>[Teritorry]</field>
+          <field>[Territory]</field>
           <field>[Clinic_Branch]</field>
           <field>[Clinic_Name]</field>
         </drill-path>
@@ -1074,6 +1145,8 @@
       <folder name='Patient Current Data' role='dimensions'>
         <folder-item name='[Activity_Status]' type='field' />
         <folder-item name='[Activity_Status_Key]' type='field' />
+        <folder-item name='[IC Pain Level (bin)]' type='field' />
+        <folder-item name='[IC_Functional_Classification]' type='field' />
         <folder-item name='[Insurer]' type='field' />
         <folder-item name='[Insurer_Key]' type='field' />
         <folder-item name='[Is_Historical_Patient]' type='field' />
@@ -1103,10 +1176,10 @@
         <folder-item name='Questionnaire' type='drillpath' />
       </folder>
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Questionnaires (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/26/2018 11:18:04 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Questionnaires (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 03:08:52 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='3204874' timestamp-start='2018-07-26 11:18:04.872' />
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='2241092' timestamp-start='2018-08-15 15:08:52.766' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -1119,7 +1192,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>11</approx-count>
+              <approx-count>15</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1133,21 +1206,21 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>10</approx-count>
+              <approx-count>14</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Teritorry</remote-name>
+              <remote-name>Territory</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[Teritorry]</local-name>
+              <local-name>[Territory]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Teritorry</remote-alias>
+              <remote-alias>Territory</remote-alias>
               <ordinal>2</ordinal>
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1161,7 +1234,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
+              <approx-count>3</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1175,7 +1248,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>2</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1202,7 +1275,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>49</approx-count>
+              <approx-count>48</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1216,7 +1289,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>6</approx-count>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1230,7 +1303,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>4</approx-count>
+              <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1244,7 +1317,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>72</approx-count>
+              <approx-count>64</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1258,7 +1331,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>2843</approx-count>
+              <approx-count>2128</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1271,7 +1344,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>2843</approx-count>
+              <approx-count>2128</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1285,7 +1358,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>2843</approx-count>
+              <approx-count>2128</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1299,7 +1372,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>1274</approx-count>
+              <approx-count>1146</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1312,7 +1385,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>2843</approx-count>
+              <approx-count>2128</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1326,7 +1399,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>1655</approx-count>
+              <approx-count>1444</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1339,7 +1412,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>14539</approx-count>
+              <approx-count>6314</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1353,7 +1426,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>349</approx-count>
+              <approx-count>329</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1366,7 +1439,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>30</approx-count>
+              <approx-count>26</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1379,7 +1452,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>30</approx-count>
+              <approx-count>26</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1420,7 +1493,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
+              <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1434,7 +1507,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>20</approx-count>
+              <approx-count>22</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1448,7 +1521,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>354</approx-count>
+              <approx-count>327</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1461,7 +1534,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>369</approx-count>
+              <approx-count>322</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1474,7 +1547,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>297</approx-count>
+              <approx-count>247</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1487,7 +1560,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>387</approx-count>
+              <approx-count>332</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1526,7 +1599,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
+              <approx-count>1</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1565,7 +1638,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
+              <approx-count>1</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1591,7 +1664,7 @@
               <family>v_CIO_General_Questionnaires</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>2</approx-count>
+              <approx-count>1</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1646,10 +1719,37 @@
               <approx-count>1</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Functional_Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IC_Functional_Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Functional_Classification</remote-alias>
+              <ordinal>40</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Pain_Level</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[IC_Pain_Level]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Pain_Level</remote-alias>
+              <ordinal>41</ordinal>
+              <family>v_CIO_General_Questionnaires</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>336</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.398957' group-percentage='0.328553' measure-ordering='alphabetic' measure-percentage='0.27249' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.602347' group-percentage='0.212516' measure-ordering='alphabetic' measure-percentage='0.185137' show-aliased-fields='true' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -1741,6 +1841,9 @@
         </panes>
         <rows />
         <cols />
+        <show-full-range>
+          <column>[federated.0bwys5f1ie5hec13el6bh1romwpb].[IC Pain Level (bin)]</column>
+        </show-full-range>
       </table>
     </worksheet>
   </worksheets>

@@ -11,6 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_Trafic_Light (DWH)' inline='true' name='federated.198c0lu0m338lj143tvzx1kpuzvf' version='18.1'>
+      <repository-location id='v_Trafic_LightDWH' path='datasources' revision='2.0' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.0mbbs0h1v7mgce135e9jm117nb60'>
@@ -90,11 +91,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Teritorry_Key</remote-name>
+            <remote-name>Territory_Key</remote-name>
             <remote-type>3</remote-type>
-            <local-name>[Teritorry_Key]</local-name>
+            <local-name>[Territory_Key]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>Teritorry_Key</remote-alias>
+            <remote-alias>Territory_Key</remote-alias>
             <ordinal>5</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
@@ -106,11 +107,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>Teritorry</remote-name>
+            <remote-name>Territory</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[Teritorry]</local-name>
+            <local-name>[Territory]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>Teritorry</remote-alias>
+            <remote-alias>Territory</remote-alias>
             <ordinal>6</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -231,18 +232,21 @@
           </metadata-record>
           <metadata-record class='column'>
             <remote-name>Is_Historical_Patient</remote-name>
-            <remote-type>3</remote-type>
+            <remote-type>129</remote-type>
             <local-name>[Is_Historical_Patient]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
             <remote-alias>Is_Historical_Patient</remote-alias>
             <ordinal>13</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>3</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
@@ -883,12 +887,31 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>3M_Questionnaire_Score</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[3M_Questionnaire_Score]</local-name>
+            <remote-name>Improving/Deteriorating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Improving/Deteriorating]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>3M_Questionnaire_Score</remote-alias>
+            <remote-alias>Improving/Deteriorating</remote-alias>
             <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>13</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>03M_Questionnaire_Score</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[03M_Questionnaire_Score]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>03M_Questionnaire_Score</remote-alias>
+            <ordinal>52</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -899,12 +922,12 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>3M_Overall_Score</remote-name>
+            <remote-name>03M_Overall_Score</remote-name>
             <remote-type>5</remote-type>
-            <local-name>[3M_Overall_Score]</local-name>
+            <local-name>[03M_Overall_Score]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>3M_Overall_Score</remote-alias>
-            <ordinal>52</ordinal>
+            <remote-alias>03M_Overall_Score</remote-alias>
+            <ordinal>53</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -915,30 +938,11 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>3M_Questionnaire_Traffic_Light_Group</remote-name>
+            <remote-name>03M_Questionnaire_Traffic_Light_Group</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[3M_Questionnaire_Traffic_Light_Group]</local-name>
+            <local-name>[03M_Questionnaire_Traffic_Light_Group]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>3M_Questionnaire_Traffic_Light_Group</remote-alias>
-            <ordinal>53</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <width>50</width>
-            <contains-null>true</contains-null>
-            <padded-semantics>true</padded-semantics>
-            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
-              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>3M_Overall_Traffic_Light_Group</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[3M_Overall_Traffic_Light_Group]</local-name>
-            <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>3M_Overall_Traffic_Light_Group</remote-alias>
+            <remote-alias>03M_Questionnaire_Traffic_Light_Group</remote-alias>
             <ordinal>54</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
@@ -953,44 +957,12 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>6M_Questionnaire_Score</remote-name>
-            <remote-type>3</remote-type>
-            <local-name>[6M_Questionnaire_Score]</local-name>
-            <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>6M_Questionnaire_Score</remote-alias>
-            <ordinal>55</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>10</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>6M_Overall_Score</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[6M_Overall_Score]</local-name>
-            <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>6M_Overall_Score</remote-alias>
-            <ordinal>56</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
-              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>6M_Questionnaire_Traffic_Light_Group</remote-name>
+            <remote-name>03M_Overall_Traffic_Light_Group</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[6M_Questionnaire_Traffic_Light_Group]</local-name>
+            <local-name>[03M_Overall_Traffic_Light_Group]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>6M_Questionnaire_Traffic_Light_Group</remote-alias>
-            <ordinal>57</ordinal>
+            <remote-alias>03M_Overall_Traffic_Light_Group</remote-alias>
+            <ordinal>55</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -1004,16 +976,105 @@
             </attributes>
           </metadata-record>
           <metadata-record class='column'>
-            <remote-name>6M_Overall_Traffic_Light_Group</remote-name>
+            <remote-name>03M_Improving/Deteriorating</remote-name>
             <remote-type>129</remote-type>
-            <local-name>[6M_Overall_Traffic_Light_Group]</local-name>
+            <local-name>[03M_Improving/Deteriorating]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
-            <remote-alias>6M_Overall_Traffic_Light_Group</remote-alias>
+            <remote-alias>03M_Improving/Deteriorating</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>13</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>06M_Questionnaire_Score</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[06M_Questionnaire_Score]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>06M_Questionnaire_Score</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>06M_Overall_Score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[06M_Overall_Score]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>06M_Overall_Score</remote-alias>
             <ordinal>58</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_FLOAT&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>06M_Questionnaire_Traffic_Light_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[06M_Questionnaire_Traffic_Light_Group]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>06M_Questionnaire_Traffic_Light_Group</remote-alias>
+            <ordinal>59</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
             <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>06M_Overall_Traffic_Light_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[06M_Overall_Traffic_Light_Group]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>06M_Overall_Traffic_Light_Group</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>06M_Improving/Deteriorating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[06M_Improving/Deteriorating]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>06M_Improving/Deteriorating</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>13</width>
+            <contains-null>false</contains-null>
             <padded-semantics>true</padded-semantics>
             <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
             <attributes>
@@ -1028,7 +1089,7 @@
             <local-name>[12M_Questionnaire_Score]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
             <remote-alias>12M_Questionnaire_Score</remote-alias>
-            <ordinal>59</ordinal>
+            <ordinal>62</ordinal>
             <local-type>integer</local-type>
             <aggregation>Sum</aggregation>
             <precision>10</precision>
@@ -1044,7 +1105,7 @@
             <local-name>[12M_Overall_Score]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
             <remote-alias>12M_Overall_Score</remote-alias>
-            <ordinal>60</ordinal>
+            <ordinal>63</ordinal>
             <local-type>real</local-type>
             <aggregation>Sum</aggregation>
             <precision>15</precision>
@@ -1060,7 +1121,7 @@
             <local-name>[12M_Questionnaire_Traffic_Light_Group]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
             <remote-alias>12M_Questionnaire_Traffic_Light_Group</remote-alias>
-            <ordinal>61</ordinal>
+            <ordinal>64</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -1079,7 +1140,61 @@
             <local-name>[12M_Overall_Traffic_Light_Group]</local-name>
             <parent-name>[v_Trafic_Light]</parent-name>
             <remote-alias>12M_Overall_Traffic_Light_Group</remote-alias>
-            <ordinal>62</ordinal>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>50</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>12M_Improving/Deteriorating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[12M_Improving/Deteriorating]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>12M_Improving/Deteriorating</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>13</width>
+            <contains-null>false</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation flag='2147483649' name='LEN_RUS_S2_VWIN' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_VARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_CHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification_Key</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[IC_Functional_Classification_Key]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>IC_Functional_Classification_Key</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IC_Functional_Classification</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[IC_Functional_Classification]</local-name>
+            <parent-name>[v_Trafic_Light]</parent-name>
+            <remote-alias>IC_Functional_Classification</remote-alias>
+            <ordinal>68</ordinal>
             <local-type>string</local-type>
             <aggregation>Count</aggregation>
             <width>50</width>
@@ -1095,25 +1210,76 @@
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
+      <column caption='06M # Deteriorating' datatype='integer' name='[# Deteriorating (copy 2)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [06M_Improving/Deteriorating] = &quot;Deteriorating&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='# Improving' datatype='integer' name='[# Deteriorating (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Improving/Deteriorating] = &quot;Improving&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='03M # Improving' datatype='integer' name='[# Improving (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [03M_Improving/Deteriorating] = &quot;Improving&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='03M % Deteriorating' datatype='real' default-format='p0.0%' name='[% Deteriorating (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[06M # Deteriorating (copy)] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='12M % Deteriorating' datatype='real' default-format='p0.0%' name='[% Deteriorating 03M (copy) (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[06M # Deteriorating (copy) (copy)] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='06M % Deteriorating' datatype='real' default-format='p0.0%' name='[% Deteriorating 03M (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[# Deteriorating (copy 2)] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='03M % Improving' datatype='real' default-format='p0.0%' name='[% Improving (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[# Improving (copy)] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='06M% Improving' datatype='real' default-format='p0.0%' name='[% Improving 03M (copy 2)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[03M # Improving (copy 2)] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='12M % Improving' datatype='real' default-format='p0.0%' name='[% Improving 03M (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[03M # Improving (copy)] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='06M # Improving' datatype='integer' name='[03M # Improving (copy 2)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [06M_Improving/Deteriorating] = &quot;Improving&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='12M # Improving' datatype='integer' name='[03M # Improving (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [12M_Improving/Deteriorating] = &quot;Improving&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='03M Improving/Deteriorating' datatype='string' name='[03M_Improving/Deteriorating]' role='dimension' type='nominal' />
+      <column caption='03M Overall Score' datatype='real' name='[03M_Overall_Score]' role='measure' type='quantitative' />
+      <column caption='03M Overall Traffic Light Group' datatype='string' name='[03M_Overall_Traffic_Light_Group]' role='dimension' type='nominal' />
+      <column caption='03M Questionnaire Score' datatype='integer' name='[03M_Questionnaire_Score]' role='measure' type='quantitative' />
+      <column caption='03M Q Traffic Light Group' datatype='string' name='[03M_Questionnaire_Traffic_Light_Group]' role='dimension' type='nominal' />
+      <column caption='12M # Deteriorating' datatype='integer' name='[06M # Deteriorating (copy) (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [12M_Improving/Deteriorating] = &quot;Deteriorating&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='03M # Deteriorating' datatype='integer' name='[06M # Deteriorating (copy)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [03M_Improving/Deteriorating] = &quot;Deteriorating&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
+      <column caption='06M Improving/Deteriorating' datatype='string' name='[06M_Improving/Deteriorating]' role='dimension' type='nominal' />
+      <column caption='06M Overall Score' datatype='real' name='[06M_Overall_Score]' role='measure' type='quantitative' />
+      <column caption='06M Overall Traffic Light Group' datatype='string' name='[06M_Overall_Traffic_Light_Group]' role='dimension' type='nominal' />
+      <column caption='06M Questionnaire Score' datatype='integer' name='[06M_Questionnaire_Score]' role='measure' type='quantitative' />
+      <column caption='06M Q Traffic Light Group' datatype='string' name='[06M_Questionnaire_Traffic_Light_Group]' role='dimension' type='nominal' />
+      <column caption='12M Improving/Deteriorating' datatype='string' name='[12M_Improving/Deteriorating]' role='dimension' type='nominal' />
       <column caption='12M Overall Score' datatype='real' default-format='n#,##0;-#,##0' name='[12M_Overall_Score]' role='measure' type='quantitative' />
       <column caption='12M Overall Traffic Light Group' datatype='string' name='[12M_Overall_Traffic_Light_Group]' role='dimension' type='nominal' />
       <column caption='12M Questionnaire Score' datatype='integer' name='[12M_Questionnaire_Score]' role='measure' type='quantitative' />
-      <column caption='12M Questionnaire Traffic Light Group' datatype='string' name='[12M_Questionnaire_Traffic_Light_Group]' role='dimension' type='nominal' />
-      <column caption='3M Overall Score' datatype='real' default-format='n#,##0;-#,##0' name='[3M_Overall_Score]' role='measure' type='quantitative' />
-      <column caption='3M Overall Traffic Light Group' datatype='string' name='[3M_Overall_Traffic_Light_Group]' role='dimension' type='nominal' />
-      <column caption='3M Questionnaire Score' datatype='integer' name='[3M_Questionnaire_Score]' role='measure' type='quantitative' />
-      <column caption='3M Questionnaire Traffic Light Group' datatype='string' name='[3M_Questionnaire_Traffic_Light_Group]' role='dimension' type='nominal' />
-      <column caption='6M Overall Score' datatype='real' default-format='n#,##0;-#,##0' name='[6M_Overall_Score]' role='measure' type='quantitative' />
-      <column caption='6M Overall Traffic Light Group' datatype='string' name='[6M_Overall_Traffic_Light_Group]' role='dimension' type='nominal' />
-      <column caption='6M Questionnaire Score' datatype='integer' name='[6M_Questionnaire_Score]' role='measure' type='quantitative' />
-      <column caption='6M Questionnaire Traffic Light Group' datatype='string' name='[6M_Questionnaire_Traffic_Light_Group]' role='dimension' type='nominal' />
+      <column caption='12M Q Traffic Light Group' datatype='string' name='[12M_Questionnaire_Traffic_Light_Group]' role='dimension' type='nominal' />
       <column caption='Activity Status' datatype='string' name='[Activity_Status]' role='dimension' type='nominal' />
       <column caption='Activity Status Key' datatype='integer' hidden='true' name='[Activity_Status_Key]' role='dimension' type='ordinal' />
+      <column caption='# Deteriorating' datatype='integer' name='[Calculation_1018939446534819840]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD(IF [Improving/Deteriorating] = &quot;Deteriorating&quot;&#13;&#10;THEN [Patient_Key] END)' />
+      </column>
       <column caption='# of Patients' datatype='integer' name='[Calculation_1099441282519252992]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Patient_Key])' />
       </column>
       <column caption='# of Visits' datatype='integer' name='[Calculation_1099441282519351297]' role='measure' type='quantitative'>
         <calculation class='tableau' formula='COUNTD([Visit_ID])' />
+      </column>
+      <column caption='% Deteriorating' datatype='real' default-format='p0.0%' name='[Calculation_700872722842447874]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Calculation_1018939446534819840] / [Calculation_1099441282519252992]' />
+      </column>
+      <column caption='% Improving' datatype='real' default-format='p0.0%' name='[Calculation_700872722842628099]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[# Deteriorating (copy)] / [Calculation_1099441282519252992]' />
       </column>
       <column caption='Change In Percent' datatype='real' name='[Change_In_Percent]' role='measure' type='quantitative' />
       <column caption='Change In Value' datatype='real' name='[Change_In_Value]' role='measure' type='quantitative' />
@@ -1124,10 +1290,12 @@
       <column caption='Continent Key' datatype='integer' hidden='true' name='[Continent_Key]' role='dimension' type='ordinal' />
       <column caption='Days from IC' datatype='integer' name='[Days_from_IC]' role='measure' type='quantitative' />
       <column caption='IC Date' datatype='date' name='[IC_Date]' role='dimension' type='ordinal' />
+      <column caption='IC Functional Classification' datatype='string' name='[IC_Functional_Classification]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='IC Functional Classification Key' datatype='integer' hidden='true' name='[IC_Functional_Classification_Key]' role='dimension' type='ordinal' />
       <column caption='IC Value' datatype='real' name='[IC_Value]' role='measure' type='quantitative' />
       <column caption='IC Visit ID' datatype='string' name='[IC_Visit_ID]' role='dimension' type='nominal' />
       <column caption='Insurer Key' datatype='integer' hidden='true' name='[Insurer_Key]' role='dimension' type='ordinal' />
-      <column aggregation='Sum' caption='Is Historical Patient' datatype='integer' name='[Is_Historical_Patient]' role='dimension' type='ordinal' />
+      <column caption='Is Historical Patient' datatype='string' name='[Is_Historical_Patient]' role='dimension' type='nominal' />
       <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
         <calculation class='tableau' formula='1' />
       </column>
@@ -1157,21 +1325,18 @@
       <column caption='Suitability Status' datatype='string' name='[Suitability_Status]' role='dimension' type='nominal' />
       <column caption='Suitability Status Key' datatype='integer' hidden='true' name='[Suitability_Status_Key]' role='dimension' type='ordinal' />
       <column caption='Teritorry Key' datatype='integer' hidden='true' name='[Teritorry_Key]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='integer' hidden='true' name='[Territory_Key]' role='dimension' type='ordinal' />
       <column caption='Visit Date' datatype='date' name='[Visit_Date]' role='dimension' type='ordinal' />
       <column caption='Visit ID' datatype='string' name='[Visit_ID]' role='dimension' type='nominal' />
       <column caption='Visit Value' datatype='real' name='[Visit_Value]' role='measure' type='quantitative' />
       <column caption='Weight Group' datatype='string' name='[Weight_Group]' role='dimension' type='nominal' />
       <column-instance column='[12M_Overall_Traffic_Light_Group]' derivation='None' name='[none:12M_Overall_Traffic_Light_Group:nk]' pivot='key' type='nominal' />
       <column-instance column='[12M_Questionnaire_Traffic_Light_Group]' derivation='None' name='[none:12M_Questionnaire_Traffic_Light_Group:nk]' pivot='key' type='nominal' />
-      <column-instance column='[3M_Overall_Traffic_Light_Group]' derivation='None' name='[none:3M_Overall_Traffic_Light_Group:nk]' pivot='key' type='nominal' />
-      <column-instance column='[3M_Questionnaire_Traffic_Light_Group]' derivation='None' name='[none:3M_Questionnaire_Traffic_Light_Group:nk]' pivot='key' type='nominal' />
-      <column-instance column='[6M_Overall_Traffic_Light_Group]' derivation='None' name='[none:6M_Overall_Traffic_Light_Group:nk]' pivot='key' type='nominal' />
-      <column-instance column='[6M_Questionnaire_Traffic_Light_Group]' derivation='None' name='[none:6M_Questionnaire_Traffic_Light_Group:nk]' pivot='key' type='nominal' />
       <column-instance column='[Period_Year]' derivation='None' name='[none:Period_Year:nk]' pivot='key' type='nominal' />
       <drill-paths>
         <drill-path name='Clinic'>
           <field>[Continent]</field>
-          <field>[Teritorry]</field>
+          <field>[Territory]</field>
           <field>[Clinic_Branch]</field>
           <field>[Clinic_Name]</field>
         </drill-path>
@@ -1198,6 +1363,7 @@
       <folder name='Patient Current Data' role='dimensions'>
         <folder-item name='[Activity_Status]' type='field' />
         <folder-item name='[Activity_Status_Key]' type='field' />
+        <folder-item name='[IC_Functional_Classification]' type='field' />
         <folder-item name='[Insurer]' type='field' />
         <folder-item name='[Insurer_Key]' type='field' />
         <folder-item name='[Is_Historical_Patient]' type='field' />
@@ -1210,33 +1376,57 @@
         <folder-item name='Patient ID' type='drillpath' />
       </folder>
       <folder name='Traffic Light' role='dimensions'>
+        <folder-item name='[Improving/Deteriorating]' type='field' />
         <folder-item name='[Overall_Traffic_Light_Group]' type='field' />
         <folder-item name='[Questionnaire]' type='field' />
         <folder-item name='[Questionnaire_Category]' type='field' />
         <folder-item name='[Questionnaire_Traffic_Light_Group]' type='field' />
         <folder-item name='[Weight_Group]' type='field' />
       </folder>
-      <folder name='Traffic Light - Compare' role='dimensions'>
+      <folder name='Traffic Light - Comparison' role='dimensions'>
+        <folder-item name='[03M_Improving/Deteriorating]' type='field' />
+        <folder-item name='[03M_Overall_Traffic_Light_Group]' type='field' />
+        <folder-item name='[03M_Questionnaire_Traffic_Light_Group]' type='field' />
+        <folder-item name='[06M_Improving/Deteriorating]' type='field' />
+        <folder-item name='[06M_Overall_Traffic_Light_Group]' type='field' />
+        <folder-item name='[06M_Questionnaire_Traffic_Light_Group]' type='field' />
+        <folder-item name='[12M_Improving/Deteriorating]' type='field' />
         <folder-item name='[12M_Overall_Traffic_Light_Group]' type='field' />
         <folder-item name='[12M_Questionnaire_Traffic_Light_Group]' type='field' />
-        <folder-item name='[3M_Overall_Traffic_Light_Group]' type='field' />
-        <folder-item name='[3M_Questionnaire_Traffic_Light_Group]' type='field' />
-        <folder-item name='[6M_Overall_Traffic_Light_Group]' type='field' />
-        <folder-item name='[6M_Questionnaire_Traffic_Light_Group]' type='field' />
       </folder>
-      <folder name='Traffic Light Score' role='measures'>
+      <folder name='Comparison Periods' role='measures'>
+        <folder-item name='[03M_Overall_Score]' type='field' />
+        <folder-item name='[03M_Questionnaire_Score]' type='field' />
+        <folder-item name='[06M_Overall_Score]' type='field' />
+        <folder-item name='[06M_Questionnaire_Score]' type='field' />
+        <folder-item name='[12M_Overall_Score]' type='field' />
+        <folder-item name='[12M_Questionnaire_Score]' type='field' />
+      </folder>
+      <folder name='Comparison Periods - Trend' role='measures'>
+        <folder-item name='[# Deteriorating (copy 2)]' type='field' />
+        <folder-item name='[# Improving (copy)]' type='field' />
+        <folder-item name='[% Deteriorating (copy)]' type='field' />
+        <folder-item name='[% Deteriorating 03M (copy) (copy)]' type='field' />
+        <folder-item name='[% Deteriorating 03M (copy)]' type='field' />
+        <folder-item name='[% Improving (copy)]' type='field' />
+        <folder-item name='[% Improving 03M (copy 2)]' type='field' />
+        <folder-item name='[% Improving 03M (copy)]' type='field' />
+        <folder-item name='[03M # Improving (copy 2)]' type='field' />
+        <folder-item name='[03M # Improving (copy)]' type='field' />
+        <folder-item name='[06M # Deteriorating (copy) (copy)]' type='field' />
+        <folder-item name='[06M # Deteriorating (copy)]' type='field' />
+      </folder>
+      <folder name='Traffic Light' role='measures'>
         <folder-item name='[Overall_Score]' type='field' />
         <folder-item name='[Questionnaire_Score]' type='field' />
         <folder-item name='[Questionnaire_Weight]' type='field' />
         <folder-item name='[Questionnaire_Weighted_Score]' type='field' />
       </folder>
-      <folder name='Traffic Light Score - Compare' role='measures'>
-        <folder-item name='[12M_Overall_Score]' type='field' />
-        <folder-item name='[12M_Questionnaire_Score]' type='field' />
-        <folder-item name='[3M_Overall_Score]' type='field' />
-        <folder-item name='[3M_Questionnaire_Score]' type='field' />
-        <folder-item name='[6M_Overall_Score]' type='field' />
-        <folder-item name='[6M_Questionnaire_Score]' type='field' />
+      <folder name='Traffic Light - Trend' role='measures'>
+        <folder-item name='[# Deteriorating (copy)]' type='field' />
+        <folder-item name='[Calculation_1018939446534819840]' type='field' />
+        <folder-item name='[Calculation_700872722842447874]' type='field' />
+        <folder-item name='[Calculation_700872722842628099]' type='field' />
       </folder>
       <folder name='Visit' role='measures'>
         <folder-item name='[Change_In_Percent]' type='field' />
@@ -1246,10 +1436,10 @@
         <folder-item name='[Visit_Value]' type='field' />
       </folder>
       <extract count='-1' enabled='true' units='records'>
-        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_Trafic_Light (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/05/2018 11:42:54 AM' username='tableau_internal_user'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_Trafic_Light (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/14/2018 01:20:46 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
-            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='431254' timestamp-start='2018-08-05 11:42:54.769' />
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='422730' timestamp-start='2018-08-14 13:20:46.572' />
           </refresh>
           <metadata-records>
             <metadata-record class='column'>
@@ -1262,7 +1452,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>16</approx-count>
+              <approx-count>11</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1276,16 +1466,16 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>15</approx-count>
+              <approx-count>11</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>Teritorry</remote-name>
+              <remote-name>Territory</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[Teritorry]</local-name>
+              <local-name>[Territory]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>Teritorry</remote-alias>
+              <remote-alias>Territory</remote-alias>
               <ordinal>2</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
@@ -1318,7 +1508,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>3</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1338,16 +1528,17 @@
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Is_Historical_Patient</remote-name>
-              <remote-type>20</remote-type>
+              <remote-type>129</remote-type>
               <local-name>[Is_Historical_Patient]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>Is_Historical_Patient</remote-alias>
               <ordinal>6</ordinal>
               <family>v_Trafic_Light</family>
-              <local-type>integer</local-type>
-              <aggregation>Sum</aggregation>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
               <approx-count>2</approx-count>
               <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
               <remote-name>Pathology</remote-name>
@@ -1373,7 +1564,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>7</approx-count>
+              <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1387,7 +1578,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
+              <approx-count>6</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1401,7 +1592,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>76</approx-count>
+              <approx-count>65</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1415,7 +1606,7 @@
               <family>v_Trafic_Light</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>11398</approx-count>
+              <approx-count>10807</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1428,7 +1619,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>11398</approx-count>
+              <approx-count>10807</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1442,7 +1633,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>11398</approx-count>
+              <approx-count>10807</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1456,7 +1647,7 @@
               <family>v_Trafic_Light</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>2607</approx-count>
+              <approx-count>1768</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1469,7 +1660,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>11398</approx-count>
+              <approx-count>10807</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1483,7 +1674,7 @@
               <family>v_Trafic_Light</family>
               <local-type>date</local-type>
               <aggregation>Year</aggregation>
-              <approx-count>3706</approx-count>
+              <approx-count>2129</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1496,7 +1687,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>57547</approx-count>
+              <approx-count>47251</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1510,7 +1701,7 @@
               <family>v_Trafic_Light</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>543</approx-count>
+              <approx-count>541</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1550,7 +1741,7 @@
               <family>v_Trafic_Light</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>10</approx-count>
+              <approx-count>9</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1563,7 +1754,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>10</approx-count>
+              <approx-count>9</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1605,7 +1796,7 @@
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1446</approx-count>
+              <approx-count>1434</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1618,7 +1809,7 @@
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>1720</approx-count>
+              <approx-count>2282</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1631,7 +1822,7 @@
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>3007</approx-count>
+              <approx-count>3032</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1644,7 +1835,7 @@
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>34473</approx-count>
+              <approx-count>47251</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1696,7 +1887,7 @@
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>5</approx-count>
+              <approx-count>4</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1710,7 +1901,7 @@
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>65</approx-count>
+              <approx-count>64</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1742,12 +1933,26 @@
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>3M_Questionnaire_Score</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[3M_Questionnaire_Score]</local-name>
+              <remote-name>Improving/Deteriorating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Improving/Deteriorating]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>3M_Questionnaire_Score</remote-alias>
+              <remote-alias>Improving/Deteriorating</remote-alias>
               <ordinal>36</ordinal>
+              <family>v_Trafic_Light</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>03M_Questionnaire_Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[03M_Questionnaire_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>03M_Questionnaire_Score</remote-alias>
+              <ordinal>37</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1755,53 +1960,67 @@
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>3M_Overall_Score</remote-name>
+              <remote-name>03M_Overall_Score</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[3M_Overall_Score]</local-name>
+              <local-name>[03M_Overall_Score]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>3M_Overall_Score</remote-alias>
-              <ordinal>37</ordinal>
+              <remote-alias>03M_Overall_Score</remote-alias>
+              <ordinal>38</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>24</approx-count>
+              <approx-count>57</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>3M_Questionnaire_Traffic_Light_Group</remote-name>
+              <remote-name>03M_Questionnaire_Traffic_Light_Group</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[3M_Questionnaire_Traffic_Light_Group]</local-name>
+              <local-name>[03M_Questionnaire_Traffic_Light_Group]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>3M_Questionnaire_Traffic_Light_Group</remote-alias>
-              <ordinal>38</ordinal>
-              <family>v_Trafic_Light</family>
-              <local-type>string</local-type>
-              <aggregation>Count</aggregation>
-              <approx-count>6</approx-count>
-              <contains-null>true</contains-null>
-              <collation flag='1' name='LEN_RUS_S2' />
-            </metadata-record>
-            <metadata-record class='column'>
-              <remote-name>3M_Overall_Traffic_Light_Group</remote-name>
-              <remote-type>129</remote-type>
-              <local-name>[3M_Overall_Traffic_Light_Group]</local-name>
-              <parent-name>[Extract]</parent-name>
-              <remote-alias>3M_Overall_Traffic_Light_Group</remote-alias>
+              <remote-alias>03M_Questionnaire_Traffic_Light_Group</remote-alias>
               <ordinal>39</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>03M_Overall_Traffic_Light_Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[03M_Overall_Traffic_Light_Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>03M_Overall_Traffic_Light_Group</remote-alias>
+              <ordinal>40</ordinal>
+              <family>v_Trafic_Light</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
               <approx-count>7</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>6M_Questionnaire_Score</remote-name>
-              <remote-type>20</remote-type>
-              <local-name>[6M_Questionnaire_Score]</local-name>
+              <remote-name>03M_Improving/Deteriorating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[03M_Improving/Deteriorating]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>6M_Questionnaire_Score</remote-alias>
-              <ordinal>40</ordinal>
+              <remote-alias>03M_Improving/Deteriorating</remote-alias>
+              <ordinal>41</ordinal>
+              <family>v_Trafic_Light</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>06M_Questionnaire_Score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[06M_Questionnaire_Score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>06M_Questionnaire_Score</remote-alias>
+              <ordinal>42</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
@@ -1809,25 +2028,25 @@
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>6M_Overall_Score</remote-name>
+              <remote-name>06M_Overall_Score</remote-name>
               <remote-type>5</remote-type>
-              <local-name>[6M_Overall_Score]</local-name>
+              <local-name>[06M_Overall_Score]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>6M_Overall_Score</remote-alias>
-              <ordinal>41</ordinal>
+              <remote-alias>06M_Overall_Score</remote-alias>
+              <ordinal>43</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>21</approx-count>
+              <approx-count>52</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>6M_Questionnaire_Traffic_Light_Group</remote-name>
+              <remote-name>06M_Questionnaire_Traffic_Light_Group</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[6M_Questionnaire_Traffic_Light_Group]</local-name>
+              <local-name>[06M_Questionnaire_Traffic_Light_Group]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>6M_Questionnaire_Traffic_Light_Group</remote-alias>
-              <ordinal>42</ordinal>
+              <remote-alias>06M_Questionnaire_Traffic_Light_Group</remote-alias>
+              <ordinal>44</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1836,16 +2055,30 @@
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
             <metadata-record class='column'>
-              <remote-name>6M_Overall_Traffic_Light_Group</remote-name>
+              <remote-name>06M_Overall_Traffic_Light_Group</remote-name>
               <remote-type>129</remote-type>
-              <local-name>[6M_Overall_Traffic_Light_Group]</local-name>
+              <local-name>[06M_Overall_Traffic_Light_Group]</local-name>
               <parent-name>[Extract]</parent-name>
-              <remote-alias>6M_Overall_Traffic_Light_Group</remote-alias>
-              <ordinal>43</ordinal>
+              <remote-alias>06M_Overall_Traffic_Light_Group</remote-alias>
+              <ordinal>45</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>6</approx-count>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>06M_Improving/Deteriorating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[06M_Improving/Deteriorating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>06M_Improving/Deteriorating</remote-alias>
+              <ordinal>46</ordinal>
+              <family>v_Trafic_Light</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
@@ -1855,11 +2088,11 @@
               <local-name>[12M_Questionnaire_Score]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>12M_Questionnaire_Score</remote-alias>
-              <ordinal>44</ordinal>
+              <ordinal>47</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>integer</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>6</approx-count>
+              <approx-count>7</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1868,11 +2101,11 @@
               <local-name>[12M_Overall_Score]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>12M_Overall_Score</remote-alias>
-              <ordinal>45</ordinal>
+              <ordinal>48</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>real</local-type>
               <aggregation>Sum</aggregation>
-              <approx-count>16</approx-count>
+              <approx-count>40</approx-count>
               <contains-null>true</contains-null>
             </metadata-record>
             <metadata-record class='column'>
@@ -1881,7 +2114,7 @@
               <local-name>[12M_Questionnaire_Traffic_Light_Group]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>12M_Questionnaire_Traffic_Light_Group</remote-alias>
-              <ordinal>46</ordinal>
+              <ordinal>49</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
@@ -1895,18 +2128,46 @@
               <local-name>[12M_Overall_Traffic_Light_Group]</local-name>
               <parent-name>[Extract]</parent-name>
               <remote-alias>12M_Overall_Traffic_Light_Group</remote-alias>
-              <ordinal>47</ordinal>
+              <ordinal>50</ordinal>
               <family>v_Trafic_Light</family>
               <local-type>string</local-type>
               <aggregation>Count</aggregation>
-              <approx-count>6</approx-count>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>12M_Improving/Deteriorating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[12M_Improving/Deteriorating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>12M_Improving/Deteriorating</remote-alias>
+              <ordinal>51</ordinal>
+              <family>v_Trafic_Light</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IC_Functional_Classification</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[IC_Functional_Classification]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IC_Functional_Classification</remote-alias>
+              <ordinal>52</ordinal>
+              <family>v_Trafic_Light</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
               <contains-null>true</contains-null>
               <collation flag='1' name='LEN_RUS_S2' />
             </metadata-record>
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.521411' measure-ordering='alphabetic' measure-percentage='0.478589' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.0755668' measure-ordering='alphabetic' measure-percentage='0.924433' show-hidden-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>
@@ -1923,50 +2184,6 @@
           </dictionary>
         </manual-sort>
         <manual-sort column='[none:12M_Questionnaire_Traffic_Light_Group:nk]' direction='ASC'>
-          <dictionary>
-            <bucket>%null%</bucket>
-            <bucket>&quot;Greatly Improving&quot;</bucket>
-            <bucket>&quot;Improving&quot;</bucket>
-            <bucket>&quot;Insufficiently Improving&quot;</bucket>
-            <bucket>&quot;Slightly Deteriorating&quot;</bucket>
-            <bucket>&quot;Deteriorating&quot;</bucket>
-            <bucket>&quot;Missing Data&quot;</bucket>
-          </dictionary>
-        </manual-sort>
-        <manual-sort column='[none:3M_Overall_Traffic_Light_Group:nk]' direction='ASC'>
-          <dictionary>
-            <bucket>%null%</bucket>
-            <bucket>&quot;Greatly Improving&quot;</bucket>
-            <bucket>&quot;Improving&quot;</bucket>
-            <bucket>&quot;Insufficiently Improving&quot;</bucket>
-            <bucket>&quot;Slightly Deteriorating&quot;</bucket>
-            <bucket>&quot;Deteriorating&quot;</bucket>
-            <bucket>&quot;Missing Data&quot;</bucket>
-          </dictionary>
-        </manual-sort>
-        <manual-sort column='[none:3M_Questionnaire_Traffic_Light_Group:nk]' direction='ASC'>
-          <dictionary>
-            <bucket>%null%</bucket>
-            <bucket>&quot;Greatly Improving&quot;</bucket>
-            <bucket>&quot;Improving&quot;</bucket>
-            <bucket>&quot;Insufficiently Improving&quot;</bucket>
-            <bucket>&quot;Slightly Deteriorating&quot;</bucket>
-            <bucket>&quot;Deteriorating&quot;</bucket>
-            <bucket>&quot;Missing Data&quot;</bucket>
-          </dictionary>
-        </manual-sort>
-        <manual-sort column='[none:6M_Overall_Traffic_Light_Group:nk]' direction='ASC'>
-          <dictionary>
-            <bucket>%null%</bucket>
-            <bucket>&quot;Greatly Improving&quot;</bucket>
-            <bucket>&quot;Improving&quot;</bucket>
-            <bucket>&quot;Insufficiently Improving&quot;</bucket>
-            <bucket>&quot;Slightly Deteriorating&quot;</bucket>
-            <bucket>&quot;Deteriorating&quot;</bucket>
-            <bucket>&quot;Missing Data&quot;</bucket>
-          </dictionary>
-        </manual-sort>
-        <manual-sort column='[none:6M_Questionnaire_Traffic_Light_Group:nk]' direction='ASC'>
           <dictionary>
             <bucket>%null%</bucket>
             <bucket>&quot;Greatly Improving&quot;</bucket>
@@ -2033,11 +2250,14 @@
           <strip size='2147483647'>
             <card type='rows' />
           </strip>
-          <strip size='31'>
+          <strip size='2147483647'>
             <card type='title' />
           </strip>
         </edge>
       </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
     </window>
   </windows>
   <thumbnails>
