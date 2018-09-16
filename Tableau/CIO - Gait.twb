@@ -6,14 +6,14 @@
     <CascadingFilters />
     <SortTagCleanup />
   </document-format-change-manifest>
-  <repository-location id='GaitOverview' path='/t/apostherapy/workbooks' revision='10.1' site='apostherapy' />
+  <repository-location id='GaitOverview' path='/t/apostherapy/workbooks' revision='10.2' site='apostherapy' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
     <datasource caption='v_CIO_General_Gait_Series (DWH)' inline='true' name='sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)' version='18.1'>
-      <repository-location id='v_CIO_General_Gait_SeriesDWH' path='/t/apostherapy/datasources' revision='2.7' site='apostherapy' />
+      <repository-location derived-from='/datasources/v_CIO_General_Gait_SeriesDWH?rev=2.7' id='v_CIO_General_Gait_SeriesDWH' path='/t/apostherapy/datasources' revision='2.8' site='apostherapy' />
       <connection channel='https' class='sqlproxy' dbname='v_CIO_General_Gait_SeriesDWH' directory='/dataserver' port='443' server='eu-west-1a.online.tableau.com' server-oauth='' username='' workgroup-auth-mode='prompt'>
         <relation name='sqlproxy' table='[sqlproxy]' type='table' />
         <calculations>
@@ -1010,11 +1010,11 @@
               <attribute datatype='boolean' name='CAP_SUPPORTS_SPLIT_FROM_RIGHT'>true</attribute>
               <attribute datatype='integer' name='charset'>0</attribute>
               <attribute datatype='string' name='collation'>&quot;binary&quot;</attribute>
-              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;v_CIO_General_Gait_Series (DWH)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;document-format-change-manifest&gt;&#10;    &lt;SortTagCleanup /&gt;&#10;  &lt;/document-format-change-manifest&gt;&#10;  &lt;repository-location id=&apos;v_CIO_General_Gait_SeriesDWH&apos; path=&apos;/t/apostherapy/datasources&apos; revision=&apos;2.7&apos; site=&apos;apostherapy&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;v_CIO_General_Gait_SeriesDWH&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;eu-west-1a.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Activity_Status]&apos; value=&apos;[sqlproxy].[Activity_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_570549801600049152]&apos; value=&apos;[sqlproxy].[Calculation_570549801600049152]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_570549801600360449]&apos; value=&apos;[sqlproxy].[Calculation_570549801600360449]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_570549801600438274]&apos; value=&apos;[sqlproxy].[Calculation_570549801600438274]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_777152430908928000]&apos; value=&apos;[sqlproxy].[Calculation_777152430908928000]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_777152430908993537]&apos; value=&apos;[sqlproxy].[Calculation_777152430908993537]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_857935745677983748]&apos; value=&apos;[sqlproxy].[Calculation_857935745677983748]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Branch]&apos; value=&apos;[sqlproxy].[Clinic_Branch]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Name]&apos; value=&apos;[sqlproxy].[Clinic_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Continent]&apos; value=&apos;[sqlproxy].[Continent]&apos; /&gt;&#10;      &lt;map key=&apos;[Days_from_IC]&apos; value=&apos;[sqlproxy].[Days_from_IC]&apos; /&gt;&#10;      &lt;map key=&apos;[IC Pain Level (bin)]&apos; value=&apos;[sqlproxy].[IC Pain Level (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Date]&apos; value=&apos;[sqlproxy].[IC_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Functional_Classification]&apos; value=&apos;[sqlproxy].[IC_Functional_Classification]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Left_SLS]&apos; value=&apos;[sqlproxy].[IC_Left_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Left_Step_Length]&apos; value=&apos;[sqlproxy].[IC_Left_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Less_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[IC_Less_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Less_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[IC_Less_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_More_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[IC_More_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_More_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[IC_More_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Pain_Level]&apos; value=&apos;[sqlproxy].[IC_Pain_Level]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Right_SLS]&apos; value=&apos;[sqlproxy].[IC_Right_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Right_Step_Length]&apos; value=&apos;[sqlproxy].[IC_Right_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Velocity]&apos; value=&apos;[sqlproxy].[IC_Velocity]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Visit_ID]&apos; value=&apos;[sqlproxy].[IC_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer]&apos; value=&apos;[sqlproxy].[Insurer]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Historical_Patient]&apos; value=&apos;[sqlproxy].[Is_Historical_Patient]&apos; /&gt;&#10;      &lt;map key=&apos;[Left_SLS]&apos; value=&apos;[sqlproxy].[Left_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[Left_Step_Length]&apos; value=&apos;[sqlproxy].[Left_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[Less_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[Less_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[Less_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[Less_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[MS SLS Avg Change Percent (copy)]&apos; value=&apos;[sqlproxy].[MS SLS Avg Change Percent (copy)]&apos; /&gt;&#10;      &lt;map key=&apos;[More_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[More_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[More_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[More_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[PT_Name]&apos; value=&apos;[sqlproxy].[PT_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology]&apos; value=&apos;[sqlproxy].[Pathology]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology_Area]&apos; value=&apos;[sqlproxy].[Pathology_Area]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_ID]&apos; value=&apos;[sqlproxy].[Patient_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Key]&apos; value=&apos;[sqlproxy].[Patient_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Parent_ID]&apos; value=&apos;[sqlproxy].[Patient_Parent_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Name]&apos; value=&apos;[sqlproxy].[Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Number]&apos; value=&apos;[sqlproxy].[Period_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year]&apos; value=&apos;[sqlproxy].[Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year_Number]&apos; value=&apos;[sqlproxy].[Period_Year_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Right_SLS]&apos; value=&apos;[sqlproxy].[Right_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[Right_Step_Length]&apos; value=&apos;[sqlproxy].[Right_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[Series_Period_Name]&apos; value=&apos;[sqlproxy].[Series_Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Series_Period_Year]&apos; value=&apos;[sqlproxy].[Series_Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Territory]&apos; value=&apos;[sqlproxy].[Territory]&apos; /&gt;&#10;      &lt;map key=&apos;[Velocity]&apos; value=&apos;[sqlproxy].[Velocity]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_Date]&apos; value=&apos;[sqlproxy].[Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_Functional_Classification]&apos; value=&apos;[sqlproxy].[Visit_Functional_Classification]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_ID]&apos; value=&apos;[sqlproxy].[Visit_ID]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Activity_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Activity_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;MS SLS Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_570549801600049152]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([More_Symptomatic_SLS]) - AVG([IC_More_Symptomatic_SLS])) / AVG([IC_More_Symptomatic_SLS])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;MS Step Length Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_570549801600360449]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([More_Symptomatic_Step_Length]) - AVG([IC_More_Symptomatic_Step_Length])) / AVG([IC_More_Symptomatic_Step_Length])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;LS Step Length Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_570549801600438274]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([Less_Symptomatic_Step_Length]) - AVG([IC_Less_Symptomatic_Step_Length])) / AVG([IC_Less_Symptomatic_Step_Length])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Num of Visits&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_777152430908928000]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Visit_ID])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Num of Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_777152430908993537]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Patient_Key])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Velocity Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_857935745677983748]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([Velocity]) - AVG([IC_Velocity])) / AVG([IC_Velocity])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Branch]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Branch_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Continent Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Continent_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Days from IC&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Days_from_IC]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;FC Grade Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[FC_Grade_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;IC Pain Level Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[IC Pain Level (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[IC_Pain_Level]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;0-10&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;10-20&apos; /&gt;&#10;      &lt;alias key=&apos;2&apos; value=&apos;20-30&apos; /&gt;&#10;      &lt;alias key=&apos;3&apos; value=&apos;30-40&apos; /&gt;&#10;      &lt;alias key=&apos;4&apos; value=&apos;40-50&apos; /&gt;&#10;      &lt;alias key=&apos;5&apos; value=&apos;50-60&apos; /&gt;&#10;      &lt;alias key=&apos;6&apos; value=&apos;60-70&apos; /&gt;&#10;      &lt;alias key=&apos;7&apos; value=&apos;70-80&apos; /&gt;&#10;      &lt;alias key=&apos;8&apos; value=&apos;80-90&apos; /&gt;&#10;      &lt;alias key=&apos;9&apos; value=&apos;90-100&apos; /&gt;&#10;      &lt;alias key=&apos;10&apos; value=&apos;100-110&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;IC Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[IC_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;IC FC Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[IC_FC_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Functional Classification&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Functional_Classification]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Left SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Left_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Left Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Left_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Less Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Less_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Less Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Less_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC More Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_More_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC More Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_More_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;IC Pain Level&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Pain_Level]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Right SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Right_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Right Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Right_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Velocity&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Velocity]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Is Historical Patient&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Historical_Patient]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;No&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Yes&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Left SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Left_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Left Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Left_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Less Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Less_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Less Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Less_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;LS SLS Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[MS SLS Avg Change Percent (copy)]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([Less_Symptomatic_SLS]) - AVG([IC_Less_Symptomatic_SLS])) / AVG([IC_Less_Symptomatic_SLS])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;More Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[More_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;More Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[More_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[PT_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PT_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Pathology_Area]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Area_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Patient_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Parent ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_Parent_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Year_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Year_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Right SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Right_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Right Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Right_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Series Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Series_Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Series Period Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Series_Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Series Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Series_Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Teritorry Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Teritorry_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Territory Key&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; hidden=&apos;true&apos; name=&apos;[Territory_Key]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Velocity]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Visit Functional Classification&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Visit_Functional_Classification]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Period_Name]&apos; derivation=&apos;None&apos; name=&apos;[none:Period_Name:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Period_Year]&apos; derivation=&apos;None&apos; name=&apos;[none:Period_Year:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Series_Period_Name]&apos; derivation=&apos;None&apos; name=&apos;[none:Series_Period_Name:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Series_Period_Year]&apos; derivation=&apos;None&apos; name=&apos;[none:Series_Period_Year:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;drill-paths&gt;&#10;    &lt;drill-path name=&apos;Clinic&apos;&gt;&#10;      &lt;field&gt;[Territory]&lt;/field&gt;&#10;      &lt;field&gt;[Continent]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Branch]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Pathology&apos;&gt;&#10;      &lt;field&gt;[Pathology_Area]&lt;/field&gt;&#10;      &lt;field&gt;[Pathology]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Patient ID&apos;&gt;&#10;      &lt;field&gt;[Patient_Parent_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_Key]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Series Period&apos;&gt;&#10;      &lt;field&gt;[Series_Period_Name]&lt;/field&gt;&#10;      &lt;field&gt;[Series_Period_Year]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;  &lt;/drill-paths&gt;&#10;  &lt;folder name=&apos;Functional Classification&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[FC_Grade_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_FC_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Functional_Classification]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Visit_Functional_Classification]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Patient Current Data&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC Pain Level (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Insurer]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Insurer_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Is_Historical_Patient]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Area_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Pathology&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Patient ID&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Periods&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Period_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Series_Period_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Series Period&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Visit&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[IC_Date]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Visit_ID]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Visit_Date]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Visit_ID]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;IC Measures&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[IC_Pain_Level]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;SLS&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[Calculation_570549801600049152]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Left_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Less_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_More_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Right_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Left_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Less_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[MS SLS Avg Change Percent (copy)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[More_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Right_SLS]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Step Length&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[Calculation_570549801600360449]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Calculation_570549801600438274]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Left_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Less_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_More_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Right_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Left_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Less_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[More_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Right_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Velocity&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[Calculation_857935745677983748]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Velocity]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Velocity]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.691652&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.308348&apos; show-aliased-fields=&apos;true&apos; show-structure=&apos;false&apos; user-set-layout=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;default-sorts&gt;&#10;    &lt;manual-sort column=&apos;[none:Period_Name:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;1M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;3M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;6M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;9M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;12M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q2&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;    &lt;manual-sort column=&apos;[none:Period_Year:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;First Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Second Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Third Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Eighth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fourth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fifth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Sixth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Seventh Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Nineth year&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;    &lt;manual-sort column=&apos;[none:Series_Period_Name:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;1M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;3M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;6M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;9M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;12M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q2&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;    &lt;manual-sort column=&apos;[none:Series_Period_Year:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;First Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Second Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Third Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fourth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fifth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Sixth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Seventh Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Eighth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Nineth year&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;  &lt;/default-sorts&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
+              <attribute datatype='string' name='datasource'>&quot;&lt;?xml version=&apos;1.0&apos; encoding=&apos;utf-8&apos; ?&gt;&#10;&#10;&lt;datasource :source-version=&apos;18.1&apos; formatted-name=&apos;v_CIO_General_Gait_Series (DWH)&apos; inline=&apos;true&apos; version=&apos;18.1&apos; xml:base=&apos;https://eu-west-1a.online.tableau.com&apos; xmlns:user=&apos;http://www.tableausoftware.com/xml/user&apos;&gt;&#10;  &lt;document-format-change-manifest&gt;&#10;    &lt;SortTagCleanup /&gt;&#10;  &lt;/document-format-change-manifest&gt;&#10;  &lt;repository-location derived-from=&apos;/datasources/v_CIO_General_Gait_SeriesDWH?rev=2.7&apos; id=&apos;v_CIO_General_Gait_SeriesDWH&apos; path=&apos;/t/apostherapy/datasources&apos; revision=&apos;2.8&apos; site=&apos;apostherapy&apos; /&gt;&#10;  &lt;connection channel=&apos;https&apos; class=&apos;sqlproxy&apos; dbname=&apos;v_CIO_General_Gait_SeriesDWH&apos; directory=&apos;/dataserver&apos; port=&apos;443&apos; server=&apos;eu-west-1a.online.tableau.com&apos;&gt;&#10;    &lt;relation name=&apos;sqlproxy&apos; table=&apos;[sqlproxy]&apos; type=&apos;table&apos; /&gt;&#10;    &lt;cols&gt;&#10;      &lt;map key=&apos;[Activity_Status]&apos; value=&apos;[sqlproxy].[Activity_Status]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_570549801600049152]&apos; value=&apos;[sqlproxy].[Calculation_570549801600049152]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_570549801600360449]&apos; value=&apos;[sqlproxy].[Calculation_570549801600360449]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_570549801600438274]&apos; value=&apos;[sqlproxy].[Calculation_570549801600438274]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_777152430908928000]&apos; value=&apos;[sqlproxy].[Calculation_777152430908928000]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_777152430908993537]&apos; value=&apos;[sqlproxy].[Calculation_777152430908993537]&apos; /&gt;&#10;      &lt;map key=&apos;[Calculation_857935745677983748]&apos; value=&apos;[sqlproxy].[Calculation_857935745677983748]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Branch]&apos; value=&apos;[sqlproxy].[Clinic_Branch]&apos; /&gt;&#10;      &lt;map key=&apos;[Clinic_Name]&apos; value=&apos;[sqlproxy].[Clinic_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Continent]&apos; value=&apos;[sqlproxy].[Continent]&apos; /&gt;&#10;      &lt;map key=&apos;[Days_from_IC]&apos; value=&apos;[sqlproxy].[Days_from_IC]&apos; /&gt;&#10;      &lt;map key=&apos;[IC Pain Level (bin)]&apos; value=&apos;[sqlproxy].[IC Pain Level (bin)]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Date]&apos; value=&apos;[sqlproxy].[IC_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Functional_Classification]&apos; value=&apos;[sqlproxy].[IC_Functional_Classification]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Left_SLS]&apos; value=&apos;[sqlproxy].[IC_Left_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Left_Step_Length]&apos; value=&apos;[sqlproxy].[IC_Left_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Less_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[IC_Less_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Less_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[IC_Less_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_More_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[IC_More_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_More_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[IC_More_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Pain_Level]&apos; value=&apos;[sqlproxy].[IC_Pain_Level]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Right_SLS]&apos; value=&apos;[sqlproxy].[IC_Right_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Right_Step_Length]&apos; value=&apos;[sqlproxy].[IC_Right_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Velocity]&apos; value=&apos;[sqlproxy].[IC_Velocity]&apos; /&gt;&#10;      &lt;map key=&apos;[IC_Visit_ID]&apos; value=&apos;[sqlproxy].[IC_Visit_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Insurer]&apos; value=&apos;[sqlproxy].[Insurer]&apos; /&gt;&#10;      &lt;map key=&apos;[Is_Historical_Patient]&apos; value=&apos;[sqlproxy].[Is_Historical_Patient]&apos; /&gt;&#10;      &lt;map key=&apos;[Left_SLS]&apos; value=&apos;[sqlproxy].[Left_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[Left_Step_Length]&apos; value=&apos;[sqlproxy].[Left_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[Less_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[Less_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[Less_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[Less_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[MS SLS Avg Change Percent (copy)]&apos; value=&apos;[sqlproxy].[MS SLS Avg Change Percent (copy)]&apos; /&gt;&#10;      &lt;map key=&apos;[More_Symptomatic_SLS]&apos; value=&apos;[sqlproxy].[More_Symptomatic_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[More_Symptomatic_Step_Length]&apos; value=&apos;[sqlproxy].[More_Symptomatic_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[Number of Records]&apos; value=&apos;[sqlproxy].[Number of Records]&apos; /&gt;&#10;      &lt;map key=&apos;[PT_Name]&apos; value=&apos;[sqlproxy].[PT_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology]&apos; value=&apos;[sqlproxy].[Pathology]&apos; /&gt;&#10;      &lt;map key=&apos;[Pathology_Area]&apos; value=&apos;[sqlproxy].[Pathology_Area]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_ID]&apos; value=&apos;[sqlproxy].[Patient_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Key]&apos; value=&apos;[sqlproxy].[Patient_Key]&apos; /&gt;&#10;      &lt;map key=&apos;[Patient_Parent_ID]&apos; value=&apos;[sqlproxy].[Patient_Parent_ID]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Name]&apos; value=&apos;[sqlproxy].[Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Number]&apos; value=&apos;[sqlproxy].[Period_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year]&apos; value=&apos;[sqlproxy].[Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Period_Year_Number]&apos; value=&apos;[sqlproxy].[Period_Year_Number]&apos; /&gt;&#10;      &lt;map key=&apos;[Right_SLS]&apos; value=&apos;[sqlproxy].[Right_SLS]&apos; /&gt;&#10;      &lt;map key=&apos;[Right_Step_Length]&apos; value=&apos;[sqlproxy].[Right_Step_Length]&apos; /&gt;&#10;      &lt;map key=&apos;[Series_Period_Name]&apos; value=&apos;[sqlproxy].[Series_Period_Name]&apos; /&gt;&#10;      &lt;map key=&apos;[Series_Period_Year]&apos; value=&apos;[sqlproxy].[Series_Period_Year]&apos; /&gt;&#10;      &lt;map key=&apos;[Territory]&apos; value=&apos;[sqlproxy].[Territory]&apos; /&gt;&#10;      &lt;map key=&apos;[Velocity]&apos; value=&apos;[sqlproxy].[Velocity]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_Date]&apos; value=&apos;[sqlproxy].[Visit_Date]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_Functional_Classification]&apos; value=&apos;[sqlproxy].[Visit_Functional_Classification]&apos; /&gt;&#10;      &lt;map key=&apos;[Visit_ID]&apos; value=&apos;[sqlproxy].[Visit_ID]&apos; /&gt;&#10;    &lt;/cols&gt;&#10;  &lt;/connection&gt;&#10;  &lt;aliases enabled=&apos;yes&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Activity_Status]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Activity Status Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Activity_Status_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;MS SLS Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_570549801600049152]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([More_Symptomatic_SLS]) - AVG([IC_More_Symptomatic_SLS])) / AVG([IC_More_Symptomatic_SLS])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;MS Step Length Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_570549801600360449]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([More_Symptomatic_Step_Length]) - AVG([IC_More_Symptomatic_Step_Length])) / AVG([IC_More_Symptomatic_Step_Length])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;LS Step Length Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_570549801600438274]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([Less_Symptomatic_Step_Length]) - AVG([IC_Less_Symptomatic_Step_Length])) / AVG([IC_Less_Symptomatic_Step_Length])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Num of Visits&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_777152430908928000]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Visit_ID])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Num of Patients&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_777152430908993537]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;COUNTD([Patient_Key])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;Velocity Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[Calculation_857935745677983748]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([Velocity]) - AVG([IC_Velocity])) / AVG([IC_Velocity])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Branch]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Branch Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Branch_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Clinic_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Clinic Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Clinic_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Continent Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Continent_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Days from IC&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Days_from_IC]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;FC Grade Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[FC_Grade_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;None&apos; caption=&apos;IC Pain Level Group&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[IC Pain Level (bin)]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;bin&apos; decimals=&apos;1&apos; formula=&apos;[IC_Pain_Level]&apos; peg=&apos;0&apos; size=&apos;10&apos; /&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;0-10&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;10-20&apos; /&gt;&#10;      &lt;alias key=&apos;2&apos; value=&apos;20-30&apos; /&gt;&#10;      &lt;alias key=&apos;3&apos; value=&apos;30-40&apos; /&gt;&#10;      &lt;alias key=&apos;4&apos; value=&apos;40-50&apos; /&gt;&#10;      &lt;alias key=&apos;5&apos; value=&apos;50-60&apos; /&gt;&#10;      &lt;alias key=&apos;6&apos; value=&apos;60-70&apos; /&gt;&#10;      &lt;alias key=&apos;7&apos; value=&apos;70-80&apos; /&gt;&#10;      &lt;alias key=&apos;8&apos; value=&apos;80-90&apos; /&gt;&#10;      &lt;alias key=&apos;9&apos; value=&apos;90-100&apos; /&gt;&#10;      &lt;alias key=&apos;10&apos; value=&apos;100-110&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;IC Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[IC_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;IC FC Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[IC_FC_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Functional Classification&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Functional_Classification]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Left SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Left_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Left Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Left_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Less Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Less_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Less Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Less_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC More Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_More_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC More Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_More_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;IC Pain Level&apos; datatype=&apos;real&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Pain_Level]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Right SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Right_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Right Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Right_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;IC Velocity&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[IC_Velocity]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;IC Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[IC_Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Insurer Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Insurer_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Is Historical Patient&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Is_Historical_Patient]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;aliases&gt;&#10;      &lt;alias key=&apos;0&apos; value=&apos;No&apos; /&gt;&#10;      &lt;alias key=&apos;1&apos; value=&apos;Yes&apos; /&gt;&#10;    &lt;/aliases&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Left SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Left_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Left Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Left_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Less Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Less_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Less Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Less_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;User&apos; caption=&apos;LS SLS Avg Change Percent&apos; datatype=&apos;real&apos; default-format=&apos;p0.0\%&apos; default-type=&apos;quantitative&apos; name=&apos;[MS SLS Avg Change Percent (copy)]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;(AVG([Less_Symptomatic_SLS]) - AVG([IC_Less_Symptomatic_SLS])) / AVG([IC_Less_Symptomatic_SLS])&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;More Symptomatic SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[More_Symptomatic_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;More Symptomatic Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[More_Symptomatic_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; name=&apos;[Number of Records]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; user:auto-column=&apos;numrec&apos; visual-totals=&apos;Default&apos;&gt;&#10;    &lt;calculation class=&apos;tableau&apos; formula=&apos;1&apos; /&gt;&#10;  &lt;/column&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[PT_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;PT Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[PT_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Pathology_Area]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Area Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Area_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Pathology Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Pathology_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Patient_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Patient Parent ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Patient_Parent_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Period_Year_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Period Year Number&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; name=&apos;[Period_Year_Number]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Right SLS&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Right_SLS]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; caption=&apos;Right Step Length&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Right_Step_Length]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Series Period Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Series_Period_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Series Period Name&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Series_Period_Name]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Series Period Year&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Series_Period_Year]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Teritorry Key&apos; datatype=&apos;integer&apos; default-type=&apos;ordinal&apos; hidden=&apos;true&apos; name=&apos;[Teritorry_Key]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Sum&apos; caption=&apos;Territory Key&apos; datatype=&apos;integer&apos; default-type=&apos;quantitative&apos; hidden=&apos;true&apos; name=&apos;[Territory_Key]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;integer&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Avg&apos; datatype=&apos;real&apos; default-format=&apos;n\#,\#\#0.0;-\#,\#\#0.0&apos; default-type=&apos;quantitative&apos; name=&apos;[Velocity]&apos; pivot=&apos;key&apos; role=&apos;measure&apos; type=&apos;quantitative&apos; user-datatype=&apos;real&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Year&apos; caption=&apos;Visit Date&apos; datatype=&apos;date&apos; default-type=&apos;ordinal&apos; name=&apos;[Visit_Date]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;ordinal&apos; user-datatype=&apos;date&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Visit Functional Classification&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Visit_Functional_Classification]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column aggregation=&apos;Count&apos; caption=&apos;Visit ID&apos; datatype=&apos;string&apos; default-type=&apos;nominal&apos; name=&apos;[Visit_ID]&apos; pivot=&apos;key&apos; role=&apos;dimension&apos; type=&apos;nominal&apos; user-datatype=&apos;string&apos; visual-totals=&apos;Default&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Period_Name]&apos; derivation=&apos;None&apos; name=&apos;[none:Period_Name:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Period_Year]&apos; derivation=&apos;None&apos; name=&apos;[none:Period_Year:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Series_Period_Name]&apos; derivation=&apos;None&apos; name=&apos;[none:Series_Period_Name:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;column-instance column=&apos;[Series_Period_Year]&apos; derivation=&apos;None&apos; name=&apos;[none:Series_Period_Year:nk]&apos; pivot=&apos;key&apos; type=&apos;nominal&apos; /&gt;&#10;  &lt;drill-paths&gt;&#10;    &lt;drill-path name=&apos;Clinic&apos;&gt;&#10;      &lt;field&gt;[Continent]&lt;/field&gt;&#10;      &lt;field&gt;[Territory]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Branch]&lt;/field&gt;&#10;      &lt;field&gt;[Clinic_Name]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Pathology&apos;&gt;&#10;      &lt;field&gt;[Pathology_Area]&lt;/field&gt;&#10;      &lt;field&gt;[Pathology]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Patient ID&apos;&gt;&#10;      &lt;field&gt;[Patient_Parent_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_ID]&lt;/field&gt;&#10;      &lt;field&gt;[Patient_Key]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;    &lt;drill-path name=&apos;Series Period&apos;&gt;&#10;      &lt;field&gt;[Series_Period_Name]&lt;/field&gt;&#10;      &lt;field&gt;[Series_Period_Year]&lt;/field&gt;&#10;    &lt;/drill-path&gt;&#10;  &lt;/drill-paths&gt;&#10;  &lt;folder name=&apos;Functional Classification&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[FC_Grade_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_FC_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Functional_Classification]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Visit_Functional_Classification]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Patient Current Data&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Activity_Status_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC Pain Level (bin)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Insurer]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Insurer_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Is_Historical_Patient]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[PT_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Area_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Pathology_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Pathology&apos; type=&apos;drillpath&apos; /&gt;&#10;    &lt;folder-item name=&apos;Patient ID&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Periods&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[Period_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Name]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Period_Year_Number]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Series_Period_Key]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;Series Period&apos; type=&apos;drillpath&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Visit&apos; role=&apos;dimensions&apos;&gt;&#10;    &lt;folder-item name=&apos;[IC_Date]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Visit_ID]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Visit_Date]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Visit_ID]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;IC Measures&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[IC_Pain_Level]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;SLS&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[Calculation_570549801600049152]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Left_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Less_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_More_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Right_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Left_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Less_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[MS SLS Avg Change Percent (copy)]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[More_Symptomatic_SLS]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Right_SLS]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Step Length&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[Calculation_570549801600360449]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Calculation_570549801600438274]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Left_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Less_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_More_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Right_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Left_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Less_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[More_Symptomatic_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Right_Step_Length]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;folder name=&apos;Velocity&apos; role=&apos;measures&apos;&gt;&#10;    &lt;folder-item name=&apos;[Calculation_857935745677983748]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[IC_Velocity]&apos; type=&apos;field&apos; /&gt;&#10;    &lt;folder-item name=&apos;[Velocity]&apos; type=&apos;field&apos; /&gt;&#10;  &lt;/folder&gt;&#10;  &lt;layout dim-ordering=&apos;alphabetic&apos; dim-percentage=&apos;0.691652&apos; measure-ordering=&apos;alphabetic&apos; measure-percentage=&apos;0.308348&apos; show-aliased-fields=&apos;true&apos; show-structure=&apos;false&apos; user-set-layout=&apos;true&apos; /&gt;&#10;  &lt;semantic-values&gt;&#10;    &lt;semantic-value key=&apos;[Country].[Name]&apos; value=&apos;&amp;quot;United States&amp;quot;&apos; /&gt;&#10;  &lt;/semantic-values&gt;&#10;  &lt;default-sorts&gt;&#10;    &lt;manual-sort column=&apos;[none:Period_Name:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;1M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;3M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;6M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;9M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;12M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q2&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;    &lt;manual-sort column=&apos;[none:Period_Year:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;First Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Second Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Third Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Eighth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fourth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fifth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Sixth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Seventh Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Nineth year&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;    &lt;manual-sort column=&apos;[none:Series_Period_Name:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;1M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;3M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;6M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;9M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;12M&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y2-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y3-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y4-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y5-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y6-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y7-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q2&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q3&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y8-Q4&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q1&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Y9-Q2&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;    &lt;manual-sort column=&apos;[none:Series_Period_Year:nk]&apos; direction=&apos;ASC&apos;&gt;&#10;      &lt;dictionary&gt;&#10;        &lt;bucket&gt;&amp;quot;IC&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;First Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Second Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Third Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fourth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Fifth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Sixth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Seventh Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Eighth Year&amp;quot;&lt;/bucket&gt;&#10;        &lt;bucket&gt;&amp;quot;Nineth year&amp;quot;&lt;/bucket&gt;&#10;      &lt;/dictionary&gt;&#10;    &lt;/manual-sort&gt;&#10;  &lt;/default-sorts&gt;&#10;&lt;/datasource&gt;&#10;&quot;</attribute>
               <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
               <attribute datatype='boolean' name='extract-active'>true</attribute>
               <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
-              <attribute datatype='string' name='update-time'>&quot;8/16/2018 2:02:03 AM&quot;</attribute>
+              <attribute datatype='string' name='update-time'>&quot;8/15/2018 3:04:56 PM&quot;</attribute>
             </attributes>
           </metadata-record>
         </metadata-records>
@@ -1177,8 +1177,8 @@
       </group>
       <drill-paths>
         <drill-path layered='true' name='Clinic'>
-          <field>[Territory]</field>
           <field>[Continent]</field>
+          <field>[Territory]</field>
           <field>[Clinic_Branch]</field>
           <field>[Clinic_Name]</field>
         </drill-path>
@@ -1889,7 +1889,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.478552' group-percentage='0.0294906' measure-ordering='alphabetic' measure-percentage='0.491957' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.492933' measure-ordering='alphabetic' measure-percentage='0.507067' show-structure='false' user-set-layout='true' />
       <style>
         <style-rule element='mark'>
           <encoding attr='color' field='[:Measure Names]' palette='blue_teal_10_0' type='palette'>
@@ -3518,7 +3518,7 @@
               <attribute datatype='string' name='dialect-definition'>&quot;&lt;dialect-definition&gt;&#10;  &lt;primary-dialect class=&apos;hyper&apos; version=&apos;0.0.0&apos;&gt;&#10;  &lt;/primary-dialect&gt;&#10;&lt;/dialect-definition&gt;&#10;&quot;</attribute>
               <attribute datatype='boolean' name='extract-active'>true</attribute>
               <attribute datatype='boolean' name='fast-get-server-time'>true</attribute>
-              <attribute datatype='string' name='update-time'>&quot;8/16/2018 2:01:29 AM&quot;</attribute>
+              <attribute datatype='string' name='update-time'>&quot;8/23/2018 2:03:22 AM&quot;</attribute>
             </attributes>
           </metadata-record>
         </metadata-records>
@@ -4075,6 +4075,7 @@
         <column caption='Exclude Series Year' datatype='string' name='[Series Period Year (copy)]' role='dimension' type='nominal'>
           <calculation class='tableau' formula='[Series_Period_Year]' />
         </column>
+        <column aggregation='Count' caption='Series Period Name' datatype='string' default-type='nominal' layered='true' name='[Series_Period_Name]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
         <column aggregation='Count' caption='Series Period Year' datatype='string' default-type='nominal' layered='true' name='[Series_Period_Year]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
         <column aggregation='Count' datatype='string' default-type='nominal' layered='true' name='[Territory]' pivot='key' role='dimension' type='nominal' user-datatype='string' visual-totals='Default' />
         <column-instance column='[Activity_Status]' derivation='None' name='[none:Activity_Status:nk]' pivot='key' type='nominal' />
@@ -4090,6 +4091,7 @@
         <column-instance column='[Pathology]' derivation='None' name='[none:Pathology:nk]' pivot='key' type='nominal' />
         <column-instance column='[Pathology_Area]' derivation='None' name='[none:Pathology_Area:nk]' pivot='key' type='nominal' />
         <column-instance column='[Series Period Year (copy)]' derivation='None' name='[none:Series Period Year (copy):nk]' pivot='key' type='nominal' />
+        <column-instance column='[Series_Period_Name]' derivation='None' name='[none:Series_Period_Name:nk]' pivot='key' type='nominal' />
         <column-instance column='[Series_Period_Year]' derivation='None' name='[none:Series_Period_Year:nk]' pivot='key' type='nominal' />
         <column-instance column='[Territory]' derivation='None' name='[none:Territory:nk]' pivot='key' type='nominal' />
       </datasource-dependencies>
@@ -4132,6 +4134,9 @@
           <groupfilter function='level-members' level='[none:Series Period Year (copy):nk]' />
           <groupfilter function='member' level='[none:Series Period Year (copy):nk]' member='&quot;IC&quot;' />
         </groupfilter>
+      </filter>
+      <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]'>
+        <groupfilter function='level-members' level='[none:Series_Period_Name:nk]' />
       </filter>
       <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Year:nk]'>
         <groupfilter function='member' level='[none:Series_Period_Year:nk]' member='&quot;First Year&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
@@ -4280,9 +4285,6 @@
           </filter>
           <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Period_Name:nk]'>
             <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
-          </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[:Measure Names]</column>
@@ -4474,9 +4476,6 @@
               <groupfilter function='level-members' level='[none:Period_Name:nk]' />
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
-          </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <alphabetic-sort column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Visit_Functional_Classification:nk]' direction='DESC' />
           <slices>
@@ -4699,9 +4698,6 @@
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
           </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
-          </filter>
           <slices>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Functional Classification (copy):nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Date:qk]</column>
@@ -4880,9 +4876,6 @@
               <groupfilter function='level-members' level='[none:Period_Name:nk]' />
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
-          </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <alphabetic-sort column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Visit_Functional_Classification:nk]' direction='DESC' />
           <slices>
@@ -5082,9 +5075,6 @@
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
           </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
-          </filter>
           <slices>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Functional Classification (copy):nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Date:qk]</column>
@@ -5263,9 +5253,6 @@
               <groupfilter function='level-members' level='[none:Period_Name:nk]' />
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
-          </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <alphabetic-sort column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Visit_Functional_Classification:nk]' direction='DESC' />
           <slices>
@@ -5472,9 +5459,6 @@
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
           </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
-          </filter>
           <slices>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Functional Classification (copy):nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Date:qk]</column>
@@ -5653,9 +5637,6 @@
               <groupfilter function='level-members' level='[none:Period_Name:nk]' />
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
-          </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <alphabetic-sort column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Visit_Functional_Classification:nk]' direction='DESC' />
           <slices>
@@ -5856,9 +5837,6 @@
               <groupfilter function='member' level='[none:Period_Name:nk]' member='&quot;IC&quot;' />
             </groupfilter>
           </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
-          </filter>
           <slices>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Functional Classification (copy):nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Date:qk]</column>
@@ -5997,9 +5975,6 @@
               <groupfilter function='level-members' level='[none:IC Functional Classification (copy):nk]' />
               <groupfilter function='member' level='[none:IC Functional Classification (copy):nk]' member='&quot;(Unknown)&quot;' />
             </groupfilter>
-          </filter>
-          <filter class='categorical' column='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]' filter-group='5'>
-            <groupfilter function='member' level='[none:Series_Period_Name:nk]' member='&quot;6M&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
           </filter>
           <slices>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Functional Classification (copy):nk]</column>
@@ -6322,6 +6297,7 @@
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]</column>
+            <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -6722,6 +6698,7 @@
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]</column>
+            <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -7068,6 +7045,7 @@
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]</column>
+            <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -7470,6 +7448,7 @@
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]</column>
+            <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -7823,6 +7802,7 @@
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]</column>
+            <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -8300,6 +8280,7 @@
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]</column>
             <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]</column>
+            <column>[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Series_Period_Name:nk]</column>
           </slices>
           <aggregation value='true' />
         </view>
@@ -8840,7 +8821,7 @@
             </zone>
           </zone>
           <zone h='97916' id='5' param='vert' type='layout-flow' w='14406' x='85008' y='1042'>
-            <zone h='6641' id='146' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Date:qk]' type='filter' values='database' w='14406' x='85008' y='1042'>
+            <zone h='6511' id='146' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Date:qk]' type='filter' values='database' w='14406' x='85008' y='1042'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8848,7 +8829,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='148' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Activity_Status:nk]' type='filter' values='database' w='14406' x='85008' y='7683'>
+            <zone h='6771' id='148' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Activity_Status:nk]' type='filter' values='database' w='14406' x='85008' y='7553'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8856,7 +8837,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='164' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Is_Historical_Patient:ok]' type='filter' values='database' w='14406' x='85008' y='14454'>
+            <zone h='6771' id='164' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Is_Historical_Patient:ok]' type='filter' values='database' w='14406' x='85008' y='14324'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8864,7 +8845,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='149' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Pathology_Area:nk]' type='filter' values='cascading' w='14406' x='85008' y='21225'>
+            <zone h='6771' id='149' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Pathology_Area:nk]' type='filter' values='cascading' w='14406' x='85008' y='21095'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8872,7 +8853,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='150' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Pathology:nk]' type='filter' values='cascading' w='14406' x='85008' y='27996'>
+            <zone h='6771' id='150' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Pathology:nk]' type='filter' values='cascading' w='14406' x='85008' y='27866'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8880,7 +8861,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='152' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Continent:nk]' type='filter' values='cascading' w='14406' x='85008' y='34767'>
+            <zone h='6771' id='152' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Continent:nk]' type='filter' values='cascading' w='14406' x='85008' y='34637'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8888,7 +8869,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='153' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]' type='filter' values='cascading' w='14406' x='85008' y='41538'>
+            <zone h='6771' id='153' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Territory:nk]' type='filter' values='cascading' w='14406' x='85008' y='41408'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8896,7 +8877,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='151' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Clinic_Branch:nk]' type='filter' values='cascading' w='14406' x='85008' y='48309'>
+            <zone h='6771' id='151' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Clinic_Branch:nk]' type='filter' values='cascading' w='14406' x='85008' y='48179'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8904,7 +8885,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='194' mode='checkdropdown' name='L FC_1' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Clinic_Name:nk]' type='filter' values='cascading' w='14406' x='85008' y='55080'>
+            <zone h='6771' id='194' mode='checkdropdown' name='L FC_1' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Clinic_Name:nk]' type='filter' values='cascading' w='14406' x='85008' y='54950'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8912,7 +8893,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='155' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Insurer:nk]' type='filter' values='database' w='14406' x='85008' y='61851'>
+            <zone h='6771' id='155' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:Insurer:nk]' type='filter' values='database' w='14406' x='85008' y='61721'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8920,7 +8901,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='154' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]' type='filter' values='relevant' w='14406' x='85008' y='68622'>
+            <zone h='6771' id='154' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:PT_Name:nk]' type='filter' values='relevant' w='14406' x='85008' y='68492'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8928,7 +8909,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='197' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Functional_Classification:nk]' type='filter' values='database' w='14406' x='85008' y='75393'>
+            <zone h='6771' id='197' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC_Functional_Classification:nk]' type='filter' values='database' w='14406' x='85008' y='75263'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8936,7 +8917,7 @@
                 <format attr='margin' value='4' />
               </zone-style>
             </zone>
-            <zone h='6771' id='198' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]' type='filter' values='database' w='14406' x='85008' y='82164'>
+            <zone h='6771' id='198' mode='checkdropdown' name='IC_FC' param='[sqlproxy.0edu30e0f8aqze17lbcb60h00qbg (copy)].[none:IC Pain Level (bin):ok]' type='filter' values='database' w='14406' x='85008' y='82034'>
               <zone-style>
                 <format attr='border-color' value='#000000' />
                 <format attr='border-style' value='none' />
@@ -8958,7 +8939,7 @@
             <zone h='48617' id='178' param='horz' type='layout-flow' w='11647' x='586' y='36230'>
               <zone h='48617' id='186' layout-strategy-id='distribute-evenly' param='vert' type='layout-flow' w='11647' x='586' y='36230'>
                 <zone h='12155' id='189' name='L FC_1 N' w='11647' x='586' y='36230'>
-                  <layout-cache fixed-size-h='333' type-h='fixed' type-w='cell' />
+                  <layout-cache fixed-size-h='383' type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8967,7 +8948,7 @@
                   </zone-style>
                 </zone>
                 <zone h='12154' id='190' name='L FC_2 N' w='11647' x='586' y='48385'>
-                  <layout-cache fixed-size-h='333' type-h='fixed' type-w='cell' />
+                  <layout-cache fixed-size-h='383' type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8976,7 +8957,7 @@
                   </zone-style>
                 </zone>
                 <zone h='12154' id='191' name='L FC_3 N' w='11647' x='586' y='60539'>
-                  <layout-cache fixed-size-h='333' type-h='fixed' type-w='cell' />
+                  <layout-cache fixed-size-h='383' type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -8985,7 +8966,7 @@
                   </zone-style>
                 </zone>
                 <zone h='12154' id='192' name='L FC_4 N' w='11647' x='586' y='72693'>
-                  <layout-cache fixed-size-h='333' type-h='fixed' type-w='cell' />
+                  <layout-cache fixed-size-h='393' type-h='fixed' type-w='cell' />
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -9215,7 +9196,7 @@
             <zone h='97916' id='140' param='horz' type='layout-flow' w='9554' x='89860' y='1042'>
               <zone fixed-size='160' h='97916' id='99' is-fixed='true' type='layout-basic' w='9554' x='89860' y='1042'>
                 <zone h='97916' id='5' param='vert' type='layout-flow' w='9554' x='89860' y='1042'>
-                  <zone h='6641' id='153' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:IC_Date:qk]' type='filter' values='database' w='9554' x='89860' y='1042'>
+                  <zone h='6511' id='153' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:IC_Date:qk]' type='filter' values='database' w='9554' x='89860' y='1042'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9223,7 +9204,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='155' mode='dropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Calculation_391531711449587715:nk]' type='filter' values='all' w='9554' x='89860' y='7683'>
+                  <zone h='6771' id='155' mode='dropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Calculation_391531711449587715:nk]' type='filter' values='all' w='9554' x='89860' y='7553'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9231,7 +9212,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='9' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Activity_Status:nk]' type='filter' w='9554' x='89860' y='14454'>
+                  <zone h='6771' id='9' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Activity_Status:nk]' type='filter' w='9554' x='89860' y='14324'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9239,7 +9220,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='158' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Is_Historical_Patient:ok]' type='filter' values='database' w='9554' x='89860' y='21225'>
+                  <zone h='6771' id='158' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Is_Historical_Patient:ok]' type='filter' values='database' w='9554' x='89860' y='21095'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9247,7 +9228,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='10' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Pathology_Area:nk]' type='filter' w='9554' x='89860' y='27996'>
+                  <zone h='6771' id='10' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Pathology_Area:nk]' type='filter' w='9554' x='89860' y='27866'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9255,7 +9236,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='152' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Pathology:nk]' type='filter' values='cascading' w='9554' x='89860' y='34767'>
+                  <zone h='6771' id='152' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Pathology:nk]' type='filter' values='cascading' w='9554' x='89860' y='34637'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9263,7 +9244,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='11' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Continent:nk]' type='filter' values='cascading' w='9554' x='89860' y='41538'>
+                  <zone h='6771' id='11' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Continent:nk]' type='filter' values='cascading' w='9554' x='89860' y='41408'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9271,7 +9252,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='168' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Territory:nk]' type='filter' values='cascading' w='9554' x='89860' y='48309'>
+                  <zone h='6771' id='168' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Territory:nk]' type='filter' values='cascading' w='9554' x='89860' y='48179'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9279,7 +9260,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='13' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Clinic_Branch:nk]' type='filter' values='cascading' w='9554' x='89860' y='55080'>
+                  <zone h='6771' id='13' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Clinic_Branch:nk]' type='filter' values='cascading' w='9554' x='89860' y='54950'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9287,7 +9268,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='14' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Insurer:nk]' type='filter' w='9554' x='89860' y='61851'>
+                  <zone h='6771' id='14' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:Insurer:nk]' type='filter' w='9554' x='89860' y='61721'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9295,7 +9276,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='167' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:PT_Name:nk]' type='filter' values='relevant' w='9554' x='89860' y='68622'>
+                  <zone h='6771' id='167' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:PT_Name:nk]' type='filter' values='relevant' w='9554' x='89860' y='68492'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9303,7 +9284,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='157' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:IC_Functional_Classification:nk]' type='filter' values='database' w='9554' x='89860' y='75393'>
+                  <zone h='6771' id='157' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:IC_Functional_Classification:nk]' type='filter' values='database' w='9554' x='89860' y='75263'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9311,7 +9292,7 @@
                       <format attr='margin' value='4' />
                     </zone-style>
                   </zone>
-                  <zone h='6771' id='169' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:IC Pain Level (bin):ok]' type='filter' values='database' w='9554' x='89860' y='82164'>
+                  <zone h='6771' id='169' mode='checkdropdown' name='Velocity (M)' param='[sqlproxy.09cc30202biepf12vin4x01wwyo3].[none:IC Pain Level (bin):ok]' type='filter' values='database' w='9554' x='89860' y='82034'>
                     <zone-style>
                       <format attr='border-color' value='#000000' />
                       <format attr='border-style' value='none' />
@@ -9594,7 +9575,7 @@
           <zoom type='entire-view' />
         </viewpoint>
       </viewpoints>
-      <active id='169' />
+      <active id='-1' />
     </window>
     <window class='worksheet' name='Velocity (S)'>
       <cards>
@@ -9868,7 +9849,7 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='11' />
+      <active id='-1' />
     </window>
     <window class='worksheet' name='IC_FC'>
       <cards>
@@ -10283,160 +10264,160 @@
           </highlight>
         </viewpoint>
       </viewpoints>
-      <active id='197' />
+      <active id='-1' />
     </window>
   </windows>
   <thumbnails>
     <thumbnail height='192' name='Gait - All Periods' width='192'>
       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
-      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
-      bEwAAAAASUVORK5CYII=
+      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
+      RK5CYII=
     </thumbnail>
     <thumbnail height='192' name='Gait - Functional Classification' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk

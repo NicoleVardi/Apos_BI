@@ -11,7 +11,7 @@
   </preferences>
   <datasources>
     <datasource caption='v_CIO_General_Gait_Series (DWH)' inline='true' name='federated.1e54g3i1pfujtt1dycdbt0jah8z9' version='18.1'>
-      <repository-location id='v_CIO_General_Gait_SeriesDWH' path='datasources' revision='2.7' />
+      <repository-location id='v_CIO_General_Gait_SeriesDWH' path='datasources' revision='2.9' />
       <connection class='federated'>
         <named-connections>
           <named-connection caption='BISRV' name='sqlserver.10jzgnk1gbcpgm175vdgd14fo267'>
@@ -1131,8 +1131,8 @@
       <column-instance column='[Series_Period_Year]' derivation='None' name='[none:Series_Period_Year:nk]' pivot='key' type='nominal' />
       <drill-paths>
         <drill-path name='Clinic'>
-          <field>[Territory]</field>
           <field>[Continent]</field>
+          <field>[Territory]</field>
           <field>[Clinic_Branch]</field>
           <field>[Clinic_Name]</field>
         </drill-path>
@@ -1218,7 +1218,7 @@
         <folder-item name='[IC_Velocity]' type='field' />
         <folder-item name='[Velocity]' type='field' />
       </folder>
-      <extract count='-1' enabled='true' units='records'>
+      <extract count='-1' enabled='false' units='records'>
         <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Repos/Apos_BI/Tableau/Data Sources/v_CIO_General_Gait_Series (DWH).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='08/15/2018 03:04:56 PM' username='tableau_internal_user'>
           <relation name='Extract' table='[Extract].[Extract]' type='table' />
           <refresh>
@@ -1832,7 +1832,7 @@
           </metadata-records>
         </connection>
       </extract>
-      <layout dim-ordering='alphabetic' dim-percentage='0.691652' measure-ordering='alphabetic' measure-percentage='0.308348' show-aliased-fields='true' show-structure='false' user-set-layout='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.692695' measure-ordering='alphabetic' measure-percentage='0.307305' show-aliased-fields='true' show-structure='false' user-set-layout='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
       </semantic-values>

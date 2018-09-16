@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Config_Patient_Files"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{A57E08FB-69A9-4021-B58B-7F0382FFB3AB}">
+  DTS:VersionBuild="57"
+  DTS:VersionGUID="{7AF2126D-D5E0-459C-987A-3B8BCAFB37D7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -39,7 +39,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADzAuWi9+KCtsavk1wBdksXAAAAAASAAACgAAAAEAAAALb8EtLBB2kmgrKDqnKec88QAAAAyoxX7p31t26x6XYeAYQVXRQAAADX/ruMjHSuxqDZOYa683KQHij0tQ</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADMf1gVJvmTu0qD/7pokwWcAAAAAASAAACgAAAAEAAAACJ7VtMW4+wXcbUuwR6I8GcQAAAAnQpNgx20G8IaaBRKFt7C3BQAAAA76dmo4ZTbMBTZLRcPt7Kxo7j+Xg</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -56,7 +56,7 @@
           <DTS:Password
             DTS:Name="password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAABcfz1znVxAnq/Ksw+OpVr7AAAAAASAAACgAAAAEAAAADpWzVI03NYpO8DACDy9d4wQAAAAC54gP0mCOQvkhYhD+2qdzBQAAAAWuG1wMgfkCK2lyP1LiDSWsmj+5w</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA1Q3qYfXWlEubtnu7L9bdowAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADnwnWEoShdl4egPYsTXFnVAAAAAASAAACgAAAAEAAAAHdMfCTgxk6EdKZWKoYHQnsQAAAA47EUNfDMjm+vGdfsa3v2+BQAAAChkbMPzEWYXyDIpZzbLvWd51PinA</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1043,7 +1043,7 @@
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{81711585-5519-47F4-84E9-DA1F86305F26}"
-                  SQLTask:SqlStatementSource="-- Patients that need to be updated as Dropped Out&#xA;SELECT P.*, PAS.Activity_Status_Key as DO_Activity_Status_Key&#xA;INTO #Temp&#xA;FROM DWH.dbo.Dim_Patients P&#xA;INNER JOIN DWH.dbo.Dim_Patient_Activity_Status PAS ON P.Activity_Status_Key = PAS.Activity_Status_Key&#xA;INNER JOIN MRR.dbo.Dropped_Out_Patients DO ON P.Patient_Key = DO.Patient_Key&#xA;WHERE PAS.Activity_Status not in ('Dropped Out','N\A')&#xA;&#xA;UPDATE P&#xA;SET Patient_ID = CONCAT(P.Patient_Parent_ID,'_DO'),&#xA;&#x9;Activity_Status_Key = (SELECT Activity_Status_Key FROM DWH.dbo.Dim_Patient_Activity_Status WHERE Activity_Status = 'Dropped Out'),&#xA;&#x9;Discharge_Date = P.Last_Visit_Date,&#xA;&#x9;Is_Discharged_Patient = 1,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM Dwh.dbo.Dim_Patients P&#xA;INNER JOIN #Temp T ON P.Patient_Key = T.Patient_Key&#xA;&#xA;-- Audit Patient Dropped Out &amp; Activit Status Change&#xA;DECLARE &#xA;&#x9;@Patient_Parent_ID varchar (50),&#xA;&#x9;@Activity_Status_Key int,&#xA;&#x9;@Old_Activity_Status_Key int,&#xA;&#x9;@IC_Date date&#xA;&#x9;&#xA;DECLARE cur CURSOR LOCAL FOR&#xA;&#xA;&#x9;SELECT Patient_Parent_ID, Activity_Status_Key, DO_Activity_Status_Key, IC_Date &#xA;&#x9;FROM #Temp&#xA;&#xA;OPEN cur&#xA;&#xA;FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;WHILE @@FETCH_STATUS = 0 BEGIN&#xA;&#xA;    --execute your sproc on each row&#xA;    EXEC DWH.adm.Log_Patient_Activity_Status_Change @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;    FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;END&#xA;&#xA;CLOSE cur&#xA;DEALLOCATE cur;&#xA;&#xA;DROP TABLE #Temp;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="-- Patients that need to be updated as Dropped Out&#xA;SELECT P.*, PAS.Activity_Status_Key as DO_Activity_Status_Key&#xA;INTO #Temp&#xA;FROM DWH.dbo.Dim_Patients P&#xA;INNER JOIN DWH.dbo.Dim_Patient_Activity_Status PAS ON P.Activity_Status_Key = PAS.Activity_Status_Key&#xA;INNER JOIN MRR.dbo.Dropped_Out_Patients DO ON P.Patient_Key = DO.Patient_Key&#xA;WHERE PAS.Activity_Status not in ('Dropped Out','N\A','Changed Pathology')&#xA;&#xA;UPDATE P&#xA;SET Patient_ID = CASE WHEN P.Patient_ID LIKE '%_DO' THEN P.Patient_ID ELSE CONCAT(P.Patient_ID,'_DO') END,&#xA;&#x9;Activity_Status_Key = (SELECT Activity_Status_Key FROM DWH.dbo.Dim_Patient_Activity_Status WHERE Activity_Status = 'Dropped Out'),&#xA;&#x9;Discharge_Date = P.Last_Visit_Date,&#xA;&#x9;Is_Discharged_Patient = 1,&#xA;&#x9;DB_Update_Date = GETDATE()&#xA;FROM Dwh.dbo.Dim_Patients P&#xA;INNER JOIN #Temp T ON P.Patient_Key = T.Patient_Key&#xA;&#xA;-- Audit Patient Dropped Out &amp; Activit Status Change&#xA;DECLARE &#xA;&#x9;@Patient_Parent_ID varchar (50),&#xA;&#x9;@Activity_Status_Key int,&#xA;&#x9;@Old_Activity_Status_Key int,&#xA;&#x9;@IC_Date date&#xA;&#x9;&#xA;DECLARE cur CURSOR LOCAL FOR&#xA;&#xA;&#x9;SELECT Patient_Parent_ID, Activity_Status_Key, DO_Activity_Status_Key, IC_Date &#xA;&#x9;FROM #Temp&#xA;&#xA;OPEN cur&#xA;&#xA;FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;WHILE @@FETCH_STATUS = 0 BEGIN&#xA;&#xA;    --execute your sproc on each row&#xA;    EXEC DWH.adm.Log_Patient_Activity_Status_Change @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;&#xA;    FETCH NEXT FROM cur INTO @Patient_Parent_ID, @Activity_Status_Key, @Old_Activity_Status_Key, @IC_Date&#xA;END&#xA;&#xA;CLOSE cur&#xA;DEALLOCATE cur;&#xA;&#xA;DROP TABLE #Temp;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -1339,6 +1339,12 @@
                           <externalMetadataColumns
                             isUsed="True">
                             <externalMetadataColumn
+                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Patient_Parent_ID]"
+                              codePage="1252"
+                              dataType="str"
+                              length="50"
+                              name="Patient_Parent_ID" />
+                            <externalMetadataColumn
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Insurer]"
                               codePage="1252"
                               dataType="str"
@@ -1348,12 +1354,6 @@
                               refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[DB_Create_Date]"
                               dataType="dbTimeStamp"
                               name="DB_Create_Date" />
-                            <externalMetadataColumn
-                              refId="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer.Inputs[OLE DB Destination Input].ExternalColumns[Patient_Parent_ID]"
-                              codePage="1252"
-                              dataType="str"
-                              length="50"
-                              name="Patient_Parent_ID" />
                           </externalMetadataColumns>
                         </input>
                       </inputs>
@@ -1588,7 +1588,7 @@
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{29EE997F-F1B1-4626-89B5-F86153921C33}"
-                  SQLTask:SqlStatementSource="MERGE dbo.Patient_Insurer as T&#xA;USING ext.Patient_Insurer as S ON T.Patient_Parent_ID = S.Patient_Parent_ID&#xA;&#xA;WHEN MATCHED THEN &#xA; UPDATE SET &#xA; T.Insurer = S.Insurer,&#xA; T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA; INSERT (Patient_Parent_ID, Insurer)&#xA; VALUES (S.Patient_Parent_ID, S.Insurer);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="MERGE dbo.Patient_Insurer as T&#xA;USING (SELECT DISTINCT Patient_Parent_ID, Insurer FROM ext.Patient_Insurer WHERE Patient_Parent_ID IS NOT NULL) as S ON T.Patient_Parent_ID = S.Patient_Parent_ID&#xA;&#xA;WHEN MATCHED THEN &#xA; UPDATE SET &#xA; T.Insurer = S.Insurer,&#xA; T.DB_Update_Date = GETDATE()&#xA;&#xA;WHEN NOT MATCHED THEN&#xA; INSERT (Patient_Parent_ID, Insurer)&#xA; VALUES (S.Patient_Parent_ID, S.Insurer);" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
           </DTS:Executables>
@@ -3033,7 +3033,7 @@
     design-time-name="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="169,42"
           Id="Package\Load External Files\Patient Insurer\Load ext Patient_Insurer\ext Patient_Insurer"
@@ -3065,9 +3065,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -3089,9 +3087,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
